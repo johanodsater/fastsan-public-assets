@@ -1,0 +1,24 @@
+{
+  "version": "1.2.0",
+  "generated_at": "2026-05-13",
+  "team_narrative": "Daniel Stalbrand + TS-placeholder (Miljokonsult)",
+  "base_url": "https://raw.githubusercontent.com/johanodsater/fastsan-public-assets/main/content/v1.1",
+  "slugs": [
+    "hem",
+    "miljoinventering",
+    "provtagning",
+    "markmiljo",
+    "inomhusmiljo",
+    "pcb",
+    "radon",
+    "forvarvsbesiktning",
+    "luktutredning",
+    "akut",
+    "om",
+    "kontakt",
+    "integritetspolicy"
+  ],
+  "injector": "__fs-injector.php",
+  "injector_version": "1.2.0",
+  "notes": "13 pages total. 11 from v1.1 (UPDATE flow) + 2 new (INSERT flow): forvarvsbesiktning, luktutredning."
+}
