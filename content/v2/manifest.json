@@ -1,0 +1,41 @@
+{
+  "version": "2.0",
+  "generated_at": "2026-05-16T23:10:13+00:00",
+  "slugs": [
+    "asbest",
+    "fukt",
+    "fukt-mogel",
+    "jord",
+    "markmiljo-undersokning",
+    "mogel",
+    "provtagning-fukt-mogel",
+    "provtagning-material",
+    "tjanster",
+    "vattenskada"
+  ],
+  "count": 10,
+  "files": [
+    "asbest.html",
+    "asbest.meta.json",
+    "fukt-mogel.html",
+    "fukt-mogel.meta.json",
+    "fukt.html",
+    "fukt.meta.json",
+    "jord.html",
+    "jord.meta.json",
+    "markmiljo-undersokning.html",
+    "markmiljo-undersokning.meta.json",
+    "mogel.html",
+    "mogel.meta.json",
+    "provtagning-fukt-mogel.html",
+    "provtagning-fukt-mogel.meta.json",
+    "provtagning-material.html",
+    "provtagning-material.meta.json",
+    "tjanster.html",
+    "tjanster.meta.json",
+    "vattenskada.html",
+    "vattenskada.meta.json"
+  ],
+  "file_count": 20,
+  "description": "Fastsan v2 content — Gutenberg blocks + meta.json för 10 v2-sidor (FAS 4 deploy 2026-05-16). Källa: reptil.hemsida.eu wp-content/uploads/fastsan-content/. Använd via __fs-injector mu-plugin för (re)injection till WordPress."
+}
