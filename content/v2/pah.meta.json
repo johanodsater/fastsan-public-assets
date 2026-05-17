@@ -1,0 +1,11 @@
+{
+  "title": "PAH-analys jord — kreosot, gasverk, riktvärden v2.3 | Fastsan",
+  "description": "PAH-analys i jord enligt SS-ISO 18287 med Naturvårdsverkets riktvärden v2.3 (2025). Kreosot, gasverk, tjärasfalt, sotnedfall — oberoende analysunderlag inför schakt, MIFO fas 2 och fastighetsförvärv i Stockholm/Mälardalen.",
+  "focus_keyword": "PAH-analys jord",
+  "parent": 8,
+  "parent_slug": "markmiljo",
+  "slug_override": "pah",
+  "template": "service-page",
+  "schema_type": "TechArticle",
+  "owner_verified": "2026-05-16 mot NV-tabell v2.3 (2025)"
+}

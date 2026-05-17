@@ -1,0 +1,11 @@
+{
+  "title": "Tungmetaller i mark — ICP-MS, riktvärden v2.3, Krom(VI) | Fastsan",
+  "description": "Metallanalys i jord enligt ICP-MS — 11 metaller med Naturvårdsverkets riktvärden v2.3 (2025). Krom(VI), CCA-impregnerat trä, bakgrundshalter via SGU. Oberoende analysunderlag för Stockholm och Mälardalen.",
+  "focus_keyword": "tungmetaller i mark",
+  "parent": 8,
+  "parent_slug": "markmiljo",
+  "slug_override": "tungmetaller",
+  "template": "service-page",
+  "schema_type": "TechArticle",
+  "owner_verified": "2026-05-16 mot NV-tabell v2.3 (2025) — 11 av 11 metaller (22 värden)"
+}

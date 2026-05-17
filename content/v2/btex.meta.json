@@ -1,0 +1,11 @@
+{
+  "title": "BTEX-analys jord — bensen, ISO 22155, riktvärden v2.3 | Fastsan",
+  "description": "BTEX-analys i jord enligt SS-EN ISO 22155 med metanolkonservering. Naturvårdsverkets riktvärden v2.3 (2025): bensen KM 0,012 / MKM 0,04 mg/kg TS. Bensin, lösningsmedel, cisterner, verkstäder — oberoende analysunderlag för Stockholm och Mälardalen.",
+  "focus_keyword": "BTEX-analys jord",
+  "parent": 8,
+  "parent_slug": "markmiljo",
+  "slug_override": "btex",
+  "template": "service-page",
+  "schema_type": "TechArticle",
+  "owner_verified": "2026-05-16 mot NV-tabell v2.3 (2025) — 4 av 4 BTEX-värden"
+}
