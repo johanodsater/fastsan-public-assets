@@ -2,16 +2,17 @@
 /**
  * Plugin Name: Fastsan — Schema Injector
  * Description: JSON-LD-schema per tjänstesida (Service) + BreadcrumbList + FAQPage. Kompletterar Organization/LocalBusiness som temat redan injicerar. Hooks: wp_head prio 99 (efter befintlig Organization). Inga exit/die-patterns (KK247-incident 2026-05-04). Avaktivering: radera filen från mu-plugins/, eller definiera FASTSAN_SCHEMA_DISABLED i wp-config.php.
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: Aibrick (C-instance)
  *
+ * v1.2.1 (2026-09-05, C): ISO/IEC 17025-påståendet struket ur provtagning-description (ägarbeslut 2026-09-05; overifierbart, samma klass som "ackrediterat ISO 17025-lab"). Deploy via github-pull.
  * v1.2.0 (2026-09-05, C): aldrig-frasen utbytt mot "Vi utför ingen sanering" i två Service-descriptions (inomhusmiljo, luktutredning) (ägarbeslut: frasen får inte användas). Deploy via github-pull.
  */
 
 if (!defined('ABSPATH')) { return; }
 if (defined('FASTSAN_SCHEMA_DISABLED') && FASTSAN_SCHEMA_DISABLED) { return; }
 if (defined('FASTSAN_SCHEMA_LOADED')) { return; }
-define('FASTSAN_SCHEMA_LOADED', '1.2.0');
+define('FASTSAN_SCHEMA_LOADED', '1.2.1');
 
 /**
  * Hämta service-data per slug.
@@ -28,7 +29,7 @@ function fastsan_schema_get_services() {
         'provtagning' => [
             'name'        => 'Provtagning byggnadsmaterial',
             'serviceType' => 'Building material sampling',
-            'description' => 'Asbest, PCB, tungmetaller och övriga ämnen — provtagning på plats, analys på specialistlaboratorium med ISO/IEC 17025-kvalitetssystem.',
+            'description' => 'Asbest, PCB, tungmetaller och övriga ämnen — provtagning på plats, analys på specialistlaboratorium. Vi tolkar resultatet och skriver rapporten.',
             'category'    => 'Material testing',
         ],
         'markmiljo' => [
