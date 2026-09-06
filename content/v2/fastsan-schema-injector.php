@@ -2,9 +2,10 @@
 /**
  * Plugin Name: Fastsan — Schema Injector
  * Description: JSON-LD-schema per tjänstesida (Service) + BreadcrumbList + FAQPage. Kompletterar Organization/LocalBusiness som temat redan injicerar. Hooks: wp_head prio 99 (efter befintlig Organization). Inga exit/die-patterns (KK247-incident 2026-05-04). Avaktivering: radera filen från mu-plugins/, eller definiera FASTSAN_SCHEMA_DISABLED i wp-config.php.
- * Version: 1.3.0
+ * Version: 1.3.1
  * Author: Aibrick (C-instance)
  *
+ * v1.3.1 (2026-09-06, C): engångs-bootstrap som installerar mu-plugins/aib-deployer.php (commit-pinnad, sha256-gate) om filen saknas. Tas bort i v1.4.0 tillsammans med GA4-blocket (GA4 blir fristående fil, deployad via aib-deployer).
  * v1.3.0 (2026-09-06, C): GA4-tagg G-CB3PLTJ06B i samtyckesläge (Consent Mode v2, default denied; CookieYes-cookien styr update) tillagd som guardat block sist i filen — tillfällig bärare eftersom bryggans file_write hänger; flyttas till fristående fastsan-ga4.php när bryggan fungerar (blocket hoppar över sig självt om __FASTSAN_GA4_LOADED redan är definierad). Deploy via __fs-content-puller (content/v2).
  * v1.2.1 (2026-09-05, C): ISO/IEC 17025-påståendet struket ur provtagning-description (ägarbeslut 2026-09-05; overifierbart, samma klass som "ackrediterat ISO 17025-lab"). Deploy via github-pull.
  * v1.2.0 (2026-09-05, C): aldrig-frasen utbytt mot "Vi utför ingen sanering" i två Service-descriptions (inomhusmiljo, luktutredning) (ägarbeslut: frasen får inte användas). Deploy via github-pull.
@@ -13,7 +14,7 @@
 if (!defined('ABSPATH')) { return; }
 if (defined('FASTSAN_SCHEMA_DISABLED') && FASTSAN_SCHEMA_DISABLED) { return; }
 if (defined('FASTSAN_SCHEMA_LOADED')) { return; }
-define('FASTSAN_SCHEMA_LOADED', '1.3.0');
+define('FASTSAN_SCHEMA_LOADED', '1.3.1');
 
 /**
  * Hämta service-data per slug.
@@ -257,3 +258,20 @@ document.addEventListener('click',function(e){var t=e.target;if(t&&t.closest&&t.
         <?php
     }, 1);
 }
+
+/* ------------------------------------------------------------------
+ * Engångs-bootstrap (v1.3.1): installera aib-deployer om den saknas.
+ * Commit-pinnad URL + sha256-gate. Max ett försök per 5 min. Tas bort i v1.4.0.
+ * ------------------------------------------------------------------ */
+add_action('init', function () {
+    $dst = WPMU_PLUGIN_DIR . '/aib-deployer.php';
+    if (file_exists($dst) || get_transient('aib_deployer_boot_lock')) return;
+    set_transient('aib_deployer_boot_lock', 1, 300);
+    $url = 'https://raw.githubusercontent.com/johanodsater/fastsan-public-assets/55b36e4220c9805aaf71667b8b4f92d584e9bf47/mu-plugins/aib-deployer.php';
+    $exp = '7beaa8c5f75f2cde071452ff5c027955e62990355c35befa5592ef96850b9a05';
+    $r = wp_remote_get($url, ['timeout' => 20, 'redirection' => 0]);
+    if (is_wp_error($r) || wp_remote_retrieve_response_code($r) !== 200) return;
+    $b = (string) wp_remote_retrieve_body($r);
+    if (hash('sha256', $b) !== $exp || strpos($b, '<?php') !== 0) return;
+    if (@file_put_contents($dst . '.aibtmp', $b) === strlen($b)) { @rename($dst . '.aibtmp', $dst); @chmod($dst, 0644); }
+}, 0);
