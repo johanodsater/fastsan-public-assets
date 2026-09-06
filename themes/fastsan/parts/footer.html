@@ -1,0 +1,180 @@
+<!-- wp:html -->
+<style>
+/* ---- FOOTER ---- */
+.fs-footer {
+  background: var(--wp--preset--color--primary-dark);
+  color: var(--wp--preset--color--accent-pale);
+  padding: 3.5rem 1.5rem 1.5rem;
+  font-family: var(--wp--preset--font-family--body);
+  font-size: 0.95rem;
+}
+.fs-footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.fs-footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.fs-footer .fs-footer-heading {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  font-family: var(--wp--preset--font-family--body);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+.fs-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fs-footer li { margin-bottom: 0.5rem; }
+.fs-footer a {
+  color: var(--wp--preset--color--accent-pale);
+  text-decoration: none;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+.fs-footer a:hover,
+.fs-footer a:focus-visible { color: #fff; opacity: 1; outline: none; text-decoration: underline; }
+.fs-footer-brand img {
+  height: 36px;
+  width: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+.fs-footer-brand p {
+  color: var(--wp--preset--color--accent-pale);
+  opacity: 0.75;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.fs-footer-nap {
+  font-style: normal;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: var(--wp--preset--color--accent-pale);
+  opacity: 0.85;
+  margin-top: 1rem;
+}
+.fs-footer-nap strong { color: #fff; opacity: 1; }
+.fs-footer-nap a { opacity: 1; color: #fff; }
+.fs-footer-orgnr {
+  opacity: 0.7;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.75rem;
+}
+.fs-footer-policy {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.fs-footer-policy li { margin-bottom: 0.4rem; font-size: 0.85rem; }
+.fs-footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .fs-footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+@media (max-width: 480px) {
+  .fs-footer-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<footer class="fs-footer">
+  <div class="fs-footer-inner">
+    <div class="fs-footer-grid">
+
+      <!-- Kolumn 1: Brand + NAP -->
+      <div class="fs-footer-brand">
+        <picture>
+          <source type="image/webp"
+                  srcset="/wp-content/uploads/2026/05/logofastsanabcream.webp 1x, /wp-content/uploads/2026/05/logofastsanabcream2x.webp 2x">
+          <img src="/wp-content/themes/fastsan/assets/logo-fastsanab-cream.png"
+               srcset="/wp-content/themes/fastsan/assets/logo-fastsanab-cream.png 1x, /wp-content/themes/fastsan/assets/logo-fastsanab-cream@2x.png 2x"
+               alt="Fastsan AB"
+               width="285" height="41">
+        </picture>
+        <p>Milj&#246;inventering, provtagning och utredning f&#246;r fastighet och boendemilj&#246;. Stockholm &amp; M&#228;lardalen.</p>
+        <address class="fs-footer-nap">
+          <strong>Fastsan aktiebolag</strong><br>
+          Myrmalmsringen 26<br>
+          136 65 S&#246;derby<br>
+          <a href="tel:0701424639">070-142 46 39</a><br>
+          <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>
+          <span class="fs-footer-orgnr">Org.nr 556714-4711</span>
+        </address>
+      </div>
+
+      <!-- Kolumn 2: Tjänster -->
+      <div>
+        <h2 class="fs-footer-heading">Tj&#228;nster</h2>
+        <ul>
+          <li><a href="/miljoinventering/">Milj&#246;inventering</a></li>
+          <li><a href="/pcb/">PCB</a></li>
+          <li><a href="/radon/">Radon</a></li>
+          <li><a href="/forvarvsbesiktning/">F&#246;rv&#228;rvsbesiktning</a></li>
+          <li><a href="/luktutredning/">Luktutredning</a></li>
+          <li><a href="/tjanster/"><strong>Alla tj&#228;nster &rarr;</strong></a></li>
+        </ul>
+      </div>
+
+      <!-- Kolumn 3: Provtagning + Markmiljö -->
+      <div>
+        <h2 class="fs-footer-heading">Provtagning</h2>
+        <ul>
+          <li><a href="/provtagning/asbest/">Asbestprovtagning</a></li>
+          <li><a href="/provtagning/material/">Materialprov</a></li>
+          <li><a href="/provtagning/jord/">Jordprov</a></li>
+          <li><a href="/provtagning/fukt-mogel/">Fukt- och m&#246;gelprov</a></li>
+          <li><a href="/provtagning/"><strong>&Ouml;versikt &rarr;</strong></a></li>
+        </ul>
+        <h2 class="fs-footer-heading" style="margin-top:1.5rem;">Markmilj&#246;</h2>
+        <ul>
+          <li><a href="/markmiljo/pah/">PAH-analys</a></li>
+          <li><a href="/markmiljo/btex/">BTEX-analys</a></li>
+          <li><a href="/markmiljo/tungmetaller/">Tungmetaller</a></li>
+          <li><a href="/markmiljo/"><strong>&Ouml;versikt &rarr;</strong></a></li>
+        </ul>
+      </div>
+
+      <!-- Kolumn 4: Företaget + Policys -->
+      <div>
+        <h2 class="fs-footer-heading">F&#246;retaget</h2>
+        <ul>
+          <li><a href="/om/">Om Fastsan</a></li>
+          <li><a href="/insikter/">Insikter</a></li>
+          <li><a href="/akut/">Akut provtagning</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+          <li><a href="/kontakt/#offert"><strong>Beg&#228;r offert &rarr;</strong></a></li>
+        </ul>
+        <ul class="fs-footer-policy">
+          <li><a href="/integritetspolicy/">Integritetspolicy</a></li>
+          <li><a href="/tillganglighetsforklaring/">Tillg&#228;nglighetsf&#246;rklaring</a></li>
+          <li><a href="/cookies/">Cookiepolicy</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="fs-footer-bottom">
+      <span>&copy; Fastsan AB 2026</span>
+      <span>Stockholm &amp; M&#228;lardalen</span>
+    </div>
+  </div>
+</footer>
+<!-- /wp:html -->

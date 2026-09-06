@@ -1,0 +1,271 @@
+<!-- wp:html -->
+<style>
+/* ---- AKUT-STRIP (top utility bar) ---- */
+.fs-akut-strip {
+  background: var(--wp--preset--color--primary-dark);
+  color: var(--wp--preset--color--accent-pale);
+  font-size: 0.875rem;
+  padding: 0.5rem 1.5rem;
+  font-family: var(--wp--preset--font-family--body);
+}
+.fs-akut-strip-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.fs-akut-strip .fs-alert-marker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.fs-akut-strip .fs-alert-marker::before {
+  content: "\25CF";
+  color: var(--wp--preset--color--alert);
+  animation: fsPulse 2s infinite;
+}
+@keyframes fsPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.fs-akut-strip a {
+  color: var(--wp--preset--color--accent-soft);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+.fs-akut-strip a:hover { color: #fff; }
+
+/* ---- HEADER ---- */
+.fs-header {
+  background: var(--wp--preset--color--base);
+  border-bottom: 1px solid var(--wp--preset--color--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: var(--wp--preset--font-family--body);
+}
+.fs-header.scrolled { box-shadow: 0 2px 20px rgba(21,50,74,0.08); }
+.fs-header-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.fs-header .fs-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--wp--preset--color--primary);
+}
+.fs-header .fs-brand img {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+.fs-header-nav {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.fs-header-nav > li > a,
+.fs-header-nav .fs-nav-trigger {
+  text-decoration: none;
+  color: var(--wp--preset--color--primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+.fs-header-nav > li > a:hover,
+.fs-header-nav .fs-nav-trigger:hover { color: var(--wp--preset--color--accent-text); }
+.fs-header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  background: var(--wp--preset--color--primary);
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.fs-header-cta:hover { background: var(--wp--preset--color--accent); }
+</style>
+
+<div class="fs-akut-strip">
+  <div class="fs-akut-strip-inner">
+    <span class="fs-alert-marker">Misst&#228;nker du asbest eller m&#246;gel? <a href="/akut/">Akut provtagning &rarr;</a></span>
+    <span>&#128222; <a href="tel:0701424639">070-142 46 39</a> &middot; Stockholm &amp; M&#228;lardalen</span>
+  </div>
+</div>
+
+<header class="fs-header" id="fs-site-header"><meta charset="utf-8">
+  <div class="fs-header-inner">
+    <a href="/" class="fs-brand" aria-label="Fastsan AB &mdash; till startsidan">
+      <picture>
+        <source type="image/webp"
+                srcset="/wp-content/uploads/2026/05/logofastsanab.webp 1x, /wp-content/uploads/2026/05/logofastsanab2x.webp 2x">
+        <img src="/wp-content/themes/fastsan/assets/logo-fastsanab.png"
+             srcset="/wp-content/themes/fastsan/assets/logo-fastsanab.png 1x, /wp-content/themes/fastsan/assets/logo-fastsanab@2x.png 2x"
+             alt="Fastsan AB"
+             width="285" height="41">
+      </picture>
+    </a>
+
+    <button class="fs-mobile-toggle" id="fs-mobile-toggle" aria-expanded="false" aria-controls="fs-primary-nav" aria-label="&Ouml;ppna meny">
+      <span class="fs-hamburger-icon" aria-hidden="true"></span>
+    </button>
+
+    <div class="fs-mobile-backdrop" id="fs-mobile-backdrop" aria-hidden="true"></div>
+
+    <div class="fs-header-nav-wrap" id="fs-primary-nav">
+      <nav aria-label="Huvudnavigation">
+        <ul class="fs-header-nav">
+          <li class="fs-has-dropdown" aria-expanded="false">
+            <button class="fs-nav-trigger" aria-haspopup="true" aria-expanded="false">Tj&#228;nster</button>
+            <ul class="fs-dropdown-panel" role="menu">
+              <li><a href="/miljoinventering/">Milj&#246;inventering</a></li>
+              <li><a href="/pcb/">PCB</a></li>
+              <li><a href="/radon/">Radon</a></li>
+              <li><a href="/forvarvsbesiktning/">F&#246;rv&#228;rvsbesiktning</a></li>
+              <li><a href="/luktutredning/">Luktutredning</a></li>
+              <li class="fs-dropdown-divider" role="separator"></li>
+              <li><a href="/tjanster/" class="fs-dropdown-overview">Alla tj&#228;nster</a></li>
+            </ul>
+          </li>
+
+          <li class="fs-has-dropdown" aria-expanded="false">
+            <button class="fs-nav-trigger" aria-haspopup="true" aria-expanded="false">Provtagning</button>
+            <ul class="fs-dropdown-panel" role="menu">
+              <li><a href="/provtagning/asbest/">Asbestprovtagning</a></li>
+              <li><a href="/provtagning/material/">Materialprov</a></li>
+              <li><a href="/provtagning/jord/">Jordprov</a></li>
+              <li><a href="/provtagning/fukt-mogel/">Fukt- och m&#246;gelprov</a></li>
+              <li class="fs-dropdown-divider" role="separator"></li>
+              <li><a href="/provtagning/" class="fs-dropdown-overview">&Ouml;versikt</a></li>
+            </ul>
+          </li>
+
+          <li class="fs-has-dropdown" aria-expanded="false">
+            <button class="fs-nav-trigger" aria-haspopup="true" aria-expanded="false">Fukt &amp; m&#246;gel</button>
+            <ul class="fs-dropdown-panel" role="menu">
+              <li><a href="/fukt-mogel/fukt/">Fuktutredning</a></li>
+              <li><a href="/fukt-mogel/mogel/">M&#246;gelutredning</a></li>
+              <li><a href="/fukt-mogel/vattenskada/">Vattenskada</a></li>
+              <li class="fs-dropdown-divider" role="separator"></li>
+              <li><a href="/inomhusmiljo/" class="fs-dropdown-overview">&Ouml;versikt</a></li>
+            </ul>
+          </li>
+
+          <li class="fs-has-dropdown" aria-expanded="false">
+            <button class="fs-nav-trigger" aria-haspopup="true" aria-expanded="false">Markmilj&#246;</button>
+            <ul class="fs-dropdown-panel" role="menu">
+              <li><a href="/markmiljo/undersokning/">Markmilj&#246;unders&#246;kning</a></li>
+              <li><a href="/markmiljo/pah/">PAH-analys</a></li>
+              <li><a href="/markmiljo/btex/">BTEX-analys</a></li>
+              <li><a href="/markmiljo/tungmetaller/">Tungmetaller</a></li>
+              <li class="fs-dropdown-divider" role="separator"></li>
+              <li><a href="/markmiljo/" class="fs-dropdown-overview">&Ouml;versikt</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/insikter/">Insikter</a></li>
+          <li><a href="/om/">Om oss</a></li>
+        </ul>
+
+        <a href="/kontakt/#offert" class="fs-mobile-cta">Beg&#228;r offert</a>
+        <a href="tel:0701424639" class="fs-mobile-call">Ring 070-142 46 39</a>
+      </nav>
+    </div>
+
+    <a href="/kontakt/#offert" class="fs-header-cta">Beg&#228;r offert</a>
+  </div>
+</header>
+
+<script>
+(function () {
+  var h = document.getElementById('fs-site-header');
+  if (h) {
+    window.addEventListener('scroll', function () {
+      h.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  }
+
+  var toggle = document.getElementById('fs-mobile-toggle');
+  var wrap = document.getElementById('fs-primary-nav');
+  var backdrop = document.getElementById('fs-mobile-backdrop');
+  var body = document.body;
+
+  function setNavOpen(open) {
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'St\u00e4ng meny' : '\u00d6ppna meny');
+    wrap.classList.toggle('open', open);
+    backdrop.classList.toggle('open', open);
+    backdrop.setAttribute('aria-hidden', open ? 'false' : 'true');
+    body.classList.toggle('fs-nav-open', open);
+  }
+
+  if (toggle && wrap && backdrop) {
+    toggle.addEventListener('click', function () {
+      setNavOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+    backdrop.addEventListener('click', function () { setNavOpen(false); });
+  }
+
+  var dropdowns = document.querySelectorAll('.fs-has-dropdown');
+  dropdowns.forEach(function (dd) {
+    var trig = dd.querySelector('.fs-nav-trigger');
+    if (!trig) return;
+    trig.addEventListener('click', function (e) {
+      e.preventDefault();
+      var open = dd.getAttribute('aria-expanded') === 'true';
+      dropdowns.forEach(function (d) {
+        if (d !== dd) {
+          d.setAttribute('aria-expanded', 'false');
+          var t = d.querySelector('.fs-nav-trigger');
+          if (t) t.setAttribute('aria-expanded', 'false');
+        }
+      });
+      dd.setAttribute('aria-expanded', open ? 'false' : 'true');
+      trig.setAttribute('aria-expanded', open ? 'false' : 'true');
+    });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      dropdowns.forEach(function (dd) {
+        dd.setAttribute('aria-expanded', 'false');
+        var t = dd.querySelector('.fs-nav-trigger');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+      if (toggle && toggle.getAttribute('aria-expanded') === 'true') setNavOpen(false);
+    }
+  });
+
+  document.addEventListener('click', function (e) {
+    if (window.innerWidth < 901) return;
+    if (!e.target.closest('.fs-has-dropdown')) {
+      dropdowns.forEach(function (dd) {
+        dd.setAttribute('aria-expanded', 'false');
+        var t = dd.querySelector('.fs-nav-trigger');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+})();
+</script>
+<!-- /wp:html -->
