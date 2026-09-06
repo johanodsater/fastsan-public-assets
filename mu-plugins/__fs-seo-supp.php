@@ -2,9 +2,10 @@
 /**
  * Plugin Name: FS SEO Supplement + Force Re-inject
  * Description: (1) Renders <title>, <meta description>, OG/Twitter cards (inkl. og:image + twitter:image från Rank Math) och Schema.org JSON-LD från rank_math_* postmeta. (2) On ?fs_force=om,kontakt|all clears __fs_inj_{slug}_v1 flags so injector re-runs.
- * Version: 1.4.0
+ * Version: 1.5.0
  * Author: AIB / C (S153-C)
  *
+ * v1.5.0 (2026-09-06, C): knowsAbout rättad efter av.se — gränsvärdet 0,01 fiber/cm³ bärs av AFS 2023:14 (ändrad genom AFS 2025:5), hantering av AFS 2023:13 (ändrad genom AFS 2025:6 + 2025:8). Alla fem listade. Deploy via aib-deployer.
  * v1.4.0 (2026-09-05, C): sameAs → FB-användarnamn (fastsanab) + LinkedIn-företagssida (fastsan-ab); foundingDate 2008 (ägarbeslut: verksamhetsstart); legalName, vatID, logo tillagda. Deploy via github-pull (bridge write timeout >7 KB).
  * v1.3.1 (2026-08-21, C S392): sameAs utökad med Facebook-sidan (ägarlämnad URL).
  * v1.3.0 (2026-08-21, C S392): founder utökad till full Person-nod med @id, email och telefon (C391-4, ägarorder: endast Daniel på sidan). sameAs ifylld med allabolag.se (C391-5). Angelica: 0 förekomster mätt i DB och schema — inget att ta bort.
@@ -132,7 +133,7 @@ add_action('wp_head', function() {
             'Radonmätning',
         ],
         'knowsAbout' => [
-            'AFS 2023:13', 'AFS 2025:6', 'Plan- och bygglagen',
+            'AFS 2023:13', 'AFS 2023:14', 'AFS 2025:5', 'AFS 2025:6', 'AFS 2025:8', 'Plan- och bygglagen',
             'Naturvårdsverket rapport 6884', 'SFS 2007:19', 'SFS 2010:963',
         ],
         'priceRange' => 'Pris efter offert',
