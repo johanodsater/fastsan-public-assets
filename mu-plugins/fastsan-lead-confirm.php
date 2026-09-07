@@ -1,10 +1,14 @@
 <?php
 /**
  * Plugin Name: Fastsan Lead Confirm (kundens bekräftelseformulär)
- * Description: Renderar kundens bokningsbekräftelse på /bekraftelse/. Läser id/exp/sig ur den signerade länken i Daniels notismejl och POST:ar till /wp-json/fastsan/v1/lead/<id>/confirm (fastsan-lead-pipeline §5). Skapar sidan en gång om den saknas. Alltid noindex.
- * Version: 1.0.0
+ * Description: Renderar kundens bokningsbekräftelse på /bekraftelse/. Läser id/exp/sig ur den signerade länken i Daniels notismejl och POST:ar till /wp-json/fastsan/v1/lead/<id>/confirm (fastsan-lead-pipeline §5). Skapar sidan en gång om den saknas. Alltid noindex, aldrig i sitemap.
+ * Version: 1.0.1
  * Author: C (Claude), Fastsan AB
  * Requires PHP: 8.0
+ *
+ * v1.0.1 (2026-09-07, C): sidan lyfts ur wp-sitemap. rank_math_robots + wp_robots gav noindex i HTML,
+ *   men WP:s inbyggda sitemap läser inte den metan — sidan låg kvar i wp-sitemap-posts-page-1.xml.
+ *   Fynd i A:s peer-review RELA-A-1226 (P1-d).
  *
  * Motpart: fastsan-lead-pipeline v0.3.0 (B S472). Signaturschema id|status|exp, status = 'confirm'.
  * Sidan är avsiktligt utan navigering till andra åtgärder: kunden ska fylla i fakturauppgifter, inget annat.
@@ -13,7 +17,7 @@
 if (!defined('ABSPATH')) return;
 if (defined('FASTSAN_LEAD_CONFIRM_LOADED')) return;
 define('FASTSAN_LEAD_CONFIRM_LOADED', true);
-define('FASTSAN_LEAD_CONFIRM_VERSION', '1.0.0');
+define('FASTSAN_LEAD_CONFIRM_VERSION', '1.0.1');
 define('FASTSAN_LEAD_CONFIRM_SLUG', 'bekraftelse');
 define('FASTSAN_LEAD_CONFIRM_PAGE_OPTION', 'fastsan_lead_confirm_page_id');
 
@@ -54,6 +58,20 @@ add_filter('wp_robots', static function (array $robots): array {
     unset($robots['index'], $robots['follow'], $robots['max-image-preview'], $robots['max-snippet']);
     return $robots;
 }, 20);
+
+/**
+ * WP:s inbyggda sitemap tittar inte på robots-metan — sidan måste lyftas ur med ett query-filter.
+ * Utan detta ligger en transaktionssida med org-nummer kvar i wp-sitemap-posts-page-1.xml.
+ */
+add_filter('wp_sitemaps_posts_query_args', static function (array $args, string $post_type): array {
+    if ($post_type !== 'page') return $args;
+    $id = (int) get_option(FASTSAN_LEAD_CONFIRM_PAGE_OPTION, 0);
+    if ($id > 0) {
+        $existing = isset($args['post__not_in']) ? (array) $args['post__not_in'] : [];
+        $args['post__not_in'] = array_values(array_unique(array_merge($existing, [$id])));
+    }
+    return $args;
+}, 10, 2);
 
 function fastsan_lead_confirm_is_page(): bool {
     $stored = (int) get_option(FASTSAN_LEAD_CONFIRM_PAGE_OPTION, 0);
