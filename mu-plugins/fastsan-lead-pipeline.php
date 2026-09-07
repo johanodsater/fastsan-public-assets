@@ -2,10 +2,11 @@
 /**
  * Plugin Name: Fastsan Lead Pipeline
  * Description: Lead-capture + statusmaskin. REST POST /wp-json/fastsan/v1/lead → DB → action fastsan_lead_created → e-postnotis till Daniel med signerade ett-tryck-statuslänkar. Daglig cron påminner (3/10/30 dagar, eskalering vid 3:e). REST POST /wp-json/fastsan/v1/lead/<id>/confirm tar emot kundens bokningsbekräftelse (fakturauppgifter). Statusbyte firar fastsan_lead_status_changed (framtida CAPI-krok, inget Meta-anrop i denna version).
- * Version: 0.2.1
+ * Version: 0.2.2
  * Author: B (Claude orchestrator), Fastsan AB
  * Requires PHP: 8.0
  *
+ * v0.2.2 (2026-09-07, B S472): confirm skriver bara skickade falt (prov 4b blankade uppgifter).
  * v0.2.1 (2026-09-07, B S472): eskaleringsadress odsater@gmail.com (johan@aibrick.se studsade 554 vid prov; agarbeslut).
  * v0.2.0 (2026-09-07, B S472, RELA-C-1220): statusmaskin new|contacted|quoted|booked|won|lost,
  *   kolumner status_updated_at/reminder_count/org_nr, company, invoice_address/postal/city/email, reference (dbDelta),
@@ -22,7 +23,7 @@ if (!defined('ABSPATH')) return;
 if (defined('FASTSAN_LEAD_PIPELINE_LOADED')) return;
 define('FASTSAN_LEAD_PIPELINE_LOADED', true);
 define('FASTSAN_LEAD_TABLE', 'fastsan_leads');
-define('FASTSAN_LEAD_PIPELINE_VERSION', '0.2.1');
+define('FASTSAN_LEAD_PIPELINE_VERSION', '0.2.2');
 define('FASTSAN_LEAD_NOTIFY_EMAIL', 'daniel@fastsan.se'); // kanon (agarbeslut 2026-09-05)
 define('FASTSAN_LEAD_ESCALATION_EMAIL', 'odsater@gmail.com'); // CC vid 3:e paminnelsen. Agarbeslut 2026-09-07: johan@aibrick.se finns inte (554 No Such User Here)
 define('FASTSAN_LEAD_SECRET_OPTION', 'fastsan_lead_action_secret');
@@ -366,21 +367,21 @@ function fastsan_lead_confirm_handle(WP_REST_Request $req) {
     if ($org_nr === '' && $company === '') {
         return new WP_REST_Response(['status' => 'error', 'reason' => 'org_nr_or_company_required'], 400);
     }
-    $fields = [
-        'org_nr'          => $org_nr,
-        'company'         => $company,
-        'invoice_address' => sanitize_text_field((string) ($req->get_param('invoice_address') ?? '')),
-        'invoice_postal'  => substr(sanitize_text_field((string) ($req->get_param('invoice_postal') ?? '')), 0, 16),
-        'invoice_city'    => substr(sanitize_text_field((string) ($req->get_param('invoice_city') ?? '')), 0, 64),
-        'invoice_email'   => sanitize_email((string) ($req->get_param('invoice_email') ?? '')),
-        'reference'       => substr(sanitize_text_field((string) ($req->get_param('reference') ?? '')), 0, 128),
-    ];
+    // v0.2.2: bara falt som SKICKAS skrivs -- en andra bekraftelse med farre falt blankar inte tidigare uppgifter.
+    $fields = [];
+    if ($org_nr !== '')  $fields['org_nr']  = $org_nr;
+    if ($company !== '') $fields['company'] = $company;
+    if ($req->has_param('invoice_address')) $fields['invoice_address'] = sanitize_text_field((string) $req->get_param('invoice_address'));
+    if ($req->has_param('invoice_postal'))  $fields['invoice_postal']  = substr(sanitize_text_field((string) $req->get_param('invoice_postal')), 0, 16);
+    if ($req->has_param('invoice_city'))    $fields['invoice_city']    = substr(sanitize_text_field((string) $req->get_param('invoice_city')), 0, 64);
+    if ($req->has_param('invoice_email'))   $fields['invoice_email']   = sanitize_email((string) $req->get_param('invoice_email'));
+    if ($req->has_param('reference'))       $fields['reference']       = substr(sanitize_text_field((string) $req->get_param('reference')), 0, 128);
     $notes = sanitize_textarea_field((string) ($req->get_param('notes') ?? ''));
     if ($notes !== '') {
         $fields['message'] = rtrim((string) $lead['message']) . "\n\n[Bekräftelse] " . $notes;
     }
 
-    $ok = $wpdb->update($table, $fields, ['id' => $id]);
+    $ok = $fields ? $wpdb->update($table, $fields, ['id' => $id]) : 0;
     if ($ok === false) {
         error_log('[AIB] fastsan-lead-pipeline: confirm-update misslyckades lead ' . $id . ': ' . $wpdb->last_error);
         return new WP_REST_Response(['status' => 'error', 'reason' => 'db_update_failed'], 500);
