@@ -2,10 +2,12 @@
 /**
  * Plugin Name: Fastsan Lead Pipeline
  * Description: Lead-capture + statusmaskin. REST POST /wp-json/fastsan/v1/lead → DB → action fastsan_lead_created → e-postnotis till Daniel med signerade ett-tryck-statuslänkar. Daglig cron påminner (3/10/30 dagar, eskalering vid 3:e). REST POST /wp-json/fastsan/v1/lead/<id>/confirm tar emot kundens bokningsbekräftelse (fakturauppgifter). Statusbyte firar fastsan_lead_status_changed (framtida CAPI-krok, inget Meta-anrop i denna version).
- * Version: 0.2.2
+ * Version: 0.3.0
  * Author: B (Claude orchestrator), Fastsan AB
  * Requires PHP: 8.0
  *
+ * v0.3.0 (2026-09-07, B S472, agarord): mejlen skickas som HTML (multipart/alternative) med statuslankarna som
+ *   klickbar rubriktext + ren-text-del (AltBody) med fulla URL:er. Samma exp/sig i bada delarna.
  * v0.2.2 (2026-09-07, B S472): confirm skriver bara skickade falt (prov 4b blankade uppgifter).
  * v0.2.1 (2026-09-07, B S472): eskaleringsadress odsater@gmail.com (johan@aibrick.se studsade 554 vid prov; agarbeslut).
  * v0.2.0 (2026-09-07, B S472, RELA-C-1220): statusmaskin new|contacted|quoted|booked|won|lost,
@@ -23,7 +25,7 @@ if (!defined('ABSPATH')) return;
 if (defined('FASTSAN_LEAD_PIPELINE_LOADED')) return;
 define('FASTSAN_LEAD_PIPELINE_LOADED', true);
 define('FASTSAN_LEAD_TABLE', 'fastsan_leads');
-define('FASTSAN_LEAD_PIPELINE_VERSION', '0.2.2');
+define('FASTSAN_LEAD_PIPELINE_VERSION', '0.3.0');
 define('FASTSAN_LEAD_NOTIFY_EMAIL', 'daniel@fastsan.se'); // kanon (agarbeslut 2026-09-05)
 define('FASTSAN_LEAD_ESCALATION_EMAIL', 'odsater@gmail.com'); // CC vid 3:e paminnelsen. Agarbeslut 2026-09-07: johan@aibrick.se finns inte (554 No Such User Here)
 define('FASTSAN_LEAD_SECRET_OPTION', 'fastsan_lead_action_secret');
@@ -416,20 +418,68 @@ function fastsan_lead_notify_to(): string {
     return is_email($to) ? $to : FASTSAN_LEAD_NOTIFY_EMAIL;
 }
 
-/** §3: statusblock, ren text (Gmail mobil). Nyutfardade lankar varje gang. */
-function fastsan_lead_status_links_block(int $id): string {
-    $b  = "\n--- MARKERA STATUS (ett tryck) ---\n";
-    $b .= sprintf("Kontaktad:      %s\n", fastsan_lead_action_url($id, 'contacted'));
-    $b .= sprintf("Offert skickad: %s\n", fastsan_lead_action_url($id, 'quoted'));
-    $b .= sprintf("Bokad:          %s\n", fastsan_lead_action_url($id, 'booked'));
-    $b .= sprintf("Blev kund:      %s\n", fastsan_lead_action_url($id, 'won'));
-    $b .= sprintf("Ingen affär:    %s\n", fastsan_lead_action_url($id, 'lost'));
-    $b .= "\n--- BEKRÄFTELSE (skicka till kunden efter samtal) ---\n";
-    $b .= fastsan_lead_confirm_url($id) . "\n";
+/** §3: lankarna utfardas EN gang per mejl och anvands i bade HTML- och textdelen (samma exp/sig). */
+function fastsan_lead_links(int $id): array {
+    $status = [];
+    foreach (fastsan_lead_action_statuses() as $st) {
+        $status[$st] = ['label' => fastsan_lead_status_label($st), 'url' => fastsan_lead_action_url($id, $st)];
+    }
+    return ['status' => $status, 'confirm' => fastsan_lead_confirm_url($id)];
+}
+
+/** Ren-text-block (AltBody / klienter utan HTML). */
+function fastsan_lead_links_text(array $links): string {
+    $b = "\n--- MARKERA STATUS (ett tryck) ---\n";
+    foreach ($links['status'] as $l) {
+        $b .= sprintf("%-16s%s\n", $l['label'] . ':', $l['url']);
+    }
+    $b .= "\n--- BEKRÄFTELSE (skicka till kunden efter samtal) ---\n" . $links['confirm'] . "\n";
     return $b;
 }
 
-function fastsan_lead_notify_body(array $lead): string {
+/** HTML-block: rubriken ar sjalva lanken (v0.3.0, agarord). Inline-CSS, stora tryckytor for mobil. */
+function fastsan_lead_links_html(array $links): string {
+    $btn = 'display:inline-block;margin:4px 6px 4px 0;padding:11px 16px;background:#1f5fbf;color:#ffffff;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;line-height:1.2';
+    $h  = '<p style="margin:22px 0 6px;font-weight:700;font-size:14px;letter-spacing:.02em;color:#333">MARKERA STATUS (ett tryck)</p><p style="margin:0">';
+    foreach ($links['status'] as $l) {
+        $h .= '<a href="' . esc_url($l['url']) . '" style="' . $btn . '">' . esc_html($l['label']) . '</a>';
+    }
+    $h .= '</p>';
+    $h .= '<p style="margin:22px 0 6px;font-weight:700;font-size:14px;letter-spacing:.02em;color:#333">BEKRÄFTELSE</p>'
+        . '<p style="margin:0"><a href="' . esc_url($links['confirm']) . '" style="' . str_replace('#1f5fbf', '#2e7d32', $btn) . '">Bekräftelselänk till kunden</a>'
+        . '<br><span style="font-size:12px;color:#666">Skicka den till kunden efter samtalet. Kunden fyller i fakturauppgifter, statusen blir Bokad.</span></p>';
+    return $h;
+}
+
+/** Ren text -> HTML-stycke (radbrytningar bevaras, allt escapas). */
+function fastsan_lead_text_to_html(string $text): string {
+    return '<div style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;line-height:1.5;color:#222;white-space:pre-wrap">' . esc_html($text) . '</div>';
+}
+
+function fastsan_lead_html_wrap(string $inner): string {
+    return '<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>'
+        . '<body style="margin:0;padding:16px;background:#ffffff"><div style="max-width:640px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#222">'
+        . $inner . '</div></body></html>';
+}
+
+/**
+ * Skickar HTML + ren text (multipart/alternative via PHPMailer AltBody). Fungerar med WP Mail SMTP
+ * (phpmailer_init firar dar ocksa). Hooken ar per anrop och tas bort direkt efter.
+ */
+function fastsan_lead_send_mail(string $to, string $subject, string $text, string $html, array $extra_headers = []): bool {
+    $alt = static function ($phpmailer) use ($text) { $phpmailer->AltBody = $text; };
+    add_action('phpmailer_init', $alt, 20);
+    $headers = array_merge(['Content-Type: text/html; charset=UTF-8'], $extra_headers);
+    try {
+        $ok = (bool) wp_mail($to, $subject, fastsan_lead_html_wrap($html), $headers);
+    } finally {
+        remove_action('phpmailer_init', $alt, 20);
+    }
+    return $ok;
+}
+
+/** Detaljtext om leadet (utan lankar). */
+function fastsan_lead_notify_details(array $lead): string {
     $body  = "Ny förfrågan inkommen via fastsan.se\n\n";
     $body .= sprintf("Lead-ID: #%d\n", $lead['id']);
     $body .= sprintf("Inkommen: %s\n", $lead['created_at']);
@@ -449,15 +499,25 @@ function fastsan_lead_notify_body(array $lead): string {
     $body .= "\n─────────────── METADATA ───────────\n";
     $body .= sprintf("IP:             %s\n", (string) ($lead['ip_address'] ?? ''));
     $body .= sprintf("Referrer:       %s\n", !empty($lead['referer']) ? $lead['referer'] : '(direkt)');
-    $body .= fastsan_lead_status_links_block((int) $lead['id']);
     return $body;
+}
+
+/** Bakatkompatibel: ren-text-kropp inkl. lankblock (anvands av paminnelsen som textdel). */
+function fastsan_lead_notify_body(array $lead, ?array $links = null): string {
+    $links = $links ?? fastsan_lead_links((int) $lead['id']);
+    return fastsan_lead_notify_details($lead) . fastsan_lead_links_text($links);
 }
 
 function fastsan_lead_notify_email($lead) {
     $site_name = get_bloginfo('name');
     $subject = sprintf('[%s] Ny förfrågan #%d — %s', $site_name, $lead['id'], $lead['name']);
-    $headers = ['Content-Type: text/plain; charset=UTF-8'];
-    wp_mail(fastsan_lead_notify_to(), $subject, fastsan_lead_notify_body($lead), $headers);
+    $links   = fastsan_lead_links((int) $lead['id']);
+    $details = fastsan_lead_notify_details($lead);
+    fastsan_lead_send_mail(
+        fastsan_lead_notify_to(), $subject,
+        $details . fastsan_lead_links_text($links),
+        fastsan_lead_text_to_html($details) . fastsan_lead_links_html($links)
+    );
 }
 
 /** §5: bekraftelsemejl. FORSTA raden ar Org-nr (Fortnox-appen hamtar namn+adress pa org-nr). */
@@ -475,9 +535,12 @@ function fastsan_lead_confirm_email(array $lead): void {
     if (!empty($lead['message'])) {
         $body .= "\nMeddelande:\n" . $lead['message'] . "\n";
     }
-    $body .= fastsan_lead_status_links_block($id);
-    $headers = ['Content-Type: text/plain; charset=UTF-8'];
-    wp_mail(fastsan_lead_notify_to(), $subject, $body, $headers);
+    $links = fastsan_lead_links($id);
+    fastsan_lead_send_mail(
+        fastsan_lead_notify_to(), $subject,
+        $body . fastsan_lead_links_text($links),
+        fastsan_lead_text_to_html($body) . fastsan_lead_links_html($links)
+    );
 }
 
 /* ---------- CRON-PAMINNELSER (§4) ---------- */
@@ -515,14 +578,20 @@ function fastsan_lead_run_reminders(): int {
             $label = fastsan_lead_status_label((string) $lead['status']);
             $subject = sprintf('[Påminnelse %d/%d] Förfrågan #%d — %s står som %s sedan %d dagar',
                 $step, FASTSAN_LEAD_REMINDER_MAX, (int) $lead['id'], (string) $lead['name'], $label, $days);
-            $headers = ['Content-Type: text/plain; charset=UTF-8'];
+            $headers = [];
             if ($step >= FASTSAN_LEAD_REMINDER_MAX) {
                 $headers[] = 'Cc: ' . FASTSAN_LEAD_ESCALATION_EMAIL;
             }
-            $body = sprintf("Påminnelse %d/%d: förfrågan #%d står som %s sedan %d dagar.\nMarkera aktuell status med ett tryck längst ner.\n\n",
+            $intro = sprintf("Påminnelse %d/%d: förfrågan #%d står som %s sedan %d dagar.\nMarkera aktuell status med ett tryck längst ner.\n\n",
                 $step, FASTSAN_LEAD_REMINDER_MAX, (int) $lead['id'], $label, $days);
-            $body .= fastsan_lead_notify_body($lead);
-            wp_mail(fastsan_lead_notify_to(), $subject, $body, $headers);
+            $links   = fastsan_lead_links((int) $lead['id']);
+            $details = $intro . fastsan_lead_notify_details($lead);
+            fastsan_lead_send_mail(
+                fastsan_lead_notify_to(), $subject,
+                $details . fastsan_lead_links_text($links),
+                fastsan_lead_text_to_html($details) . fastsan_lead_links_html($links),
+                $headers
+            );
 
             $wpdb->update($table, ['reminder_count' => $step], ['id' => (int) $lead['id']], ['%d'], ['%d']);
             $sent++;
