@@ -2,10 +2,11 @@
 /**
  * Plugin Name: Fastsan Lead Pipeline
  * Description: Lead-capture + statusmaskin. REST POST /wp-json/fastsan/v1/lead → DB → action fastsan_lead_created → e-postnotis till Daniel med signerade ett-tryck-statuslänkar. Daglig cron påminner (3/10/30 dagar, eskalering vid 3:e). REST POST /wp-json/fastsan/v1/lead/<id>/confirm tar emot kundens bokningsbekräftelse (fakturauppgifter). Statusbyte firar fastsan_lead_status_changed (framtida CAPI-krok, inget Meta-anrop i denna version).
- * Version: 0.2.0
+ * Version: 0.2.1
  * Author: B (Claude orchestrator), Fastsan AB
  * Requires PHP: 8.0
  *
+ * v0.2.1 (2026-09-07, B S472): eskaleringsadress odsater@gmail.com (johan@aibrick.se studsade 554 vid prov; agarbeslut).
  * v0.2.0 (2026-09-07, B S472, RELA-C-1220): statusmaskin new|contacted|quoted|booked|won|lost,
  *   kolumner status_updated_at/reminder_count/org_nr, company, invoice_address/postal/city/email, reference (dbDelta),
  *   HMAC-signerade statuslänkar (?fs_lead_action=1, hemlighet självbootstrappad i wp_option
@@ -21,9 +22,9 @@ if (!defined('ABSPATH')) return;
 if (defined('FASTSAN_LEAD_PIPELINE_LOADED')) return;
 define('FASTSAN_LEAD_PIPELINE_LOADED', true);
 define('FASTSAN_LEAD_TABLE', 'fastsan_leads');
-define('FASTSAN_LEAD_PIPELINE_VERSION', '0.2.0');
+define('FASTSAN_LEAD_PIPELINE_VERSION', '0.2.1');
 define('FASTSAN_LEAD_NOTIFY_EMAIL', 'daniel@fastsan.se'); // kanon (agarbeslut 2026-09-05)
-define('FASTSAN_LEAD_ESCALATION_EMAIL', 'johan@aibrick.se'); // CC vid 3:e paminnelsen (RELA-C-1220 §3/§4)
+define('FASTSAN_LEAD_ESCALATION_EMAIL', 'odsater@gmail.com'); // CC vid 3:e paminnelsen. Agarbeslut 2026-09-07: johan@aibrick.se finns inte (554 No Such User Here)
 define('FASTSAN_LEAD_SECRET_OPTION', 'fastsan_lead_action_secret');
 define('FASTSAN_LEAD_LINK_TTL', 90 * DAY_IN_SECONDS); // §2: exp = utfardande + 90 dagar
 define('FASTSAN_LEAD_CRON_HOOK', 'fastsan_lead_reminders');
