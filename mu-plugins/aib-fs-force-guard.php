@@ -2,10 +2,11 @@
 /**
  * Plugin Name: AIB fs_force Guard
  * Description: Puts the __fs-injector ?fs_force= trigger behind aib-deployer auth. Unsigned requests get the parameter dropped before init:999 (the injector then runs its normal no-op pass). Signed requests (X-AIB-Ts / X-AIB-Nonce / X-AIB-Sig = HMAC-SHA256 over "ts\nnonce\nfs_force=<value>" with option aib_deployer_secret, same replay window as aib-deployer) pass through. Log: uploads/fastsan-content/guard.log.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Ai Brick AB (C)
  *
  * Why: ?fs_force=all clears the injector flags and re-writes post_content from uploads/fastsan-content/*.html — it reverts every DB-side content patch. Owner decision 2026-09-07 (RELA-A-1179 p2, alt. "bakom aib-deployer-auth"; .off would also kill __fs_handle_redirect_to and the file->page pipeline).
+ * 1.0.1 (C, 2026-09-07): init-prio 1 -> 0 (måste ligga före allt annat på init; __fs-seo-supp hade en egen fs_force-handler på init:1 som exitade före guarden — den är borttagen i seo-supp v1.6.0).
  * Rollback: rename to .off via aib-deployer.
  */
 
@@ -58,4 +59,4 @@ add_action( 'init', static function () {
 			. ' reason=' . $why . ' ip=' . ( $_SERVER['REMOTE_ADDR'] ?? '?' ) . "\n";
 		@file_put_contents( $dir . '/guard.log', $line, FILE_APPEND );
 	}
-}, 1 );
+}, 0 );

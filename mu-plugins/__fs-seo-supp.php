@@ -1,10 +1,11 @@
 <?php
 /**
- * Plugin Name: FS SEO Supplement + Force Re-inject
- * Description: (1) Renders <title>, <meta description>, OG/Twitter cards (inkl. og:image + twitter:image från Rank Math) och Schema.org JSON-LD från rank_math_* postmeta. (2) On ?fs_force=om,kontakt|all clears __fs_inj_{slug}_v1 flags so injector re-runs.
- * Version: 1.5.0
+ * Plugin Name: FS SEO Supplement
+ * Description: Renders <title>, <meta description>, OG/Twitter cards (inkl. og:image + twitter:image från Rank Math) och Schema.org JSON-LD från rank_math_* postmeta.
+ * Version: 1.6.0
  * Author: AIB / C (S153-C)
  *
+ * v1.6.0 (2026-09-07, C): Oautentiserad ?fs_force-handler (init:1, exit med JSON) borttagen — död kod (rensade bara _v1-flaggor; injektorn kör tier v5) och ett öppet endpoint. Auth för fs_force ligger nu i aib-fs-force-guard (init:0, aib-deployer-HMAC). RELA-A-1179 p2, ägarbeslut 2026-09-07.
  * v1.5.0 (2026-09-06, C): knowsAbout rättad efter av.se — gränsvärdet 0,01 fiber/cm³ bärs av AFS 2023:14 (ändrad genom AFS 2025:5), hantering av AFS 2023:13 (ändrad genom AFS 2025:6 + 2025:8). Alla fem listade. Deploy via aib-deployer.
  * v1.4.0 (2026-09-05, C): sameAs → FB-användarnamn (fastsanab) + LinkedIn-företagssida (fastsan-ab); foundingDate 2008 (ägarbeslut: verksamhetsstart); legalName, vatID, logo tillagda. Deploy via github-pull (bridge write timeout >7 KB).
  * v1.3.1 (2026-08-21, C S392): sameAs utökad med Facebook-sidan (ägarlämnad URL).
@@ -145,24 +146,3 @@ add_action('wp_head', function() {
     ];
     echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
 }, 2);
-
-add_action('init', function() {
-    if (!isset($_GET['fs_force'])) return;
-    $param = sanitize_text_field(wp_unslash($_GET['fs_force']));
-    $all_slugs = ['hem','miljoinventering','provtagning','markmiljo','inomhusmiljo','pcb','radon','akut','om','kontakt','integritetspolicy'];
-
-    if ($param === 'all') {
-        $targets = $all_slugs;
-    } else {
-        $targets = array_intersect($all_slugs, array_map('trim', explode(',', $param)));
-    }
-
-    $cleared = [];
-    foreach ($targets as $slug) {
-        if (delete_option('__fs_inj_' . $slug . '_v1')) $cleared[] = $slug;
-    }
-
-    header('Content-Type: application/json; charset=utf-8');
-    echo wp_json_encode(['cleared' => $cleared, 'targets' => array_values($targets), 'ts' => date('c')], JSON_UNESCAPED_UNICODE);
-    exit;
-}, 1);
