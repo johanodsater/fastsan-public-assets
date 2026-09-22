@@ -2,9 +2,10 @@
 /**
  * Plugin Name: Fastsan — Schema Injector
  * Description: JSON-LD-schema per tjänstesida (Service) + BreadcrumbList + FAQPage. Kompletterar Organization/LocalBusiness som temat redan injicerar. Hooks: wp_head prio 99 (efter befintlig Organization). Inga exit/die-patterns (KK247-incident 2026-05-04). Avaktivering: radera filen från mu-plugins/, eller definiera FASTSAN_SCHEMA_DISABLED i wp-config.php.
- * Version: 1.4.0
+ * Version: 1.5.0
  * Author: Aibrick (C-instance)
  *
+ * v1.5.0 (2026-09-22, C): BreadcrumbList följer sidhierarkin (Hem > förälder > sida) i stället för att alltid hoppa över föräldern. Namnet = sidtiteln före första " — " eller " | " (SEO-svansen bort). Sidor som själva bär en BreadcrumbList i post_content får ingen från injektorn — sidans lista gäller (en lista per sida).
  * v1.4.0 (2026-09-06, C): ren version — GA4 lever nu i fristående mu-plugins/fastsan-ga4.php och deploys går via mu-plugins/aib-deployer.php (HMAC + sha256, commit-pinnat). v1.3.x (GA4-block + bootstrap) var tillfälliga bärare medan bryggans file_write låg nere.
  * v1.2.1 (2026-09-05, C): ISO/IEC 17025-påståendet struket ur provtagning-description (ägarbeslut 2026-09-05; overifierbart, samma klass som "ackrediterat ISO 17025-lab"). Deploy via github-pull.
  * v1.2.0 (2026-09-05, C): aldrig-frasen utbytt mot "Vi utför ingen sanering" i två Service-descriptions (inomhusmiljo, luktutredning) (ägarbeslut: frasen får inte användas). Deploy via github-pull.
@@ -13,7 +14,7 @@
 if (!defined('ABSPATH')) { return; }
 if (defined('FASTSAN_SCHEMA_DISABLED') && FASTSAN_SCHEMA_DISABLED) { return; }
 if (defined('FASTSAN_SCHEMA_LOADED')) { return; }
-define('FASTSAN_SCHEMA_LOADED', '1.4.0');
+define('FASTSAN_SCHEMA_LOADED', '1.5.0');
 
 /**
  * Hämta service-data per slug.
@@ -130,25 +131,45 @@ function fastsan_schema_build_service($post) {
 }
 
 /**
- * Bygg BreadcrumbList för alla sidor utom front-page.
+ * Kort namn för en brödsmula: sidtiteln före första " — " eller " | ".
+ * Titlarna bär SEO-svansar ("Jordprov — markmiljöprovtagning Stockholm | MIFO fas 2").
+ */
+function fastsan_schema_crumb_name($p) {
+    $t = trim(html_entity_decode(wp_strip_all_tags($p->post_title), ENT_QUOTES, 'UTF-8'));
+    $parts = preg_split('/\s+[\x{2014}|]\s+/u', $t, 2);
+    $n = is_array($parts) ? trim($parts[0]) : '';
+    return $n !== '' ? $n : $t;
+}
+
+/**
+ * Bygg BreadcrumbList för alla sidor utom front-page: Hem > förfäder > sidan.
+ * v1.5.0: sidor med egen BreadcrumbList i post_content hoppas över (sidans lista gäller).
  */
 function fastsan_schema_build_breadcrumb($post) {
     if (is_front_page()) return null;
-    $home = home_url('/');
-    $items = [
-        [
+    if (strpos((string) $post->post_content, 'BreadcrumbList') !== false) return null;
+    $home  = home_url('/');
+    $chain = [];
+    foreach (array_reverse(get_post_ancestors($post)) as $aid) {
+        $a = get_post($aid);
+        if ($a && $a->post_status === 'publish') $chain[] = $a;
+    }
+    $chain[] = $post;
+    $items = [[
+        '@type'    => 'ListItem',
+        'position' => 1,
+        'name'     => 'Hem',
+        'item'     => $home,
+    ]];
+    $pos = 2;
+    foreach ($chain as $p) {
+        $items[] = [
             '@type'    => 'ListItem',
-            'position' => 1,
-            'name'     => 'Hem',
-            'item'     => $home,
-        ],
-        [
-            '@type'    => 'ListItem',
-            'position' => 2,
-            'name'     => wp_strip_all_tags($post->post_title),
-            'item'     => get_permalink($post),
-        ],
-    ];
+            'position' => $pos++,
+            'name'     => fastsan_schema_crumb_name($p),
+            'item'     => get_permalink($p),
+        ];
+    }
     return [
         '@context'        => 'https://schema.org',
         '@type'           => 'BreadcrumbList',
