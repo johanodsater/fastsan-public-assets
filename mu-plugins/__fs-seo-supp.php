@@ -2,9 +2,10 @@
 /**
  * Plugin Name: FS SEO Supplement
  * Description: Renders <title>, <meta description>, OG/Twitter cards (inkl. og:image + twitter:image från Rank Math) och Schema.org JSON-LD från rank_math_* postmeta.
- * Version: 1.6.0
+ * Version: 1.7.0
  * Author: AIB / C (S153-C)
  *
+ * v1.7.0 (2026-09-22, C): ProfessionalService får image (loggan), geo (OSM building 429741114, 59.18139/18.16310) och openingHoursSpecification mån–fre 08–17 (ägarlämnade tider, samma som Google-profilen). Tar Rich Results-varningarna för Lokala företag.
  * v1.6.0 (2026-09-07, C): Oautentiserad ?fs_force-handler (init:1, exit med JSON) borttagen — död kod (rensade bara _v1-flaggor; injektorn kör tier v5) och ett öppet endpoint. Auth för fs_force ligger nu i aib-fs-force-guard (init:0, aib-deployer-HMAC). RELA-A-1179 p2, ägarbeslut 2026-09-07.
  * v1.5.0 (2026-09-06, C): knowsAbout rättad efter av.se — gränsvärdet 0,01 fiber/cm³ bärs av AFS 2023:14 (ändrad genom AFS 2025:5), hantering av AFS 2023:13 (ändrad genom AFS 2025:6 + 2025:8). Alla fem listade. Deploy via aib-deployer.
  * v1.4.0 (2026-09-05, C): sameAs → FB-användarnamn (fastsanab) + LinkedIn-företagssida (fastsan-ab); foundingDate 2008 (ägarbeslut: verksamhetsstart); legalName, vatID, logo tillagda. Deploy via github-pull (bridge write timeout >7 KB).
@@ -138,6 +139,20 @@ add_action('wp_head', function() {
             'Naturvårdsverket rapport 6884', 'SFS 2007:19', 'SFS 2010:963',
         ],
         'priceRange' => 'Pris efter offert',
+        'image' => $home . 'wp-content/themes/fastsan/assets/logo-fastsanab.png',
+        'geo' => [
+            '@type' => 'GeoCoordinates',
+            'latitude' => 59.18139,
+            'longitude' => 18.16310,
+        ],
+        'openingHoursSpecification' => [
+            [
+                '@type' => 'OpeningHoursSpecification',
+                'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                'opens' => '08:00',
+                'closes' => '17:00',
+            ],
+        ],
         'sameAs' => [
             'https://www.allabolag.se/5567144711',
             'https://www.facebook.com/fastsanab',
