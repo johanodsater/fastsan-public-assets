@@ -94,7 +94,8 @@
   .fs-footer-grid { grid-template-columns: 1fr; }
 }
 /* Större träffyta för länkarna i sidfoten utan att raderna flyttas (WCAG 2.5.8). */
-.fs-footer a { padding-block: 0.3rem; margin-block: -0.3rem; }
+.fs-footer a { position: relative; }
+.fs-footer a::after { content: ""; position: absolute; inset: -0.3rem 0; }
 </style>
 
 <footer class="fs-footer">

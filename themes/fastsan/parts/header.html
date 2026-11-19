@@ -38,7 +38,8 @@
 }
 .fs-akut-strip a:hover { color: #fff; }
 /* Större träffyta utan att raden blir högre (WCAG 2.5.8). */
-.fs-akut-strip a { padding-block: 0.3rem; margin-block: -0.3rem; }
+.fs-akut-strip a { position: relative; }
+.fs-akut-strip a::after { content: ""; position: absolute; inset: -0.3rem 0; }
 
 /* ---- HEADER ---- */
 .fs-header {
