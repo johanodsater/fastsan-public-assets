@@ -605,3 +605,18 @@
   outline-color: var(--wp--preset--color--accent-pale);
   box-shadow: 0 0 0 5px color-mix(in srgb, var(--wp--preset--color--accent-pale) 25%, transparent);
 }
+
+/* ===== Sidans ram: ingen vit remsa mellan sidhuvud, sektioner och sidfot ===== */
+
+.wp-site-blocks:has(.fs-hem) > :is(main, footer) {
+  margin-block-start: 0;
+}
+
+/* ===== Knapp i full bredd i kontaktkortet och priskortet ===== */
+
+.fs-hem .fs-hem-kort > .wp-block-buttons > .wp-block-button,
+.fs-hem .fs-hem-priskort > .wp-block-buttons > .wp-block-button,
+.fs-hem .fs-hem-kort > .wp-block-buttons .wp-block-button__link,
+.fs-hem .fs-hem-priskort > .wp-block-buttons .wp-block-button__link {
+  width: 100%;
+}

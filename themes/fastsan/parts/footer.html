@@ -93,6 +93,8 @@
 @media (max-width: 480px) {
   .fs-footer-grid { grid-template-columns: 1fr; }
 }
+/* Större träffyta för länkarna i sidfoten utan att raderna flyttas (WCAG 2.5.8). */
+.fs-footer a { padding-block: 0.3rem; }
 </style>
 
 <footer class="fs-footer">
@@ -142,14 +144,14 @@
           <li><a href="/provtagning/material/">Materialprov</a></li>
           <li><a href="/provtagning/jord/">Jordprov</a></li>
           <li><a href="/provtagning/fukt-mogel/">Fukt- och m&#246;gelprov</a></li>
-          <li><a href="/provtagning/"><strong>&Ouml;versikt &rarr;</strong></a></li>
+          <li><a href="/provtagning/" aria-label="&Ouml;versikt provtagning"><strong>&Ouml;versikt &rarr;</strong></a></li>
         </ul>
         <h2 class="fs-footer-heading" style="margin-top:1.5rem;">Markmilj&#246;</h2>
         <ul>
           <li><a href="/markmiljo/pah/">PAH-analys</a></li>
           <li><a href="/markmiljo/btex/">BTEX-analys</a></li>
           <li><a href="/markmiljo/tungmetaller/">Tungmetaller</a></li>
-          <li><a href="/markmiljo/"><strong>&Ouml;versikt &rarr;</strong></a></li>
+          <li><a href="/markmiljo/" aria-label="&Ouml;versikt markmilj&ouml;"><strong>&Ouml;versikt &rarr;</strong></a></li>
         </ul>
       </div>
 

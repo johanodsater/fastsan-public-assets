@@ -37,6 +37,8 @@
   border-bottom: 1px solid currentColor;
 }
 .fs-akut-strip a:hover { color: #fff; }
+/* Större träffyta utan att raden blir högre (WCAG 2.5.8). */
+.fs-akut-strip a { padding-block: 0.3rem; }
 
 /* ---- HEADER ---- */
 .fs-header {
@@ -109,7 +111,7 @@
 <div class="fs-akut-strip">
   <div class="fs-akut-strip-inner">
     <span class="fs-alert-marker">Misst&#228;nker du asbest eller m&#246;gel? <a href="/akut/">Akut provtagning &rarr;</a></span>
-    <span>&#128222; <a href="tel:0701424639">070-142 46 39</a> &middot; Stockholm &amp; M&#228;lardalen</span>
+    <span><span aria-hidden="true">&#128222;</span> <a href="tel:0701424639">070-142 46 39</a> &middot; Stockholm &amp; M&#228;lardalen</span>
   </div>
 </div>
 
@@ -156,7 +158,7 @@
               <li><a href="/provtagning/jord/">Jordprov</a></li>
               <li><a href="/provtagning/fukt-mogel/">Fukt- och m&#246;gelprov</a></li>
               <li class="fs-dropdown-divider" aria-hidden="true"></li>
-              <li><a href="/provtagning/" class="fs-dropdown-overview">&Ouml;versikt</a></li>
+              <li><a href="/provtagning/" class="fs-dropdown-overview" aria-label="&Ouml;versikt provtagning">&Ouml;versikt</a></li>
             </ul>
           </li>
 
@@ -168,7 +170,7 @@
               <li><a href="/fukt-mogel/vattenskada/">Vattenskada</a></li>
               <li><a href="/inomhusmiljo/">Inomhusmilj&#246;</a></li>
               <li class="fs-dropdown-divider" aria-hidden="true"></li>
-              <li><a href="/fukt-mogel/" class="fs-dropdown-overview">&Ouml;versikt</a></li>
+              <li><a href="/fukt-mogel/" class="fs-dropdown-overview" aria-label="&Ouml;versikt fukt och m&ouml;gel">&Ouml;versikt</a></li>
             </ul>
           </li>
 
@@ -180,7 +182,7 @@
               <li><a href="/markmiljo/btex/">BTEX-analys</a></li>
               <li><a href="/markmiljo/tungmetaller/">Tungmetaller</a></li>
               <li class="fs-dropdown-divider" aria-hidden="true"></li>
-              <li><a href="/markmiljo/" class="fs-dropdown-overview">&Ouml;versikt</a></li>
+              <li><a href="/markmiljo/" class="fs-dropdown-overview" aria-label="&Ouml;versikt markmilj&ouml;">&Ouml;versikt</a></li>
             </ul>
           </li>
 
