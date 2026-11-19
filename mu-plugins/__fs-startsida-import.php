@@ -2,7 +2,7 @@
 /**
  * Plugin Name: __FS Startsida Import (one-shot)
  * Description: Registrerar startsidans bilder som bilagor och skapar eller uppdaterar utkastsidan. Körs på ?fs_os=startsida och raderar sig själv.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Ai Brick AB
  */
 
@@ -75,7 +75,8 @@ add_action( 'init', static function () {
 	}
 	update_option( 'fastsan_startsida_media', $media, false );
 
-	$src = $base . 'fastsan-content/hem-ny.html';
+	// Underkatalog och .txt: injektorn (__fs-injector.php) läser alla *.html direkt i fastsan-content/ och skulle annars skapa en sida av filen.
+	$src = $base . 'fastsan-content/startsida/hem-ny.txt';
 	if ( file_exists( $src ) ) {
 		$content = (string) file_get_contents( $src );
 		$pid     = (int) get_option( 'fastsan_startsida_utkast_id' );

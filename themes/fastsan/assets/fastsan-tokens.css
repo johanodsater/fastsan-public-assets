@@ -1,0 +1,102 @@
+/*
+ * Fastsan canonical CSS-tokens (Spec §3-alias + Fas 1 WCAG-fix)
+ *
+ * Källa: Fastsan_WP_Port_Spec_v1.md §3
+ *
+ * Block-tema genererar `--wp--preset--color--*` från theme.json.palette.
+ * Denna fil aliasar dem till spec §3-namn (--sandstone-text, --ink-mute, --alert)
+ * så att forkade barn-projekt och hand-skriven CSS kan referera till brand-tokens
+ * utan att lära sig WP-prefix-konvention.
+ *
+ * Fas 1 WCAG-fix:
+ *  - --sandstone-text #8B6035 (4.86:1 mot base) för normal text — INTE --sandstone (#B5824A, 3.2:1)
+ *  - --ink-mute #666666 (5.74:1) för subtle text — INTE #888 (1.74:1)
+ *  - --alert #B33A2C (5.07:1) — INTE #C44536 mot alert-soft-bg
+ *  - :focus-visible global synlig fokus-indikator
+ */
+
+:root {
+  /* Spec §3 alias-tokens. Värdena pekar på theme.json (2026-11-19): en källa för färg och typsnitt. */
+  --navy:          var(--wp--preset--color--primary);
+  --navy-deep:     var(--wp--preset--color--primary-dark);
+  --navy-light:    var(--wp--preset--color--primary-light);
+  --sandstone:     var(--wp--preset--color--accent);  /* OK för borders/bg + large/bold text */
+  --sandstone-text:var(--wp--preset--color--accent-text);  /* WCAG-AA — använd för normal text */
+  --sandstone-light:var(--wp--preset--color--accent-soft);
+  --sandstone-pale:var(--wp--preset--color--accent-pale);
+  --cream:         var(--wp--preset--color--base-muted);
+  --paper:         var(--wp--preset--color--base);
+  --ink:           var(--wp--preset--color--contrast);
+  --ink-soft:      var(--wp--preset--color--secondary-text);
+  --ink-mute:      var(--wp--preset--color--tertiary-text);  /* WCAG-fix från #888 (5.74:1) */
+  --border:        var(--wp--preset--color--border);
+  --alert:         var(--wp--preset--color--alert);  /* WCAG-fix från #C44536 (5.07:1 mot base) */
+  --alert-soft:    var(--wp--preset--color--alert-soft);
+  --success:       var(--wp--preset--color--success);
+
+  --display: var(--wp--preset--font-family--display);
+  --body:    var(--wp--preset--font-family--body);
+  --max-w:   1180px;
+}
+
+/* ===== Fas 1 WCAG-fix: synlig :focus-visible-indikator (WCAG 2.4.7) ===== */
+
+*:focus {
+  outline: none; /* tar bort default-outline för konsistens */
+}
+
+*:focus-visible {
+  outline: 3px solid var(--sandstone);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Specifik fokus för knappar/länkar med egen bakgrund */
+a:focus-visible,
+button:focus-visible,
+.wp-block-button__link:focus-visible,
+.fs-header-cta:focus-visible {
+  outline-color: var(--sandstone);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--sandstone) 18%, transparent);
+}
+
+/* Mörk bakgrund: använd accent-pale för outline-kontrast */
+.fs-footer a:focus-visible,
+.fs-akut-strip a:focus-visible,
+.has-background-color.has-primary-dark-background-color *:focus-visible {
+  outline-color: var(--sandstone-pale);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--sandstone-pale) 25%, transparent);
+}
+
+/* ===== Reduced motion-stöd (WCAG 2.3.3) ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== Touch targets ≥44px (WCAG 2.5.5 AAA, men spec §5 kräver det) ===== */
+
+@media (pointer: coarse) {
+  a,
+  button,
+  .wp-block-button__link {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* ===== Sandstone som text färg ALDRIG på small/normal — använd accent-text ===== */
+
+.has-accent-color {
+  /* Om någon explicit applicerar accent-färg på text — varna via dev tools */
+  /* Använder accent-text i :root men inte överrider här eftersom det skulle bryta */
+  /* sandstone på borders/bg. Detta är dokumentation, inte enforcement. */
+}

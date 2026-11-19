@@ -1,0 +1,607 @@
+/*
+ * Fastsan – startsidans sektioner (mönstren fastsan/hero … fastsan/cta-band).
+ *
+ * Byggd mobilen först. Inga brytpunkter: kolumnerna radbryts av sig själva
+ * (auto-fit och flex-wrap). Färg, typsnitt, avstånd, radie och skugga kommer
+ * från theme.json. Allt är avgränsat till .fs-hem.
+ */
+
+/* ===== Grund ===== */
+
+.fs-hem .wp-block-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wp--preset--spacing--30);
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.fs-hem .wp-block-group > *,
+.fs-hem figure {
+  margin-block: 0;
+}
+
+.fs-hem figure {
+  margin-inline: 0;
+}
+
+.fs-hem :is(h1, h2) {
+  text-wrap: balance;
+}
+
+.fs-hem h1 {
+  line-height: 1.04;
+}
+
+.fs-hem .fs-hem-inre {
+  gap: var(--wp--preset--spacing--50);
+}
+
+.fs-hem .fs-hem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+  gap: var(--wp--preset--spacing--60) var(--wp--preset--spacing--70);
+  align-items: start;
+}
+
+.fs-hem .fs-hem-grid--smal {
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+}
+
+.fs-hem .fs-hem-grid--mitt {
+  align-items: center;
+}
+
+.fs-hem .fs-hem-eyebrow {
+  font-size: var(--wp--preset--font-size--xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--wp--preset--color--accent-text);
+}
+
+.fs-hem .fs-hem-ingress {
+  font-size: var(--wp--preset--font-size--lead);
+  color: var(--wp--preset--color--secondary-text);
+  max-width: 30em;
+}
+
+/* ===== Knappar ===== */
+
+.fs-hem .wp-block-buttons {
+  gap: 0.75rem;
+}
+
+.fs-hem .wp-block-button__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 3.25rem;
+  box-sizing: border-box;
+  border-radius: var(--wp--custom--radius--mid);
+  font-weight: 600;
+}
+
+.fs-hem .fs-pil .wp-block-button__link::after {
+  content: "";
+  flex: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: currentColor;
+  -webkit-mask: url(icons/pil.svg) center / contain no-repeat;
+  mask: url(icons/pil.svg) center / contain no-repeat;
+}
+
+/* ===== Bocklistor ===== */
+
+.fs-hem ul.fs-hem-checks {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.4rem;
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: 500;
+}
+
+.fs-hem ul.fs-hem-checks li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.fs-hem ul.fs-hem-checks li::before {
+  content: "";
+  flex: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-top: 0.2em;
+  background: var(--wp--preset--color--accent-soft);
+  -webkit-mask: url(icons/bock.svg) center / contain no-repeat;
+  mask: url(icons/bock.svg) center / contain no-repeat;
+}
+
+/* ===== Hero ===== */
+
+.fs-hem.fs-hem-hero {
+  padding-top: var(--wp--preset--spacing--60);
+  padding-bottom: calc(var(--wp--preset--spacing--70) + 3.75rem);
+}
+
+.fs-hem .fs-hem-hero__text {
+  gap: var(--wp--preset--spacing--40);
+}
+
+.fs-hem .fs-hem-chip {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--base) 40%, transparent);
+  border-radius: var(--wp--custom--radius--pill);
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: 600;
+}
+
+.fs-hem .fs-hem-chip::before {
+  content: "";
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--wp--preset--color--accent-soft);
+}
+
+.fs-hem .fs-hem-lead {
+  font-size: var(--wp--preset--font-size--lead);
+  color: color-mix(in srgb, var(--wp--preset--color--base) 84%, transparent);
+  max-width: 33em;
+}
+
+/* Kontaktkortet */
+
+.fs-hem .fs-hem-kort {
+  align-self: center;
+  gap: 1rem;
+  padding: 1.125rem;
+  border-radius: var(--wp--custom--radius--xl);
+  box-shadow: var(--wp--custom--shadow--xl);
+}
+
+.fs-hem .fs-hem-kort__rad {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem 1.125rem;
+}
+
+.fs-hem .fs-hem-kort__foto {
+  flex: 1.6 1 12.5rem;
+  display: flex;
+}
+
+.fs-hem .fs-hem-kort__foto img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 80% 12%;
+  border-radius: var(--wp--custom--radius--lg);
+}
+
+.fs-hem .fs-hem-kort__info {
+  flex: 1 1 13.75rem;
+  gap: 0.25rem;
+}
+
+.fs-hem .fs-hem-kort__namn {
+  font-family: var(--wp--preset--font-family--display);
+  font-size: var(--wp--preset--font-size--x-large);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--wp--preset--color--primary);
+}
+
+.fs-hem .fs-hem-kort__roll {
+  color: var(--wp--preset--color--secondary-text);
+}
+
+.fs-hem .fs-hem-kort ul.fs-hem-checks {
+  flex-direction: column;
+  margin-top: 0.65rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--wp--preset--color--border);
+  font-size: var(--wp--preset--font-size--medium);
+  font-weight: 400;
+}
+
+.fs-hem .fs-hem-kort ul.fs-hem-checks li::before {
+  background: var(--wp--preset--color--accent-text);
+}
+
+/* ===== Nyckelfakta ===== */
+
+.fs-hem.fs-hem-fakta {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.fs-hem ul.fs-hem-fakta__lista {
+  list-style: none;
+  margin-top: -3.75rem;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, max(15rem, 24%)), 1fr));
+  background: var(--wp--preset--color--base);
+  border: 1px solid var(--wp--preset--color--border);
+  border-radius: var(--wp--custom--radius--lg);
+  box-shadow: var(--wp--custom--shadow--md);
+  position: relative;
+}
+
+.fs-hem ul.fs-hem-fakta__lista li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 1.1rem 1.4rem;
+  font-size: var(--wp--preset--font-size--small);
+  color: var(--wp--preset--color--secondary-text);
+}
+
+.fs-hem ul.fs-hem-fakta__lista strong {
+  font-family: var(--wp--preset--font-family--display);
+  font-size: var(--wp--preset--font-size--x-large);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--wp--preset--color--primary);
+}
+
+/* ===== Tjänster ===== */
+
+.fs-hem .fs-hem-rubrikrad {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem 2rem;
+}
+
+.fs-hem .fs-hem-rubrik {
+  gap: 0.75rem;
+  max-width: 40em;
+}
+
+.fs-hem .fs-hem-mer {
+  font-weight: 600;
+}
+
+.fs-hem .fs-hem-mer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.fs-hem .fs-hem-kortgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 1.25rem;
+}
+
+.fs-hem .fs-hem-tjanst {
+  position: relative;
+  gap: 0.75rem;
+  padding: 1.6rem;
+  background: var(--wp--preset--color--base);
+  border: 1px solid var(--wp--preset--color--border);
+  border-radius: var(--wp--custom--radius--lg);
+  box-shadow: var(--wp--custom--shadow--sm);
+}
+
+.fs-hem .fs-hem-tjanst::before {
+  content: "";
+  flex: none;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: var(--wp--custom--radius--mid);
+  background-color: var(--wp--preset--color--accent-pale);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.75rem;
+}
+
+.fs-hem .fs-ikon-asbest::before { background-image: url(icons/asbest.svg); }
+.fs-hem .fs-ikon-fukt::before { background-image: url(icons/fukt.svg); }
+.fs-hem .fs-ikon-pcb::before { background-image: url(icons/pcb.svg); }
+.fs-hem .fs-ikon-radon::before { background-image: url(icons/radon.svg); }
+.fs-hem .fs-ikon-mark::before { background-image: url(icons/mark.svg); }
+.fs-hem .fs-ikon-forvarv::before { background-image: url(icons/forvarv.svg); }
+
+.fs-hem .fs-hem-tjanst::after {
+  content: "";
+  flex: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: auto;
+  background: var(--wp--preset--color--primary);
+  -webkit-mask: url(icons/pil.svg) center / contain no-repeat;
+  mask: url(icons/pil.svg) center / contain no-repeat;
+}
+
+.fs-hem .fs-hem-tjanst h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hela kortet är klickbart, men länken är fortfarande bara rubriken. */
+.fs-hem .fs-hem-tjanst h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--wp--custom--radius--lg);
+}
+
+.fs-hem .fs-hem-tjanst h3 a:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.fs-hem .fs-hem-tjanst h3 a:focus-visible::after {
+  outline: 3px solid var(--wp--preset--color--accent);
+  outline-offset: 2px;
+}
+
+.fs-hem .fs-hem-tjanst p {
+  color: var(--wp--preset--color--secondary-text);
+}
+
+/* ===== Så går det till ===== */
+
+.fs-hem .fs-hem-fotopar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+  max-width: 33.4rem;
+  padding-top: 0.6rem;
+}
+
+.fs-hem .fs-hem-fotopar img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 55%;
+  border-radius: var(--wp--custom--radius--lg);
+}
+
+.fs-hem .fs-hem-fotopar figure:last-child img {
+  object-position: 50% 45%;
+}
+
+.fs-hem .fs-hem-steglista {
+  gap: 0.9rem;
+  counter-reset: fs-steg;
+}
+
+.fs-hem .fs-hem-steg {
+  counter-increment: fs-steg;
+  display: grid;
+  grid-template-columns: 3.75rem minmax(0, 1fr);
+  gap: 0.5rem 0.9rem;
+  padding: 1.5rem 1.6rem;
+  background: var(--wp--preset--color--base);
+  border: 1px solid var(--wp--preset--color--border);
+  border-radius: var(--wp--custom--radius--lg);
+}
+
+.fs-hem .fs-hem-steg::before {
+  content: counter(fs-steg, decimal-leading-zero);
+  grid-row: 1 / span 2;
+  font-family: var(--wp--preset--font-family--display);
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--wp--preset--color--accent-text);
+}
+
+.fs-hem .fs-hem-steg > * {
+  grid-column: 2;
+}
+
+.fs-hem .fs-hem-steg__huvud {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+
+.fs-hem .fs-hem-steg > p {
+  color: var(--wp--preset--color--secondary-text);
+}
+
+.fs-hem .fs-hem-badge {
+  align-self: flex-start;
+  padding: 0.2rem 0.75rem;
+  border-radius: var(--wp--custom--radius--pill);
+  background: var(--wp--preset--color--accent-pale);
+  color: var(--wp--preset--color--primary);
+  font-size: var(--wp--preset--font-size--xs);
+  font-weight: 600;
+}
+
+.fs-hem .fs-hem-badge--alltid {
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--base);
+}
+
+/* ===== Asbestprov med pris ===== */
+
+.fs-hem .fs-hem-pris__foto {
+  max-width: 33.4rem;
+  padding-top: 0.5rem;
+}
+
+.fs-hem .fs-hem-pris__foto img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: 50% 28%;
+  border-radius: var(--wp--custom--radius--lg);
+}
+
+.fs-hem .fs-hem-priskort {
+  gap: 0.4rem;
+  padding: 2rem;
+  border-radius: var(--wp--custom--radius--xl);
+}
+
+.fs-hem .fs-hem-badge--pris {
+  background: var(--wp--preset--color--accent-soft);
+  color: var(--wp--preset--color--primary-dark);
+  font-weight: 700;
+}
+
+.fs-hem .fs-hem-priskort__pris {
+  margin-top: 0.5rem;
+  font-family: var(--wp--preset--font-family--display);
+  font-size: var(--wp--preset--font-size--display);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.fs-hem .fs-hem-priskort__text {
+  padding-bottom: 0.9rem;
+  color: color-mix(in srgb, var(--wp--preset--color--base) 84%, transparent);
+}
+
+.fs-hem .fs-hem-rad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--wp--preset--color--base) 25%, transparent);
+  color: color-mix(in srgb, var(--wp--preset--color--base) 84%, transparent);
+}
+
+.fs-hem .fs-hem-rad strong {
+  font-weight: 600;
+  color: var(--wp--preset--color--base);
+}
+
+.fs-hem .fs-hem-priskort .wp-block-buttons {
+  padding-top: 0.6rem;
+}
+
+/* ===== Varför oberoende ===== */
+
+.fs-hem.fs-hem-varfor .fs-hem-eyebrow {
+  color: var(--wp--preset--color--primary);
+}
+
+.fs-hem.fs-hem-varfor .fs-hem-ingress {
+  color: var(--wp--preset--color--contrast);
+}
+
+.fs-hem .fs-hem-person {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.fs-hem .fs-hem-person figure {
+  flex: none;
+}
+
+.fs-hem .fs-hem-person img {
+  display: block;
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: cover;
+  border-radius: var(--wp--custom--radius--lg);
+}
+
+.fs-hem .fs-hem-person__text {
+  gap: 0.1rem;
+}
+
+.fs-hem .fs-hem-person__namn {
+  font-family: var(--wp--preset--font-family--display);
+  font-size: var(--wp--preset--font-size--x-large);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--wp--preset--color--primary);
+}
+
+.fs-hem .fs-hem-skal {
+  gap: 1.6rem;
+}
+
+.fs-hem .fs-hem-skal__punkt {
+  gap: 0.4rem;
+  padding-top: 1.1rem;
+  border-top: 2px solid var(--wp--preset--color--primary);
+}
+
+/* ===== Insikt ===== */
+
+.fs-hem .fs-hem-insikt__ruta {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 3rem;
+  padding: var(--wp--preset--spacing--50);
+  border: 1px solid var(--wp--preset--color--border);
+  border-radius: var(--wp--custom--radius--xl);
+}
+
+.fs-hem .fs-hem-insikt__text {
+  flex: 1 1 26rem;
+  gap: 0.75rem;
+  max-width: 42em;
+}
+
+.fs-hem .fs-hem-insikt__text > p:last-child {
+  color: var(--wp--preset--color--secondary-text);
+}
+
+.fs-hem .fs-hem-insikt__lankar {
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+/* ===== Avslutande band ===== */
+
+.fs-hem .fs-hem-cta__rad {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.75rem 3rem;
+}
+
+.fs-hem .fs-hem-cta__text {
+  gap: 0.6rem;
+  max-width: 34em;
+}
+
+.fs-hem .fs-hem-cta__text p {
+  font-size: var(--wp--preset--font-size--lead);
+  color: color-mix(in srgb, var(--wp--preset--color--base) 84%, transparent);
+}
+
+/* ===== Fokus på mörk botten ===== */
+
+.fs-hem.fs-hem-hero > .wp-block-group > .fs-hem-hero__text *:focus-visible,
+.fs-hem.fs-hem-cta *:focus-visible,
+.fs-hem .fs-hem-priskort *:focus-visible {
+  outline-color: var(--wp--preset--color--accent-pale);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--wp--preset--color--accent-pale) 25%, transparent);
+}

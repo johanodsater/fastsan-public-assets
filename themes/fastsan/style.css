@@ -1,0 +1,21 @@
+/*
+Theme Name: Fastsan
+Theme URI: https://fastsan.se
+Author: Ai Brick AB
+Author URI: https://aibrick.se
+Description: Block-tema för Fastsan AB (miljöinventering & provtagning). Canonical Ai Brick block-tema-mall — semantiska tokens (primary/accent/contrast) för forkability. Tema med två template-parts (header med akut-strip + logo, footer med NAP-grid) och tre custom templates (front-page, service-page, blank). Designprincip: Logo/Background-regel v1 (Fastsan_Logo_Regel.md), WCAG 2.2 AA-kompatibla färger.
+Version: 1.1.0
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 8.1
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: fastsan
+Tags: block-theme, full-site-editing, professional-services, custom-colors, custom-logo
+*/
+
+/*
+ * All styling lives in theme.json (FSE).
+ * This file exists only for WordPress theme registration.
+ * For Elementor-specific styling, see assets/elementor-overrides.css (loaded via functions.php).
+ */
