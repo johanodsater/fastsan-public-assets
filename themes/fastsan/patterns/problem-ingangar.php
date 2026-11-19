@@ -19,7 +19,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"fs-hem-ingress"} -->
-<p class="fs-hem-ingress">Välj det som ligger närmast ditt ärende. Är du osäker ringer du oss.</p>
+<p class="fs-hem-ingress">Miljöinventering, provtagning och utredning för fastighetsägare, BRF:er, byggherrar och privatpersoner. Är du osäker ringer du oss.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -29,7 +29,17 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"fs-hem-kortgrid","layout":{"type":"default"}} -->
-<div class="wp-block-group fs-hem-kortgrid"><!-- wp:group {"className":"fs-hem-tjanst fs-ikon-asbest","layout":{"type":"default"}} -->
+<div class="wp-block-group fs-hem-kortgrid"><!-- wp:group {"className":"fs-hem-tjanst fs-ikon-miljo","layout":{"type":"default"}} -->
+<div class="wp-block-group fs-hem-tjanst fs-ikon-miljo"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading"><a href="/miljoinventering/">Miljöinventering</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Miljöinventering inför rivning, ombyggnad eller försäljning.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-hem-tjanst fs-ikon-asbest","layout":{"type":"default"}} -->
 <div class="wp-block-group fs-hem-tjanst fs-ikon-asbest"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading"><a href="/provtagning/asbest/">Asbest</a></h3>
 <!-- /wp:heading -->
@@ -76,16 +86,6 @@
 
 <!-- wp:paragraph -->
 <p>Markmiljöundersökning och jordprov, MIFO fas 1 och 2.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"fs-hem-tjanst fs-ikon-forvarv","layout":{"type":"default"}} -->
-<div class="wp-block-group fs-hem-tjanst fs-ikon-forvarv"><!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading"><a href="/forvarvsbesiktning/">Förvärvsbesiktning</a></h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>Miljöteknisk besiktning innan du köper en fastighet.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

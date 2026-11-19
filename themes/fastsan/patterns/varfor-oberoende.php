@@ -28,7 +28,7 @@
 
 <!-- wp:group {"className":"fs-hem-person__text","layout":{"type":"default"}} -->
 <div class="wp-block-group fs-hem-person__text"><!-- wp:paragraph {"className":"fs-hem-person__namn"} -->
-<p class="fs-hem-person__namn">Daniel Stålbrand</p>
+<p class="fs-hem-person__namn"><a href="/om/">Daniel Stålbrand</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

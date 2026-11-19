@@ -312,6 +312,7 @@
   background-size: 1.75rem;
 }
 
+.fs-hem .fs-ikon-miljo::before { background-image: url(icons/miljoinventering.svg); }
 .fs-hem .fs-ikon-asbest::before { background-image: url(icons/asbest.svg); }
 .fs-hem .fs-ikon-fukt::before { background-image: url(icons/fukt.svg); }
 .fs-hem .fs-ikon-pcb::before { background-image: url(icons/pcb.svg); }
@@ -529,6 +530,10 @@
 
 .fs-hem .fs-hem-person__text {
   gap: 0.1rem;
+}
+
+.fs-hem .fs-hem-person__namn a {
+  color: inherit;
 }
 
 .fs-hem .fs-hem-person__namn {
