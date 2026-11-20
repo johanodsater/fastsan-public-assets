@@ -2,9 +2,10 @@
 /**
  * Plugin Name: FS SEO Supplement
  * Description: Renders <title>, <meta description>, OG/Twitter cards (inkl. og:image + twitter:image från Rank Math) och Schema.org JSON-LD från rank_math_* postmeta.
- * Version: 1.7.0
+ * Version: 1.8.0
  * Author: AIB / C (S153-C)
  *
+ * v1.8.0 (2026-10-19, C): makesOffer (Offer 2495 SEK asbestprov inkl. ett prov, Offer 650 SEK extra prov) pa asbestsidan och dess utkast (_aib_utkast_for). Agarbeslut pris 2026-10-19, rela B->C tillagg 1. priceRange oforandrad sajtvid.
  * v1.7.0 (2026-09-22, C): ProfessionalService får image (loggan), geo (OSM building 429741114, 59.18139/18.16310) och openingHoursSpecification mån–fre 08–17 (ägarlämnade tider, samma som Google-profilen). Tar Rich Results-varningarna för Lokala företag.
  * v1.6.0 (2026-09-07, C): Oautentiserad ?fs_force-handler (init:1, exit med JSON) borttagen — död kod (rensade bara _v1-flaggor; injektorn kör tier v5) och ett öppet endpoint. Auth för fs_force ligger nu i aib-fs-force-guard (init:0, aib-deployer-HMAC). RELA-A-1179 p2, ägarbeslut 2026-09-07.
  * v1.5.0 (2026-09-06, C): knowsAbout rättad efter av.se — gränsvärdet 0,01 fiber/cm³ bärs av AFS 2023:14 (ändrad genom AFS 2025:5), hantering av AFS 2023:13 (ändrad genom AFS 2025:6 + 2025:8). Alla fem listade. Deploy via aib-deployer.
@@ -159,5 +160,35 @@ add_action('wp_head', function() {
             'https://www.linkedin.com/company/fastsan-ab',
         ],
     ];
+    // v1.8.0 — pris pa asbestsidan (och dess utkast) som Offer, sa AI-sok och Google kan citera siffran.
+    if (is_singular('page')) {
+        $pid = get_queried_object_id();
+        $live = (int) get_post_meta($pid, '_aib_utkast_for', true) ?: $pid;
+        if ('asbest' === get_post_field('post_name', $live)) {
+            $asbest_url = get_permalink($live);
+            $schema['makesOffer'] = [
+                [
+                    '@type' => 'Offer',
+                    'name' => 'Asbestprov med hembesök – ett prov ingår',
+                    'description' => 'Hembesök, certifierad provtagning, analys i oberoende laboratorium och skriftlig rapport. Normal svarstid 3 dagar.',
+                    'price' => '2495',
+                    'priceCurrency' => 'SEK',
+                    'availability' => 'https://schema.org/InStock',
+                    'areaServed' => ['@type' => 'AdministrativeArea', 'name' => 'Stockholm'],
+                    'url' => $asbest_url,
+                    'itemOffered' => ['@type' => 'Service', 'name' => 'Asbestprovtagning', 'serviceType' => 'Asbestprovtagning', 'provider' => ['@id' => $home . '#organization']],
+                ],
+                [
+                    '@type' => 'Offer',
+                    'name' => 'Extra asbestprov vid samma besök',
+                    'price' => '650',
+                    'priceCurrency' => 'SEK',
+                    'availability' => 'https://schema.org/InStock',
+                    'url' => $asbest_url,
+                    'itemOffered' => ['@type' => 'Service', 'name' => 'Asbestprovtagning – extra prov', 'provider' => ['@id' => $home . '#organization']],
+                ],
+            ];
+        }
+    }
     echo '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>' . "\n";
 }, 2);
