@@ -2,9 +2,10 @@
 /**
  * Plugin Name: FS SEO Supplement
  * Description: Renders <title>, <meta description>, OG/Twitter cards (inkl. og:image + twitter:image från Rank Math) och Schema.org JSON-LD från rank_math_* postmeta.
- * Version: 1.8.0
+ * Version: 1.9.0
  * Author: AIB / C (S153-C)
  *
+ * v1.9.0 (2026-11-20, B): makesOffer även på startsidan och dess utkast, men bara när sidans eget innehåll visar priset "2 495 kr". Schemat påstår aldrig ett pris som besökaren inte ser. Ägarorder 2026-11-20.
  * v1.8.0 (2026-10-19, C): makesOffer (Offer 2495 SEK asbestprov inkl. ett prov, Offer 650 SEK extra prov) pa asbestsidan och dess utkast (_aib_utkast_for). Agarbeslut pris 2026-10-19, rela B->C tillagg 1. priceRange oforandrad sajtvid.
  * v1.7.0 (2026-09-22, C): ProfessionalService får image (loggan), geo (OSM building 429741114, 59.18139/18.16310) och openingHoursSpecification mån–fre 08–17 (ägarlämnade tider, samma som Google-profilen). Tar Rich Results-varningarna för Lokala företag.
  * v1.6.0 (2026-09-07, C): Oautentiserad ?fs_force-handler (init:1, exit med JSON) borttagen — död kod (rensade bara _v1-flaggor; injektorn kör tier v5) och ett öppet endpoint. Auth för fs_force ligger nu i aib-fs-force-guard (init:0, aib-deployer-HMAC). RELA-A-1179 p2, ägarbeslut 2026-09-07.
@@ -164,8 +165,12 @@ add_action('wp_head', function() {
     if (is_singular('page')) {
         $pid = get_queried_object_id();
         $live = (int) get_post_meta($pid, '_aib_utkast_for', true) ?: $pid;
-        if ('asbest' === get_post_field('post_name', $live)) {
-            $asbest_url = get_permalink($live);
+        $on_asbest = ('asbest' === get_post_field('post_name', $live));
+        // v1.9.0 — startsidan (och dess utkast) bär samma erbjudande när dess eget innehåll visar priset.
+        $on_home = ((int) get_option('page_on_front') === (int) $live)
+            && false !== strpos((string) get_post_field('post_content', $pid), '2 495 kr');
+        if ($on_asbest || $on_home) {
+            $asbest_url = $on_asbest ? get_permalink($live) : $home . 'provtagning/asbest/';
             $schema['makesOffer'] = [
                 [
                     '@type' => 'Offer',
