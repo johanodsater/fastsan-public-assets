@@ -15,11 +15,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"section"} -->
-<h2 class="wp-block-heading has-section-font-size">Vad behöver du hjälp med?</h2>
+<h2 class="wp-block-heading has-section-font-size">Miljöinventering, provtagning och utredning</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"fs-hem-ingress"} -->
-<p class="fs-hem-ingress">Miljöinventering, provtagning och utredning för fastighetsägare, BRF:er, byggherrar och privatpersoner. Är du osäker ringer du oss.</p>
+<p class="fs-hem-ingress">För fastighetsägare, BRF:er, byggherrar och privatpersoner. Är du osäker ringer du oss.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
