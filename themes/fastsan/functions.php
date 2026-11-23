@@ -8,7 +8,7 @@
 defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'FASTSAN_THEME_VERSION' ) ) {
-	define( 'FASTSAN_THEME_VERSION', '1.1.0' );
+	define( 'FASTSAN_THEME_VERSION', '1.1.1' );
 }
 
 /**
