@@ -38,8 +38,9 @@ window.__stil = async function (lage, sidor, bredder) {
       f.remove();
     }
   }
-  if (lage === 'fore') {
-    localStorage.setItem('qa_stil_fore', JSON.stringify(nu));
+  if (lage === 'fore' || lage === 'fore+') {  // fore+ lägger till i det sparade (ett call-steg får ta högst 30 s)
+    const gammalt = lage === 'fore+' ? JSON.parse(localStorage.getItem('qa_stil_fore') || '{}') : {};
+    localStorage.setItem('qa_stil_fore', JSON.stringify(Object.assign(gammalt, nu)));
     return JSON.stringify({ sparat: Object.fromEntries(Object.entries(nu).map(([k, v]) => [k, v.length])) });
   }
   const fore = JSON.parse(localStorage.getItem('qa_stil_fore') || '{}');
