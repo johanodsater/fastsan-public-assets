@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name: AIB Deployer
- * Description: Autentiserad (HMAC-SHA256), replay-skyddad, sha256-verifierad fildeploy från commit-pinnade GitHub-raw-URL:er. Trigger: POST /?aib_deploy=1. Mål begränsade till mu-plugins/, themes/, uploads/fastsan-content/. Logg: uploads/aib-deployer/deploy.log. Hemlighet: wp_option aib_deployer_secret (hex). Ersätter engångs-pullers och bryggans file_write.
- * Version: 1.0.0
+ * Description: Autentiserad (HMAC-SHA256), replay-skyddad, sha256-verifierad fildeploy från commit-pinnade GitHub-raw-URL:er. Trigger: POST /?aib_deploy=1. Mål begränsade till mu-plugins/, themes/, uploads/fastsan-content/. Logg och kopior: mappen aib-deployer-data utanför webbroten (1.1.0), annars uploads/aib-deployer med spärr. Hemlighet: wp_option aib_deployer_secret (hex). Ersätter engångs-pullers och bryggans file_write.
+ * Version: 1.1.0
  * Author: Ai Brick AB
  */
 
 if (!defined('ABSPATH')) return;
 if (defined('AIB_DEPLOYER_LOADED')) return;
-define('AIB_DEPLOYER_LOADED', '1.0.0');
+define('AIB_DEPLOYER_LOADED', '1.1.0');
 
 add_action('init', 'aib_deployer_handle', 1);
 
@@ -81,7 +81,7 @@ function aib_deployer_run() {
         aib_deployer_log('OK rename ' . $req['dest'] . ' -> ' . $req['to']);
         $out = ['ok' => true, 'op' => 'rename', 'dest' => $req['dest'], 'to' => $req['to']];
     } elseif ($op === 'stat') {
-        $out = ['ok' => true, 'op' => 'stat', 'dest' => $req['dest'], 'exists' => file_exists($dest), 'bytes' => file_exists($dest) ? filesize($dest) : null, 'sha256' => file_exists($dest) ? hash_file('sha256', $dest) : null];
+        $out = ['ok' => true, 'op' => 'stat', 'dest' => $req['dest'], 'exists' => file_exists($dest), 'bytes' => file_exists($dest) ? filesize($dest) : null, 'sha256' => file_exists($dest) ? hash_file('sha256', $dest) : null, 'data' => (strpos(aib_deployer_data_dir(), WP_CONTENT_DIR) === 0 ? 'uploads' : 'utanfor')];
     } else {
         return aib_deployer_fail(400, 'op');
     }
@@ -101,17 +101,42 @@ function aib_deployer_path($rel) {
     return WP_CONTENT_DIR . '/' . $rel;
 }
 
+/**
+ * Datakatalog för logg och kopior. Utanför webbroten när det går, annars uploads/aib-deployer.
+ * Båda mapparna får en spärr (.htaccess), så att logg och kopior aldrig går att hämta utifrån (QA-1, 2026-11-23).
+ */
+function aib_deployer_data_dir() {
+    static $dir = null;
+    if ($dir !== null) return $dir;
+    $gammal = WP_CONTENT_DIR . '/uploads/aib-deployer';
+    $ute    = dirname(rtrim(ABSPATH, '/\\')) . '/aib-deployer-data';
+    if ((is_dir($ute) || @mkdir($ute, 0750, true)) && is_writable($ute)) {
+        $dir = $ute;
+    } else {
+        $dir = $gammal;
+        if (!is_dir($dir)) @mkdir($dir, 0755, true);
+    }
+    aib_deployer_guard($dir);
+    if ($dir !== $gammal && is_dir($gammal)) aib_deployer_guard($gammal);
+    return $dir;
+}
+
+function aib_deployer_guard($dir) {
+    if (!file_exists($dir . '/.htaccess')) {
+        @file_put_contents($dir . '/.htaccess', "<IfModule mod_authz_core.c>\nRequire all denied\n</IfModule>\n<IfModule !mod_authz_core.c>\nOrder allow,deny\nDeny from all\n</IfModule>\n");
+    }
+    if (!file_exists($dir . '/index.html')) @file_put_contents($dir . '/index.html', '');
+}
+
 function aib_deployer_backup($dest) {
     if (!file_exists($dest)) return null;
-    $bdir = WP_CONTENT_DIR . '/uploads/aib-deployer/backup';
+    $bdir = aib_deployer_data_dir() . '/backup';
     if (!is_dir($bdir) && !@mkdir($bdir, 0755, true)) return null;
     $b = $bdir . '/' . basename($dest) . '.' . gmdate('Ymd-His');
     return @copy($dest, $b) ? $b : null;
 }
 
 function aib_deployer_log($line) {
-    $ldir = WP_CONTENT_DIR . '/uploads/aib-deployer';
-    if (!is_dir($ldir)) @mkdir($ldir, 0755, true);
-    if (!file_exists($ldir . '/index.html')) @file_put_contents($ldir . '/index.html', '');
+    $ldir = aib_deployer_data_dir();
     @file_put_contents($ldir . '/deploy.log', '[' . gmdate('c') . '] ' . $line . "\n", FILE_APPEND);
 }
