@@ -8,7 +8,7 @@
 defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'FASTSAN_THEME_VERSION' ) ) {
-	define( 'FASTSAN_THEME_VERSION', '1.2.0' );
+	define( 'FASTSAN_THEME_VERSION', '1.2.1' );
 }
 
 /**
@@ -36,6 +36,8 @@ function fastsan_theme_setup() {
 	add_theme_support( 'responsive-embeds' );
 	add_theme_support( 'editor-styles' );
 	add_theme_support( 'wp-block-styles' );
+	// Mellanstorlek för bilder som visas 250–400 px breda. Utan den hoppar urvalet från 300 till 768 px.
+	add_image_size( 'fastsan-480', 480, 0 );
 	load_theme_textdomain( 'fastsan', get_template_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'fastsan_theme_setup' );
@@ -120,6 +122,35 @@ function fastsan_enqueue_styles() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'fastsan_enqueue_styles', 20 );
+
+/**
+ * Rätt bildstorlek för bilder som visas smalare än WordPress antar.
+ * WordPress skriver sizes="(max-width: 963px) 100vw, 963px" (bildens fulla bredd), och webbläsaren hämtar då
+ * originalet fast bilden visas 250–400 px bred (mätt 2026-11-23: 963 -> 249, 900 -> 260, 800 -> 302).
+ * Här står den bredd bilden faktiskt får, per bild-id i mediabiblioteket. Ny bild i en smal ruta: lägg till en rad.
+ */
+function fastsan_img_sizes_map() {
+	return apply_filters(
+		'fastsan_img_sizes_map',
+		array(
+			154 => '(max-width: 400px) 82vw, 330px',  // startsidan, kortet "Din kontakt"
+			157 => '(max-width: 600px) 45vw, 260px',  // startsidan, "Så går det till"
+			111 => '(max-width: 600px) 92vw, 400px',  // /provtagning/asbest/ och /om/
+		)
+	);
+}
+function fastsan_img_sizes( $img, $context, $attachment_id ) {
+	$map = fastsan_img_sizes_map();
+	if ( ! isset( $map[ $attachment_id ] ) || false === strpos( $img, ' srcset=' ) ) {
+		return $img;
+	}
+	$sizes = ' sizes="' . esc_attr( $map[ $attachment_id ] ) . '"';
+	if ( preg_match( '/ sizes="[^"]*"/', $img ) ) {
+		return preg_replace( '/ sizes="[^"]*"/', $sizes, $img, 1 );
+	}
+	return preg_replace( '/<img /', '<img' . $sizes . ' ', $img, 1 );
+}
+add_filter( 'wp_content_img_tag', 'fastsan_img_sizes', 9, 3 );
 
 /**
  * Sajtikoner, temafärg och färgschema i <head>. Ikonerna ligger i temat (assets/favicons).
