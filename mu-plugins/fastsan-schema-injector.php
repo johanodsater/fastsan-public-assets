@@ -2,9 +2,10 @@
 /**
  * Plugin Name: Fastsan — Schema Injector
  * Description: JSON-LD-schema per tjänstesida (Service) + BreadcrumbList + FAQPage. Kompletterar Organization/LocalBusiness som temat redan injicerar. Hooks: wp_head prio 99 (efter befintlig Organization). Inga exit/die-patterns (KK247-incident 2026-05-04). Avaktivering: radera filen från mu-plugins/, eller definiera FASTSAN_SCHEMA_DISABLED i wp-config.php.
- * Version: 1.5.0
+ * Version: 1.7.0
  * Author: Aibrick (C-instance)
  *
+ * v1.6.0 (2026-10-20, C): FAQ:n ur _fastsan_faqs renderas SYNLIGT pa sidan (H2 Vanliga fragor + H3/P per par), infogad fore sidans sista wp:html-CTA. Samma kalla som FAQPage-schemat, sa schema = text alltid (seo-audit HR-11 Hidden Schema, B 2026-10-20 C2, agarbeslut (a)). Hook the_content prio 8 = fore do_blocks, bara huvudfragan.
  * v1.5.0 (2026-09-22, C): BreadcrumbList följer sidhierarkin (Hem > förälder > sida) i stället för att alltid hoppa över föräldern. Namnet = sidtiteln före första " — " eller " | " (SEO-svansen bort). Sidor som själva bär en BreadcrumbList i post_content får ingen från injektorn — sidans lista gäller (en lista per sida).
  * v1.4.0 (2026-09-06, C): ren version — GA4 lever nu i fristående mu-plugins/fastsan-ga4.php och deploys går via mu-plugins/aib-deployer.php (HMAC + sha256, commit-pinnat). v1.3.x (GA4-block + bootstrap) var tillfälliga bärare medan bryggans file_write låg nere.
  * v1.2.1 (2026-09-05, C): ISO/IEC 17025-påståendet struket ur provtagning-description (ägarbeslut 2026-09-05; overifierbart, samma klass som "ackrediterat ISO 17025-lab"). Deploy via github-pull.
@@ -14,7 +15,7 @@
 if (!defined('ABSPATH')) { return; }
 if (defined('FASTSAN_SCHEMA_DISABLED') && FASTSAN_SCHEMA_DISABLED) { return; }
 if (defined('FASTSAN_SCHEMA_LOADED')) { return; }
-define('FASTSAN_SCHEMA_LOADED', '1.5.0');
+define('FASTSAN_SCHEMA_LOADED', '1.6.0');
 
 /**
  * Hämta service-data per slug.
@@ -210,6 +211,32 @@ function fastsan_schema_build_faq($post) {
 }
 
 /**
+ * v1.7.0 (2026-11-23, QA-planen punkt 9): Article for blogginlagg. Mätt: /asbest-2025-nya-gransvardet/ hade bara
+ * ProfessionalService. Rubrik, datum och bild finns synliga på sidan. Författare och utgivare pekar på
+ * bolagets nod (#organization, __fs-seo-supp.php).
+ */
+function fastsan_schema_build_article($post) {
+    if (!$post || empty($post->ID)) return null;
+    $home = home_url('/');
+    $url  = get_permalink($post);
+    $data = [
+        '@context'         => 'https://schema.org',
+        '@type'            => 'Article',
+        '@id'              => $url . '#article',
+        'mainEntityOfPage' => $url,
+        'headline'         => wp_strip_all_tags(get_the_title($post)),
+        'datePublished'    => get_post_time('c', false, $post),
+        'dateModified'     => get_post_modified_time('c', false, $post),
+        'inLanguage'       => 'sv-SE',
+        'author'           => ['@id' => $home . '#organization'],
+        'publisher'        => ['@id' => $home . '#organization'],
+    ];
+    $img = get_the_post_thumbnail_url($post, 'full');
+    if ($img) $data['image'] = $img;
+    return $data;
+}
+
+/**
  * Output ett JSON-LD-block (inline, ej via wp_add_inline_script eftersom det
  * inte är ett registrerat script-handle).
  */
@@ -225,6 +252,11 @@ function fastsan_schema_output($data) {
  * Prio 99 = efter Rank Math och efter temats Organization-schema.
  */
 add_action('wp_head', function () {
+    if (is_singular('post')) {
+        $article = fastsan_schema_build_article(get_queried_object());
+        if ($article) fastsan_schema_output($article);
+        return;
+    }
     if (!is_singular('page')) return;
     $post = get_queried_object();
     if (!$post || !isset($post->post_name)) return;
@@ -238,6 +270,44 @@ add_action('wp_head', function () {
     $faq = fastsan_schema_build_faq($post);
     if ($faq) fastsan_schema_output($faq);
 }, 99);
+
+/**
+ * v1.6.0 — Synlig FAQ ur samma meta som schemat. Prio 8 pa the_content = fore do_blocks (9),
+ * sa blockmarkup kan infogas fore sidans sista wp:html-block (CTA:n). Saknas en avslutande
+ * CTA laggs FAQ:n sist.
+ */
+function fastsan_schema_faq_blocks($post) {
+    $raw = get_post_meta($post->ID, '_fastsan_faqs', true);
+    if (empty($raw)) return '';
+    $faqs = is_array($raw) ? $raw : json_decode($raw, true);
+    if (!is_array($faqs) || empty($faqs)) return '';
+    $out = "<!-- wp:heading {\"level\":2,\"anchor\":\"vanliga-fragor\"} -->\n<h2 class=\"wp-block-heading\" id=\"vanliga-fragor\">Vanliga frågor</h2>\n<!-- /wp:heading -->\n\n";
+    $n = 0;
+    foreach ($faqs as $f) {
+        if (empty($f['q']) || empty($f['a'])) continue;
+        $q = esc_html(wp_strip_all_tags($f['q']));
+        $a = esc_html(wp_strip_all_tags($f['a']));
+        $out .= "<!-- wp:heading {\"level\":3} -->\n<h3 class=\"wp-block-heading\">" . $q . "</h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>" . $a . "</p>\n<!-- /wp:paragraph -->\n\n";
+        $n++;
+    }
+    return $n ? $out : '';
+}
+add_filter('the_content', function ($content) {
+    if (!is_singular('page') || !in_the_loop() || !is_main_query()) return $content;
+    $post = get_post();
+    if (!$post) return $content;
+    $faq = fastsan_schema_faq_blocks($post);
+    if ('' === $faq) return $content;
+    $trim = rtrim($content);
+    $close = '<!-- /wp:html -->';
+    if (substr($trim, -strlen($close)) === $close) {
+        $open = strrpos($trim, '<!-- wp:html -->');
+        if (false !== $open) {
+            return substr($content, 0, $open) . $faq . substr($content, $open);
+        }
+    }
+    return $content . "\n\n" . $faq;
+}, 8);
 
 /**
  * Admin-notice så ingen glömmer att pluginen är aktiv.

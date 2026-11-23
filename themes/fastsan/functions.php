@@ -8,7 +8,7 @@
 defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'FASTSAN_THEME_VERSION' ) ) {
-	define( 'FASTSAN_THEME_VERSION', '1.1.1' );
+	define( 'FASTSAN_THEME_VERSION', '1.2.0' );
 }
 
 /**
@@ -36,7 +36,6 @@ function fastsan_theme_setup() {
 	add_theme_support( 'responsive-embeds' );
 	add_theme_support( 'editor-styles' );
 	add_theme_support( 'wp-block-styles' );
-	add_theme_support( 'elementor' );
 	load_theme_textdomain( 'fastsan', get_template_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'fastsan_theme_setup' );
@@ -119,21 +118,26 @@ function fastsan_enqueue_styles() {
 			fastsan_asset_ver( 'assets/fastsan-startsida.css' )
 		);
 	}
-
-	// Elementor overrides — endast om Elementor laddat
-	if ( did_action( 'elementor/loaded' ) ) {
-		$elementor_file = get_template_directory() . '/assets/elementor-overrides.css';
-		if ( file_exists( $elementor_file ) ) {
-			wp_enqueue_style(
-				'fastsan-elementor-overrides',
-				get_template_directory_uri() . '/assets/elementor-overrides.css',
-				array( 'fastsan-tokens' ),
-				FASTSAN_THEME_VERSION
-			);
-		}
-	}
 }
 add_action( 'wp_enqueue_scripts', 'fastsan_enqueue_styles', 20 );
+
+/**
+ * Sajtikoner, temafärg och färgschema i <head>. Ikonerna ligger i temat (assets/favicons).
+ * Flyttat hit 2026-11-23 från hjälpfilen mu-plugins/__fs-favicon-deploy.php, som också hade en öppen
+ * hämtadress (?fs_favicon_pull=1). Samma fem rader som förut, plus color-scheme.
+ */
+function fastsan_head_icons() {
+	$base = get_template_directory_uri() . '/assets/favicons/';
+	echo '<link rel="icon" type="image/x-icon" href="' . esc_url( $base . 'favicon.ico' ) . '" />' . "\n";
+	echo '<link rel="icon" type="image/png" sizes="16x16" href="' . esc_url( $base . 'favicon-16.png' ) . '" />' . "\n";
+	echo '<link rel="icon" type="image/png" sizes="32x32" href="' . esc_url( $base . 'favicon-32.png' ) . '" />' . "\n";
+	echo '<link rel="apple-touch-icon" sizes="180x180" href="' . esc_url( $base . 'apple-touch-icon.png' ) . '" />' . "\n";
+	echo '<meta name="theme-color" content="#15324A" />' . "\n";
+	echo '<meta name="color-scheme" content="light" />' . "\n";
+}
+if ( ! file_exists( WPMU_PLUGIN_DIR . '/__fs-favicon-deploy.php' ) ) {
+	add_action( 'wp_head', 'fastsan_head_icons', 3 );
+}
 
 /**
  * Enqueue samma tokens i block-editorn (så Site Editor / Gutenberg ser samma tokens).

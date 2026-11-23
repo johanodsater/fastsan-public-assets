@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Fastsan Sticky Contact Bar
  * Description: Floating contact bar (telefon, e-post, bli uppringd) for fastsan.se. Replaces the KK247 bar (aib-sticky-contact) which carried korkort247.se contact data and routed leads to the driving school.
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: Ai Brick AB (A)
  *
  * CHANGELOG
@@ -60,6 +60,8 @@ add_action( 'wp_footer', function () {
 .fs-sticky-bar.fs-hidden{transform:translateY(100%)}
 .fs-sticky-bar a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 6px 12px;color:#fff;text-decoration:none;font-size:clamp(.68rem,2.9vw,.78rem);font-weight:500;gap:4px;border-right:1px solid rgba(255,255,255,.12);transition:background .2s;min-width:0}
 .fs-sticky-bar a:last-child{border-right:none}
+/* Telefonnumret är den längsta texten: den kolumnen får mer bredd, så att numret inte klipps ("Ring: 070-142 …", mätt 2026-11-23). */
+.fs-sticky-bar a:first-child{flex:1.45}
 .fs-sticky-bar a span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 .fs-sticky-bar a:hover,.fs-sticky-bar a:focus{background:rgba(255,255,255,.1)}
 .fs-sticky-bar .fs-sb-icon{display:inline-flex;line-height:1}

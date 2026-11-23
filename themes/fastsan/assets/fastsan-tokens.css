@@ -34,6 +34,9 @@
   --alert-soft:    var(--wp--preset--color--alert-soft);
   --success:       var(--wp--preset--color--success);
 
+  /* Sajten finns bara i ljust utförande. Utan den här raden kan webbläsaren rita formulärfält och rullningslister mörka. */
+  color-scheme: light;
+
   --display: var(--wp--preset--font-family--display);
   --body:    var(--wp--preset--font-family--body);
   --max-w:   1180px;
@@ -84,6 +87,27 @@ body {
     -webkit-hyphens: auto;
     hyphens: auto;
   }
+}
+
+/* ===== Träffyta minst 24 px för korta textlänkar (WCAG 2.5.8) =====
+ * Samma grepp som i sidfoten och akutraden: en osynlig yta runt länken, raden blir inte högre.
+ * Mätt 2026-11-23: länkarna var 17–19 px höga.
+ */
+
+.fs-breadcrumb a,
+.fs-header-nav > li > a,
+.fs-contact-block a,
+.fs-sidebar-card a {
+  position: relative;
+}
+
+.fs-breadcrumb a::after,
+.fs-header-nav > li > a::after,
+.fs-contact-block a::after,
+.fs-sidebar-card a::after {
+  content: "";
+  position: absolute;
+  inset: -0.3rem 0;
 }
 
 /* ===== Reduced motion-stöd (WCAG 2.3.3) ===== */
