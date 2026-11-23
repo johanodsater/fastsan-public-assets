@@ -2,10 +2,28 @@
 /**
  * Plugin Name: Fastsan Lead Pipeline
  * Description: Lead-capture + statusmaskin. REST POST /wp-json/fastsan/v1/lead → DB → action fastsan_lead_created → e-postnotis till Daniel med signerade ett-tryck-statuslänkar. Daglig cron påminner (3/10/30 dagar, eskalering vid 3:e). REST POST /wp-json/fastsan/v1/lead/<id>/confirm tar emot kundens bokningsbekräftelse (fakturauppgifter). Statusbyte firar fastsan_lead_status_changed (framtida CAPI-krok, inget Meta-anrop i denna version).
- * Version: 0.3.0
+ * Version: 0.7.0
  * Author: B (Claude orchestrator), Fastsan AB
  * Requires PHP: 8.0
  *
+ * v0.7.0 (2026-11-23, B, agarorder Johan 17:16 "kor", QA-planen punkt 4): robotskydd pa POST /lead utan captcha.
+ *   Tre sparrar: ett dolt kontrollfalt som ska vara tomt (fs_kontroll), en tidsstamplad biljett fran
+ *   GET /wp-json/fastsan/v1/lead-token som maste vara minst 3 s och hogst 24 h gammal (ft + fs), och hogst
+ *   5 godkanda inskick per adress och timme. Avvisade inskick sparas inte och ger inget mejl; de raknas i
+ *   wp_option fastsan_lead_guard_stats. Inskick helt utan biljett godtas till 2026-11-24 06:00 (sidor som stod
+ *   oppna vid driftsattningen har det gamla skriptet); darefter kravs biljett. Facebook-leads och uppringningsformularet gar via fastsan_lead_insert
+ *   och berors inte.
+ * v0.6.0 (2026-10-19, A, agarorder Johan 23:26): privatperson anger personnummer i bekraftelsen (kravs).
+ *   10 eller 12 siffror, kontrollsiffran (Luhn) provas, sparas som AAAAMMDD-NNNN i kolumn personal_nr.
+ *   Forsta raden i Daniels bekraftelsemejl ar Personnummer (som Org-nr for foretag).
+ * v0.5.0 (2026-10-19, A): bekraftelsen tar customer_type (private|company). Privatperson: namn + e-post + adress
+ *   + postnummer kravs, namn/telefon/e-post uppdateras pa leaden; foretag: org-nr + namn kravs, kontaktperson -> name.
+ *   Kolumn customer_type. Bekraftelsemejlet till Daniel visar kundtypen. Utan customer_type: gamla regeln (bakatkompatibelt).
+ * v0.4.1 (2026-10-19, A): mejlens HTML-del radbryts med <br> i stallet for white-space:pre-wrap (Outlook slog ihop
+ *   allt till ett stycke); telefonnumret blir tel:-lank. Ren-text-delen orord.
+ * v0.4.0 (2026-10-19, A, RELA-C-1722 del 1): fastsan_lead_insert(array) delad insertvag for andra kallor
+ *   (Facebook-leads via fastsan-meta-leads.php), kolumner fb_leadgen_id (UNIQUE) / fb_form_id / fb_ad_id /
+ *   fb_campaign_id, mejl fran Facebook-annons markas [Facebook] i amnet och kallraden. Webbformularets vag orord.
  * v0.3.0 (2026-09-07, B S472, agarord): mejlen skickas som HTML (multipart/alternative) med statuslankarna som
  *   klickbar rubriktext + ren-text-del (AltBody) med fulla URL:er. Samma exp/sig i bada delarna.
  * v0.2.2 (2026-09-07, B S472): confirm skriver bara skickade falt (prov 4b blankade uppgifter).
@@ -25,13 +43,20 @@ if (!defined('ABSPATH')) return;
 if (defined('FASTSAN_LEAD_PIPELINE_LOADED')) return;
 define('FASTSAN_LEAD_PIPELINE_LOADED', true);
 define('FASTSAN_LEAD_TABLE', 'fastsan_leads');
-define('FASTSAN_LEAD_PIPELINE_VERSION', '0.3.0');
+define('FASTSAN_LEAD_PIPELINE_VERSION', '0.7.0');
 define('FASTSAN_LEAD_NOTIFY_EMAIL', 'daniel@fastsan.se'); // kanon (agarbeslut 2026-09-05)
 define('FASTSAN_LEAD_ESCALATION_EMAIL', 'odsater@gmail.com'); // CC vid 3:e paminnelsen. Agarbeslut 2026-09-07: johan@aibrick.se finns inte (554 No Such User Here)
 define('FASTSAN_LEAD_SECRET_OPTION', 'fastsan_lead_action_secret');
 define('FASTSAN_LEAD_LINK_TTL', 90 * DAY_IN_SECONDS); // §2: exp = utfardande + 90 dagar
 define('FASTSAN_LEAD_CRON_HOOK', 'fastsan_lead_reminders');
 define('FASTSAN_LEAD_REMINDER_MAX', 3);
+define('FASTSAN_LEAD_TOKEN_MIN_AGE', 3);               // v0.7.0: sekunder fran utfardad biljett till inskick
+define('FASTSAN_LEAD_TOKEN_MAX_AGE', DAY_IN_SECONDS);  // v0.7.0: en flik som statt oppen over natten gar fortfarande
+// v0.7.0: sidor som redan stod oppna vid driftsattningen har det gamla skriptet och skickar ingen biljett.
+// Inskick helt utan biljett slapps darfor igenom fram till denna tid (raknas som utan_biljett); darefter kravs biljett.
+if (!defined('FASTSAN_LEAD_TOKEN_REQUIRED_FROM')) define('FASTSAN_LEAD_TOKEN_REQUIRED_FROM', gmmktime(5, 0, 0, 11, 24, 2026)); // 2026-11-24 06:00 svensk tid
+define('FASTSAN_LEAD_RATE_MAX', 5);                    // v0.7.0: godkanda inskick per adress ...
+define('FASTSAN_LEAD_RATE_WINDOW', HOUR_IN_SECONDS);   // ... och timme
 if (!defined('FASTSAN_LEAD_CONFIRM_PAGE')) define('FASTSAN_LEAD_CONFIRM_PAGE', '/bekraftelse/'); // C:s formularsida (§5), byts via filter fastsan_lead_confirm_page_url
 
 /* ---------- STATUSMASKIN (§1) ---------- */
@@ -92,13 +117,20 @@ function fastsan_lead_create_table() {
         invoice_city VARCHAR(64) NULL,
         invoice_email VARCHAR(255) NULL,
         reference VARCHAR(128) NULL,
+        customer_type VARCHAR(16) NULL,
+        personal_nr VARCHAR(13) NULL,
         ip_address VARCHAR(64) NULL,
         user_agent TEXT NULL,
         referer VARCHAR(512) NULL,
+        fb_leadgen_id VARCHAR(32) NULL,
+        fb_form_id VARCHAR(32) NULL,
+        fb_ad_id VARCHAR(32) NULL,
+        fb_campaign_id VARCHAR(32) NULL,
         PRIMARY KEY  (id),
         KEY idx_created (created_at),
         KEY idx_status (status),
-        KEY idx_email (email)
+        KEY idx_email (email),
+        UNIQUE KEY uq_fb_leadgen (fb_leadgen_id)
     ) $charset;";
     require_once ABSPATH . 'wp-admin/includes/upgrade.php';
     dbDelta($sql);
@@ -260,6 +292,12 @@ add_action('rest_api_init', static function () {
         'callback' => 'fastsan_lead_handle',
         'permission_callback' => '__return_true',
     ]);
+    // v0.7.0: biljett till formularet. Sidan ligger i cache, sa biljetten hamtas for sig och cachas aldrig.
+    register_rest_route('fastsan/v1', '/lead-token', [
+        'methods'  => 'GET',
+        'callback' => 'fastsan_lead_token_handle',
+        'permission_callback' => '__return_true',
+    ]);
     // §5: kundens bokningsbekraftelse. Oppen route, men sig KRAVS (samma HMAC-schema, s=confirm).
     register_rest_route('fastsan/v1', '/lead/(?P<id>\d+)/confirm', [
         'methods'  => 'POST',
@@ -269,9 +307,94 @@ add_action('rest_api_init', static function () {
     ]);
 });
 
+/* ---------- ROBOTSKYDD (v0.7.0) ---------- */
+
+function fastsan_lead_token_sig(int $ts): string {
+    return substr(hash_hmac('sha256', 'form|' . $ts, fastsan_lead_secret()), 0, 32);
+}
+
+function fastsan_lead_token_handle(WP_REST_Request $req) {
+    $ts = time();
+    do_action('litespeed_control_set_nocache', 'fastsan lead-token');
+    $res = new WP_REST_Response(['t' => $ts, 's' => fastsan_lead_token_sig($ts)], 200);
+    $res->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
+    return $res;
+}
+
+/** Nyckel for raknaren per adress. Adressen sparas inte, bara en signerad kontrollsumma. */
+function fastsan_lead_rate_key(): string {
+    $ip = isset($_SERVER['REMOTE_ADDR']) ? (string) $_SERVER['REMOTE_ADDR'] : '';
+    return 'fs_lead_rl_' . substr(hash_hmac('sha256', 'rate|' . $ip, fastsan_lead_secret()), 0, 24);
+}
+
+/** Sekunder kvar tills adressen far skicka igen, 0 om den far skicka nu. */
+function fastsan_lead_rate_wait(): int {
+    $row = get_transient(fastsan_lead_rate_key());
+    if (!is_array($row) || empty($row['start'])) return 0;
+    $left = (int) $row['start'] + FASTSAN_LEAD_RATE_WINDOW - time();
+    if ($left <= 0) return 0;
+    return ((int) ($row['n'] ?? 0) >= FASTSAN_LEAD_RATE_MAX) ? $left : 0;
+}
+
+function fastsan_lead_rate_hit(): void {
+    $key = fastsan_lead_rate_key();
+    $row = get_transient($key);
+    $now = time();
+    if (!is_array($row) || empty($row['start']) || (int) $row['start'] + FASTSAN_LEAD_RATE_WINDOW <= $now) {
+        $row = ['start' => $now, 'n' => 0];
+    }
+    $row['n'] = (int) $row['n'] + 1;
+    set_transient($key, $row, max(1, (int) $row['start'] + FASTSAN_LEAD_RATE_WINDOW - $now));
+}
+
+function fastsan_lead_guard_count(string $reason): void {
+    $stats = get_option('fastsan_lead_guard_stats', []);
+    if (!is_array($stats)) $stats = [];
+    $stats[$reason] = (int) ($stats[$reason] ?? 0) + 1;
+    $stats['senast'] = current_time('mysql');
+    update_option('fastsan_lead_guard_stats', $stats, false);
+}
+
+/** null = slapp igenom. Annars ett fardigt felsvar; inget sparas och inget mejl gar. */
+function fastsan_lead_guard(WP_REST_Request $req): ?WP_REST_Response {
+    $deny = static function (string $reason, int $http, array $extra = []): WP_REST_Response {
+        fastsan_lead_guard_count(explode('_', $reason)[0]);
+        $res = new WP_REST_Response(array_merge(['status' => 'error', 'reason' => $reason], $extra), $http);
+        $res->header('Cache-Control', 'no-store');
+        return $res;
+    };
+
+    if (trim((string) ($req->get_param('fs_kontroll') ?? '')) !== '') {
+        return $deny('kontrollfalt', 400);
+    }
+
+    $ts  = (string) ($req->get_param('ft') ?? '');
+    $sig = strtolower((string) ($req->get_param('fs') ?? ''));
+    if ($ts === '' && $sig === '' && time() < FASTSAN_LEAD_TOKEN_REQUIRED_FROM) {
+        fastsan_lead_guard_count('utan');
+    } else {
+        if ($ts === '' || $sig === '' || !ctype_digit($ts)) return $deny('biljett_saknas', 403);
+        if (!hash_equals(fastsan_lead_token_sig((int) $ts), $sig)) return $deny('biljett_ogiltig', 403);
+        $age = time() - (int) $ts;
+        if ($age < FASTSAN_LEAD_TOKEN_MIN_AGE) return $deny('biljett_for_ny', 403);
+        if ($age > FASTSAN_LEAD_TOKEN_MAX_AGE) return $deny('biljett_for_gammal', 403);
+    }
+
+    $wait = fastsan_lead_rate_wait();
+    if ($wait > 0) {
+        $res = $deny('takt', 429, ['retry_after' => $wait]);
+        $res->header('Retry-After', (string) $wait);
+        return $res;
+    }
+    return null;
+}
+
 function fastsan_lead_handle(WP_REST_Request $req) {
     global $wpdb;
     $table = $wpdb->prefix . FASTSAN_LEAD_TABLE;
+
+    $blocked = fastsan_lead_guard($req);
+    if ($blocked !== null) return $blocked;
 
     $name  = sanitize_text_field($req->get_param('name') ?? '');
     $email = sanitize_email($req->get_param('email') ?? '');
@@ -329,6 +452,7 @@ function fastsan_lead_handle(WP_REST_Request $req) {
 
     $lead_id = (int) $wpdb->insert_id;
     $lead = array_merge(['id' => $lead_id], $data);
+    fastsan_lead_rate_hit();
 
     // §6 fail-soft: notisen far aldrig doda svaret till formularet.
     try {
@@ -343,7 +467,73 @@ function fastsan_lead_handle(WP_REST_Request $req) {
     ], 201);
 }
 
+/**
+ * v0.4.0: delad insertvag for andra kallor an webbformularet (Facebook-leads m.fl.).
+ * Tar en rad med pipelinens kolumner, fyller standardvarden, sparar och firar fastsan_lead_created
+ * (samma mejl, samma statusknappar, samma paminnelser). Returnerar lead-id, 0 vid fel (t.ex. dubblett).
+ */
+function fastsan_lead_insert(array $data): int {
+    global $wpdb;
+    $table = $wpdb->prefix . FASTSAN_LEAD_TABLE;
+    $now = current_time('mysql');
+    $row = array_merge([
+        'created_at' => $now, 'name' => '', 'email' => '', 'phone' => '',
+        'contact_preference' => 'either', 'object_type' => 'unknown', 'urgency' => 'normal',
+        'message' => '', 'source' => 'unknown', 'consent_marketing' => 0, 'consent_lab_disclosure' => 0,
+        'status' => 'new', 'status_updated_at' => $now, 'reminder_count' => 0,
+        'ip_address' => '', 'user_agent' => '', 'referer' => '',
+    ], $data);
+    if ($row['name'] === '' || ($row['email'] === '' && $row['phone'] === '')) return 0;
+    if ($wpdb->insert($table, $row) === false) {
+        error_log('[AIB] fastsan-lead-pipeline: fastsan_lead_insert misslyckades: ' . $wpdb->last_error);
+        return 0;
+    }
+    $lead_id = (int) $wpdb->insert_id;
+    try {
+        do_action('fastsan_lead_created', array_merge(['id' => $lead_id], $row));
+    } catch (\Throwable $e) {
+        error_log('[AIB] fastsan-lead-pipeline: fastsan_lead_created-krok fel lead ' . $lead_id . ': ' . $e->getMessage());
+    }
+    return $lead_id;
+}
+
 /* ---------- BEKRAFTELSE-ENDPOINT (§5) ---------- */
+
+/**
+ * v0.6.0: personnummer -> 'AAAAMMDD-NNNN', eller '' om det inte gar att tolka.
+ * 10 eller 12 siffror (bindestreck, plus och blanksteg tillats). Kontrollsiffran (Luhn) provas pa de sista tio.
+ * Tio siffror far sekel ur dagens ar; '+' (100 ar eller aldre) drar av ett sekel. Samordningsnummer (dag+60) godtas.
+ */
+function fastsan_lead_normalize_pnr(string $raw): string {
+    $raw = trim($raw);
+    $plus = strpos($raw, '+') !== false;
+    $d = preg_replace('/\D/', '', $raw);
+    if (!preg_match('/^(\d{10}|\d{12})$/', $d)) return '';
+    $ten = substr($d, -10);
+    $sum = 0;
+    for ($i = 0; $i < 10; $i++) {
+        $n = (int) $ten[$i] * (($i % 2 === 0) ? 2 : 1);
+        $sum += ($n > 9) ? $n - 9 : $n;
+    }
+    if ($sum % 10 !== 0) return '';
+    if (strlen($d) === 12) {
+        $full = $d;
+    } else {
+        $yy  = (int) substr($ten, 0, 2);
+        $now = (int) gmdate('Y');
+        $century = (int) floor($now / 100) * 100;
+        $year = $century + $yy;
+        if ($year > $now) $year -= 100;
+        if ($plus) $year -= 100;
+        $full = sprintf('%04d', $year) . substr($ten, 2);
+    }
+    $mm = (int) substr($full, 4, 2);
+    $dd = (int) substr($full, 6, 2);
+    if ($dd > 60) $dd -= 60;
+    if ($mm < 1 || $mm > 12 || $dd < 1 || $dd > 31) return '';
+    return substr($full, 0, 8) . '-' . substr($full, 8, 4);
+}
+
 function fastsan_lead_confirm_handle(WP_REST_Request $req) {
     global $wpdb;
     $table = $wpdb->prefix . FASTSAN_LEAD_TABLE;
@@ -361,18 +551,43 @@ function fastsan_lead_confirm_handle(WP_REST_Request $req) {
         return new WP_REST_Response(['status' => 'error', 'reason' => 'not_found'], 404);
     }
 
-    // Falt (alla sanerade). org_nr: 10-12 siffror, bindestreck tillats, lagras utan.
+    // v0.5.0: kundtypen styr kraven. Utan customer_type galler gamla regeln (org-nr eller foretagsnamn).
+    $type = strtolower((string) ($req->get_param('customer_type') ?? ''));
     $org_raw = preg_replace('/\s+/', '', (string) ($req->get_param('org_nr') ?? ''));
     $org_nr  = str_replace('-', '', $org_raw);
     if (!preg_match('/^\d{10,12}$/', $org_nr)) $org_nr = '';
     $company = sanitize_text_field((string) ($req->get_param('company') ?? ''));
-    if ($org_nr === '' && $company === '') {
-        return new WP_REST_Response(['status' => 'error', 'reason' => 'org_nr_or_company_required'], 400);
-    }
-    // v0.2.2: bara falt som SKICKAS skrivs -- en andra bekraftelse med farre falt blankar inte tidigare uppgifter.
     $fields = [];
-    if ($org_nr !== '')  $fields['org_nr']  = $org_nr;
-    if ($company !== '') $fields['company'] = $company;
+    if ($type === 'private') {
+        $pname  = sanitize_text_field((string) ($req->get_param('name') ?? ''));
+        $paddr  = sanitize_text_field((string) ($req->get_param('invoice_address') ?? ''));
+        $ppost  = preg_replace('/\D/', '', (string) ($req->get_param('invoice_postal') ?? ''));
+        if ($pname === '' || $paddr === '' || strlen($ppost) !== 5) {
+            return new WP_REST_Response(['status' => 'error', 'reason' => 'private_name_address_required'], 400);
+        }
+        $ppnr = fastsan_lead_normalize_pnr((string) ($req->get_param('personal_nr') ?? ''));
+        if ($ppnr === '') {
+            return new WP_REST_Response(['status' => 'error', 'reason' => 'personal_nr_required'], 400);
+        }
+        $fields['customer_type'] = 'private';
+        $fields['personal_nr'] = $ppnr;
+        $fields['name'] = $pname;
+        $pphone = sanitize_text_field((string) ($req->get_param('phone') ?? ''));
+        if ($pphone !== '') $fields['phone'] = $pphone;
+        $pmail = sanitize_email((string) ($req->get_param('email') ?? ''));
+        if ($pmail !== '') { $fields['email'] = $pmail; $fields['invoice_email'] = $pmail; }
+    } else {
+        if ($org_nr === '' && $company === '') {
+            return new WP_REST_Response(['status' => 'error', 'reason' => 'org_nr_or_company_required'], 400);
+        }
+        if ($type === 'company') {
+            $fields['customer_type'] = 'company';
+            $cname = sanitize_text_field((string) ($req->get_param('contact_name') ?? ''));
+            if ($cname !== '') $fields['name'] = $cname;
+        }
+        if ($org_nr !== '')  $fields['org_nr']  = $org_nr;
+        if ($company !== '') $fields['company'] = $company;
+    }
     if ($req->has_param('invoice_address')) $fields['invoice_address'] = sanitize_text_field((string) $req->get_param('invoice_address'));
     if ($req->has_param('invoice_postal'))  $fields['invoice_postal']  = substr(sanitize_text_field((string) $req->get_param('invoice_postal')), 0, 16);
     if ($req->has_param('invoice_city'))    $fields['invoice_city']    = substr(sanitize_text_field((string) $req->get_param('invoice_city')), 0, 64);
@@ -453,7 +668,21 @@ function fastsan_lead_links_html(array $links): string {
 
 /** Ren text -> HTML-stycke (radbrytningar bevaras, allt escapas). */
 function fastsan_lead_text_to_html(string $text): string {
-    return '<div style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;line-height:1.5;color:#222;white-space:pre-wrap">' . esc_html($text) . '</div>';
+    // v0.4.1: Outlook ignorerar white-space:pre-wrap och slog ihop allt till ett stycke.
+    // Varje rad blir nu en egen rad (<br>), upprepade blanksteg blir &nbsp; sa kolumnerna star kvar,
+    // och telefonnumret blir en ring-lank (ett tryck i mobilen).
+    $out = [];
+    foreach (explode("\n", str_replace("\r\n", "\n", $text)) as $line) {
+        $e = esc_html($line);
+        $e = preg_replace_callback('/ {2,}/', static function ($m) { return str_repeat('&nbsp;', strlen($m[0])); }, $e);
+        if (preg_match('/^Telefon:\s+(\+?[0-9][0-9 ()\-]{5,})\s*$/u', $line, $m)) {
+            $num = trim($m[1]);
+            $tel = preg_replace('/[^0-9+]/', '', $num);
+            $e = str_replace(esc_html($num), '<a href="tel:' . esc_attr($tel) . '" style="color:#1f5fbf;font-weight:700;text-decoration:none">' . esc_html($num) . '</a>', $e);
+        }
+        $out[] = $e === '' ? '&nbsp;' : $e;
+    }
+    return '<div style="font-family:Consolas,Menlo,ui-monospace,monospace;font-size:13px;line-height:1.5;color:#222">' . implode("<br>\n", $out) . '</div>';
 }
 
 function fastsan_lead_html_wrap(string $inner): string {
@@ -480,7 +709,8 @@ function fastsan_lead_send_mail(string $to, string $subject, string $text, strin
 
 /** Detaljtext om leadet (utan lankar). */
 function fastsan_lead_notify_details(array $lead): string {
-    $body  = "Ny förfrågan inkommen via fastsan.se\n\n";
+    $is_fb = (($lead['source'] ?? '') === 'facebook');
+    $body  = $is_fb ? "Ny förfrågan inkommen via Facebook-annons\n\n" : "Ny förfrågan inkommen via fastsan.se\n\n";
     $body .= sprintf("Lead-ID: #%d\n", $lead['id']);
     $body .= sprintf("Inkommen: %s\n", $lead['created_at']);
     $body .= sprintf("Status:   %s\n\n", fastsan_lead_status_label((string) ($lead['status'] ?? 'new')));
@@ -492,7 +722,7 @@ function fastsan_lead_notify_details(array $lead): string {
     $body .= "─────────────── UPPDRAG ────────────\n";
     $body .= sprintf("Objekttyp:      %s\n", $lead['object_type']);
     $body .= sprintf("Brådska:        %s\n", $lead['urgency']);
-    $body .= sprintf("Källa:          %s\n", $lead['source']);
+    $body .= sprintf("Källa:          %s\n", $is_fb ? 'Facebook (kampanj ' . ($lead['fb_campaign_id'] ?? '-') . ', annons ' . ($lead['fb_ad_id'] ?? '-') . ')' : $lead['source']);
     if (!empty($lead['message'])) {
         $body .= "\nMeddelande:\n" . $lead['message'] . "\n";
     }
@@ -510,7 +740,7 @@ function fastsan_lead_notify_body(array $lead, ?array $links = null): string {
 
 function fastsan_lead_notify_email($lead) {
     $site_name = get_bloginfo('name');
-    $subject = sprintf('[%s] Ny förfrågan #%d — %s', $site_name, $lead['id'], $lead['name']);
+    $subject = sprintf('%s[%s] Ny förfrågan #%d — %s', (($lead['source'] ?? '') === 'facebook') ? '[Facebook] ' : '', $site_name, $lead['id'], $lead['name']);
     $links   = fastsan_lead_links((int) $lead['id']);
     $details = fastsan_lead_notify_details($lead);
     fastsan_lead_send_mail(
@@ -523,8 +753,26 @@ function fastsan_lead_notify_email($lead) {
 /** §5: bekraftelsemejl. FORSTA raden ar Org-nr (Fortnox-appen hamtar namn+adress pa org-nr). */
 function fastsan_lead_confirm_email(array $lead): void {
     $id = (int) $lead['id'];
+    $priv = (($lead['customer_type'] ?? '') === 'private');
+    if ($priv) {
+        $subject = sprintf('Bokningsbekräftelse mottagen — #%d %s (privatperson)', $id, (string) ($lead['name'] ?? ''));
+        $body  = sprintf("Personnummer:   %s\n", !empty($lead['personal_nr']) ? $lead['personal_nr'] : '(ej angivet)');
+        $body .= "Kundtyp:        Privatperson\n";
+        $body .= sprintf("Namn:           %s\n", (string) ($lead['name'] ?? ''));
+        $body .= sprintf("Telefon:        %s\n", (string) ($lead['phone'] ?? ''));
+        $body .= sprintf("E-post:         %s\n", (string) ($lead['email'] ?? ''));
+        $body .= sprintf("Adress:         %s\n", (string) ($lead['invoice_address'] ?? ''));
+        $body .= sprintf("Postnr/ort:     %s %s\n", (string) ($lead['invoice_postal'] ?? ''), (string) ($lead['invoice_city'] ?? ''));
+        $body .= "                (adressen där provet tas och dit fakturan går)\n";
+        $body .= sprintf("\nFörfrågan #%d, status nu: %s\n", $id, fastsan_lead_status_label((string) $lead['status']));
+        if (!empty($lead['message'])) $body .= "\nMeddelande:\n" . $lead['message'] . "\n";
+        $links = fastsan_lead_links($id);
+        fastsan_lead_send_mail(fastsan_lead_notify_to(), $subject, $body . fastsan_lead_links_text($links), fastsan_lead_text_to_html($body) . fastsan_lead_links_html($links));
+        return;
+    }
     $subject = sprintf('Bokningsbekräftelse mottagen — #%d %s', $id, (string) ($lead['company'] ?? ''));
-    $body  = sprintf("Org-nr: %s\n", !empty($lead['org_nr']) ? $lead['org_nr'] : '(ej angivet)');
+    $body  = (($lead['customer_type'] ?? '') === 'company') ? "Kundtyp:        Företag/förening\n" : '';
+    $body .= sprintf("Org-nr: %s\n", !empty($lead['org_nr']) ? $lead['org_nr'] : '(ej angivet)');
     $body .= sprintf("Företag:        %s\n", (string) ($lead['company'] ?? ''));
     $body .= sprintf("Fakturaadress:  %s\n", (string) ($lead['invoice_address'] ?? ''));
     $body .= sprintf("Postnr/ort:     %s %s\n", (string) ($lead['invoice_postal'] ?? ''), (string) ($lead['invoice_city'] ?? ''));

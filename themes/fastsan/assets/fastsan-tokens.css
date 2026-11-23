@@ -69,6 +69,23 @@ button:focus-visible,
   box-shadow: 0 0 0 5px color-mix(in srgb, var(--sandstone-pale) 25%, transparent);
 }
 
+/* ===== Smala skärmar: långa ord får brytas (WCAG 1.4.10 och 1.4.12) =====
+ * Mätt 2026-11-23: 7 av 30 sidor blev bredare än 320 px och 17 av 30 med ökat textavstånd. Orsaken var
+ * rubriker med ett långt ord ("Tillgänglighetsförklaring", "Markmiljöundersökning").
+ * overflow-wrap bryter ett ord som annars inte ryms. På smala skärmar avstavas rubriker med bindestreck.
+ */
+
+body {
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  h1, h2, h3, h4, h5, h6 {
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
 /* ===== Reduced motion-stöd (WCAG 2.3.3) ===== */
 
 @media (prefers-reduced-motion: reduce) {

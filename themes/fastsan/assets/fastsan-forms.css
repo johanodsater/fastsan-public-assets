@@ -1,0 +1,222 @@
+/*
+ * Fastsan forms CSS — offertformulär + definitionslistor
+ * v1.0.0 (2026-08-21, C) — täcker .fs-offert-form som deployades utan styling.
+ * Tokens: fastsan-tokens.css (:root). Ingen påverkan utanför formulär/dl.
+ */
+
+/* ===== Offertformulär ===== */
+
+.fs-offert-form {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  margin: 1.5rem 0 2.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr); /* utan minmax(0) växer kolumnen efter rullistans längsta val (372 px på en 320 px bred skärm, mätt 2026-11-23) */
+  gap: 1.15rem;
+  box-shadow: 0 2px 12px rgba(21, 50, 74, 0.06);
+}
+
+.fs-field,
+.fs-checkbox {
+  min-width: 0;
+}
+
+.fs-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.fs-offert-form input,
+.fs-offert-form select,
+.fs-offert-form textarea {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.fs-field label {
+  font-family: var(--body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.01em;
+}
+
+.fs-offert-form input[type="text"],
+.fs-offert-form input[type="email"],
+.fs-offert-form input[type="tel"],
+.fs-offert-form select,
+.fs-offert-form textarea {
+  width: 100%;
+  font-family: var(--body);
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.7rem 0.85rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.fs-offert-form select {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2315324A' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-right: 2.4rem;
+  cursor: pointer;
+}
+
+.fs-offert-form textarea {
+  resize: vertical;
+  min-height: 130px;
+  line-height: 1.55;
+}
+
+.fs-offert-form input::placeholder,
+.fs-offert-form textarea::placeholder {
+  color: var(--ink-mute);
+  opacity: 1;
+}
+
+/* Muspekar-fokus: tokens.css släcker outline utom :focus-visible,
+   så textfält behöver egen indikator på :focus. */
+.fs-offert-form input:focus,
+.fs-offert-form select:focus,
+.fs-offert-form textarea:focus {
+  border-color: var(--sandstone);
+  box-shadow: 0 0 0 3px rgba(181, 130, 74, 0.18);
+}
+
+.fs-offert-form input[type="file"] {
+  font-family: var(--body);
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+/* ===== Checkboxar ===== */
+
+/* Etiketten är ett vanligt textblock med rutan utlyft till vänster. Med display:flex blev varje textbit och
+   länken en egen kolumn, och texten kunde inte radbrytas som en mening. */
+.fs-checkbox label {
+  display: block;
+  position: relative;
+  padding-left: 1.75rem;
+  font-family: var(--body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.fs-checkbox input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin: 0;
+  accent-color: var(--navy);
+  cursor: pointer;
+}
+
+.fs-checkbox a {
+  color: var(--sandstone-text);
+  text-decoration: underline;
+}
+
+/* ===== Submit ===== */
+
+.fs-offert-form .btn-primary {
+  justify-self: start;
+  font-family: var(--body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cream);
+  background: var(--navy);
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 1.9rem;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.fs-offert-form .btn-primary:hover {
+  background: var(--navy-light);
+}
+
+.fs-offert-form .btn-primary:active {
+  transform: translateY(1px);
+}
+
+.fs-offert-form .btn-primary[disabled] {
+  background: var(--ink-mute);
+  cursor: wait;
+}
+
+/* ===== Status (sätts av fastsan-offert.js) ===== */
+
+.fs-form-status {
+  font-family: var(--body);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  margin: 0;
+}
+
+.fs-form-status--success {
+  background: #EAF2EC;
+  border: 1px solid var(--success);
+  color: #2E4F3A;
+}
+
+.fs-form-status--error {
+  background: var(--alert-soft);
+  border: 1px solid var(--alert);
+  color: var(--alert);
+}
+
+/* ===== Definitionslistor (Företagsinformation m.fl.) ===== */
+
+.entry-content dl {
+  display: grid;
+  grid-template-columns: minmax(110px, 180px) 1fr;
+  gap: 0.45rem 1.25rem;
+  margin: 1.25rem 0;
+  font-family: var(--body);
+}
+
+.entry-content dt {
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 0.92rem;
+}
+
+.entry-content dd {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+/* ===== Mobil ===== */
+
+@media (max-width: 600px) {
+  .fs-offert-form {
+    padding: 1.4rem 1.1rem;
+  }
+  .fs-offert-form .btn-primary {
+    justify-self: stretch;
+    width: 100%;
+  }
+  .entry-content dl {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+  .entry-content dd {
+    margin-bottom: 0.6rem;
+  }
+}

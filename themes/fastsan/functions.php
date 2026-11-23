@@ -53,6 +53,15 @@ function fastsan_preload_fonts() {
 add_action( 'wp_head', 'fastsan_preload_fonts', 1 );
 
 /**
+ * Versionsstrang for en fil i temat: filens andringstid. Webblasaren far da en ny adress sa fort filen andras
+ * (servern later den ligga i cache i sju dagar). Finns filen inte ges temats version.
+ */
+function fastsan_asset_ver( $rel ) {
+	$mtime = @filemtime( get_template_directory() . '/' . ltrim( $rel, '/' ) );
+	return $mtime ? (string) $mtime : FASTSAN_THEME_VERSION;
+}
+
+/**
  * Enqueue Fastsan canonical CSS-tokens + dropdown nav CSS (FAS 1 v2 IA).
  */
 function fastsan_enqueue_styles() {
@@ -62,7 +71,7 @@ function fastsan_enqueue_styles() {
 			'fastsan-tokens',
 			get_template_directory_uri() . '/assets/fastsan-tokens.css',
 			array(),
-			FASTSAN_THEME_VERSION
+			fastsan_asset_ver( 'assets/fastsan-tokens.css' )
 		);
 	}
 
@@ -73,7 +82,7 @@ function fastsan_enqueue_styles() {
 			'fastsan-dropdown',
 			get_template_directory_uri() . '/assets/fastsan-dropdown.css',
 			array( 'fastsan-tokens' ),
-			FASTSAN_THEME_VERSION
+			fastsan_asset_ver( 'assets/fastsan-dropdown.css' )
 		);
 	}
 
@@ -84,7 +93,7 @@ function fastsan_enqueue_styles() {
 			'fastsan-forms',
 			get_template_directory_uri() . '/assets/fastsan-forms.css',
 			array( 'fastsan-tokens' ),
-			FASTSAN_THEME_VERSION
+			fastsan_asset_ver( 'assets/fastsan-forms.css' )
 		);
 	}
 
@@ -95,7 +104,7 @@ function fastsan_enqueue_styles() {
 			'fastsan-offert',
 			get_template_directory_uri() . '/assets/fastsan-offert.js',
 			array(),
-			FASTSAN_THEME_VERSION,
+			fastsan_asset_ver( 'assets/fastsan-offert.js' ),
 			array( 'in_footer' => true, 'strategy' => 'defer' )
 		);
 	}
@@ -107,7 +116,7 @@ function fastsan_enqueue_styles() {
 			'fastsan-startsida',
 			get_template_directory_uri() . '/assets/fastsan-startsida.css',
 			array( 'fastsan-tokens' ),
-			FASTSAN_THEME_VERSION
+			fastsan_asset_ver( 'assets/fastsan-startsida.css' )
 		);
 	}
 
