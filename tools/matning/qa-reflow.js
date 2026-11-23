@@ -1,0 +1,91 @@
+/*
+ * qa-reflow.js – mater om sajtens sidor ryms pa en given bredd, med och utan okat textavstand (WCAG 1.4.10, 1.4.12).
+ * Kors i sajtens egen flik (Chrome-bryggan, call{js}): varje sida i wp-sitemap.xml laddas i en iframe med bredden W.
+ * Anvandning, tre slags steg:
+ *   1. hamta filen och kor den:  window.__qinit(320, '')          -> antal sidor   (andra argumentet: prov-CSS som laggs in i varje sida)
+ *   2. mat fem sidor at gangen:  window.__q.run(0,5) ... (25,30)   -> antal matta   (ett steg far ta hogst 30 s)
+ *   3. hamta resultatet:         window.__qresult()                -> JSON
+ * Raknas inte som fel: CookieYes egna element (.cky-*), element med position:fixed och det som ligger i en
+ * behallare som sjalv ryms och har egen rullning eller klippning.
+ */
+window.__qinit = async function (W, EXTRA) {
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  const xml = async u => { const t = await (await fetch(u)).text(); return [...t.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]); };
+  let urls = [];
+  for (const s of await xml('/wp-sitemap.xml')) urls = urls.concat(await xml(s));
+  urls = [...new Set(urls)];
+  const clipped = (el, doc) => {
+    let p = el.parentElement;
+    while (p && p !== doc.documentElement && p !== doc.body) {
+      if (doc.defaultView.getComputedStyle(p).overflowX !== 'visible') {
+        const r = p.getBoundingClientRect();
+        if (r.right <= W + 0.5 && r.left >= -0.5) return true;
+      }
+      p = p.parentElement;
+    }
+    return false;
+  };
+  const name = el => el.tagName.toLowerCase() + (typeof el.className === 'string' && el.className ? '.' + el.className.trim().split(/\s+/).slice(0, 2).join('.') : '');
+  const scan = doc => {
+    const bad = [];
+    for (const el of doc.body.querySelectorAll('*')) {
+      if (el.closest('[class*="cky-"]')) continue;
+      const cs = doc.defaultView.getComputedStyle(el);
+      if (cs.display === 'none' || cs.visibility === 'hidden' || cs.position === 'fixed') continue;
+      const r = el.getBoundingClientRect();
+      if (r.width === 0 || r.height === 0) continue;
+      if ((r.right > W + 0.5 || r.left < -0.5) && !clipped(el, doc)) bad.push(el);
+    }
+    const leaf = bad.filter(el => ![...el.children].some(c => bad.includes(c)));
+    return {
+      n: bad.length,
+      leaf: leaf.slice(0, 4).map(el => {
+        const r = el.getBoundingClientRect();
+        return (el.parentElement ? name(el.parentElement) + '>' : '') + name(el) + ' r=' + Math.round(r.right) + ' w=' + Math.round(r.width) +
+          ' "' + (el.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 30) + '"';
+      })
+    };
+  };
+  window.__q = {
+    W, urls, out: [],
+    run: async (a, b) => {
+      for (const u of urls.slice(a, b)) {
+        const f = document.createElement('iframe');
+        f.style.cssText = 'position:fixed;left:0;top:0;width:' + W + 'px;height:700px;border:0;opacity:0;pointer-events:none';
+        f.src = u;
+        document.body.appendChild(f);
+        await new Promise(r => { f.onload = r; setTimeout(r, 9000); });
+        await sleep(500);
+        const rec = { u: new URL(u).pathname };
+        try {
+          const doc = f.contentDocument;
+          if (EXTRA) { const e = doc.createElement('style'); e.textContent = EXTRA; doc.head.appendChild(e); await sleep(150); }
+          rec.sw = doc.documentElement.scrollWidth;
+          const a1 = scan(doc);
+          const st = doc.createElement('style');
+          st.textContent = '*{line-height:1.5!important;letter-spacing:.12em!important;word-spacing:.16em!important}p{margin-bottom:2em!important}';
+          doc.head.appendChild(st);
+          await sleep(200);
+          rec.sw2 = doc.documentElement.scrollWidth;
+          const b1 = scan(doc);
+          if (rec.sw > W || a1.n) rec.a = a1;
+          if (rec.sw2 > W || b1.n) rec.b = b1;
+        } catch (e) { rec.err = String(e); }
+        f.remove();
+        window.__q.out.push(rec);
+      }
+      return window.__q.out.length;
+    }
+  };
+  return urls.length;
+};
+window.__qresult = function () {
+  const o = window.__q.out, W = window.__q.W;
+  return JSON.stringify({
+    bredd: W, sidor: o.length,
+    for_breda: o.filter(r => r.sw > W).length,
+    for_breda_textavstand: o.filter(r => r.sw2 > W).length,
+    rader: o.filter(r => r.a || r.b || r.err),
+    utan_anm: o.filter(r => !r.a && !r.b && !r.err).length
+  });
+};
