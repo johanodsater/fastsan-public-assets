@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Fastsan Sticky Contact Bar
  * Description: Floating contact bar (telefon, e-post, bli uppringd) for fastsan.se. Replaces the KK247 bar (aib-sticky-contact) which carried korkort247.se contact data and routed leads to the driving school.
- * Version: 1.2.1
+ * Version: 1.3.0
  * Author: Ai Brick AB (A)
  *
  * CHANGELOG
@@ -41,21 +41,29 @@ define( 'FASTSAN_SB_PHONE_DISPLAY', '070-142 46 39' );
 define( 'FASTSAN_SB_PHONE_TEL', '+46701424639' );
 define( 'FASTSAN_SB_EMAIL', 'daniel@fastsan.se' );
 
-add_action( 'wp_footer', function () {
+/**
+ * v1.3.0 (2026-11-23): stilen skrivs i <head> i stället för mitt i sidan. En <style> i body är inte giltig HTML
+ * (W3C-kontrollen, QA-K punkt 6). Samma regler som förut.
+ */
+function fastsan_sb_skip() {
 	if ( is_admin() ) {
-		return;
+		return true;
 	}
 	$uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '';
 	foreach ( array( '/wp-login', '/wp-admin' ) as $s ) {
 		if ( false !== strpos( $uri, $s ) ) {
-			return;
+			return true;
 		}
 	}
-	$tel   = FASTSAN_SB_PHONE_TEL;
-	$disp  = FASTSAN_SB_PHONE_DISPLAY;
-	$mail  = FASTSAN_SB_EMAIL;
+	return false;
+}
+
+add_action( 'wp_head', function () {
+	if ( fastsan_sb_skip() ) {
+		return;
+	}
 	?>
-<style>
+<style id="fastsan-sticky-contact">
 .fs-sticky-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#15324a;display:flex;justify-content:center;align-items:stretch;box-shadow:0 -2px 12px rgba(0,0,0,.15);font-family:inherit;transition:transform .3s ease}
 .fs-sticky-bar.fs-hidden{transform:translateY(100%)}
 .fs-sticky-bar a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 6px 12px;color:#fff;text-decoration:none;font-size:clamp(.68rem,2.9vw,.78rem);font-weight:500;gap:4px;border-right:1px solid rgba(255,255,255,.12);transition:background .2s;min-width:0}
@@ -89,7 +97,23 @@ html{scroll-padding-bottom:7rem}
 .fs-cb-modal button[type=submit][disabled]{opacity:.6;cursor:wait}
 .fs-cb-modal .fs-cb-success h3{color:#1c7c3a;margin-bottom:8px}
 </style>
+	<?php
+}, 30 );
 
+add_action( 'wp_footer', function () {
+	if ( is_admin() ) {
+		return;
+	}
+	$uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '';
+	foreach ( array( '/wp-login', '/wp-admin' ) as $s ) {
+		if ( false !== strpos( $uri, $s ) ) {
+			return;
+		}
+	}
+	$tel   = FASTSAN_SB_PHONE_TEL;
+	$disp  = FASTSAN_SB_PHONE_DISPLAY;
+	$mail  = FASTSAN_SB_EMAIL;
+	?>
 <div class="fs-sticky-bar" id="fsStickyBar">
 	<a href="tel:<?php echo esc_attr( $tel ); ?>" aria-label="Ring <?php echo esc_attr( $disp ); ?>">
 		<span class="fs-sb-icon" aria-hidden="true"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>

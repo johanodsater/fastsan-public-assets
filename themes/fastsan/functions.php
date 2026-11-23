@@ -8,7 +8,7 @@
 defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'FASTSAN_THEME_VERSION' ) ) {
-	define( 'FASTSAN_THEME_VERSION', '1.2.1' );
+	define( 'FASTSAN_THEME_VERSION', '1.3.0' );
 }
 
 /**
@@ -118,6 +118,24 @@ function fastsan_enqueue_styles() {
 			get_template_directory_uri() . '/assets/fastsan-startsida.css',
 			array( 'fastsan-tokens' ),
 			fastsan_asset_ver( 'assets/fastsan-startsida.css' )
+		);
+	}
+
+	// Sidhuvud, akutrad och sidfot (låg förut som <style> mitt i sidan).
+	wp_enqueue_style(
+		'fastsan-ram',
+		get_template_directory_uri() . '/assets/fastsan-ram.css',
+		array( 'fastsan-tokens' ),
+		fastsan_asset_ver( 'assets/fastsan-ram.css' )
+	);
+
+	// Blogginlägg och arkiv.
+	if ( is_singular( 'post' ) || is_home() || is_archive() ) {
+		wp_enqueue_style(
+			'fastsan-insikter',
+			get_template_directory_uri() . '/assets/fastsan-insikter.css',
+			array( 'fastsan-tokens' ),
+			fastsan_asset_ver( 'assets/fastsan-insikter.css' )
 		);
 	}
 }

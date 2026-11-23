@@ -1,0 +1,214 @@
+/*
+ * fastsan-insikter.css – blogginlägg (templates/single.html) och arkivet (templates/archive.html).
+ * Flyttat 2026-11-23 ur <style>-block i mallarna (QA-K punkt 6). Laddas bara på inlägg och arkiv.
+ */
+
+/* ===== ur templates/single.html ===== */
+.fs-article-hero {
+  background: linear-gradient(180deg, #FAF7F2 0%, #FFFFFF 100%);
+  padding: 3.5rem 1.5rem 2.5rem;
+}
+.fs-article-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.fs-article-hero .wp-block-post-terms a {
+  display: inline-block;
+  background: var(--wp--preset--color--accent-pale);
+  color: var(--wp--preset--color--accent-text);
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.fs-article-hero h1 { margin: 1rem 0 0; }
+.fs-article-byline {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--wp--preset--color--border);
+  font-size: 0.95rem;
+  color: var(--wp--preset--color--secondary-text);
+}
+.fs-article-byline .wp-block-avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  display: block;
+}
+.fs-article-byline-meta { font-size: 0.85rem; color: var(--wp--preset--color--tertiary-text); }
+.fs-article-byline .wp-block-post-author-name,
+.fs-article-byline .wp-block-post-author-name a {
+  color: var(--wp--preset--color--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+.fs-article-body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+.fs-article-body .wp-block-post-featured-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+.fs-article-related {
+  max-width: 720px;
+  margin: 3rem auto 0;
+  padding: 1.5rem 1.5rem 0;
+  border-top: 1px solid var(--wp--preset--color--border);
+}
+.fs-article-related h2 {
+  font-size: var(--wp--preset--font-size--x-large);
+  margin: 0 0 0.75rem;
+}
+.fs-article-related .fs-empty-note {
+  color: var(--wp--preset--color--tertiary-text);
+  font-style: italic;
+}
+.fs-article-cta {
+  max-width: 720px;
+  margin: 3rem auto 0;
+  padding: 2.5rem 2rem;
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--base);
+  border-radius: 8px;
+  text-align: center;
+}
+.fs-article-cta h2 { color: #fff; font-size: 1.5rem; margin: 0 0 0.75rem; }
+.fs-article-cta p { color: var(--wp--preset--color--accent-pale); margin: 0 0 1.5rem; }
+.fs-article-cta .fs-cta-buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fs-article-cta .fs-cta-primary,
+.fs-article-cta .fs-cta-secondary {
+  display: inline-block;
+  padding: 0.85rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.fs-article-cta .fs-cta-primary {
+  background: var(--wp--preset--color--accent);
+  color: var(--wp--preset--color--base);
+}
+.fs-article-cta .fs-cta-secondary {
+  border: 1px solid var(--wp--preset--color--base);
+  color: var(--wp--preset--color--base);
+}
+.fs-article-cta a:hover,
+.fs-article-cta a:focus-visible { opacity: 0.9; outline: none; }
+
+/* ===== ur templates/archive.html ===== */
+.fs-insikter-hero {
+  background: linear-gradient(180deg, #FAF7F2 0%, #FFFFFF 100%);
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+}
+.fs-insikter-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.fs-insikter-hero h1 { margin: 0 0 1rem; }
+.fs-insikter-hero p {
+  color: var(--wp--preset--color--secondary-text);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.fs-insikter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1180px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+.fs-insikter-grid .wp-block-post {
+  background: var(--wp--preset--color--base);
+  border: 1px solid var(--wp--preset--color--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.fs-insikter-grid .wp-block-post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(21, 50, 74, 0.12);
+}
+.fs-insikter-grid .wp-block-post-featured-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.fs-insikter-grid .wp-block-post-title {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin: 0 0 0.5rem;
+  padding: 1.25rem 1.25rem 0;
+}
+.fs-insikter-grid .wp-block-post-title a {
+  color: var(--wp--preset--color--primary);
+  text-decoration: none;
+}
+.fs-insikter-grid .wp-block-post-title a:hover { color: var(--wp--preset--color--accent-text); }
+.fs-insikter-grid .wp-block-post-terms {
+  padding: 1.25rem 1.25rem 0.5rem;
+  margin: 0;
+}
+.fs-insikter-grid .wp-block-post-terms a {
+  display: inline-block;
+  background: var(--wp--preset--color--accent-pale);
+  color: var(--wp--preset--color--accent-text);
+  padding: 0.2rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.fs-insikter-grid .wp-block-post-excerpt {
+  padding: 0 1.25rem;
+  margin: 0 0 1rem;
+  color: var(--wp--preset--color--secondary-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.fs-insikter-grid .wp-block-post-date {
+  padding: 0 1.25rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--wp--preset--color--tertiary-text);
+  display: block;
+}
+.fs-insikter-coming {
+  max-width: 720px;
+  margin: 3rem auto 4rem;
+  padding: 2.5rem 2rem;
+  background: var(--wp--preset--color--base-muted);
+  border: 1px dashed var(--wp--preset--color--border);
+  border-radius: 8px;
+  text-align: center;
+}
+.fs-insikter-coming h2 {
+  font-size: var(--wp--preset--font-size--x-large);
+  margin: 0 0 0.75rem;
+  color: var(--wp--preset--color--primary);
+}
+.fs-insikter-coming p {
+  color: var(--wp--preset--color--secondary-text);
+  margin: 0;
+}
+.fs-insikter-coming p + p { margin-top: 0.5rem; }
+.fs-insikter-coming a {
+  color: var(--wp--preset--color--accent-text);
+  font-weight: 500;
+}
