@@ -23,6 +23,12 @@
   min-width: 0;
 }
 
+/* fastsan-offert.js döljer foto-fältet med attributet hidden (formuläret kan inte ta emot bilagor).
+   display:flex på .fs-field vann över attributet, så fältet syntes ändå (sett 2026-11-23). */
+.fs-field[hidden] {
+  display: none;
+}
+
 .fs-field {
   display: flex;
   flex-direction: column;
