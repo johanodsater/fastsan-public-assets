@@ -133,7 +133,7 @@ function fastsan_img_sizes_map() {
 	return apply_filters(
 		'fastsan_img_sizes_map',
 		array(
-			154 => '(max-width: 400px) 82vw, 330px',  // startsidan, kortet "Din kontakt"
+			154 => '(min-width: 1100px) 250px, (max-width: 480px) 84vw, 420px',  // startsidan, kortet "Din kontakt" (mätt 213–414 px)
 			157 => '(max-width: 600px) 45vw, 260px',  // startsidan, "Så går det till"
 			111 => '(max-width: 600px) 92vw, 400px',  // /provtagning/asbest/ och /om/
 		)
