@@ -106,6 +106,8 @@
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
 }
+/* Länken är redan understruken, så tangentbordsfokus visas med en ram (WCAG 2.4.7). */
+.fs-footer .fs-footer-sign a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 2px; }
 /* Kontaktfältet ligger fast nere till höger från 768 px (fastsan-sticky-contact.php): 67 px högt, 80 px över
    nederkanten, och 67 px lägre när man rullar neråt. Luften håller nedersta raden fri i båda lägena. */
 @media (min-width: 768px) {
