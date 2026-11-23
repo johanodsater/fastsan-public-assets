@@ -2,10 +2,16 @@
 /**
  * Plugin Name: Fastsan Lead Pipeline
  * Description: Lead-capture + statusmaskin. REST POST /wp-json/fastsan/v1/lead → DB → action fastsan_lead_created → e-postnotis till Daniel med signerade ett-tryck-statuslänkar. Daglig cron påminner (3/10/30 dagar, eskalering vid 3:e). REST POST /wp-json/fastsan/v1/lead/<id>/confirm tar emot kundens bokningsbekräftelse (fakturauppgifter). Statusbyte firar fastsan_lead_status_changed (framtida CAPI-krok, inget Meta-anrop i denna version).
- * Version: 0.7.0
+ * Version: 0.8.0
  * Author: B (Claude orchestrator), Fastsan AB
  * Requires PHP: 8.0
  *
+ * v0.8.0 (2026-11-23, B, agarorder Johan 17:16 "kor", QA-planen punkt 6): gallring enligt integritetspolicyn
+ *   (/integritetspolicy/, "Hur lange vi sparar uppgifterna"). Den dagliga korningen raderar forfragningar som
+ *   inte lett till uppdrag (alla lagen utom booked och won) nar senaste kontakt ar aldre an 2 ar, och
+ *   uppdragsrader (booked, won) nar den ar aldre an 7 ar. Senaste kontakt = det senare av created_at och
+ *   status_updated_at. Uppringningsloggen (wp_option fastsan_callback_log) rensas pa poster aldre an 2 ar.
+ *   Hogst 500 rader per korning. Utfallet sparas i wp_option fastsan_lead_retention_last. Inga mejl.
  * v0.7.0 (2026-11-23, B, agarorder Johan 17:16 "kor", QA-planen punkt 4): robotskydd pa POST /lead utan captcha.
  *   Tre sparrar: ett dolt kontrollfalt som ska vara tomt (fs_kontroll), en tidsstamplad biljett fran
  *   GET /wp-json/fastsan/v1/lead-token som maste vara minst 3 s och hogst 24 h gammal (ft + fs), och hogst
@@ -43,7 +49,7 @@ if (!defined('ABSPATH')) return;
 if (defined('FASTSAN_LEAD_PIPELINE_LOADED')) return;
 define('FASTSAN_LEAD_PIPELINE_LOADED', true);
 define('FASTSAN_LEAD_TABLE', 'fastsan_leads');
-define('FASTSAN_LEAD_PIPELINE_VERSION', '0.7.0');
+define('FASTSAN_LEAD_PIPELINE_VERSION', '0.8.0');
 define('FASTSAN_LEAD_NOTIFY_EMAIL', 'daniel@fastsan.se'); // kanon (agarbeslut 2026-09-05)
 define('FASTSAN_LEAD_ESCALATION_EMAIL', 'odsater@gmail.com'); // CC vid 3:e paminnelsen. Agarbeslut 2026-09-07: johan@aibrick.se finns inte (554 No Such User Here)
 define('FASTSAN_LEAD_SECRET_OPTION', 'fastsan_lead_action_secret');
@@ -55,6 +61,9 @@ define('FASTSAN_LEAD_TOKEN_MAX_AGE', DAY_IN_SECONDS);  // v0.7.0: en flik som st
 // v0.7.0: sidor som redan stod oppna vid driftsattningen har det gamla skriptet och skickar ingen biljett.
 // Inskick helt utan biljett slapps darfor igenom fram till denna tid (raknas som utan_biljett); darefter kravs biljett.
 if (!defined('FASTSAN_LEAD_TOKEN_REQUIRED_FROM')) define('FASTSAN_LEAD_TOKEN_REQUIRED_FROM', gmmktime(5, 0, 0, 11, 24, 2026)); // 2026-11-24 06:00 svensk tid
+define('FASTSAN_LEAD_RETENTION_REQUEST_YEARS', 2);    // v0.8.0: forfragan som inte lett till uppdrag
+define('FASTSAN_LEAD_RETENTION_ASSIGNMENT_YEARS', 7); // v0.8.0: uppdragsrelaterad kommunikation (bokforingslagen)
+define('FASTSAN_LEAD_RETENTION_BATCH', 500);          // v0.8.0: hogst sa manga rader per regel och korning
 define('FASTSAN_LEAD_RATE_MAX', 5);                    // v0.7.0: godkanda inskick per adress ...
 define('FASTSAN_LEAD_RATE_WINDOW', HOUR_IN_SECONDS);   // ... och timme
 if (!defined('FASTSAN_LEAD_CONFIRM_PAGE')) define('FASTSAN_LEAD_CONFIRM_PAGE', '/bekraftelse/'); // C:s formularsida (§5), byts via filter fastsan_lead_confirm_page_url
@@ -799,6 +808,83 @@ add_action('init', static function () {
 }, 20);
 
 add_action(FASTSAN_LEAD_CRON_HOOK, 'fastsan_lead_run_reminders');
+add_action(FASTSAN_LEAD_CRON_HOOK, 'fastsan_lead_run_retention_cron', 20);
+
+/* ---------- GALLRING (v0.8.0) ---------- */
+
+/** Lagen som raknas som uppdrag. Alla andra lagen ar forfragningar som inte lett till uppdrag. */
+function fastsan_lead_assignment_statuses(): array {
+    return ['booked', 'won'];
+}
+
+function fastsan_lead_run_retention_cron(): void {
+    try {
+        fastsan_lead_run_retention();
+    } catch (\Throwable $e) {
+        error_log('[AIB] fastsan-lead-pipeline: gallringen foll: ' . $e->getMessage());
+    }
+}
+
+/**
+ * Gallrar enligt integritetspolicyn. $dry = true raderar inget och visar bara vilka id som skulle tas bort.
+ * $table (hela tabellnamnet) finns for prov mot en kopia; utelamnad = den riktiga tabellen.
+ * Returnerar ['requests' => [id...], 'assignments' => [id...], 'callback_log' => antal, 'dry' => bool].
+ */
+function fastsan_lead_run_retention(bool $dry = false, ?string $table = null): array {
+    global $wpdb;
+    $live = $wpdb->prefix . FASTSAN_LEAD_TABLE;
+    if ($table === null) $table = $live;
+    if (!preg_match('/^[A-Za-z0-9_]+$/', $table) || strpos($table, $live) !== 0) {
+        throw new \InvalidArgumentException('otillaten tabell');
+    }
+
+    $now   = (int) current_time('timestamp'); // samma klocka som created_at (current_time('mysql'))
+    $cut_r = gmdate('Y-m-d H:i:s', strtotime('-' . FASTSAN_LEAD_RETENTION_REQUEST_YEARS . ' years', $now));
+    $cut_a = gmdate('Y-m-d H:i:s', strtotime('-' . FASTSAN_LEAD_RETENTION_ASSIGNMENT_YEARS . ' years', $now));
+    $in    = "'" . implode("','", array_map('esc_sql', fastsan_lead_assignment_statuses())) . "'";
+    $last  = 'GREATEST(created_at, COALESCE(status_updated_at, created_at))';
+    $limit = (int) FASTSAN_LEAD_RETENTION_BATCH;
+
+    $out = ['dry' => $dry, 'table' => $table, 'cut_requests' => $cut_r, 'cut_assignments' => $cut_a];
+    $rules = [
+        'requests'    => $wpdb->prepare("status NOT IN ($in) AND $last < %s", $cut_r),
+        'assignments' => $wpdb->prepare("status IN ($in) AND $last < %s", $cut_a),
+    ];
+    foreach ($rules as $key => $where) {
+        $ids = array_map('intval', (array) $wpdb->get_col("SELECT id FROM $table WHERE $where ORDER BY id LIMIT $limit"));
+        if (!$dry && $ids) {
+            $wpdb->query("DELETE FROM $table WHERE id IN (" . implode(',', $ids) . ") AND $where");
+        }
+        $out[$key] = $ids;
+    }
+
+    // Uppringningsloggen (namn + telefon) i wp_option: poster aldre an 2 ar tas bort. Bara mot den riktiga tabellen.
+    $out['callback_log'] = 0;
+    if ($table === $live) {
+        $log = get_option('fastsan_callback_log', []);
+        if (is_array($log) && $log) {
+            $keep = array_values(array_filter($log, static function ($row) use ($cut_r) {
+                return is_array($row) && isset($row['time']) && (string) $row['time'] >= $cut_r;
+            }));
+            $out['callback_log'] = count($log) - count($keep);
+            if (!$dry && $out['callback_log'] > 0) update_option('fastsan_callback_log', $keep, false);
+        }
+    }
+
+    if (!$dry && $table === $live) {
+        update_option('fastsan_lead_retention_last', [
+            'tid' => current_time('mysql'),
+            'forfragningar' => count($out['requests']),
+            'uppdrag' => count($out['assignments']),
+            'uppringningslogg' => $out['callback_log'],
+        ], false);
+        if ($out['requests'] || $out['assignments'] || $out['callback_log']) {
+            error_log(sprintf('[AIB] fastsan-lead-pipeline: gallrat %d forfragningar, %d uppdragsrader, %d loggposter',
+                count($out['requests']), count($out['assignments']), $out['callback_log']));
+        }
+    }
+    return $out;
+}
 
 /** Korbar aven direkt via do_action(FASTSAN_LEAD_CRON_HOOK). Returnerar antal skickade paminnelser. */
 function fastsan_lead_run_reminders(): int {
