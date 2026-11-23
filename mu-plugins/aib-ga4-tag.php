@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name: AIB GA4 Tag (Consent Mode v2)
- * Description: Generisk GA4-tagg för alla AIB-kundsajter. Mät-ID läses ur wp_option aib_ga4_id (eller konstanten AIB_GA4_ID). Tomt ID = ingen utdata. Startar i nekat läge (cookiefria pingar); CookieYes-cookien (cookieyes-consent) styr uppdatering: analytics → analytics_storage, advertisement → ad_*, functional → functionality/personalization. Inloggade användare, admin, feeds och förhandsvisningar mäts inte.
- * Version: 1.0.0
+ * Description: Generisk GA4-tagg för alla AIB-kundsajter. Mät-ID läses ur wp_option aib_ga4_id (eller konstanten AIB_GA4_ID). Tomt ID = ingen utdata. Startar i nekat läge (cookiefria pingar). Samtycke läses från CookieYes (cookien cookieyes-consent: analytics → analytics_storage, advertisement → ad_*, functional → functionality/personalization) och från Aib-Cores ruta (localStorage aib_cookie_consent och händelsen aib-consent-analytics: analytics → analytics_storage). Inloggade användare, admin, feeds och förhandsvisningar mäts inte.
+ * Version: 1.1.0
  * Author: Ai Brick AB
  */
 
 if (!defined('ABSPATH')) return;
 if (defined('AIB_GA4_TAG_LOADED')) return;
-define('AIB_GA4_TAG_LOADED', '1.0.0');
+define('AIB_GA4_TAG_LOADED', '1.1.0');
 if (!defined('__FASTSAN_GA4_LOADED')) define('__FASTSAN_GA4_LOADED', true); // övergång: stoppar äldre fastsan-ga4.php
 
 function aib_ga4_tag_id() {
@@ -34,6 +34,10 @@ function ap(o){if(!o||o.action!=='yes')return;var a=o.analytics==='yes',ad=o.adv
 ap(rd());
 document.addEventListener('cookieyes_consent_update',function(){setTimeout(function(){ap(rd());},50);});
 document.addEventListener('click',function(e){var t=e.target;if(t&&t.closest&&t.closest('.cky-btn'))setTimeout(function(){ap(rd());},300);},true);
+function aibRd(){try{return JSON.parse(localStorage.getItem('aib_cookie_consent'));}catch(e){return null;}}
+function aibAp(){var s=aibRd();if(!s||s.version!==1)return;gtag('consent','update',{analytics_storage:s.analytics?'granted':'denied'});}
+aibAp();
+document.addEventListener('aib-consent-analytics',function(){gtag('consent','update',{analytics_storage:'granted'});});
 })();
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo esc_attr($id); ?>"></script>
