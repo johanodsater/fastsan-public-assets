@@ -5,8 +5,10 @@
  *   1. hamta filen och kor den:  window.__qinit(320, '')          -> antal sidor   (andra argumentet: prov-CSS som laggs in i varje sida)
  *   2. mat fem sidor at gangen:  window.__q.run(0,5) ... (25,30)   -> antal matta   (ett steg far ta hogst 30 s)
  *   3. hamta resultatet:         window.__qresult()                -> JSON
- * Raknas inte som fel: CookieYes egna element (.cky-*), element med position:fixed och det som ligger i en
- * behallare som sjalv ryms och har egen rullning eller klippning.
+ * Raknas inte som fel: CookieYes egna element (.cky-*), element som ar eller ligger i position:fixed (mobilmenyn
+ * utanfor skarmen), skarmlasartext (1 px) och det som ligger i en behallare som sjalv ryms och har egen rullning
+ * eller klippning. Rullningslisten doljs i iframen, sa bredden W ar hela layoutbredden, som pa en telefon.
+ * Resultatet tar bara med sidor som ar for breda (sw = sidans bredd utan, sw2 = med okat textavstand).
  */
 window.__qinit = async function (W, EXTRA) {
   const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -25,21 +27,28 @@ window.__qinit = async function (W, EXTRA) {
     }
     return false;
   };
+  const infixed = (el, doc) => {
+    for (let p = el; p && p !== doc.documentElement; p = p.parentElement) {
+      if (doc.defaultView.getComputedStyle(p).position === 'fixed') return true;
+    }
+    return false;
+  };
   const name = el => el.tagName.toLowerCase() + (typeof el.className === 'string' && el.className ? '.' + el.className.trim().split(/\s+/).slice(0, 2).join('.') : '');
   const scan = doc => {
     const bad = [];
     for (const el of doc.body.querySelectorAll('*')) {
       if (el.closest('[class*="cky-"]')) continue;
       const cs = doc.defaultView.getComputedStyle(el);
-      if (cs.display === 'none' || cs.visibility === 'hidden' || cs.position === 'fixed') continue;
+      if (cs.display === 'none' || cs.visibility === 'hidden') continue;
       const r = el.getBoundingClientRect();
-      if (r.width === 0 || r.height === 0) continue;
+      if (r.width <= 1 || r.height <= 1) continue;
+      if (infixed(el, doc)) continue;
       if ((r.right > W + 0.5 || r.left < -0.5) && !clipped(el, doc)) bad.push(el);
     }
     const leaf = bad.filter(el => ![...el.children].some(c => bad.includes(c)));
     return {
       n: bad.length,
-      leaf: leaf.slice(0, 4).map(el => {
+      leaf: leaf.slice(0, 3).map(el => {
         const r = el.getBoundingClientRect();
         return (el.parentElement ? name(el.parentElement) + '>' : '') + name(el) + ' r=' + Math.round(r.right) + ' w=' + Math.round(r.width) +
           ' "' + (el.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 30) + '"';
@@ -59,7 +68,10 @@ window.__qinit = async function (W, EXTRA) {
         const rec = { u: new URL(u).pathname };
         try {
           const doc = f.contentDocument;
-          if (EXTRA) { const e = doc.createElement('style'); e.textContent = EXTRA; doc.head.appendChild(e); await sleep(150); }
+          const e = doc.createElement('style');
+          e.textContent = 'html{scrollbar-width:none}' + (EXTRA || '');
+          doc.head.appendChild(e);
+          await sleep(200);
           rec.sw = doc.documentElement.scrollWidth;
           const a1 = scan(doc);
           const st = doc.createElement('style');
@@ -68,8 +80,8 @@ window.__qinit = async function (W, EXTRA) {
           await sleep(200);
           rec.sw2 = doc.documentElement.scrollWidth;
           const b1 = scan(doc);
-          if (rec.sw > W || a1.n) rec.a = a1;
-          if (rec.sw2 > W || b1.n) rec.b = b1;
+          if (rec.sw > W) rec.a = a1.leaf;
+          if (rec.sw2 > W) rec.b = b1.leaf.filter(x => !a1.leaf.includes(x));
         } catch (e) { rec.err = String(e); }
         f.remove();
         window.__q.out.push(rec);
@@ -85,7 +97,7 @@ window.__qresult = function () {
     bredd: W, sidor: o.length,
     for_breda: o.filter(r => r.sw > W).length,
     for_breda_textavstand: o.filter(r => r.sw2 > W).length,
-    rader: o.filter(r => r.a || r.b || r.err),
-    utan_anm: o.filter(r => !r.a && !r.b && !r.err).length
+    rader: o.filter(r => r.sw > W || r.sw2 > W || r.err),
+    ryms: o.filter(r => r.sw <= W && r.sw2 <= W && !r.err).length
   });
 };
