@@ -46,14 +46,30 @@ window.__qinit = async function (W, EXTRA) {
       if ((r.right > W + 0.5 || r.left < -0.5) && !clipped(el, doc)) bad.push(el);
     }
     const leaf = bad.filter(el => ![...el.children].some(c => bad.includes(c)));
-    return {
-      n: bad.length,
-      leaf: leaf.slice(0, 3).map(el => {
-        const r = el.getBoundingClientRect();
-        return (el.parentElement ? name(el.parentElement) + '>' : '') + name(el) + ' r=' + Math.round(r.right) + ' w=' + Math.round(r.width) +
-          ' "' + (el.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 30) + '"';
-      })
-    };
+    const rows = leaf.slice(0, 3).map(el => {
+      const r = el.getBoundingClientRect();
+      return (el.parentElement ? name(el.parentElement) + '>' : '') + name(el) + ' r=' + Math.round(r.right) + ' w=' + Math.round(r.width) +
+        ' "' + (el.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 30) + '"';
+    });
+    // Text som sticker ut ur sin ruta (ett langt ord som inte far brytas): rutan ryms, men texten gor det inte.
+    const tw = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT);
+    const seen = new Set();
+    for (let n = tw.nextNode(); n; n = tw.nextNode()) {
+      if (!n.nodeValue.trim()) continue;
+      const el = n.parentElement;
+      if (!el || seen.has(el) || el.closest('[class*="cky-"]')) continue;
+      const cs = doc.defaultView.getComputedStyle(el);
+      if (cs.display === 'none' || cs.visibility === 'hidden') continue;
+      const rg = doc.createRange();
+      rg.selectNodeContents(n);
+      const r = rg.getBoundingClientRect();
+      if (r.width <= 1 || r.right <= W + 0.5) continue;
+      if (infixed(el, doc) || clipped(el, doc) || cs.overflowX !== 'visible') continue;
+      seen.add(el);
+      const ord = n.nodeValue.trim().split(/\s+/).sort((x, y) => y.length - x.length)[0];
+      if (rows.length < 6) rows.push('TEXT ' + name(el) + ' r=' + Math.round(r.right) + ' fs=' + parseFloat(cs.fontSize) + ' "' + ord.slice(0, 34) + '"');
+    }
+    return { n: bad.length + seen.size, leaf: rows };
   };
   window.__q = {
     W, urls, out: [],
