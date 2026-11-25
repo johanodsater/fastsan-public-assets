@@ -1,28 +1,107 @@
-<!-- wp:heading {"level":1} -->
+<!-- wp:group {"className":"fs-komp-topp"} -->
+<div class="wp-block-group fs-komp-topp"><!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading">Utbildning och certifiering</h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"className":"lead"} -->
-<p class="lead">Daniel Stålbrand, grundare av Fastsan, gör inventeringarna och tar proverna. Utbildningarna i asbest, PCB och byggarbetsmiljösamordning är registrerade i <a href="https://id06.se/vara-tjanster/id06-kompetensdatabas/" target="_blank" rel="noreferrer noopener">ID06 Kompetensdatabas</a> och kan kontrolleras via hans ID06-kort.</p>
+<!-- wp:paragraph {"className":"fs-komp-ingress"} -->
+<p class="fs-komp-ingress">Daniel Stålbrand, grundare av Fastsan, gör inventeringarna och tar proverna.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
+<!-- wp:group {"className":"fs-komp-status"} -->
+<div class="wp-block-group fs-komp-status"><!-- wp:paragraph {"className":"fs-komp-status__titel"} -->
+<p class="fs-komp-status__titel">Giltighet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-komp-status__lista"} -->
+<ul class="wp-block-list fs-komp-status__lista"><!-- wp:list-item {"className":"fs-komp-giltig"} -->
+<li class="fs-komp-giltig">Asbest: giltig till 2027-04-19</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item {"className":"fs-komp-permanent"} -->
+<li class="fs-komp-permanent">PCB: permanent</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item {"className":"fs-komp-permanent"} -->
+<li class="fs-komp-permanent">Byggarbetsmiljösamordnare: permanent</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item {"className":"fs-komp-saknas"} -->
+<li class="fs-komp-saknas">Fukt och boendemiljö: uppgift saknas</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item {"className":"fs-komp-saknas"} -->
+<li class="fs-komp-saknas">CMF-certifiering: uppgift saknas</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-komp-register"} -->
+<div class="wp-block-group fs-komp-register"><!-- wp:heading -->
 <h2 class="wp-block-heading">Asbest</h2>
 <!-- /wp:heading -->
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Särskild utbildning Asbest, 2016-05-19. Utbildare: Marko Ilkka, Instruktörerna i Norden AB.</li>
+<!-- wp:group {"className":"fs-komp-rad"} -->
+<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
+<p class="fs-komp-rad__datum">2016-05-19</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-komp-rad__text"} -->
+<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
+<p class="fs-komp-rad__namn">Särskild utbildning Asbest</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">Utbildare: Marko Ilkka, Instruktörerna i Norden AB</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-fornyad"} -->
+<p class="fs-komp-rad__status fs-komp-fornyad">Förnyad 2022-04-19</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-komp-rad"} -->
+<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
+<p class="fs-komp-rad__datum">2022-04-19</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-komp-rad__text"} -->
+<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
+<p class="fs-komp-rad__namn">Kompletterande utbildning Asbest</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">Utbildare: Instruktörerna i Norden AB</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-giltig"} -->
+<p class="fs-komp-rad__status fs-komp-giltig">Giltig till 2027-04-19</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>Den särskilda utbildningen är den fullständiga kursen. Den kompletterande utbildningen förnyar den.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"className":"fs-komp-tidslinje"} -->
+<ol class="wp-block-list fs-komp-tidslinje"><!-- wp:list-item -->
+<li><strong>2016-05-19</strong> Grundkurs</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item {"className":"fs-komp-utgangen"} -->
+<li class="fs-komp-utgangen"><strong>2021-05-19</strong> Utgången i ID06</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Kompletterande utbildning Asbest, 2022-04-19, giltig till 2027-04-19. Utbildare: Instruktörerna i Norden AB.</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<li><strong>2022-04-19</strong> Förnyad</li>
+<!-- /wp:list-item -->
 
-<!-- wp:paragraph -->
-<p>Den särskilda utbildningen är den fullständiga kursen. Den kompletterande utbildningen förnyar den. I ID06 står den särskilda utbildningen därför som utgången 2021-05-19.</p>
-<!-- /wp:paragraph -->
+<!-- wp:list-item {"className":"fs-komp-giltig"} -->
+<li class="fs-komp-giltig"><strong>2027-04-19</strong> Giltig till</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
 
 <!-- wp:paragraph -->
 <p>Kurserna tar bland annat upp föreskrifterna, var asbest kan finnas, provtagning inför analys och hälsoriskerna.</p>
@@ -32,9 +111,25 @@
 <h2 class="wp-block-heading">Inventering av PCB</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>PCB Sanering, 2022-02-09 (på utbildningsbeviset: Sanering och inventering av PCB).</p>
+<!-- wp:group {"className":"fs-komp-rad"} -->
+<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
+<p class="fs-komp-rad__datum">2022-02-09</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-komp-rad__text"} -->
+<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
+<p class="fs-komp-rad__namn">PCB Sanering</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">På utbildningsbeviset: Sanering och inventering av PCB. Utbildare: Instruktörerna i Norden AB</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-permanent"} -->
+<p class="fs-komp-rad__status fs-komp-permanent">Permanent</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph -->
 <p>Kursen omfattar bland annat provtagningsteknik och inventering. Fastsan utför ingen sanering.</p>
@@ -44,9 +139,25 @@
 <h2 class="wp-block-heading">Byggarbetsmiljösamordnare</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>Byggarbetsmiljösamordnare Projektering/planering och Utförande (BAS-P)(BAS-U), 2023-11-30, 8 timmar med kunskapsprov.</p>
+<!-- wp:group {"className":"fs-komp-rad"} -->
+<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
+<p class="fs-komp-rad__datum">2023-11-30</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-komp-rad__text"} -->
+<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
+<p class="fs-komp-rad__namn">Byggarbetsmiljösamordnare Projektering/planering och Utförande (BAS-P)(BAS-U)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">8 timmar med kunskapsprov. Utbildare: Instruktörerna i Norden AB</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-permanent"} -->
+<p class="fs-komp-rad__status fs-komp-permanent">Permanent</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:paragraph -->
 <p>Bas-P samordnar arbetsmiljön när ett bygge planeras, Bas-U när det utförs.</p>
@@ -56,24 +167,101 @@
 <h2 class="wp-block-heading">Fukt och boendemiljö</h2>
 <!-- /wp:heading -->
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li>Baskurs inom fukt- och torkteknik. [Utbildare och datum saknas]</li>
-<!-- /wp:list-item -->
+<!-- wp:group {"className":"fs-komp-rad"} -->
+<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
+<p class="fs-komp-rad__datum">–</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li>Masterkurs inom fukt- och torkteknik. [Utbildare och datum saknas]</li>
-<!-- /wp:list-item -->
+<!-- wp:group {"className":"fs-komp-rad__text"} -->
+<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
+<p class="fs-komp-rad__namn">Baskurs inom fukt- och torkteknik</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li>Boendemiljö och fasta installationer. [Utbildare och datum saknas]</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">Utbildare och datum saknas</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-saknas"} -->
+<p class="fs-komp-rad__status fs-komp-saknas">Uppgift saknas</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-komp-rad"} -->
+<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
+<p class="fs-komp-rad__datum">–</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-komp-rad__text"} -->
+<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
+<p class="fs-komp-rad__namn">Masterkurs inom fukt- och torkteknik</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">Utbildare och datum saknas</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-saknas"} -->
+<p class="fs-komp-rad__status fs-komp-saknas">Uppgift saknas</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-komp-rad"} -->
+<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
+<p class="fs-komp-rad__datum">–</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-komp-rad__text"} -->
+<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
+<p class="fs-komp-rad__namn">Boendemiljö och fasta installationer</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">Utbildare och datum saknas</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-saknas"} -->
+<p class="fs-komp-rad__status fs-komp-saknas">Uppgift saknas</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">Certifiering</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>CMF – Certifiering av miljöinventerare, fastigheter. Kravspecifikation från Sveriges Fastighetsägareförbund. [Certifikatnummer, utfärdat och giltig till saknas]</p>
+<!-- wp:group {"className":"fs-komp-rad"} -->
+<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
+<p class="fs-komp-rad__datum">–</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-komp-rad__text"} -->
+<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
+<p class="fs-komp-rad__namn">CMF – Certifiering av miljöinventerare, fastigheter</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">Kravspecifikation från Sveriges Fastighetsägareförbund. Certifikatnummer och giltighet saknas</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-saknas"} -->
+<p class="fs-komp-rad__status fs-komp-saknas">Uppgift saknas</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-komp-kontroll"} -->
+<div class="wp-block-group fs-komp-kontroll"><!-- wp:heading -->
+<h2 class="wp-block-heading">Så kontrollerar du</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Utbildningarna i asbest, PCB och byggarbetsmiljösamordning är registrerade i <a href="https://id06.se/vara-tjanster/id06-kompetensdatabas/" target="_blank" rel="noreferrer noopener">ID06 Kompetensdatabas</a> och kan kontrolleras via Daniels ID06-kort.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I ID06 står den särskilda utbildningen i asbest som utgången 2021-05-19, eftersom den kompletterande utbildningen 2022-04-19 har förnyat den.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->

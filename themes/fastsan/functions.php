@@ -8,7 +8,7 @@
 defined( 'ABSPATH' ) || exit;
 
 if ( ! defined( 'FASTSAN_THEME_VERSION' ) ) {
-	define( 'FASTSAN_THEME_VERSION', '1.3.0' );
+	define( 'FASTSAN_THEME_VERSION', '1.3.1' );
 }
 
 /**
@@ -121,6 +121,16 @@ function fastsan_enqueue_styles() {
 		);
 	}
 
+	// Sidan Utbildning och certifiering (/kompetens/). Laddas bara på den sidan (B 2026-11-25).
+	if ( is_page( 'kompetens' ) ) {
+		wp_enqueue_style(
+			'fastsan-kompetens',
+			get_template_directory_uri() . '/assets/fastsan-kompetens.css',
+			array( 'fastsan-tokens' ),
+			fastsan_asset_ver( 'assets/fastsan-kompetens.css' )
+		);
+	}
+
 	// Sidhuvud, akutrad och sidfot (låg förut som <style> mitt i sidan).
 	wp_enqueue_style(
 		'fastsan-ram',
@@ -196,6 +206,7 @@ function fastsan_enqueue_editor_styles() {
 	add_editor_style( 'assets/fastsan-dropdown.css' );
 	add_editor_style( 'assets/fastsan-forms.css' );
 	add_editor_style( 'assets/fastsan-startsida.css' );
+	add_editor_style( 'assets/fastsan-kompetens.css' );
 }
 add_action( 'after_setup_theme', 'fastsan_enqueue_editor_styles' );
 
