@@ -1,0 +1,79 @@
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Utbildning och certifiering</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"lead"} -->
+<p class="lead">Daniel Stålbrand, grundare av Fastsan, gör inventeringarna och tar proverna. Utbildningarna i asbest, PCB och byggarbetsmiljösamordning är registrerade i <a href="https://id06.se/vara-tjanster/id06-kompetensdatabas/" target="_blank" rel="noreferrer noopener">ID06 Kompetensdatabas</a> och kan kontrolleras via hans ID06-kort.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Asbest</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Särskild utbildning Asbest, 2016-05-19. Utbildare: Marko Ilkka, Instruktörerna i Norden AB.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Kompletterande utbildning Asbest, 2022-04-19, giltig till 2027-04-19. Utbildare: Instruktörerna i Norden AB.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Den särskilda utbildningen är den fullständiga kursen. Den kompletterande utbildningen förnyar den. I ID06 står den särskilda utbildningen därför som utgången 2021-05-19.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Kurserna tar bland annat upp föreskrifterna, var asbest kan finnas, provtagning inför analys och hälsoriskerna.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Inventering av PCB</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>PCB Sanering, 2022-02-09 (på utbildningsbeviset: Sanering och inventering av PCB).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Kursen omfattar bland annat provtagningsteknik och inventering. Fastsan utför ingen sanering.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Byggarbetsmiljösamordnare</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Byggarbetsmiljösamordnare Projektering/planering och Utförande (BAS-P)(BAS-U), 2023-11-30, 8 timmar med kunskapsprov.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bas-P samordnar arbetsmiljön när ett bygge planeras, Bas-U när det utförs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Fukt och boendemiljö</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Baskurs inom fukt- och torkteknik. [Utbildare och datum saknas]</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Masterkurs inom fukt- och torkteknik. [Utbildare och datum saknas]</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Boendemiljö och fasta installationer. [Utbildare och datum saknas]</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Certifiering</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>CMF – Certifiering av miljöinventerare, fastigheter. Kravspecifikation från Sveriges Fastighetsägareförbund. [Certifikatnummer, utfärdat och giltig till saknas]</p>
+<!-- /wp:paragraph -->

@@ -1,9 +1,12 @@
 <?php
 /**
  * Plugin Name: Fastsan Utkast Preview
- * Description: Visar startsidans utkast utan inloggning när adressen bär rätt nyckel. Nyckeln härleds ur aib_deployer_secret och lagras inte. Tas bort vid bytet till live.
- * Version: 1.0.0
+ * Description: Shows a draft page to visitors without login when the address carries the right key (?page_id=<id>&fs_utkast=<key>). The key is the first 24 hex of HMAC-SHA256('fs-utkast-<id>', aib_deployer_secret) and is never stored. A draft qualifies when it has post meta _fastsan_utkast_preview = 1, or is the page in option fastsan_startsida_utkast_id. Sends noindex and disables page cache.
+ * Version: 1.1.0
  * Author: Ai Brick AB
+ *
+ * 1.1.0 (2026-11-25, B): any draft marked with _fastsan_utkast_preview, not only the start page draft.
+ * 1.0.0 (2026-11-19, B): start page draft only.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -15,12 +18,23 @@ function fastsan_utkast_preview_ok() {
 	if ( null !== $ok ) {
 		return $ok;
 	}
-	$pid = (int) get_option( 'fastsan_startsida_utkast_id' );
-	$sec = (string) get_option( 'aib_deployer_secret' );
+	$ok  = false;
+	$pid = isset( $_GET['page_id'] ) ? (int) $_GET['page_id'] : 0;
 	$got = isset( $_GET['fs_utkast'] ) ? (string) $_GET['fs_utkast'] : '';
-	$ok  = ( $pid && '' !== $sec && '' !== $got
-		&& isset( $_GET['page_id'] ) && (int) $_GET['page_id'] === $pid
-		&& hash_equals( substr( hash_hmac( 'sha256', 'fs-utkast-' . $pid, $sec ), 0, 24 ), $got ) );
+	$sec = (string) get_option( 'aib_deployer_secret' );
+	if ( ! $pid || '' === $got || '' === $sec ) {
+		return $ok;
+	}
+	$post = get_post( $pid );
+	if ( ! $post || 'page' !== $post->post_type || 'draft' !== $post->post_status ) {
+		return $ok;
+	}
+	$marked = ( '1' === (string) get_post_meta( $pid, '_fastsan_utkast_preview', true ) )
+		|| ( (int) get_option( 'fastsan_startsida_utkast_id' ) === $pid );
+	if ( ! $marked ) {
+		return $ok;
+	}
+	$ok = hash_equals( substr( hash_hmac( 'sha256', 'fs-utkast-' . $pid, $sec ), 0, 24 ), $got );
 	return $ok;
 }
 
