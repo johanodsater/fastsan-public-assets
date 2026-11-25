@@ -1,11 +1,19 @@
 <!-- wp:group {"className":"fs-komp-topp"} -->
-<div class="wp-block-group fs-komp-topp"><!-- wp:heading {"level":1} -->
+<div class="wp-block-group fs-komp-topp"><!-- wp:group {"className":"fs-komp-topp__text"} -->
+<div class="wp-block-group fs-komp-topp__text"><!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading">Utbildning och certifiering</h1>
 <!-- /wp:heading -->
 
+<!-- wp:group {"className":"fs-komp-person"} -->
+<div class="wp-block-group fs-komp-person"><!-- wp:image {"id":155,"sizeSlug":"thumbnail","linkDestination":"none","className":"fs-komp-portratt"} -->
+<figure class="wp-block-image size-thumbnail fs-komp-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
 <!-- wp:paragraph {"className":"fs-komp-ingress"} -->
 <p class="fs-komp-ingress">Daniel Stålbrand, grundare av Fastsan, gör inventeringarna och tar proverna.</p>
-<!-- /wp:paragraph -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
 <!-- wp:group {"className":"fs-komp-status"} -->
 <div class="wp-block-group fs-komp-status"><!-- wp:paragraph {"className":"fs-komp-status__titel"} -->
@@ -14,23 +22,23 @@
 
 <!-- wp:list {"className":"fs-komp-status__lista"} -->
 <ul class="wp-block-list fs-komp-status__lista"><!-- wp:list-item {"className":"fs-komp-giltig"} -->
-<li class="fs-komp-giltig">Asbest: giltig till 2027-04-19</li>
+<li class="fs-komp-giltig"><strong>Asbest</strong><em>Giltig till 2027-04-19</em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"fs-komp-permanent"} -->
-<li class="fs-komp-permanent">PCB: permanent</li>
+<li class="fs-komp-permanent"><strong>PCB</strong><em>Permanent</em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"fs-komp-permanent"} -->
-<li class="fs-komp-permanent">Byggarbetsmiljösamordnare: permanent</li>
+<li class="fs-komp-permanent"><strong>Byggarbetsmiljösamordnare</strong><em>Permanent</em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"fs-komp-saknas"} -->
-<li class="fs-komp-saknas">Fukt och boendemiljö: uppgift saknas</li>
+<li class="fs-komp-saknas"><strong>Fukt och boendemiljö</strong><em>Uppgift saknas</em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"fs-komp-saknas"} -->
-<li class="fs-komp-saknas">CMF-certifiering: uppgift saknas</li>
+<li class="fs-komp-saknas"><strong>CMF-certifiering</strong><em>Uppgift saknas</em></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group --></div>
@@ -94,8 +102,8 @@
 <li class="fs-komp-utgangen"><strong>2021-05-19</strong> Utgången i ID06</li>
 <!-- /wp:list-item -->
 
-<!-- wp:list-item -->
-<li><strong>2022-04-19</strong> Förnyad</li>
+<!-- wp:list-item {"className":"fs-komp-period"} -->
+<li class="fs-komp-period"><strong>2022-04-19</strong> Förnyad</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item {"className":"fs-komp-giltig"} -->
