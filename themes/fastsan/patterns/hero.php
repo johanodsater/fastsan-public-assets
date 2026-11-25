@@ -33,7 +33,7 @@
 
 <!-- wp:list {"className":"fs-hem-checks"} -->
 <ul class="wp-block-list fs-hem-checks"><!-- wp:list-item -->
-<li>CMF-certifierad</li>
+<li>CMF-certifiering pågår</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
