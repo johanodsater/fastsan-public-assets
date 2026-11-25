@@ -108,6 +108,16 @@
 	font-weight: 600;
 	color: var(--wp--preset--color--contrast);
 }
+@media (max-width: 479px) {
+	.fs-komp-status li {
+		grid-template-columns: auto minmax(0, 1fr);
+		row-gap: 0.4em;
+	}
+	.fs-komp-status li em {
+		grid-column: 2;
+		justify-self: start;
+	}
+}
 
 /* 3. Marken som stamplar (registret och statusrutan) */
 .fs-komp-rad__status,
