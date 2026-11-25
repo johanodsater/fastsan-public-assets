@@ -37,8 +37,8 @@
 <li class="fs-komp-permanent"><strong>Byggarbetsmiljösamordnare</strong><em>Permanent</em></li>
 <!-- /wp:list-item -->
 
-<!-- wp:list-item {"className":"fs-komp-saknas"} -->
-<li class="fs-komp-saknas"><strong>Fukt och boendemiljö</strong><em>Uppgift saknas</em></li>
+<!-- wp:list-item {"className":"fs-komp-permanent"} -->
+<li class="fs-komp-permanent"><strong>Fukt och boendemiljö</strong><em>Masterkurs 2023</em></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group --></div>
@@ -84,7 +84,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
-<p class="fs-komp-rad__under">Utbildare: Marko Ilkka, Instruktörerna i Norden AB</p>
+<p class="fs-komp-rad__under">Utbildare: Marko Ilkka, Instruktörerna i Norden AB. <a href="https://onlineutbildningar.com/kurs/asbest-full-kompetens" target="_blank" rel="noreferrer noopener">Om kursen</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -104,7 +104,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
-<p class="fs-komp-rad__under">Utbildare: Instruktörerna i Norden AB</p>
+<p class="fs-komp-rad__under">Utbildare: Instruktörerna i Norden AB. <a href="https://onlineutbildningar.com/kurs/kompletterande-asbest-utbildning" target="_blank" rel="noreferrer noopener">Om kursen</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -136,6 +136,10 @@
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
+<p>Den kompletterande utbildningen görs vart femte år för att behålla behörigheten och avslutas med ett kunskapsprov.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
 <p>Kurserna tar bland annat upp föreskrifterna, var asbest kan finnas, provtagning inför analys och hälsoriskerna.</p>
 <!-- /wp:paragraph -->
 
@@ -154,7 +158,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
-<p class="fs-komp-rad__under">På utbildningsbeviset: Sanering och inventering av PCB. Utbildare: Instruktörerna i Norden AB</p>
+<p class="fs-komp-rad__under">På utbildningsbeviset: Sanering och inventering av PCB. Utbildare: Instruktörerna i Norden AB. <a href="https://onlineutbildningar.com/kurs/pcb-sanering-och-inventering" target="_blank" rel="noreferrer noopener">Om kursen</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -162,6 +166,10 @@
 <p class="fs-komp-rad__status fs-komp-permanent">Permanent</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p>Innehållet följer riktlinjer som branschorganisationer, Naturvårdsverket och miljöförvaltningar har enats om. Kursen avslutas med ett skriftligt prov.</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p>Kursen omfattar bland annat provtagningsteknik och inventering. Fastsan utför ingen sanering.</p>
@@ -221,21 +229,21 @@
 
 <!-- wp:group {"className":"fs-komp-rad"} -->
 <div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
-<p class="fs-komp-rad__datum">–</p>
+<p class="fs-komp-rad__datum">2023-04-26</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"fs-komp-rad__text"} -->
 <div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
-<p class="fs-komp-rad__namn">Masterkurs inom fukt- och torkteknik</p>
+<p class="fs-komp-rad__namn">Fukt- och torkteknik: Masterkurs</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
-<p class="fs-komp-rad__under">Utbildare och datum saknas</p>
+<p class="fs-komp-rad__under">Utbildare: Corroventa Avfuktning AB, Bankeryd, 25–26 april 2023. Innehåll: fuktteori, fuktmätning, avancerade torkmetoder och styrning av torkprocessen på distans.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-saknas"} -->
-<p class="fs-komp-rad__status fs-komp-saknas">Uppgift saknas</p>
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-permanent"} -->
+<p class="fs-komp-rad__status fs-komp-permanent">Genomförd</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
