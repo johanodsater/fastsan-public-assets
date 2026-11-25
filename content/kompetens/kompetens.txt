@@ -22,6 +22,10 @@
 
 <!-- wp:list {"className":"fs-komp-status__lista"} -->
 <ul class="wp-block-list fs-komp-status__lista"><!-- wp:list-item {"className":"fs-komp-giltig"} -->
+<li class="fs-komp-giltig"><strong>Miljöinventering</strong><em>Verifierad</em></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item {"className":"fs-komp-giltig"} -->
 <li class="fs-komp-giltig"><strong>Asbest</strong><em>Giltig till 2027-04-19</em></li>
 <!-- /wp:list-item -->
 
@@ -35,10 +39,6 @@
 
 <!-- wp:list-item {"className":"fs-komp-saknas"} -->
 <li class="fs-komp-saknas"><strong>Fukt och boendemiljö</strong><em>Uppgift saknas</em></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item {"className":"fs-komp-saknas"} -->
-<li class="fs-komp-saknas"><strong>CMF-certifiering</strong><em>Uppgift saknas</em></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group --></div>
@@ -46,6 +46,30 @@
 
 <!-- wp:group {"className":"fs-komp-register"} -->
 <div class="wp-block-group fs-komp-register"><!-- wp:heading -->
+<h2 class="wp-block-heading">Miljöinventering</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-komp-rad"} -->
+<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
+<p class="fs-komp-rad__datum">2024-08-28</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-komp-rad__text"} -->
+<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
+<p class="fs-komp-rad__namn">Material-/miljöinventering av byggnader</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">Utbildare: SIFU AB, distans. <a href="https://true.sifu.se/se/utbildningsbevis-sifu-daniel-stalbrand-195389/" target="_blank" rel="noreferrer noopener">Kontrollera beviset hos SIFU</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-giltig"} -->
+<p class="fs-komp-rad__status fs-komp-giltig">Verifierad</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading -->
 <h2 class="wp-block-heading">Asbest</h2>
 <!-- /wp:heading -->
 
@@ -227,30 +251,6 @@
 
 <!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
 <p class="fs-komp-rad__under">Utbildare och datum saknas</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-saknas"} -->
-<p class="fs-komp-rad__status fs-komp-saknas">Uppgift saknas</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Certifiering</h2>
-<!-- /wp:heading -->
-
-<!-- wp:group {"className":"fs-komp-rad"} -->
-<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
-<p class="fs-komp-rad__datum">–</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"className":"fs-komp-rad__text"} -->
-<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
-<p class="fs-komp-rad__namn">CMF – Certifiering av miljöinventerare, fastigheter</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
-<p class="fs-komp-rad__under">Kravspecifikation från Sveriges Fastighetsägareförbund. Certifikatnummer och giltighet saknas</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
