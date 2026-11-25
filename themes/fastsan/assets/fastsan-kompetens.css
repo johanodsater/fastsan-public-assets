@@ -3,6 +3,7 @@
  * Laddas bara pa den sidan (functions.php, is_page( 'kompetens' )).
  * Bara temats egna farger, typsnitt och avstand (theme.json). Mobilen forst.
  * 1.0 B 2026-11-25, Johan 17:10 "kor". 1.1 B 2026-11-25, Johan 18:39 "kor" (punkt 1-7).
+ * 1.1.2: bara palettens farger (rad F3), inga blandade toner.
  */
 
 /* 1. Bredare sida, bara har: innehallet far temats breda matt i stallet for 720 px */
@@ -132,13 +133,13 @@
 	padding: 0.35em 0.75em;
 	border: 1px solid transparent;
 	border-radius: 2px;
-	color: var(--wp--preset--color--primary);
-	background: color-mix(in srgb, var(--wp--preset--color--primary) 9%, var(--wp--preset--color--base));
+	color: var(--wp--preset--color--base);
+	background: var(--wp--preset--color--primary);
 }
 .fs-komp-giltig.fs-komp-rad__status,
 .fs-komp-status li.fs-komp-giltig em {
-	color: color-mix(in srgb, var(--wp--preset--color--success) 80%, var(--wp--preset--color--contrast));
-	background: color-mix(in srgb, var(--wp--preset--color--success) 13%, var(--wp--preset--color--base));
+	color: var(--wp--preset--color--base);
+	background: var(--wp--preset--color--success);
 }
 .fs-komp-fornyad.fs-komp-rad__status {
 	color: var(--wp--preset--color--accent-text);
@@ -254,7 +255,7 @@
 	height: 1.3em;
 	background: var(--wp--preset--color--success);
 	border-color: var(--wp--preset--color--success);
-	box-shadow: 0 0 0 4px color-mix(in srgb, var(--wp--preset--color--success) 18%, var(--wp--preset--color--base));
+	box-shadow: 0 0 0 4px var(--wp--preset--color--border);
 }
 .fs-komp-tidslinje strong {
 	display: block;
@@ -262,9 +263,7 @@
 	font-variant-numeric: tabular-nums;
 	color: var(--wp--preset--color--primary);
 }
-.fs-komp-tidslinje li.fs-komp-giltig strong {
-	color: color-mix(in srgb, var(--wp--preset--color--success) 80%, var(--wp--preset--color--contrast));
-}
+.fs-komp-tidslinje li.fs-komp-giltig strong { color: var(--wp--preset--color--success); }
 
 @media (min-width: 600px) {
 	.fs-komp-tidslinje { grid-template-columns: repeat(4, minmax(0, 1fr)); }
