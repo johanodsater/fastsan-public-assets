@@ -2,9 +2,10 @@
 /**
  * Plugin Name: Fastsan — Schema Injector
  * Description: JSON-LD-schema per tjänstesida (Service) + BreadcrumbList + FAQPage. Kompletterar Organization/LocalBusiness som temat redan injicerar. Hooks: wp_head prio 99 (efter befintlig Organization). Inga exit/die-patterns (KK247-incident 2026-05-04). Avaktivering: radera filen från mu-plugins/, eller definiera FASTSAN_SCHEMA_DISABLED i wp-config.php.
- * Version: 1.8.0
+ * Version: 1.8.1
  * Author: Aibrick (C-instance)
  *
+ * v1.8.1 (2026-11-26, B): baskursen har utfardare Corroventa Avfuktning AB (Johan 17:40 "Kor K4").
  * v1.8.0 (2026-11-26, B): Person med hasCredential pa /kompetens/ (Johan 2026-11-26 14:14 "kor byte").
  * v1.6.0 (2026-10-20, C): FAQ:n ur _fastsan_faqs renderas SYNLIGT pa sidan (H2 Vanliga fragor + H3/P per par), infogad fore sidans sista wp:html-CTA. Samma kalla som FAQPage-schemat, sa schema = text alltid (seo-audit HR-11 Hidden Schema, B 2026-10-20 C2, agarbeslut (a)). Hook the_content prio 8 = fore do_blocks, bara huvudfragan.
  * v1.5.0 (2026-09-22, C): BreadcrumbList följer sidhierarkin (Hem > förälder > sida) i stället för att alltid hoppa över föräldern. Namnet = sidtiteln före första " — " eller " | " (SEO-svansen bort). Sidor som själva bär en BreadcrumbList i post_content får ingen från injektorn — sidans lista gäller (en lista per sida).
@@ -16,7 +17,7 @@
 if (!defined('ABSPATH')) { return; }
 if (defined('FASTSAN_SCHEMA_DISABLED') && FASTSAN_SCHEMA_DISABLED) { return; }
 if (defined('FASTSAN_SCHEMA_LOADED')) { return; }
-define('FASTSAN_SCHEMA_LOADED', '1.8.0');
+define('FASTSAN_SCHEMA_LOADED', '1.8.1');
 
 /**
  * Hämta service-data per slug.
@@ -267,7 +268,7 @@ function fastsan_schema_build_person($post) {
             $c('Kompletterande utbildning Asbest', $inf, '2022-04-19', array('validUntil' => '2027-04-19')),
             $c('Sanering och inventering av PCB', $inf, '2022-02-09'),
             $c('Byggarbetsmiljösamordnare Projektering/planering och Utförande (BAS-P)(BAS-U)', $inf, '2023-11-30'),
-            $c('Baskurs inom fukt- och torkteknik'),
+            $c('Baskurs inom fukt- och torkteknik', $corr),
             $c('Boendemiljö och fasta installationer', $corr, '2023-01-19'),
             $c('Fukt- och torkteknik: Masterkurs', $corr, '2023-04-26'),
         ),

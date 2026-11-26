@@ -215,6 +215,10 @@
 <!-- wp:group {"className":"fs-komp-rad__text"} -->
 <div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
 <p class="fs-komp-rad__namn">Baskurs inom fukt- och torkteknik</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">Utbildare: Corroventa Avfuktning AB (Corroventa Academy). Innehåll: avfuktningsteori, orsaker till vattenskador och val av torkmetod, torkning av vattenskador i olika huskonstruktioner och byggmaterial, mätteknik för olika material och val av avfuktare.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
