@@ -2,7 +2,10 @@
 /**
  * Plugin Name: Fastsan llms.txt + agents.md Deployer
  * Description: One-shot deploy of /llms.txt and /agents.md to webroot for AI-crawler indexing.
- * Version: 1.9
+ * Version: 1.10
+ *
+ * 1.10 (2026-11-26, B): sidan Utbildning och certifiering (/kompetens/) under Foretaget (Johan 2026-11-26 14:14
+ * "kor byte").
  * Author: Ai Brick AB
  *
  * 1.9 (2026-11-25, B): CMF-certifieringen ar inte klar (Johan 2026-11-25 19:20, "inte klart forens efter
@@ -93,6 +96,7 @@ Tekniska fördjupningar av markmiljöundersökning — specifika analystyper, st
 ## Företaget
 
 - [Om Fastsan](https://fastsan.se/om/): Företagspresentation, team, positionering och certifieringar.
+- [Utbildning och certifiering](https://fastsan.se/kompetens/): Daniel Stålbrands utbildningar och behörigheter inom miljöinventering, asbest, PCB, byggarbetsmiljösamordning och fukt, med datum, utbildare och giltighet.
 - [Kontakt](https://fastsan.se/kontakt/): Adress, telefon, e-post och offertformulär.
 
 ## Optional

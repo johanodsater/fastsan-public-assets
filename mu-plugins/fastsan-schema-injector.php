@@ -2,9 +2,10 @@
 /**
  * Plugin Name: Fastsan — Schema Injector
  * Description: JSON-LD-schema per tjänstesida (Service) + BreadcrumbList + FAQPage. Kompletterar Organization/LocalBusiness som temat redan injicerar. Hooks: wp_head prio 99 (efter befintlig Organization). Inga exit/die-patterns (KK247-incident 2026-05-04). Avaktivering: radera filen från mu-plugins/, eller definiera FASTSAN_SCHEMA_DISABLED i wp-config.php.
- * Version: 1.7.0
+ * Version: 1.8.0
  * Author: Aibrick (C-instance)
  *
+ * v1.8.0 (2026-11-26, B): Person med hasCredential pa /kompetens/ (Johan 2026-11-26 14:14 "kor byte").
  * v1.6.0 (2026-10-20, C): FAQ:n ur _fastsan_faqs renderas SYNLIGT pa sidan (H2 Vanliga fragor + H3/P per par), infogad fore sidans sista wp:html-CTA. Samma kalla som FAQPage-schemat, sa schema = text alltid (seo-audit HR-11 Hidden Schema, B 2026-10-20 C2, agarbeslut (a)). Hook the_content prio 8 = fore do_blocks, bara huvudfragan.
  * v1.5.0 (2026-09-22, C): BreadcrumbList följer sidhierarkin (Hem > förälder > sida) i stället för att alltid hoppa över föräldern. Namnet = sidtiteln före första " — " eller " | " (SEO-svansen bort). Sidor som själva bär en BreadcrumbList i post_content får ingen från injektorn — sidans lista gäller (en lista per sida).
  * v1.4.0 (2026-09-06, C): ren version — GA4 lever nu i fristående mu-plugins/fastsan-ga4.php och deploys går via mu-plugins/aib-deployer.php (HMAC + sha256, commit-pinnat). v1.3.x (GA4-block + bootstrap) var tillfälliga bärare medan bryggans file_write låg nere.
@@ -15,7 +16,7 @@
 if (!defined('ABSPATH')) { return; }
 if (defined('FASTSAN_SCHEMA_DISABLED') && FASTSAN_SCHEMA_DISABLED) { return; }
 if (defined('FASTSAN_SCHEMA_LOADED')) { return; }
-define('FASTSAN_SCHEMA_LOADED', '1.6.0');
+define('FASTSAN_SCHEMA_LOADED', '1.8.0');
 
 /**
  * Hämta service-data per slug.
@@ -237,6 +238,43 @@ function fastsan_schema_build_article($post) {
 }
 
 /**
+ * v1.8.0 — Person med intygen pa /kompetens/ (B 2026-11-26, Johan 14:14 "kor byte").
+ * Samma uppgifter som syns pa sidan: namn, utbildare och datum. Samma @id som temats
+ * founder-nod (#daniel), sa noderna avser samma person. Ingen jobTitle har: temats nod bar den.
+ */
+function fastsan_schema_build_person($post) {
+    if (!$post || 'kompetens' !== $post->post_name) return null;
+    $inf  = array('@type' => 'Organization', 'name' => 'Instruktörerna i Norden AB');
+    $corr = array('@type' => 'Organization', 'name' => 'Corroventa Avfuktning AB');
+    $c = function ($name, $by = null, $date = null, $extra = array()) {
+        $n = array('@type' => 'EducationalOccupationalCredential', 'name' => $name, 'credentialCategory' => 'certificate');
+        if ($by)   $n['recognizedBy'] = $by;
+        if ($date) $n['dateCreated'] = $date;
+        return array_merge($n, $extra);
+    };
+    return array(
+        '@context'    => 'https://schema.org',
+        '@type'       => 'Person',
+        '@id'         => 'https://fastsan.se/#daniel',
+        'name'        => 'Daniel Stålbrand',
+        'url'         => 'https://fastsan.se/kompetens/',
+        'image'       => 'https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp',
+        'worksFor'    => array('@id' => 'https://fastsan.se/#organization'),
+        'hasCredential' => array(
+            $c('Material-/miljöinventering av byggnader', array('@type' => 'Organization', 'name' => 'SIFU AB'), '2024-08-28',
+               array('url' => 'https://true.sifu.se/se/utbildningsbevis-sifu-daniel-stalbrand-195389/')),
+            $c('Särskild utbildning Asbest', $inf, '2016-05-19'),
+            $c('Kompletterande utbildning Asbest', $inf, '2022-04-19', array('validUntil' => '2027-04-19')),
+            $c('Sanering och inventering av PCB', $inf, '2022-02-09'),
+            $c('Byggarbetsmiljösamordnare Projektering/planering och Utförande (BAS-P)(BAS-U)', $inf, '2023-11-30'),
+            $c('Baskurs inom fukt- och torkteknik'),
+            $c('Boendemiljö och fasta installationer', $corr, '2023-01-19'),
+            $c('Fukt- och torkteknik: Masterkurs', $corr, '2023-04-26'),
+        ),
+    );
+}
+
+/**
  * Output ett JSON-LD-block (inline, ej via wp_add_inline_script eftersom det
  * inte är ett registrerat script-handle).
  */
@@ -269,6 +307,9 @@ add_action('wp_head', function () {
 
     $faq = fastsan_schema_build_faq($post);
     if ($faq) fastsan_schema_output($faq);
+
+    $person = fastsan_schema_build_person($post);
+    if ($person) fastsan_schema_output($person);
 }, 99);
 
 /**
