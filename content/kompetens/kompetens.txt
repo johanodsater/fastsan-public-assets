@@ -215,15 +215,31 @@
 <!-- wp:group {"className":"fs-komp-rad__text"} -->
 <div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
 <p class="fs-komp-rad__namn">Baskurs inom fukt- och torkteknik</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
-<p class="fs-komp-rad__under">Utbildare och datum saknas</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-saknas"} -->
-<p class="fs-komp-rad__status fs-komp-saknas">Uppgift saknas</p>
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-permanent"} -->
+<p class="fs-komp-rad__status fs-komp-permanent">Genomförd</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-komp-rad"} -->
+<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
+<p class="fs-komp-rad__datum">2023-01-19</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-komp-rad__text"} -->
+<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
+<p class="fs-komp-rad__namn">Boendemiljö och fasta installationer</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
+<p class="fs-komp-rad__under">Utbildare: Corroventa Avfuktning AB (Corroventa Academy), Stefan Aktander, Åke Bratt, Benny Riis och Karl Jansson, 19–20 januari 2023. Innehåll: fukt, lukt och radon i bostäder, torkning och avfuktning av krypgrunder, ventilation och täthet på kallvindar samt radonmätning och radonkällor.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-permanent"} -->
+<p class="fs-komp-rad__status fs-komp-permanent">Genomförd</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -244,26 +260,6 @@
 
 <!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-permanent"} -->
 <p class="fs-komp-rad__status fs-komp-permanent">Genomförd</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"fs-komp-rad"} -->
-<div class="wp-block-group fs-komp-rad"><!-- wp:paragraph {"className":"fs-komp-rad__datum"} -->
-<p class="fs-komp-rad__datum">–</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"className":"fs-komp-rad__text"} -->
-<div class="wp-block-group fs-komp-rad__text"><!-- wp:paragraph {"className":"fs-komp-rad__namn"} -->
-<p class="fs-komp-rad__namn">Boendemiljö och fasta installationer</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"fs-komp-rad__under"} -->
-<p class="fs-komp-rad__under">Utbildare och datum saknas</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:paragraph {"className":"fs-komp-rad__status fs-komp-saknas"} -->
-<p class="fs-komp-rad__status fs-komp-saknas">Uppgift saknas</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
