@@ -2,8 +2,11 @@
 /**
  * Plugin Name: AIB Klickkarta (Fastsans egen klickkarta)
  * Description: Sparar klick och hur långt besökaren rullade i en egen tabell i sajtens databas, och ritar dem ovanpå sidan i Verktyg → Klickkarta. Inga kakor, inget besökar-id, inget sparat i webbläsaren och ingen IP-adress sparas. Mäter alla besökare utan samtycke (Johans beslut B1 A, 2026-11-26). Klick från Johans och kontorets adresser (samma som IP-regeln i Taggstyrning) sparas inte; adressen används bara i jämförelsen. Gallring efter 24 månader. Spärr: skriptet laddas bara när wp_option aib_klickkarta_live är 1, eller med provnyckeln i adressen (?aib_klickprov=<nyckel>, visas i Verktyg → Klickkarta). Provklick märks prov=1 och gallras efter 30 dagar. Stängs av med konstanten AIB_KLICKKARTA_AV eller genom att filen tas bort; tabellen ligger kvar.
- * Version: 1.0.1
+ * Version: 1.0.2
  *
+ * v1.0.2 (B, 2026-11-26, ägarorder Johan 12:09 "kör 1.0.2", efter skärmbilden av visningen 12:04): större prickar på kartan,
+ *   och klick som ligger inom 16 px från varandra ritas som en prick med antalet. En länk utan id och klass namnges efter
+ *   adressen ("a → /tjanster/") i stället för bara "a".
  * v1.0.1 (B, 2026-11-26, provkörningen 4d): klick i kakrutan sparas inte (rutan ligger över sidan, så punkten hamnade på fel
  *   ställe; 18 av 18 provklick träffade rutan eller dess spärr). Klick på fasta delar (position fixed eller sticky, till exempel
  *   kontaktraden) märks fast=1 och räknas i listorna men ritas inte på kartan, eftersom deras läge på sidan beror på rullningen.
@@ -14,7 +17,7 @@
 
 if (!defined('ABSPATH')) return;
 if (defined('AIB_KLICKKARTA_LOADED')) return;
-define('AIB_KLICKKARTA_LOADED', '1.0.1');
+define('AIB_KLICKKARTA_LOADED', '1.0.2');
 
 const AIB_KLICKKARTA_TABELL = 'aib_klick';
 const AIB_KLICKKARTA_DB = '2';
@@ -223,7 +226,7 @@ add_action('wp_footer', static function () {
     if (!$prov && !aib_klickkarta_live()) return;
     $p = $prov ? aib_klickkarta_provnyckel() : '';
     ?>
-<!-- AIB Klickkarta 1.0.1 / inga kakor, inget besökar-id -->
+<!-- AIB Klickkarta 1.0.2 / inga kakor, inget besökar-id -->
 <script>
 (function(){
 var U=<?php echo wp_json_encode(home_url('/?aib_klick=1')); ?>,P=<?php echo wp_json_encode($p); ?>,q=[],maxr=0,klar=false;
@@ -242,7 +245,8 @@ if(c.id)return c.id.slice(0,40);
 var i=1,s=c;while((s=s.previousElementSibling))i++;
 return 'block-'+i;
 }
-function besk(el){var t=el.tagName.toLowerCase();if(el.id)return (t+'#'+el.id).slice(0,100);var c=klass(el).trim().split(/\s+/).filter(function(x){return x&&!/^(is-|has-|wp-container|wp-elements)/.test(x);})[0];return (c?t+'.'+c:t).slice(0,100);}
+function adress(h){try{var u=new URL(h,location.href);return u.host===location.host?u.pathname+u.hash:u.host+u.pathname;}catch(e){return '';}}
+function besk(el){var t=el.tagName.toLowerCase();if(el.id)return (t+'#'+el.id).slice(0,100);var c=klass(el).trim().split(/\s+/).filter(function(x){return x&&!/^(is-|has-|wp-container|wp-elements)/.test(x);})[0];if(c)return (t+'.'+c).slice(0,100);var h=t==='a'?el.getAttribute('href')||'':'';if(h&&!/^(tel|mailto):/i.test(h))return ('a \u2192 '+adress(h)).slice(0,100);return t;}
 function mal(el){return el.closest('a[href],button,input,select,textarea,label,summary,[role="button"],[role="link"],[onclick],[tabindex]:not([tabindex="-1"])');}
 function fast(el){for(var i=0;el&&el!==document.body&&i<12;i++,el=el.parentElement){var p=getComputedStyle(el).position;if(p==='fixed'||p==='sticky')return 1;}return 0;}
 function dok(){var d=document.documentElement,b=document.body;return {w:Math.max(d.scrollWidth,b?b.scrollWidth:0,1),h:Math.max(d.scrollHeight,b?b.scrollHeight:0,1)};}
@@ -378,7 +382,7 @@ function aib_klickkarta_visning() {
 
       <div class="aib-kk-rad">
         <div class="aib-kk-karta">
-          <p class="description">Blå prick = klick på något klickbart. Röd prick = dött klick (på något som inte går att klicka på). Linjerna visar hur stor del av sidvisningarna som når sektionen. Klick på fasta delar (sidhuvudet när det följer med, kontaktraden) står i listorna men ritas inte, eftersom deras läge beror på hur långt besökaren rullat. Klick i kakrutan sparas inte.</p>
+          <p class="description">Blå prick = klick på något klickbart. Röd prick = mest döda klick (på något som inte går att klicka på). Siffran i pricken = antal klick på samma ställe (inom 16 px). Linjerna visar hur stor del av sidvisningarna som når sektionen. Klick på fasta delar (sidhuvudet när det följer med, kontaktraden) står i listorna men ritas inte, eftersom deras läge beror på hur långt besökaren rullat. Klick i kakrutan sparas inte.</p>
           <div id="aibKkRam" style="--vb:<?php echo (int) $vybredd; ?>px">
             <div id="aibKkInre">
               <iframe id="aibKkSida" src="<?php echo esc_url(add_query_arg('aib_klickvy', '1', home_url($sida))); ?>" width="<?php echo (int) $vybredd; ?>" height="900" title="Sidan <?php echo esc_attr($sida); ?>"></iframe>
@@ -434,7 +438,11 @@ function aib_klickkarta_visning() {
         f.style.height=h+'px';f.height=h;duk.width=w;duk.height=h;duk.style.width=w+'px';duk.style.height=h+'px';
         var s=Math.min(1,ram.clientWidth/w);inre.style.transform='scale('+s+')';ram.style.height=Math.ceil(h*s)+'px';
         var c=duk.getContext('2d');c.clearRect(0,0,w,h);
-        K.forEach(function(k){c.beginPath();c.arc(k[0]/10000*w,k[1]/10000*h,7,0,6.2832);c.fillStyle=k[2]?'rgba(200,30,30,.45)':'rgba(20,90,200,.35)';c.fill();});
+        var G={},S=16;
+        K.forEach(function(k){var x=k[0]/10000*w,y=k[1]/10000*h,n=Math.round(x/S)+','+Math.round(y/S);var g=G[n]||(G[n]={x:0,y:0,n:0,d:0});g.x+=x;g.y+=y;g.n++;g.d+=k[2];});
+        Object.keys(G).forEach(function(n){var g=G[n],x=g.x/g.n,y=g.y/g.n,rad=14+Math.min(16,Math.sqrt(g.n)*4);
+          c.beginPath();c.arc(x,y,rad,0,6.2832);c.fillStyle=g.d*2>g.n?'rgba(200,30,30,.6)':'rgba(20,90,200,.55)';c.fill();c.lineWidth=3;c.strokeStyle='#fff';c.stroke();
+          if(g.n>1){c.font='bold 20px sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillStyle='#fff';c.fillText(String(g.n),x,y+1);c.textAlign='start';c.textBaseline='alphabetic';}});
         var huvud=d.querySelector('main')||d.body,delar=[];
         [].slice.call(d.querySelectorAll('.fs-hem, main > *, .wp-block-post-content > *, footer')).forEach(function(el){if(el.closest('.fs-hem')&&!el.classList.contains('fs-hem'))return;var r=el.getBoundingClientRect();if(r.height<80)return;delar.push(r.top+(d.defaultView.scrollY||0));});
         delar=delar.filter(function(y,i,a){return a.indexOf(y)===i;}).sort(function(a,b){return a-b;});
