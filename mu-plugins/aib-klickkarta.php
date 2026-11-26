@@ -2,8 +2,11 @@
 /**
  * Plugin Name: AIB Klickkarta (Fastsans egen klickkarta)
  * Description: Sparar klick och hur långt besökaren rullade i en egen tabell i sajtens databas, och ritar dem ovanpå sidan i Verktyg → Klickkarta. Inga kakor, inget besökar-id, inget sparat i webbläsaren och ingen IP-adress sparas. Mäter alla besökare utan samtycke (Johans beslut B1 A, 2026-11-26). Klick från Johans och kontorets adresser (samma som IP-regeln i Taggstyrning) sparas inte; adressen används bara i jämförelsen. Gallring efter 24 månader. Spärr: skriptet laddas bara när wp_option aib_klickkarta_live är 1, eller med provnyckeln i adressen (?aib_klickprov=<nyckel>, visas i Verktyg → Klickkarta). Provklick märks prov=1 och gallras efter 30 dagar. Stängs av med konstanten AIB_KLICKKARTA_AV eller genom att filen tas bort; tabellen ligger kvar.
- * Version: 1.0.0
+ * Version: 1.0.1
  *
+ * v1.0.1 (B, 2026-11-26, provkörningen 4d): klick i kakrutan sparas inte (rutan ligger över sidan, så punkten hamnade på fel
+ *   ställe; 18 av 18 provklick träffade rutan eller dess spärr). Klick på fasta delar (position fixed eller sticky, till exempel
+ *   kontaktraden) märks fast=1 och räknas i listorna men ritas inte på kartan, eftersom deras läge på sidan beror på rullningen.
  * v1.0.0 (B, 2026-11-26, ägarorder Johan 11:07 "kör 4"): mätplanen P4 (claude/Fastsan_Matning_Plan_2026-11-25.md),
  *   besluten B1 A (alla besökare), B2 A (visning i WP-admin), B3 24 månader, B4 nej.
  * Author: Ai Brick AB
@@ -11,10 +14,10 @@
 
 if (!defined('ABSPATH')) return;
 if (defined('AIB_KLICKKARTA_LOADED')) return;
-define('AIB_KLICKKARTA_LOADED', '1.0.0');
+define('AIB_KLICKKARTA_LOADED', '1.0.1');
 
 const AIB_KLICKKARTA_TABELL = 'aib_klick';
-const AIB_KLICKKARTA_DB = '1';
+const AIB_KLICKKARTA_DB = '2';
 const AIB_KLICKKARTA_MANADER = 24;
 const AIB_KLICKKARTA_PROV_DAGAR = 30;
 const AIB_KLICKKARTA_CRON = 'aib_klickkarta_gallra';
@@ -97,6 +100,7 @@ function aib_klickkarta_skapa_tabell() {
         text VARCHAR(100) NOT NULL DEFAULT '',
         sektion VARCHAR(40) NOT NULL DEFAULT '',
         dod TINYINT(1) NOT NULL DEFAULT 0,
+        fast TINYINT(1) NOT NULL DEFAULT 0,
         prov TINYINT(1) NOT NULL DEFAULT 0,
         PRIMARY KEY  (id),
         KEY sida_tid (sida, tid),
@@ -187,11 +191,11 @@ add_action('init', static function () {
     foreach ($klick as $k) {
         if (!is_array($k) || count($k) < 7) continue;
         $rader[] = ['k', aib_klickkarta_int($k[0], 0, 10000), aib_klickkarta_int($k[1], 0, 1000000), aib_klickkarta_int($k[2], 0, 10000),
-            aib_klickkarta_str($k[3], 100), aib_klickkarta_str($k[4], 100), aib_klickkarta_str($k[5], 40), empty($k[6]) ? 0 : 1];
+            aib_klickkarta_str($k[3], 100), aib_klickkarta_str($k[4], 100), aib_klickkarta_str($k[5], 40), empty($k[6]) ? 0 : 1, empty($k[7]) ? 0 : 1];
     }
     if (isset($d['r'])) {
         $rf = aib_klickkarta_int($d['r'], 0, 10000);
-        $rader[] = ['r', 0, (int) round($rf / 10000 * $sidhojd), $rf, '', '', '', 0];
+        $rader[] = ['r', 0, (int) round($rf / 10000 * $sidhojd), $rf, '', '', '', 0, 0];
     }
     if (!$rader) aib_klickkarta_svara($prov ? 200 : 204, $prov ? ['ok' => true, 'sparade' => 0, 'intern' => $intern] : null);
 
@@ -200,10 +204,10 @@ add_action('init', static function () {
     $varden = [];
     $plats = [];
     foreach ($rader as $r) {
-        $plats[] = '(%s,%s,%s,%d,%d,%d,%d,%d,%s,%s,%s,%d,%d)';
-        array_push($varden, $tid, $r[0], $sida, $bredd, $r[1], $r[2], $r[3], $sidhojd, $r[4], $r[5], $r[6], $r[7], $prov ? 1 : 0);
+        $plats[] = '(%s,%s,%s,%d,%d,%d,%d,%d,%s,%s,%s,%d,%d,%d)';
+        array_push($varden, $tid, $r[0], $sida, $bredd, $r[1], $r[2], $r[3], $sidhojd, $r[4], $r[5], $r[6], $r[7], $r[8], $prov ? 1 : 0);
     }
-    $sql = "INSERT INTO $t (tid,typ,sida,bredd,x,y,yf,sidhojd,elem,text,sektion,dod,prov) VALUES " . implode(',', $plats);
+    $sql = "INSERT INTO $t (tid,typ,sida,bredd,x,y,yf,sidhojd,elem,text,sektion,dod,fast,prov) VALUES " . implode(',', $plats);
     $ok = $wpdb->query($wpdb->prepare($sql, $varden));
     set_transient($nyckel, $antal + count($rader), 120);
     if ($prov) aib_klickkarta_svara(200, ['ok' => $ok !== false, 'sparade' => (int) $ok, 'intern' => $intern]);
@@ -219,7 +223,7 @@ add_action('wp_footer', static function () {
     if (!$prov && !aib_klickkarta_live()) return;
     $p = $prov ? aib_klickkarta_provnyckel() : '';
     ?>
-<!-- AIB Klickkarta 1.0.0 / inga kakor, inget besökar-id -->
+<!-- AIB Klickkarta 1.0.1 / inga kakor, inget besökar-id -->
 <script>
 (function(){
 var U=<?php echo wp_json_encode(home_url('/?aib_klick=1')); ?>,P=<?php echo wp_json_encode($p); ?>,q=[],maxr=0,klar=false;
@@ -229,7 +233,6 @@ function del(el){
 if(el.closest('#fsStickyBar'))return 'kontaktrad';
 if(el.closest('.fs-cb-overlay'))return 'uppringning';
 if(el.closest('.fs-akut-strip'))return 'akutrad';
-if(el.closest('[class^="cky-"],[class*=" cky-"]'))return 'kakruta';
 if(el.closest('header,.fs-header'))return 'sidhuvud';
 if(el.closest('footer'))return 'sidfot';
 var h=el.closest('.fs-hem');if(h){var m=klass(h).match(/fs-hem-([a-z0-9]+)/);if(m)return 'hem-'+m[1];}
@@ -241,6 +244,7 @@ return 'block-'+i;
 }
 function besk(el){var t=el.tagName.toLowerCase();if(el.id)return (t+'#'+el.id).slice(0,100);var c=klass(el).trim().split(/\s+/).filter(function(x){return x&&!/^(is-|has-|wp-container|wp-elements)/.test(x);})[0];return (c?t+'.'+c:t).slice(0,100);}
 function mal(el){return el.closest('a[href],button,input,select,textarea,label,summary,[role="button"],[role="link"],[onclick],[tabindex]:not([tabindex="-1"])');}
+function fast(el){for(var i=0;el&&el!==document.body&&i<12;i++,el=el.parentElement){var p=getComputedStyle(el).position;if(p==='fixed'||p==='sticky')return 1;}return 0;}
 function dok(){var d=document.documentElement,b=document.body;return {w:Math.max(d.scrollWidth,b?b.scrollWidth:0,1),h:Math.max(d.scrollHeight,b?b.scrollHeight:0,1)};}
 function skicka(slut){
 var m=dok(),data={v:1,s:location.pathname.slice(0,191),w:window.innerWidth,dh:m.h,p:P,k:q.splice(0,50)};
@@ -254,12 +258,12 @@ if(q.length)skicka(false);
 function rull(){var r=(window.scrollY||window.pageYOffset||0)+window.innerHeight;if(r>maxr)maxr=r;}
 rull();addEventListener('scroll',rull,{passive:true});
 document.addEventListener('click',function(e){
-var t=e.target;if(!t||!t.closest||t.closest('#wpadminbar'))return;
+var t=e.target;if(!t||!t.closest||t.closest('#wpadminbar,[class^="cky-"],[class*=" cky-"]'))return;
 if(e.detail===0&&e.clientX===0&&e.clientY===0)return;
 var m=dok(),el=mal(t),vis=el||t;
 var x=Math.round(e.pageX/m.w*10000);if(!(x>=0))return;
 var txt=/^(INPUT|TEXTAREA|SELECT)$/.test(vis.tagName)||(!el&&vis.children.length)?'':rensa(vis.innerText||vis.textContent);
-q.push([Math.min(10000,x),Math.round(e.pageY),Math.min(10000,Math.round(e.pageY/m.h*10000)),besk(vis),txt,del(vis),el?0:1]);
+q.push([Math.min(10000,x),Math.round(e.pageY),Math.min(10000,Math.round(e.pageY/m.h*10000)),besk(vis),txt,del(vis),el?0:1,fast(vis)]);
 if(q.length>=20)skicka(false);
 },true);
 addEventListener('pagehide',function(){skicka(true);});
@@ -316,7 +320,8 @@ function aib_klickkarta_visning() {
 
     $bas = $wpdb->prepare("FROM $t WHERE sida = %s AND bredd BETWEEN %d AND %d AND tid >= DATE_SUB(UTC_TIMESTAMP(), INTERVAL %d DAY) AND $provvillkor",
         $sida, $bmin, $bmax, $dagar);
-    $klick = $wpdb->get_results("SELECT x, yf, dod $bas AND typ = 'k' ORDER BY id DESC LIMIT 5000", ARRAY_N);
+    $klick = $wpdb->get_results("SELECT x, yf, dod $bas AND typ = 'k' AND fast = 0 ORDER BY id DESC LIMIT 5000", ARRAY_N);
+    $fasta = (int) $wpdb->get_var("SELECT COUNT(*) $bas AND typ = 'k' AND fast = 1");
     $element = $wpdb->get_results("SELECT elem, text, sektion, COUNT(*) AS n, SUM(dod) AS doda $bas AND typ = 'k' GROUP BY elem, text, sektion ORDER BY n DESC LIMIT 25", ARRAY_A);
     $sektioner = $wpdb->get_results("SELECT sektion, COUNT(*) AS n, SUM(dod) AS doda $bas AND typ = 'k' GROUP BY sektion ORDER BY n DESC LIMIT 25", ARRAY_A);
     $rull = $wpdb->get_col("SELECT yf $bas AND typ = 'r' LIMIT 20000");
@@ -362,7 +367,8 @@ function aib_klickkarta_visning() {
       </form>
 
       <div class="aib-kk-siffror">
-        <div><b><?php echo count($klick); ?></b> klick</div>
+        <div><b><?php echo count($klick); ?></b> klick på kartan</div>
+        <div><b><?php echo (int) $fasta; ?></b> klick på fasta delar</div>
         <div><b><?php echo (int) $visningar; ?></b> sidvisningar</div>
         <div>Når 25 %: <b><?php echo (int) $djup[25]; ?> %</b></div>
         <div>Når 50 %: <b><?php echo (int) $djup[50]; ?> %</b></div>
@@ -372,7 +378,7 @@ function aib_klickkarta_visning() {
 
       <div class="aib-kk-rad">
         <div class="aib-kk-karta">
-          <p class="description">Blå prick = klick på något klickbart. Röd prick = dött klick (på något som inte går att klicka på). Linjerna visar hur stor del av sidvisningarna som når sektionen.</p>
+          <p class="description">Blå prick = klick på något klickbart. Röd prick = dött klick (på något som inte går att klicka på). Linjerna visar hur stor del av sidvisningarna som når sektionen. Klick på fasta delar (sidhuvudet när det följer med, kontaktraden) står i listorna men ritas inte, eftersom deras läge beror på hur långt besökaren rullat. Klick i kakrutan sparas inte.</p>
           <div id="aibKkRam" style="--vb:<?php echo (int) $vybredd; ?>px">
             <div id="aibKkInre">
               <iframe id="aibKkSida" src="<?php echo esc_url(add_query_arg('aib_klickvy', '1', home_url($sida))); ?>" width="<?php echo (int) $vybredd; ?>" height="900" title="Sidan <?php echo esc_attr($sida); ?>"></iframe>
