@@ -1,0 +1,117 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida fs-guide--bred"} -->
+<div class="wp-block-group fs-guide fs-guide--sida fs-guide--bred"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Insikter från Fastsan — guider och analyser</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Här samlar Fastsan praktiska insikter, regelverksanalyser och guider för dig som äger fastighet, beställer rivning eller renovering, eller arbetar med inomhusmiljö. Vi skriver om asbest, PCB, fukt, mögel, radon, markmiljö och de regulatoriska förändringar som påverkar ditt projekt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Guiderna skrivs av Daniel Stålbrand, grundare av Fastsan. <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Senaste guiden</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:query {"queryId":11,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"className":"fs-insikt-utvald"} -->
+<div class="wp-block-query fs-insikt-utvald"><!-- wp:post-template -->
+<!-- wp:group {"className":"fs-insikt-kort"} -->
+<div class="wp-block-group fs-insikt-kort"><!-- wp:post-featured-image {"isLink":true} /-->
+
+<!-- wp:group {"className":"fs-insikt-text"} -->
+<div class="wp-block-group fs-insikt-text"><!-- wp:post-terms {"term":"category"} /-->
+
+<!-- wp:post-title {"isLink":true,"level":2} /-->
+
+<!-- wp:post-date {"format":"j F Y"} /-->
+
+<!-- wp:post-excerpt {"moreText":"Läs guiden →","excerptLength":30} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
+
+<!-- wp:heading {"anchor":"fler"} -->
+<h2 class="wp-block-heading" id="fler">Fler guider och analyser</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":12,"query":{"perPage":12,"pages":0,"offset":1,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"className":"fs-insikt-lista"} -->
+<div class="wp-block-query fs-insikt-lista"><!-- wp:post-template -->
+<!-- wp:group {"className":"fs-insikt-kort"} -->
+<div class="wp-block-group fs-insikt-kort"><!-- wp:post-featured-image {"isLink":true} /-->
+
+<!-- wp:group {"className":"fs-insikt-text"} -->
+<div class="wp-block-group fs-insikt-text"><!-- wp:post-terms {"term":"category"} /-->
+
+<!-- wp:post-title {"isLink":true,"level":3} /-->
+
+<!-- wp:post-date {"format":"j F Y"} /-->
+
+<!-- wp:post-excerpt {"moreText":"Läs mer →","excerptLength":30} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Hitta rätt tjänst</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/provtagning/asbest/">Asbestprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/pcb/">PCB-inventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/miljoinventering/">Miljöinventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/radon/">Radonmätning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/fukt-mogel/">Fukt och mögel</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/">Markmiljö</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Behöver du hjälp i ett konkret ärende?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Fastsan utför oberoende miljöinventeringar, provtagningar och utredningar i Stockholm och Mälardalen. Vi utför ingen sanering och har inget ekonomiskt intresse i entreprenaden — <a href="/om/">läs mer om företaget bakom analyserna</a>. Beskriv ditt ärende så återkommer vi med offert eller bedömning.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/">Beskriv ditt ärende</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="/tjanster/">Se alla tjänster</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

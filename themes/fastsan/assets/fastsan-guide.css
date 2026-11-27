@@ -4,6 +4,7 @@
  * Bara temats färger, typsnitt och avstånd (theme.json). Mobilen först. Samma formspråk som /kompetens/:
  * ljus panel med sandstenslinje, kapitelnummer, stämplar och tidslinje.
  * 1.0 B 2026-11-27, Johan 11:43 "vart är inramning bakgrund det lilla extra".
+ * 1.3 B 2026-11-27: listsidan /insikter/ (fs-insikt-*, fs-guide--bred), Johan 14:24.
  * 1.2 B 2026-11-27: tjänstesidor (/miljoinventering/) i samma form, Johan 12:11.
  * 1.1 B 2026-11-27: tidslinjen lodrät (fem spalter bröt ord), luft efter kapitelrubrik och före etikettrader.
  */
@@ -488,3 +489,75 @@
 	color: var(--wp--preset--color--base);
 }
 .fs-guide-relaterat li::before { content: "\2192"; }
+
+/* 1.3: listsidan /insikter/ (senaste guiden stort, resten i rutnät) */
+.wp-block-post-content > .fs-guide--bred { max-width: var(--wp--style--global--wide-size) !important; }
+.fs-guide--bred > h2::before { content: none; }
+.fs-insikt-utvald .wp-block-post-template,
+.fs-insikt-lista .wp-block-post-template {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.fs-insikt-lista .wp-block-post-template { display: grid; gap: var(--wp--preset--spacing--40); }
+.fs-insikt-lista .wp-block-post-template > li,
+.fs-insikt-utvald .wp-block-post-template > li { display: flex; margin: 0; }
+@media (min-width: 700px) { .fs-insikt-lista .wp-block-post-template { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .fs-insikt-lista .wp-block-post-template { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.fs-insikt-kort {
+	flex: 1;
+	margin: 0 !important;
+	display: flex;
+	flex-direction: column;
+	background: var(--wp--preset--color--base);
+	border: 1px solid var(--wp--preset--color--border);
+	border-top: 3px solid var(--wp--preset--color--primary);
+}
+.fs-insikt-kort > * { margin: 0 !important; }
+.fs-insikt-kort .wp-block-post-featured-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+.fs-insikt-text {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6em;
+	padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40) var(--wp--preset--spacing--40);
+}
+.fs-insikt-text > * { margin: 0 !important; }
+.fs-insikt-text .wp-block-post-terms a {
+	display: inline-block;
+	padding: 0.2rem 0.7rem;
+	border-radius: 9999px;
+	background: var(--wp--preset--color--accent-pale);
+	color: var(--wp--preset--color--accent-text);
+	font-size: var(--wp--preset--font-size--xs);
+	font-weight: 500;
+	text-decoration: none;
+}
+.fs-insikt-text .wp-block-post-title { font-size: var(--wp--preset--font-size--x-large); line-height: 1.3; }
+.fs-insikt-text .wp-block-post-title a { color: var(--wp--preset--color--primary); text-decoration: none; }
+.fs-insikt-text .wp-block-post-title a:hover,
+.fs-insikt-text .wp-block-post-title a:focus-visible { text-decoration: underline; }
+.fs-insikt-text .wp-block-post-date { font-size: var(--wp--preset--font-size--xs); color: var(--wp--preset--color--tertiary-text); }
+.fs-insikt-text .wp-block-post-excerpt { font-size: var(--wp--preset--font-size--small); line-height: 1.55; color: var(--wp--preset--color--secondary-text); }
+.fs-insikt-text .wp-block-post-excerpt__more-text { margin-block-start: 0.6em; }
+.fs-insikt-text .wp-block-post-excerpt__more-link { font-weight: 600; color: var(--wp--preset--color--accent-text); }
+.fs-guide > .fs-guide-rubrikrad + .fs-insikt-utvald { margin-block-start: 0.4em; }
+.fs-insikt-utvald .fs-insikt-kort {
+	background: var(--wp--preset--color--base-muted);
+	border-color: var(--wp--preset--color--base-muted);
+	border-top-color: var(--wp--preset--color--accent-soft);
+}
+.fs-insikt-utvald .fs-insikt-text .wp-block-post-title { font-size: var(--wp--preset--font-size--xx-large); line-height: 1.2; }
+@media (min-width: 800px) {
+	.fs-insikt-utvald .fs-insikt-kort { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
+	.fs-insikt-utvald .wp-block-post-featured-image,
+	.fs-insikt-utvald .wp-block-post-featured-image a { display: block; height: 100%; }
+	.fs-insikt-utvald .wp-block-post-featured-image img { height: 100%; min-height: 20rem; aspect-ratio: auto; }
+	.fs-insikt-utvald .fs-insikt-text { justify-content: center; padding: var(--wp--preset--spacing--50); }
+}
