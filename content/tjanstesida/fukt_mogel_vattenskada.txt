@@ -1,0 +1,313 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Vattenskada: akut utredning och dokumentation</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Har du fått en vattenskada? Stoppa vattnet, fotografera och anmäl skadan till försäkringsbolaget. Fastsan hjälper bostadsägare, BRF:er, fastighetsägare och företag i Stockholm och Mälardalen med oberoende fuktmätning, skadeavgränsning och slutmätning före återställning. Vi säljer ingen sanering, rivning eller torkning.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Anmäl skadan så snart som möjligt</strong> och fotografera innan något rivs eller slängs.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Torrt avgörs med mätning</strong>, inte med att ytan känns torr.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Slutmätning före återställning</strong> minskar risken för mögel bakom nya ytskikt.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av hur mycket som rivs.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"akut"} -->
+<h2 class="wp-block-heading" id="akut">Gör detta direkt</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Stoppa vattnet</strong> om det går: huvudkran eller ventil.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Bryt strömmen</strong> i området om vatten kan nå el.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Flytta undan</strong> lösa saker.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fotografera</strong> skadan innan något rivs.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Anmäl</strong> skadan till försäkringsbolaget och vid behov till fastighetsägaren eller BRF-styrelsen.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Riv inte</strong> större delar innan skadan är dokumenterad.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Försäkring och mätning</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Anmälan till försäkringsbolaget</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Konsumenternas Försäkringsbyrå råder att skadan anmäls så snart som möjligt, att skadorna fotograferas och att inget skadat slängs innan försäkringsbolaget har kontaktats.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.konsumenternas.se/arkiv---nyheter-bloggar-och-poddar/nyheter/2026/juli/skyfall-och-oversvamning--sa-kan-forsakringen-hjalpa-dig/" target="_blank" rel="noreferrer noopener">Konsumenternas Försäkringsbyrå</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">RBK: fukt i betong före tät beläggning</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>RBK-auktoriserad fuktkontrollant är branschens system för mätning av relativ fuktighet i betong. Det är inget lagkrav, men kan krävas av beställaren, golvleverantören eller i vissa försäkringsärenden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.rbk.nu/" target="_blank" rel="noreferrer noopener">Rådet för ByggKompetens</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Vad försäkringen ersätter står i villkoren. Plötsliga läckage från ledning eller maskin ingår ofta. Skador som beror på bristande underhåll eller fel i konstruktionen undantas ofta.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs en oberoende fuktkonsult?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Är det torrt nog?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Före återställning</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Slutmätning i rätt material och djup innan golv, vägg eller tak byggs igen.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Oklar utbredning</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Behöver allt rivas?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Mätning visar hur långt fukten har gått, så att rivningen kan avgränsas.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Olika bedömningar</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">BRF, medlem och försäkringsbolag</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En rapport från någon som inte säljer rivning, torkning eller återställning.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Lukt efter torkning</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Mögel eller dold fukt</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Fuktmätning och vid behov prov. Se <a href="/fukt-mogel/mogel/">mögelutredning</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Genomgång</strong> av vad som hänt och vad som redan gjorts.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fuktmätning</strong> på plats av din konsult personligen, Daniel eller hans kollega: skadans utbredning i trä, betong och hålrum.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Prov</strong> av material vid misstanke om mögel.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med mätpunkter, metod, värden och bedömning.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Slutmätning</strong> före återställning, när uttorkningen är klar.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Vid akut misstanke om mögel eller asbest i det som ska rivas: se <a href="/akut/">akut provtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad ska jag göra först vid en vattenskada?</summary><!-- wp:paragraph -->
+<p>Stoppa vattnet, fotografera skadan och anmäl den till försäkringsbolaget och vid behov till fastighetsägaren eller BRF:en. Flytta undan lösa saker och riv inget större innan skadan är dokumenterad.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Måste jag anlita försäkringsbolagets saneringsfirma?</summary><!-- wp:paragraph -->
+<p>Försäkringsbolaget kan föreslå eller anlita en skadefirma. Du har rätt att förstå vad som ska göras och varför. Vid osäkerhet kan en oberoende fuktkonsult granska utbredning, mätvärden och dokumentation.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Hur vet jag om det är torrt nog att återställa?</summary><!-- wp:paragraph -->
+<p>Genom mätning i rätt material, inte genom att ytan känns torr. Trä mäts med fuktkvotsmätare, betong med givare för relativ fuktighet i borrhål.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Kan mögel uppstå efter en vattenskada?</summary><!-- wp:paragraph -->
+<p>Ja, om fukten blir kvar tillräckligt länge i trä, papp, gipsskiva eller spånskiva. Avgränsning, uttorkning och slutmätning minskar risken.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Sanerar Fastsan?</summary><!-- wp:paragraph -->
+<p>Nej. Fastsan mäter och utreder. Rapporten kan användas som underlag när åtgärden handlas upp.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Har du fått en vattenskada?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/?service=vattenskada">Begär akut bedömning</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/fukt-mogel/fukt/">Fuktutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/fukt-mogel/mogel/">Mögelutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/fukt-mogel/">Fukt- och mögelprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/akut/">Akut provtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/fukt-mogel/">Fukt och mögel, översikt</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.konsumenternas.se/arkiv---nyheter-bloggar-och-poddar/nyheter/2026/juli/skyfall-och-oversvamning--sa-kan-forsakringen-hjalpa-dig/" target="_blank" rel="noreferrer noopener">Skyfall och översvämning – så kan försäkringen hjälpa dig</a>, Konsumenternas Försäkringsbyrå.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.rbk.nu/" target="_blank" rel="noreferrer noopener">RBK-auktoriserad fuktkontrollant</a>, Rådet för ByggKompetens.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

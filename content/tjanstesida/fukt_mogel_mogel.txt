@@ -1,0 +1,285 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Mögelutredning i Stockholm för bostad och BRF</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Fastsan utreder mögel åt bostadsägare, BRF-styrelser, fastighetsägare och förvaltare i Stockholm och Mälardalen. Vi går igenom historiken, besiktar, mäter fukt och tar riktade prover. Rapporten kan användas inför åtgärd och i dialog med försäkringsbolag eller fastighetsägare. Vi säljer ingen sanering.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Utredningen börjar inte med ett luftprov.</strong> Den börjar med frågan varför det finns fukt.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Svart betyder inte mögel</strong>: missfärgning kan vara smuts, sot eller annan påväxt.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Hyresvärden ska hålla bostaden</strong> i fullt brukbart skick.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad utredningen visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"vad"} -->
+<h2 class="wp-block-heading" id="vad">Mögel är ett tecken på fukt</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Mögel växer där fukt har funnits tillräckligt länge. Därför letar utredningen efter fuktkällan, inte bara efter möglet. Riskkonstruktioner som krypgrund, enstegstätad fasad, källarvägg och kalla snedtak gås igenom särskilt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Artnamnet ensamt avgör inte vad som behöver göras. Fuktkällan, hur skadat materialet är och om de som vistas i rummet utsätts väger minst lika tungt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Hälsa och ansvar</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Olägenhet för människors hälsa</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Kommunen bedömer om fukt och mikroorganismer i bostäder och allmänna lokaler är en olägenhet för hälsan. Fukt- och mögelskador kan enligt Boverket leda till allergier, astma och andra sjukdomar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.folkhalsomyndigheten.se/contentassets/26ea6c0d999742c0a5351c63e70cb0ce/fohmfs-2014-14.pdf" target="_blank" rel="noreferrer noopener">FoHMFS 2014:14, miljöbalken 9 kap. 3 §</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Hyresrätt</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Hyresvärden ska hålla lägenheten i fullt brukbart skick, både vid tillträdet och under hyrestiden. Är den inte det kan hyresgästen ha rätt till nedsättning av hyran.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=1970:994" target="_blank" rel="noreferrer noopener">Jordabalken 12 kap. 9, 11 och 15 §§</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Bostadsrätt</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bostadsrättshavaren ska hålla lägenheten i gott skick, om inte stadgarna säger något annat. Det som inte ligger på bostadsrättshavaren ansvarar föreningen för. En oberoende utredning hjälper när det är oklart vems skadan är.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=1991:614" target="_blank" rel="noreferrer noopener">Bostadsrättslagen 7 kap. 4 och 12 §§</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går mögelutredningen till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Genomgång och intervju</strong>: historik, tidigare skador, ventilation och renoveringar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Besiktning</strong> på plats av din konsult personligen, Daniel eller hans kollega: badrum, kök, källare, vind, krypgrund, fönsteranslutningar och takgenomföringar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fuktindikering och fuktmätning</strong> i de material som misstänks.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Riktade prover</strong> av material, luft eller damm vid behov, analyserade på oberoende laboratorium.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med observationer, mätvärden, foton, analysresultat, sannolik orsak och rekommenderade åtgärder.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Provtagningen beskrivs på <a href="/provtagning/fukt-mogel/">fukt- och mögelprovtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"hyresgast"} -->
+<h2 class="wp-block-heading" id="hyresgast">Om du hyr eller bor i bostadsrätt</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Hyresrätt</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Anmäl skriftligt</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Felanmäl skriftligt till hyresvärden och spara svaren. Fotografera lukt och fläckar med datum. Hanteras det inte kan kommunens miljöförvaltning kontaktas.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Bostadsrätt</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Ansvaret är delat</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Läs stadgarna: de kan flytta ansvar mellan medlem och förening. Styrelsen bör utreda orsaken innan någon åtgärd beställs, och dokumentera ärendet.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Är svart missfärgning alltid mögel?</summary><!-- wp:paragraph -->
+<p>Nej. Mögel kan inte bedömas säkert utifrån färg. Svart missfärgning kan vara smuts, sot, annan påväxt eller olika mögelarter. Det kräver undersökning och vid behov prov.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Kan jag tvätta bort mögel själv?</summary><!-- wp:paragraph -->
+<p>Ytligt mögel på silikonfogar i badrum kan ofta tvättas bort. På trä, tapet och gips räcker ytlig tvätt sällan, och tvätten tillför ny fukt. Låt fuktkällan utredas först.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Måste allt angripet material bytas?</summary><!-- wp:paragraph -->
+<p>Inte alltid. Det bedöms i utredningen utifrån material, hur djupt påväxten går och fuktkällan.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vem ansvarar för mögel i en bostadsrätt?</summary><!-- wp:paragraph -->
+<p>Det beror på var skadan sitter och vad som orsakat den. Bostadsrättshavaren ska hålla lägenheten i gott skick om inte stadgarna säger annat, och föreningen ansvarar för resten.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Sanerar Fastsan?</summary><!-- wp:paragraph -->
+<p>Nej. Fastsan utreder och tar prover. Rapporten kan användas som underlag när åtgärden handlas upp.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Misstänker du mögel?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/?service=mogel">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/fukt-mogel/fukt/">Fuktutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/fukt-mogel/">Fukt- och mögelprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/luktutredning/">Luktutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/fukt-mogel/vattenskada/">Vattenskada</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/fukt-mogel/">Fukt och mögel, översikt</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.folkhalsomyndigheten.se/contentassets/26ea6c0d999742c0a5351c63e70cb0ce/fohmfs-2014-14.pdf" target="_blank" rel="noreferrer noopener">Folkhälsomyndighetens allmänna råd om fukt och mikroorganismer (FoHMFS 2014:14)</a>, Folkhälsomyndigheten.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/konsekvenser-samhallet/konsekvenser-halsan/Halsa-fukt-mogel/" target="_blank" rel="noreferrer noopener">Din hälsa kan påverkas av fukt och mögel</a>, Boverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://rkrattsbaser.gov.se/sfst?bet=1970:994" target="_blank" rel="noreferrer noopener">Jordabalken (1970:994), 12 kap.</a>, Regeringskansliets rättsdatabaser.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://rkrattsbaser.gov.se/sfst?bet=1991:614" target="_blank" rel="noreferrer noopener">Bostadsrättslagen (1991:614)</a>, Regeringskansliets rättsdatabaser.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

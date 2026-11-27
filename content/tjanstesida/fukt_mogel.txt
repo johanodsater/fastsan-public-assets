@@ -1,0 +1,257 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Fukt och mögel: utredning, mätning och vattenskada</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Fastsan utreder fuktskador, mögelpåväxt, vattenskador och besvär i inomhusmiljön i Stockholm och Mälardalen. Vi letar efter orsaken, mäter fukten och tar prover där det behövs. Vi säljer ingen sanering eller återställning, så du får ett neutralt underlag.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Mögel är nästan alltid ett tecken på fukt.</strong> Utredningen letar efter fuktkällan.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Mätning före beslut</strong>: rätt metod för trä, betong och hålrum.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Kommunen bedömer</strong> om fukt och mögel i en bostad är en olägenhet för hälsan.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad utredningen visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"tjanster"} -->
+<h2 class="wp-block-heading" id="tjanster">Tjänster inom fukt och mögel</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Fuktutredning</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Misstänkt fukt i konstruktionen</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Fuktmätning efter läckage, vid dold fukt eller inför återställning. Se <a href="/fukt-mogel/fukt/">fuktutredning</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Mögelutredning</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Bostad och BRF</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Historik, genomgång på plats, fuktmätning och riktade prover. Se <a href="/fukt-mogel/mogel/">mögelutredning</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Vattenskada</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Efter läckage</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Skadans utbredning, mätvärden och slutmätning före återställning. Se <a href="/fukt-mogel/vattenskada/">vattenskada</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Provtagningen beskrivs på <a href="/provtagning/fukt-mogel/">fukt- och mögelprovtagning</a>. När det luktar men inget syns: se <a href="/luktutredning/">luktutredning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Fukt, mögel och hälsa</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Olägenhet för människors hälsa</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Kommunen bedömer om fukt och mikroorganismer i bostäder och allmänna lokaler är en olägenhet för hälsan. Den bör bland annat se om det finns synlig mikrobiell växt eller mikrobiell lukt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.folkhalsomyndigheten.se/contentassets/26ea6c0d999742c0a5351c63e70cb0ce/fohmfs-2014-14.pdf" target="_blank" rel="noreferrer noopener">FoHMFS 2014:14, miljöbalken 9 kap. 3 §</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Hälsan kan påverkas</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Fukt- och mögelskador kan enligt Boverket leda till allergier, astma och andra sjukdomar. Människor är olika känsliga.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/konsekvenser-samhallet/konsekvenser-halsan/Halsa-fukt-mogel/" target="_blank" rel="noreferrer noopener">Boverket: Din hälsa kan påverkas av fukt och mögel</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Genomgång</strong> av byggnadens historik, tidigare skador och vilka besvär som finns.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Besiktning</strong> på plats av din konsult personligen, Daniel eller hans kollega: riskpunkter som badrum, kök, källare, vind och krypgrund.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fuktmätning</strong>: screening och riktade mätningar i rätt material.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Prov</strong> av material, luft eller damm vid behov, analyserade på oberoende laboratorium.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med mätvärden, foton, sannolik orsak och rekommenderat nästa steg.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Vid akut misstanke finns ett snabbare spår: se <a href="/akut/">akut provtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är skillnaden mellan fuktutredning och mögelutredning?</summary><!-- wp:paragraph -->
+<p>En fuktutredning mäter var fukten finns och hur mycket. En mögelutredning tar dessutom reda på om fukten har gett påväxt eller lukt, och tar prover vid behov. Ofta görs båda i samma besök.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Räcker det att ta ett mögelprov?</summary><!-- wp:paragraph -->
+<p>Sällan. Ett prov visar vad som finns där provet togs. Det säger inte var fukten kommer ifrån. Därför börjar utredningen med genomgång och fuktmätning.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Sanerar Fastsan?</summary><!-- wp:paragraph -->
+<p>Nej. Fastsan utreder, mäter och tar prover. Rapporten kan användas som underlag när åtgärden handlas upp.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Misstänker du fukt eller mögel?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/?service=fukt-mogel">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/inomhusmiljo/">Fukt- och mögelutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/fukt-mogel/">Fukt- och mögelprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/luktutredning/">Luktutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/forvarvsbesiktning/">Miljöteknisk förvärvsbesiktning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/akut/">Akut provtagning</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.folkhalsomyndigheten.se/contentassets/26ea6c0d999742c0a5351c63e70cb0ce/fohmfs-2014-14.pdf" target="_blank" rel="noreferrer noopener">Folkhälsomyndighetens allmänna råd om fukt och mikroorganismer (FoHMFS 2014:14)</a>, Folkhälsomyndigheten.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/konsekvenser-samhallet/konsekvenser-halsan/Halsa-fukt-mogel/" target="_blank" rel="noreferrer noopener">Din hälsa kan påverkas av fukt och mögel</a>, Boverket.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
