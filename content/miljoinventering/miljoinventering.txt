@@ -1,0 +1,359 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Miljöinventering — inför rivning, ombyggnad eller försäljning</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Vi identifierar miljö- och hälsofarliga material i fastigheten innan rivningslovet söks, byggprojektet startar eller affären avslutas. Rapporten är underlag för er handlingsplan: vad som finns, var det sitter och hur mycket. Den kan läggas som bilaga till avfallshanteringsplanen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand, grundare av Fastsan, leder inventeringarna. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"id":168,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-bild"} -->
+<figure class="wp-block-image size-full fs-guide-bild"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-aterbruk-rorisolering-markerad.webp" alt="Rörisolering under ett bjälklag, markerad med röd sprayfärg" class="wp-image-168"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Sedan 1 juli 2026</strong> krävs en avfallshanteringsplan för åtgärder som kräver lov eller anmälan.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Före rivning och ombyggnad</strong> ska hälsofarligt material utredas, med prover om det behövs.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan tar prover</strong> av allt som misstänks och lämnar dem till laboratorium för analys.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad proverna visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"vad-ar-en-miljoinventering"} -->
+<h2 class="wp-block-heading" id="vad-ar-en-miljoinventering">Vad en miljöinventering är</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En miljöinventering kartlägger systematiskt de material i en byggnad som kan innehålla miljö- eller hälsofarliga ämnen, främst asbest, PCB, tungmetaller (bly, kvicksilver, krom VI), PAH, klorparaffiner och flyktiga organiska föreningar. Boverkets allmänna råd om rivningsavfall kallar den <a href="https://www.boverket.se/sv/byggande/cirkular-ekonomi/vagledning/barverksdelar/bedomning-skick/miljo-och-halsa/" target="_blank" rel="noreferrer noopener">materialinventering</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Den bygger på fyra moment: dokumentgenomgång, besiktning, provtagning och analys på laboratorium. Resultatet sammanställs i en rapport med mängdberäkningar, som är underlag för avfallshanteringsplanen, för anbudsförfrågningar till saneringsföretag och för hanteringen av avfallet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Vad lagen kräver</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Avfallshanteringsplan sedan 1 juli 2026</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Byggherren ska se till att det finns en avfallshanteringsplan för åtgärder som kräver lov eller anmälan. Planen ska bland annat visa hur farliga ämnen ska hanteras och avlägsnas på ett säkert sätt. Enligt <a href="https://www.boverket.se/sv/PBL-kunskapsbanken/lov--byggande/byggprocessen/avfallshanteringsplan/" target="_blank" rel="noreferrer noopener">Boverket</a> kan en materialinventering behövas för att ta fram uppgifterna. För lov och anmälningar som kom in före 1 juli 2026 gäller de äldre reglerna om kontrollplan.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/" target="_blank" rel="noreferrer noopener">PBL 10 kap. 8 a §</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Utredning före rivning</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Innan rivning, ombyggnad eller renovering börjar ska det utredas om det finns hälsofarligt material i den del av byggnaden som arbetet gäller. Går det inte att klarlägga på annat sätt ska prover tas och analyseras, och den som ska riva ska få resultatet skriftligt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">AFS 2023:3</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">PCB i fogmassor och golvmassor</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Den som äger en byggnad där fogmassor eller halkskyddade golvmassor kan ha använts vid bygget eller en renovering åren 1956–1973 ska undersöka om de innehåller PCB. Mer om <a href="/pcb/">PCB-inventering</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">16 § förordningen om PCB m.m.</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Ska byggdelar återbrukas? Läs guiden <a href="/aterbruk-miljoinventering/">Återbruk av byggmaterial – därför ska miljöinventeringen komma först</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs en miljöinventering?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför rivning</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Avfallshanteringsplan och AFS 2023:3</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Byggherren ansvarar för att avfallet hanteras rätt. Inventeringen visar vad som måste tas om hand som farligt avfall, och den som ska riva får resultatet skriftligt.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför större ombyggnad</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Stambyten, fasader, fönster och tak</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>PCB användes i fogmassor och golvmassor 1956–1973. Asbest användes i bland annat isolering, undertak och golvmattor fram till förbudet 1982 (<a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/asbest/" target="_blank" rel="noreferrer noopener">Boverket</a>).</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför fastighetsförsäljning</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Köpare och jurister frågar</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Köpare och köparens jurist frågar i allt högre grad efter dokumenterad status på miljöfarliga material, särskilt för kommersiella fastigheter och äldre flerbostadshus. En miljöinventering inför affären minskar risken för senare prisavdrag eller hävning.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Genomgång</strong> av tillgängliga ritningar, byggår och tidigare renoveringar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Besiktning</strong> på plats av din konsult personligen, Daniel eller hans kollega.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Prov</strong> av misstänkta material. Antalet bestäms av byggnadens storlek och hur många olika material den har.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong>: Fastsan tar prover av allt som misstänks och lämnar dem till laboratorium för analys.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med mängdberäkningar, fotodokumentation och avfallsklassificering, som underlag för avfallshanteringsplanen.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Genomgång</strong> av rapporten, där frågor besvaras.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:gallery {"columns":2,"linkTo":"none","className":"fs-guide-galleri"} -->
+<figure class="wp-block-gallery has-nested-images columns-2 is-cropped fs-guide-galleri"><!-- wp:image {"id":170,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-aterbruk-matta-lim-provpase.webp" alt="Provpåse märkt matta och lim på ett golv där mattan är uppriven" class="wp-image-170"/><figcaption class="wp-element-caption">Prov av matta och lim.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":171,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-aterbruk-kakelfix-provpase.webp" alt="Provpåse märkt kakelfix framför en vägg där kakel har tagits bort" class="wp-image-171"/><figcaption class="wp-element-caption">Prov av kakelfix bakom borttaget kakel.</figcaption></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:heading {"anchor":"tid"} -->
+<h2 class="wp-block-heading" id="tid">Hur lång tid tar det?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>För en normalstor flerbostadsfastighet eller villa:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-tidslinje"} -->
+<ol class="wp-block-list fs-guide-tidslinje"><!-- wp:list-item -->
+<li><strong>1–2 veckor</strong> Provtagning på plats, räknat från att offerten godkänts</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>5–10 arbetsdagar</strong> Svar från laboratoriet</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>1 vecka</strong> Rapporten levereras efter labbsvaret</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>3–5 veckor</strong> Total ledtid</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">För akuta projekt finns ett snabbare spår: se <a href="/akut/">akut provtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Är miljöinventering och materialinventering samma sak?</summary><!-- wp:paragraph -->
+<p>Ja. Boverkets allmänna råd om rivningsavfall använder ordet materialinventering för samma kartläggning.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Behöver vi en avfallshanteringsplan?</summary><!-- wp:paragraph -->
+<p>I regel ja, om åtgärden kräver bygglov, rivningslov eller anmälan. Planen behövs inte om det är uppenbart att den inte behövs, och det avgör byggnadsnämnden.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vilka byggnader kan innehålla PCB?</summary><!-- wp:paragraph -->
+<p>Byggnader där fogmassor eller halkskyddade golvmassor kan ha använts vid bygget eller en renovering 1956–1973. Ägaren ska då undersöka om de innehåller PCB.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Sanerar Fastsan?</summary><!-- wp:paragraph -->
+<p>Nej. Fastsan tar prover och skriver rapporter. Rapporten kan användas som underlag när saneringen handlas upp.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Hur lång tid tar en miljöinventering?</summary><!-- wp:paragraph -->
+<p>Normalt 3–5 veckor från godkänd offert till rapport. För akuta projekt finns ett snabbare spår.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Behöver du en miljöinventering?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/#offert">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/provtagning/material/">Provtagning av byggnadsmaterial</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/asbest/">Asbestprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/pcb/">PCB-inventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/">Markmiljöundersökning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/forvarvsbesiktning/">Miljöteknisk förvärvsbesiktning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/aterbruk-miljoinventering/">Guide: återbruk av byggmaterial</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/" target="_blank" rel="noreferrer noopener">Plan- och bygglag (2010:900), 10 kap. 8 a §</a>, riksdagen.se.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.boverket.se/sv/PBL-kunskapsbanken/lov--byggande/byggprocessen/avfallshanteringsplan/" target="_blank" rel="noreferrer noopener">Avfallshanteringsplan</a>, Boverket, PBL kunskapsbanken.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">Projektering och byggarbetsmiljösamordning – grundläggande skyldigheter (AFS 2023:3)</a>, Arbetsmiljöverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">Förordning (2007:19) om PCB m.m.</a>, Regeringskansliets rättsdatabaser.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.boverket.se/sv/byggande/cirkular-ekonomi/vagledning/barverksdelar/bedomning-skick/miljo-och-halsa/" target="_blank" rel="noreferrer noopener">Miljö- och hälsoskadliga ämnen</a>, Boverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/asbest/" target="_blank" rel="noreferrer noopener">Risker med hantering av asbest i byggnader</a>, Boverket.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 26–27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

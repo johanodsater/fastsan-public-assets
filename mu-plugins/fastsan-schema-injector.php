@@ -2,9 +2,10 @@
 /**
  * Plugin Name: Fastsan — Schema Injector
  * Description: JSON-LD-schema per tjänstesida (Service) + BreadcrumbList + FAQPage. Kompletterar Organization/LocalBusiness som temat redan injicerar. Hooks: wp_head prio 99 (efter befintlig Organization). Inga exit/die-patterns (KK247-incident 2026-05-04). Avaktivering: radera filen från mu-plugins/, eller definiera FASTSAN_SCHEMA_DISABLED i wp-config.php.
- * Version: 1.9.0
+ * Version: 1.9.1
  * Author: Aibrick (C-instance)
  *
+ * v1.9.1 (2026-11-27, B, Johan 12:11): sidor utan _fastsan_faqs far FAQPage ur fragorna i ramen fs-guide (details.fs-guide-fraga).
  * v1.9.0 (2026-11-27, B, Johan 12:01 "kör allt", plan G1-G3): inlagg. Article.author = Person #daniel nar inlaggets forfattare ar Daniels konto, description ur utdraget, citation ur guidens kallruta (.fs-guide-kallor), FAQPage ur guidens fragor (details.fs-guide-fraga). Schema = synlig text.
  * v1.8.1 (2026-11-26, B): baskursen har utfardare Corroventa Avfuktning AB (Johan 17:40 "Kor K4").
  * v1.8.0 (2026-11-26, B): Person med hasCredential pa /kompetens/ (Johan 2026-11-26 14:14 "kor byte").
@@ -18,7 +19,7 @@
 if (!defined('ABSPATH')) { return; }
 if (defined('FASTSAN_SCHEMA_DISABLED') && FASTSAN_SCHEMA_DISABLED) { return; }
 if (defined('FASTSAN_SCHEMA_LOADED')) { return; }
-define('FASTSAN_SCHEMA_LOADED', '1.9.0');
+define('FASTSAN_SCHEMA_LOADED', '1.9.1');
 
 /**
  * Hämta service-data per slug.
@@ -349,6 +350,7 @@ add_action('wp_head', function () {
     if ($crumb) fastsan_schema_output($crumb);
 
     $faq = fastsan_schema_build_faq($post);
+    if (!$faq) $faq = fastsan_schema_build_post_faq($post);
     if ($faq) fastsan_schema_output($faq);
 
     $person = fastsan_schema_build_person($post);

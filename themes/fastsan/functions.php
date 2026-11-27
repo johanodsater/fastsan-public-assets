@@ -149,12 +149,12 @@ function fastsan_enqueue_styles() {
 		);
 	}
 
-	// Guider under Insikter: ramar, kort och tidslinje (klasserna fs-guide-*). Bara inlägg (B 2026-11-27).
-	if ( is_singular( 'post' ) ) {
+	// Guider och tjänstesidor i ramen fs-guide: ramar, kort och tidslinje. Bara där innehållet har ramen (B 2026-11-27).
+	if ( is_singular() && false !== strpos( (string) get_post_field( 'post_content', get_queried_object_id() ), 'fs-guide' ) ) {
 		wp_enqueue_style(
 			'fastsan-guide',
 			get_template_directory_uri() . '/assets/fastsan-guide.css',
-			array( 'fastsan-insikter' ),
+			array( 'fastsan-tokens' ),
 			fastsan_asset_ver( 'assets/fastsan-guide.css' )
 		);
 	}

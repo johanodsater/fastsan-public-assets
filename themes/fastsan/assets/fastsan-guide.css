@@ -1,9 +1,10 @@
 /*
  * Fastsan: guider under Insikter (innehåll inslaget i gruppen .fs-guide).
- * Laddas på inlägg (functions.php, is_singular( 'post' )). Allt är bundet till .fs-guide, så andra inlägg påverkas inte.
+ * Laddas på sidor och inlägg vars innehåll har ramen fs-guide (functions.php). Allt är bundet till .fs-guide, så andra inlägg påverkas inte.
  * Bara temats färger, typsnitt och avstånd (theme.json). Mobilen först. Samma formspråk som /kompetens/:
  * ljus panel med sandstenslinje, kapitelnummer, stämplar och tidslinje.
  * 1.0 B 2026-11-27, Johan 11:43 "vart är inramning bakgrund det lilla extra".
+ * 1.2 B 2026-11-27: tjänstesidor (/miljoinventering/) i samma form, Johan 12:11.
  * 1.1 B 2026-11-27: tidslinjen lodrät (fem spalter bröt ord), luft efter kapitelrubrik och före etikettrader.
  */
 
@@ -433,3 +434,57 @@
 	font-size: var(--wp--preset--font-size--small);
 	color: var(--wp--preset--color--tertiary-text);
 }
+
+/* 1.2: tjänstesidor i samma form (toppanel, porträtt, bild, kontaktruta, relaterade tjänster) */
+.fs-guide-topp {
+	background: var(--wp--preset--color--base-muted);
+	border-top: 3px solid var(--wp--preset--color--accent-soft);
+	padding: var(--wp--preset--spacing--50) var(--wp--preset--spacing--40);
+	margin-block-start: var(--wp--preset--spacing--40);
+}
+.fs-guide-topp > * { margin-block: 0; }
+.fs-guide-topp > * + * { margin-block-start: var(--wp--preset--spacing--30); }
+.fs-guide-person { display: flex; align-items: center; gap: var(--wp--preset--spacing--30); }
+.fs-guide-person > * { margin: 0 !important; }
+.fs-guide-person p { font-size: var(--wp--preset--font-size--small); color: var(--wp--preset--color--secondary-text); }
+.fs-guide-portratt { flex: none; }
+.fs-guide-portratt img {
+	display: block;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 0 0 0 3px var(--wp--preset--color--base), 0 0 0 4px var(--wp--preset--color--accent-soft);
+}
+.fs-guide-bild img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	border-radius: 8px;
+}
+.fs-guide-kontakt {
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+	padding: var(--wp--preset--spacing--50) var(--wp--preset--spacing--40);
+	margin-block-start: var(--wp--preset--spacing--70) !important;
+	text-align: center;
+}
+.fs-guide-kontakt > * { margin-block: 0; }
+.fs-guide-kontakt > * + * { margin-block-start: var(--wp--preset--spacing--30); }
+.fs-guide-kontakt h2 { color: var(--wp--preset--color--base); }
+.fs-guide-kontakt p { color: var(--wp--preset--color--accent-pale); }
+.fs-guide-kontakt a { color: var(--wp--preset--color--base); }
+.fs-guide-kontakt .wp-block-buttons { justify-content: center; gap: 0.75rem; }
+.fs-guide-kontakt .wp-block-button__link { border-radius: 4px; padding: 0.85rem 1.5rem; font-weight: 600; text-decoration: none; }
+.fs-guide-kontakt .is-style-fill .wp-block-button__link {
+	background: var(--wp--preset--color--accent-pale);
+	color: var(--wp--preset--color--primary);
+}
+.fs-guide-kontakt .is-style-outline .wp-block-button__link {
+	background: transparent;
+	border: 1px solid var(--wp--preset--color--base);
+	color: var(--wp--preset--color--base);
+}
+.fs-guide-relaterat li::before { content: "\2192"; }
