@@ -148,6 +148,16 @@ function fastsan_enqueue_styles() {
 			fastsan_asset_ver( 'assets/fastsan-insikter.css' )
 		);
 	}
+
+	// Guider under Insikter: ramar, kort och tidslinje (klasserna fs-guide-*). Bara inlägg (B 2026-11-27).
+	if ( is_singular( 'post' ) ) {
+		wp_enqueue_style(
+			'fastsan-guide',
+			get_template_directory_uri() . '/assets/fastsan-guide.css',
+			array( 'fastsan-insikter' ),
+			fastsan_asset_ver( 'assets/fastsan-guide.css' )
+		);
+	}
 }
 add_action( 'wp_enqueue_scripts', 'fastsan_enqueue_styles', 20 );
 
@@ -207,6 +217,7 @@ function fastsan_enqueue_editor_styles() {
 	add_editor_style( 'assets/fastsan-forms.css' );
 	add_editor_style( 'assets/fastsan-startsida.css' );
 	add_editor_style( 'assets/fastsan-kompetens.css' );
+	add_editor_style( 'assets/fastsan-guide.css' );
 }
 add_action( 'after_setup_theme', 'fastsan_enqueue_editor_styles' );
 

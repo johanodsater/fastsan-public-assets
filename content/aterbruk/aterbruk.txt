@@ -1,17 +1,94 @@
-<!-- wp:paragraph {"className":"article-byline"} -->
-<p class="article-byline">Senast granskad: 27 november 2026. Källorna står sist i guiden.</p>
+<!-- wp:group {"className":"fs-guide"} -->
+<div class="wp-block-group fs-guide"><!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026 · Källorna står sist i guiden</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"className":"article-lead"} -->
-<p class="article-lead">Att återbruka byggmaterial sparar resurser. Men en dörr, ett fönster eller en golvplatta från ett äldre hus kan innehålla ämnen som inte får spridas vidare, till exempel asbest och PCB. Därför börjar ett återbruk med en miljöinventering: först när du vet vad materialet innehåller går det att avgöra vad som kan användas igen.</p>
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Att återbruka byggmaterial sparar resurser. Men en dörr, ett fönster eller en golvplatta från ett äldre hus kan innehålla ämnen som inte får spridas vidare, till exempel asbest och PCB. Därför börjar ett återbruk med en miljöinventering: först när du vet vad materialet innehåller går det att avgöra vad som kan användas igen.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p>Guiden går igenom vad lagen kräver sedan 1 juli 2026, vilka material som brukar ställa till det, vad som inte får återbrukas eller säljas och vem som ansvarar. Den riktar sig till fastighetsägare, bostadsrättsföreningar och byggherrar.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Vad är återbruk?</h2>
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Sedan 1 juli 2026</strong> krävs en avfallshanteringsplan för åtgärder som kräver lov eller anmälan.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Före rivning</strong> ska hälsofarligt material utredas, med prover om det behövs.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Asbest från rivning och PCB-varor</strong> får inte säljas eller återanvändas.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Bara prov och analys</strong> ger säkert svar på vad ett material innehåller.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I guiden</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-innehall__lista"} -->
+<ol class="wp-block-list fs-guide-innehall__lista"><!-- wp:list-item -->
+<li><a href="#vad-ar-aterbruk">Vad är återbruk?</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#lagen">Vad lagen kräver sedan 1 juli 2026</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#tva-fragor">Miljöinventering och återbruksinventering – två olika frågor</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#fallorna">Fällorna: material som ser ofarliga ut</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#forbjudet">Det som inte får återbrukas eller säljas</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#krav">Klarar det återbrukade dagens krav?</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#ansvar">Vem ansvarar?</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#sa-gar-det-till">Så går en miljöinventering till</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#checklista">Checklista: från idé till återbrukat material</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#fragor">Vanliga frågor</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="#kallor">Källor</a></li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"vad-ar-aterbruk"} -->
+<h2 class="wp-block-heading" id="vad-ar-aterbruk">Vad är återbruk?</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -19,19 +96,52 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Gränsen mot avfall avgör vilka regler som gäller. Avfall är allt som innehavaren gör sig av med, avser att göra sig av med eller är skyldig att göra sig av med (15 kap. 4 § miljöbalken). Det som en gång har blivit avfall upphör att vara avfall först när vissa villkor är uppfyllda: det ska ha ett bestämt ändamål, det ska finnas en marknad eller efterfrågan, det ska uppfylla kraven i lag och det får inte leda till allmänt negativa följder för hälsa eller miljö (15 kap. 6–8 §§, <a href="https://www.naturvardsverket.se/vagledning-och-stod/avfall/bedomning-av-nar-avfall-upphor-att-vara-avfall/" target="_blank" rel="noreferrer noopener">Naturvårdsverkets vägledning</a>).</p>
+<p>Gränsen mot avfall avgör vilka regler som gäller. Avfall är allt som innehavaren gör sig av med, avser att göra sig av med eller är skyldig att göra sig av med (15 kap. 4 § miljöbalken).</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Vad lagen kräver sedan 1 juli 2026</h2>
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">När upphör avfall att vara avfall?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Det som en gång har blivit avfall upphör att vara avfall först när alla fyra villkoren är uppfyllda (15 kap. 6–8 §§ miljöbalken, <a href="https://www.naturvardsverket.se/vagledning-och-stod/avfall/bedomning-av-nar-avfall-upphor-att-vara-avfall/" target="_blank" rel="noreferrer noopener">Naturvårdsverkets vägledning</a>):</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-villkor"} -->
+<ol class="wp-block-list fs-guide-villkor"><!-- wp:list-item -->
+<li>Det har ett bestämt ändamål.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Det finns en marknad eller efterfrågan.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Det uppfyller kraven i lag.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Det leder inte till allmänt negativa följder för hälsa eller miljö.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Vad lagen kräver sedan 1 juli 2026</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Sedan 1 juli 2026 ska byggherren se till att det finns en avfallshanteringsplan för åtgärder som kräver lov eller anmälan (10 kap. 8 a § <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/" target="_blank" rel="noreferrer noopener">plan- och bygglagen</a>). Planen ska visa</p>
+<p>Sedan 1 juli 2026 ska byggherren se till att det finns en avfallshanteringsplan för åtgärder som kräver lov eller anmälan (10 kap. 8 a § <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/" target="_blank" rel="noreferrer noopener">plan- och bygglagen</a>).</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Avfallshanteringsplanen ska visa</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-bockar"} -->
+<ul class="wp-block-list fs-guide-bockar"><!-- wp:list-item -->
 <li>vilka byggprodukter som kan återanvändas och hur de ska tas om hand,</li>
 <!-- /wp:list-item -->
 
@@ -48,80 +158,183 @@
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf">PBL 10 kap. 8 a §</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
 <!-- wp:paragraph -->
 <p>Planen krävs inte om det är uppenbart att den inte behövs, och det avgör byggnadsnämnden. Den får stå i samma dokument som kontrollplanen. Enligt <a href="https://www.boverket.se/sv/PBL-kunskapsbanken/lov--byggande/byggprocessen/avfallshanteringsplan/" target="_blank" rel="noreferrer noopener">Boverket</a> kan en materialinventering behövas för att ta fram uppgifterna, och den kan läggas som bilaga till planen. För lov och anmälningar som kom in före 1 juli 2026 gäller de äldre reglerna om kontrollplan.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>Arbetsmiljöverket ställer ett eget krav i <a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">AFS 2023:3</a>. Innan rivning, ombyggnad eller renovering börjar ska det utredas om det finns hälsofarligt material i den del av byggnaden som arbetet gäller. Går det inte att klarlägga på annat sätt ska prover tas och analyseras, och den som ska riva ska få resultatet skriftligt.</p>
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Arbetsmiljöverkets krav</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Miljöinventering och återbruksinventering – två olika frågor</h2>
+<!-- wp:paragraph -->
+<p>Innan rivning, ombyggnad eller renovering börjar ska det utredas om det finns hälsofarligt material i den del av byggnaden som arbetet gäller. Går det inte att klarlägga på annat sätt ska prover tas och analyseras, och den som ska riva ska få resultatet skriftligt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">AFS 2023:3</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Årtalen att hålla koll på</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-tidslinje"} -->
+<ol class="wp-block-list fs-guide-tidslinje"><!-- wp:list-item -->
+<li><strong>1956–1973</strong> PCB i fogmassor och golvmassor</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>1982</strong> Asbest förbjuds i Sverige</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>8 januari 2026</strong> Nya byggproduktförordningen börjar gälla</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>1 juli 2026</strong> Krav på avfallshanteringsplan</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>8 januari 2040</strong> Äldre byggproduktförordningen gäller hit</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"tva-fragor"} -->
+<h2 class="wp-block-heading" id="tva-fragor">Miljöinventering och återbruksinventering – två olika frågor</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>En miljöinventering kartlägger vad som kan bli farligt avfall. Boverkets allmänna råd om rivningsavfall kallar den materialinventering. En återbruksinventering bedömer vilka byggdelar som kan användas igen och i vilket skick de är.</p>
+<!-- wp:group {"className":"fs-guide-jamfor"} -->
+<div class="wp-block-group fs-guide-jamfor"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Miljöinventering</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Vad är farligt?</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="https://www.boverket.se/sv/byggande/cirkular-ekonomi/vagledning/barverksdelar/bedomning-skick/miljo-och-halsa/" target="_blank" rel="noreferrer noopener">Boverket skriver</a> att kravet på miljöinventering också gäller delar som ska återbrukas, för att säkerställa att de är fria från otillåtna ämnen, och att det vid återbruk kan behövas en noggrannare inventering av just de materialen. Därför styr miljöinventeringen återbruket: en dörr kan vara i fint skick och ändå inte få användas igen.</p>
+<p>Kartlägger vad som kan bli farligt avfall. Boverkets allmänna råd om rivningsavfall kallar den materialinventering.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Återbruksinventering</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Vad kan användas igen?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bedömer vilka byggdelar som kan användas igen och i vilket skick de är.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.boverket.se/sv/byggande/cirkular-ekonomi/vagledning/barverksdelar/bedomning-skick/miljo-och-halsa/" target="_blank" rel="noreferrer noopener">Boverket skriver</a> att kravet på miljöinventering också gäller delar som ska återbrukas, för att säkerställa att de är fria från otillåtna ämnen, och att det vid återbruk kan behövas en noggrannare inventering av just de materialen. Därför styr miljöinventeringen återbruket.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-citat"} -->
+<p class="fs-guide-citat">En dörr kan vara i fint skick och ändå inte få användas igen.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p>Boverket påpekar också två saker som är lätta att missa. Ett material som har fungerat utan problem utomhus kan ge problem och ohälsa om det återbrukas inomhus. Och inventeringen behöver ofta göras i steg: en första omgång medan lokalerna används, och en kompletterande när de är tömda och svåråtkomliga delar har frilagts. <a href="/miljoinventering/">Läs om Fastsans miljöinventering</a>.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Fällorna: material som ser ofarliga ut</h2>
+<!-- wp:heading {"anchor":"fallorna"} -->
+<h2 class="wp-block-heading" id="fallorna">Fällorna: material som ser ofarliga ut</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p>De flesta farliga ämnen syns inte. Byggår och material ger en första fingervisning, men bara prov och analys ger säkert svar. Det här är de vanligaste.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3} -->
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Asbest</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>Asbest användes i byggnader från 1940-talet och en bit in på 1980-talet och förbjöds i Sverige 1982. Det kan finnas i bland annat kakelfix och fogar, golvmattor och lim under mattor och plattor, rörisolering, fönsterkitt, puts och skivor (<a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/asbest/" target="_blank" rel="noreferrer noopener">Boverket</a>). Det går i regel inte att se om ett material innehåller asbest: ett prov måste analyseras i mikroskop. Arbete med asbest kräver tillstånd från <a href="https://www.av.se/halsa-och-sakerhet/kemiska-risker/risker-for-vissa-amnen-produkter-och-verksamheter/asbest/" target="_blank" rel="noreferrer noopener">Arbetsmiljöverket</a>. Mer om <a href="/provtagning/asbest/">asbestprov</a> och om <a href="/asbest-2025-nya-gransvardet/">det nya gränsvärdet för asbest</a>.</p>
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Användes från 1940-talet till förbudet 1982</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3} -->
+<!-- wp:paragraph -->
+<p>Kan finnas i bland annat kakelfix och fogar, golvmattor och lim under mattor och plattor, rörisolering, fönsterkitt, puts och skivor (<a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/asbest/" target="_blank" rel="noreferrer noopener">Boverket</a>). Det går i regel inte att se om ett material innehåller asbest: ett prov måste analyseras i mikroskop. Arbete med asbest kräver tillstånd från <a href="https://www.av.se/halsa-och-sakerhet/kemiska-risker/risker-for-vissa-amnen-produkter-och-verksamheter/asbest/" target="_blank" rel="noreferrer noopener">Arbetsmiljöverket</a>. Mer om <a href="/provtagning/asbest/">asbestprov</a> och om <a href="/asbest-2025-nya-gransvardet/">det nya gränsvärdet för asbest</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">PCB</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>PCB användes i fogmassor och halkskyddade golvmassor. Den som äger en byggnad där sådana massor kan ha använts vid bygget eller en renovering åren 1956–1973 ska undersöka om de innehåller PCB (16 § <a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">förordningen om PCB m.m.</a>). En vara med mer än 50 mg/kg PCB räknas som PCB-produkt. Kommunen är i de flesta fall tillsynsmyndighet (<a href="https://www.naturvardsverket.se/vagledning-och-stod/kemikalier/pcb/" target="_blank" rel="noreferrer noopener">Naturvårdsverket</a>). Mer om <a href="/pcb/">PCB-inventering</a>.</p>
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Fogmassor och golvmassor 1956–1973</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3} -->
+<!-- wp:paragraph -->
+<p>Den som äger en byggnad där sådana massor kan ha använts vid bygget eller en renovering de åren ska undersöka om de innehåller PCB (16 § <a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">förordningen om PCB m.m.</a>). En vara med mer än 50 mg/kg PCB räknas som PCB-produkt. Kommunen är i de flesta fall tillsynsmyndighet (<a href="https://www.naturvardsverket.se/vagledning-och-stod/kemikalier/pcb/" target="_blank" rel="noreferrer noopener">Naturvårdsverket</a>). Mer om <a href="/pcb/">PCB-inventering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Freoner i isolering</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>Cellplast i markskivor, väggar, flytande golv och kylrum kan innehålla ozonnedbrytande freoner (CFC och HCFC). <a href="https://www.naturvardsverket.se/vagledning-och-stod/avfall/bygg--och-rivningsavfall/cfc-haltigt-byggisolermaterial/" target="_blank" rel="noreferrer noopener">Naturvårdsverket</a> anger att det oftast gäller XPS och PUR, som har tät snittyta; PUR är ofta gul. Isolering med mer än 0,1 viktprocent CFC är farligt avfall. Den ska hanteras varsamt så att den inte bryts sönder, och hållas separat.</p>
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Cellplast, oftast XPS och PUR</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3} -->
+<!-- wp:paragraph -->
+<p>Cellplast i markskivor, väggar, flytande golv och kylrum kan innehålla ozonnedbrytande freoner (CFC och HCFC). XPS och PUR har tät snittyta, och PUR är ofta gul (<a href="https://www.naturvardsverket.se/vagledning-och-stod/avfall/bygg--och-rivningsavfall/cfc-haltigt-byggisolermaterial/" target="_blank" rel="noreferrer noopener">Naturvårdsverket</a>). Isolering med mer än 0,1 viktprocent CFC är farligt avfall. Den ska hanteras varsamt så att den inte bryts sönder, och hållas separat.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Impregnerat trä</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>Trä impregnerat med <a href="https://www.kemi.se/lagar-och-regler/lagstiftningar-inom-kemikalieomradet/bekampningsmedel/biocider/vanliga-typer-av-biocidprodukter/traskyddsmedel/traskydd-med-kreosot" target="_blank" rel="noreferrer noopener">kreosot</a> får inte användas inuti byggnader, i leksaker, på lekplatser eller där huden ofta kommer åt det. Begagnat kreosotträ får säljas till och återanvändas av privatpersoner bara om det impregnerades före 31 december 2002. Virke impregnerat med kreosot, arsenik, krom eller koppar kan vara farligt avfall, och är du osäker ska virket behandlas som impregnerat (<a href="https://www.kemi.se/lagar-och-regler/lagstiftningar-inom-kemikalieomradet/bekampningsmedel/biocider/vanliga-typer-av-biocidprodukter/traskyddsmedel" target="_blank" rel="noreferrer noopener">Kemikalieinspektionen</a>).</p>
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Kreosot, arsenik, krom och koppar</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3} -->
+<!-- wp:paragraph -->
+<p>Trä impregnerat med <a href="https://www.kemi.se/lagar-och-regler/lagstiftningar-inom-kemikalieomradet/bekampningsmedel/biocider/vanliga-typer-av-biocidprodukter/traskyddsmedel/traskydd-med-kreosot" target="_blank" rel="noreferrer noopener">kreosot</a> får inte användas inuti byggnader, i leksaker, på lekplatser eller där huden ofta kommer åt det. Begagnat kreosotträ får säljas till och återanvändas av privatpersoner bara om det impregnerades före 31 december 2002. Virke impregnerat med kreosot, arsenik, krom eller koppar kan vara farligt avfall, och är du osäker ska virket behandlas som impregnerat (<a href="https://www.kemi.se/lagar-och-regler/lagstiftningar-inom-kemikalieomradet/bekampningsmedel/biocider/vanliga-typer-av-biocidprodukter/traskyddsmedel" target="_blank" rel="noreferrer noopener">Kemikalieinspektionen</a>).</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Blåbetong</h3>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>Blåbetong är ett alunskifferbaserat byggnadsmaterial som tillverkades 1929–1975 och avger radon (<a href="https://www.stralsakerhetsmyndigheten.se/omraden/radon/vad-ar-radon/radonkallor-i-inomhusluften/" target="_blank" rel="noreferrer noopener">Strålsäkerhetsmyndigheten</a>). Mer om <a href="/radon/">radonmätning</a>.</p>
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Tillverkades 1929–1975</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:gallery {"columns":3,"linkTo":"none"} -->
-<figure class="wp-block-gallery has-nested-images columns-3 is-cropped"><!-- wp:image {"id":165,"sizeSlug":"full","linkDestination":"none"} -->
+<!-- wp:paragraph -->
+<p>Ett alunskifferbaserat byggnadsmaterial som avger radon (<a href="https://www.stralsakerhetsmyndigheten.se/omraden/radon/vad-ar-radon/radonkallor-i-inomhusluften/" target="_blank" rel="noreferrer noopener">Strålsäkerhetsmyndigheten</a>). Mer om <a href="/radon/">radonmätning</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:gallery {"columns":3,"linkTo":"none","className":"fs-guide-galleri"} -->
+<figure class="wp-block-gallery has-nested-images columns-3 is-cropped fs-guide-galleri"><!-- wp:image {"id":165,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-aterbruk-fonsterkitt-sprickor.webp" alt="Sprucket och flagnande fönsterkitt och färg i hörnet av en fönsterbåge" class="wp-image-165"/><figcaption class="wp-element-caption">Fönsterkitt kan innehålla asbest.</figcaption></figure>
 <!-- /wp:image -->
 
@@ -146,30 +359,70 @@
 <!-- /wp:image --></figure>
 <!-- /wp:gallery -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Det som inte får återbrukas eller säljas</h2>
+<!-- wp:heading {"anchor":"forbjudet"} -->
+<h2 class="wp-block-heading" id="forbjudet">Det som inte får återbrukas eller säljas</h2>
 <!-- /wp:heading -->
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Asbest.</strong> Asbesthaltigt material som tagits ner vid rivning får inte säljas eller överlåtas, inte heller av privatpersoner. Förbudet står i EU:s kemikalieförordning Reach.</li>
-<!-- /wp:list-item -->
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort fs-guide-kort--stopp"} -->
+<div class="wp-block-group fs-guide-kort fs-guide-kort--stopp"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Asbest</h3>
+<!-- /wp:heading -->
 
-<!-- wp:list-item -->
-<li><strong>PCB.</strong> En PCB-vara får inte tillverkas, bearbetas, saluföras, överlåtas för användning eller återanvändas (7 § förordningen om PCB m.m.).</li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Får inte säljas eller överlåtas</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:list-item -->
-<li><strong>Kreosotträ.</strong> Bara på villkoren ovan, och aldrig inomhus.</li>
-<!-- /wp:list-item -->
+<!-- wp:paragraph -->
+<p>Asbesthaltigt material som tagits ner vid rivning får inte säljas eller överlåtas, inte heller av privatpersoner. Förbudet står i EU:s kemikalieförordning Reach.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
-<!-- wp:list-item -->
-<li><strong>Ämnen på kandidatförteckningen.</strong> Här finns inget förbud. Men den som lämnar ifrån sig en vara med mer än 0,1 viktprocent av ett sådant ämne ska ge information om säker användning: till yrkeskunder senast vid första leveransen och till konsumenter på begäran inom 45 dagar, kostnadsfritt (<a href="https://www.kemi.se/lagar-och-regler/lagstiftningar-inom-kemikalieomradet/eu-gemensam-lagstiftning/reach-forordningen/reach-forordningen-och-varor" target="_blank" rel="noreferrer noopener">Kemikalieinspektionen</a>).</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
+<!-- wp:group {"className":"fs-guide-kort fs-guide-kort--stopp"} -->
+<div class="wp-block-group fs-guide-kort fs-guide-kort--stopp"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">PCB</h3>
+<!-- /wp:heading -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Klarar det återbrukade dagens krav?</h2>
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Får inte återanvändas</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En PCB-vara får inte tillverkas, bearbetas, saluföras, överlåtas för användning eller återanvändas (7 § förordningen om PCB m.m.).</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort fs-guide-kort--stopp"} -->
+<div class="wp-block-group fs-guide-kort fs-guide-kort--stopp"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Kreosotträ</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Bara på villkor, aldrig inomhus</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Begagnat kreosotträ får bara säljas till och återanvändas av privatpersoner om det impregnerades före 31 december 2002, och aldrig inuti byggnader.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort fs-guide-kort--info"} -->
+<div class="wp-block-group fs-guide-kort fs-guide-kort--info"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Ämnen på kandidatförteckningen</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Inget förbud, men plikt att informera</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Den som lämnar ifrån sig en vara med mer än 0,1 viktprocent av ett sådant ämne ska ge information om säker användning: till yrkeskunder senast vid första leveransen och till konsumenter på begäran inom 45 dagar, kostnadsfritt (<a href="https://www.kemi.se/lagar-och-regler/lagstiftningar-inom-kemikalieomradet/eu-gemensam-lagstiftning/reach-forordningen/reach-forordningen-och-varor" target="_blank" rel="noreferrer noopener">Kemikalieinspektionen</a>).</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"krav"} -->
+<h2 class="wp-block-heading" id="krav">Klarar det återbrukade dagens krav?</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -177,11 +430,16 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Begagnade byggprodukter kan sällan CE-märkas, eftersom CE-märkningen bygger på kontroll av tillverkningen. <a href="https://www.boverket.se/sv/byggande/cirkular-ekonomi/styrmedel/ce-markning-och-aterbruk/" target="_blank" rel="noreferrer noopener">Boverket</a> nämner andra underlag för byggherrens bedömning:</p>
+<p>Begagnade byggprodukter kan sällan CE-märkas, eftersom CE-märkningen bygger på kontroll av tillverkningen.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Underlag för byggherrens bedömning</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-bockar"} -->
+<ul class="wp-block-list fs-guide-bockar"><!-- wp:list-item -->
 <li>tidigare märkning eller dokumentation om produkten,</li>
 <!-- /wp:list-item -->
 
@@ -202,62 +460,95 @@
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.boverket.se/sv/byggande/cirkular-ekonomi/styrmedel/ce-markning-och-aterbruk/" target="_blank" rel="noreferrer noopener">Boverket: CE-märkning och återbruk</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
 <!-- wp:paragraph -->
 <p>EU:s nya förordning om byggprodukter, (EU) 2024/3110, blev till stora delar tillämplig 8 januari 2026 och ger möjlighet att bedöma och beskriva prestanda för återbrukade byggprodukter. Men 2026 finns ännu inga harmoniserade standarder enligt den, och den äldre förordningen gäller parallellt fram till 8 januari 2040 (<a href="https://www.boverket.se/sv/PBL-kunskapsbanken/regler-om-byggande/krav-pa-byggprodukter/cpr-2024/" target="_blank" rel="noreferrer noopener">Boverket</a>).</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Vem ansvarar?</h2>
+<!-- wp:heading {"anchor":"ansvar"} -->
+<h2 class="wp-block-heading" id="ansvar">Vem ansvarar?</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>Byggherren ska se till att varje åtgärd genomförs enligt de krav som gäller (10 kap. 5 § plan- och bygglagen) och att avfallshanteringsplanen finns.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Avfallsproducent är som huvudregel den vars arbete ger upphov till avfallet. Enligt <a href="https://www.naturvardsverket.se/vagledning-och-stod/avfall/begrepp-och-definitioner/vem-ar-avfallsproducent/" target="_blank" rel="noreferrer noopener">Naturvårdsverket</a> går det inte att avtala om vem som är avfallsproducent. Ett avtal kan däremot reglera vem som står för behandlingen av avfallet och kostnaderna för det.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Bygg- och rivningsavfall ska sorteras där det uppkommer, minst i trä, mineral (betong, tegel, klinker, keramik och sten), metall, glas, plast och gips (3 kap. 19 § <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/avfallsforordning-2020614_sfs-2020-614/" target="_blank" rel="noreferrer noopener">avfallsförordningen</a>). Farligt avfall får inte blandas eller spädas ut med annat avfall eller andra material (4 kap. 19 §).</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Så går en miljöinventering till</h2>
+<!-- wp:group {"className":"fs-guide-roller"} -->
+<div class="wp-block-group fs-guide-roller"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Byggherren</h3>
 <!-- /wp:heading -->
 
-<!-- wp:list {"ordered":true} -->
-<ol class="wp-block-list"><!-- wp:list-item -->
-<li>Genomgång av ritningar, byggår och tidigare renoveringar.</li>
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Ser till att kraven följs</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ska se till att varje åtgärd genomförs enligt de krav som gäller (10 kap. 5 § plan- och bygglagen) och att avfallshanteringsplanen finns.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Avfallsproducenten</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Den vars arbete ger avfallet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Enligt <a href="https://www.naturvardsverket.se/vagledning-och-stod/avfall/begrepp-och-definitioner/vem-ar-avfallsproducent/" target="_blank" rel="noreferrer noopener">Naturvårdsverket</a> går det inte att avtala om vem som är avfallsproducent. Ett avtal kan däremot reglera vem som står för behandlingen av avfallet och kostnaderna för det.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Alla på bygget</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Sorterar där avfallet uppkommer</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Minst trä, mineral (betong, tegel, klinker, keramik och sten), metall, glas, plast och gips (3 kap. 19 § <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/avfallsforordning-2020614_sfs-2020-614/" target="_blank" rel="noreferrer noopener">avfallsförordningen</a>). Farligt avfall får inte blandas eller spädas ut (4 kap. 19 §).</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går en miljöinventering till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Genomgång</strong> av ritningar, byggår och tidigare renoveringar.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Besiktning på plats.</li>
+<li><strong>Besiktning</strong> på plats.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Prov av misstänkta material. Antalet beror på byggnadens storlek och hur många olika material den har.</li>
+<li><strong>Prov</strong> av misstänkta material. Antalet beror på byggnadens storlek och hur många olika material den har.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Analys på laboratorium.</li>
+<li><strong>Analys</strong> på laboratorium.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Skriftlig rapport med mängdberäkningar, foton och avfallsklassificering, som underlag för avfallshanteringsplanen.</li>
+<li><strong>Rapport</strong> med mängdberäkningar, foton och avfallsklassificering, som underlag för avfallshanteringsplanen.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Genomgång av rapporten, där frågor besvaras.</li>
+<li><strong>Genomgång</strong> av rapporten, där frågor besvaras.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->
 
-<!-- wp:paragraph -->
-<p>Fastsan tar prover och skriver rapporter, men sanerar inte. <a href="/kompetens/">Utbildning och certifiering</a> visar vilka utbildningar inventeringarna bygger på.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:gallery {"columns":2,"linkTo":"none"} -->
-<figure class="wp-block-gallery has-nested-images columns-2 is-cropped"><!-- wp:image {"id":170,"sizeSlug":"full","linkDestination":"none"} -->
+<!-- wp:gallery {"columns":2,"linkTo":"none","className":"fs-guide-galleri"} -->
+<figure class="wp-block-gallery has-nested-images columns-2 is-cropped fs-guide-galleri"><!-- wp:image {"id":170,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-aterbruk-matta-lim-provpase.webp" alt="Provpåse märkt matta och lim på ett golv där mattan är uppriven" class="wp-image-170"/><figcaption class="wp-element-caption">Prov av matta och lim.</figcaption></figure>
 <!-- /wp:image -->
 
@@ -266,12 +557,17 @@
 <!-- /wp:image --></figure>
 <!-- /wp:gallery -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Checklista: från idé till återbrukat material</h2>
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Fastsan tar prover och skriver rapporter, men sanerar inte. <a href="/kompetens/">Utbildning och certifiering</a> visar vilka utbildningar inventeringarna bygger på.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"checklista"} -->
+<h2 class="wp-block-heading" id="checklista">Checklista: från idé till återbrukat material</h2>
 <!-- /wp:heading -->
 
-<!-- wp:list {"ordered":true} -->
-<ol class="wp-block-list"><!-- wp:list-item -->
+<!-- wp:group {"className":"fs-guide-checklista"} -->
+<div class="wp-block-group fs-guide-checklista"><!-- wp:list {"ordered":true,"className":"fs-guide-checklista__lista"} -->
+<ol class="wp-block-list fs-guide-checklista__lista"><!-- wp:list-item -->
 <li>Ta reda på byggår och tidigare renoveringar.</li>
 <!-- /wp:list-item -->
 
@@ -302,54 +598,56 @@
 <!-- wp:list-item -->
 <li>Sortera avfallet på plats och håll farligt avfall för sig.</li>
 <!-- /wp:list-item --></ol>
-<!-- /wp:list -->
+<!-- /wp:list --></div>
+<!-- /wp:group -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Vanliga frågor</h2>
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
 <!-- /wp:heading -->
 
-<!-- wp:details -->
-<details class="wp-block-details"><summary>Hur vet man om det är asbest?</summary><!-- wp:paragraph -->
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Hur vet man om det är asbest?</summary><!-- wp:paragraph -->
 <p>Byggåret ger en första bedömning: en byggnad från 1940–1980 innehåller sannolikt asbest någonstans. Men det enda säkra sättet är att ta prover och analysera dem.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details -->
-<details class="wp-block-details"><summary>När förbjöds asbest?</summary><!-- wp:paragraph -->
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>När förbjöds asbest?</summary><!-- wp:paragraph -->
 <p>Asbest förbjöds i byggsektorn i Sverige 1982. Tänk på att asbest också kan finnas i material som har byggts in vid tidigare renoveringar.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details -->
-<details class="wp-block-details"><summary>Vad är PCB?</summary><!-- wp:paragraph -->
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är PCB?</summary><!-- wp:paragraph -->
 <p>PCB (polyklorerade bifenyler) användes bland annat i fogmassor och golvmassor i byggnader från 1956–1973. En vara med mer än 50 mg/kg PCB räknas som PCB-produkt och får inte återanvändas.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details -->
-<details class="wp-block-details"><summary>Behöver vi en avfallshanteringsplan?</summary><!-- wp:paragraph -->
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Behöver vi en avfallshanteringsplan?</summary><!-- wp:paragraph -->
 <p>I regel ja, om åtgärden kräver bygglov, rivningslov eller anmälan. Planen behövs inte om det är uppenbart att den inte behövs, och det avgör byggnadsnämnden.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details -->
-<details class="wp-block-details"><summary>Får jag sälja gamla fönster?</summary><!-- wp:paragraph -->
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Får jag sälja gamla fönster?</summary><!-- wp:paragraph -->
 <p>Det beror på vad de innehåller. Fönsterkitt kan innehålla asbest, och asbesthaltigt material från rivning får inte säljas eller överlåtas. Låt analysera kittet innan fönstren säljs.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details -->
-<details class="wp-block-details"><summary>Kan vi avtala bort ansvaret för avfallet?</summary><!-- wp:paragraph -->
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Kan vi avtala bort ansvaret för avfallet?</summary><!-- wp:paragraph -->
 <p>Nej, inte vem som är avfallsproducent. Ett avtal kan reglera vem som sköter behandlingen av avfallet och betalar för den.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading">Källor</h2>
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
 <!-- /wp:heading -->
 
-<!-- wp:list -->
-<ul class="wp-block-list"><!-- wp:list-item -->
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
 <li><a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/miljobalk-1998808_sfs-1998-808/" target="_blank" rel="noreferrer noopener">Miljöbalk (1998:808), 15 kap.</a>, riksdagen.se.</li>
 <!-- /wp:list-item -->
 
@@ -423,9 +721,11 @@
 
 <!-- wp:list-item -->
 <li><a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/avfallsforordning-2020614_sfs-2020-614/" target="_blank" rel="noreferrer noopener">Avfallsförordning (2020:614), 3 kap. 19 § och 4 kap. 19 §</a>, riksdagen.se.</li>
-<!-- /wp:list-item --></ul>
+<!-- /wp:list-item --></ol>
 <!-- /wp:list -->
 
-<!-- wp:paragraph -->
-<p>Alla källor lästa 26–27 november 2026.</p>
-<!-- /wp:paragraph -->
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 26–27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
