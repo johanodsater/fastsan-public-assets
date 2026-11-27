@@ -491,6 +491,7 @@
 .fs-guide-relaterat li::before { content: "\2192"; }
 
 /* 1.3: listsidan /insikter/ (senaste guiden stort, resten i rutnät) */
+.wp-block-post-content:has(> .fs-guide--bred),
 .wp-block-post-content > .fs-guide--bred { max-width: var(--wp--style--global--wide-size) !important; }
 .fs-guide--bred > h2::before { content: none; }
 .fs-insikt-utvald .wp-block-post-template,
