@@ -56,6 +56,8 @@
 .fs-article-body .wp-block-post-featured-image img {
   width: 100%;
   height: auto;
+  aspect-ratio: 16 / 9; /* liggande även när fotot är stående (B 2026-11-27) */
+  object-fit: cover;
   border-radius: 8px;
   display: block;
 }
