@@ -23,10 +23,6 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:image {"id":154,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-bild"} -->
-<figure class="wp-block-image size-full fs-guide-bild"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-miljokonsult-daniel-stalbrand-faltbesok.webp" alt="Daniel Stålbrand, miljökonsult på Fastsan, står utomhus vid en fastighet med en uppslagen rapportpärm" class="wp-image-154"/></figure>
-<!-- /wp:image -->
-
 <!-- wp:group {"className":"fs-guide-korthet"} -->
 <div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
 <p class="fs-guide-rubrikrad">I korthet</p>
