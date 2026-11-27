@@ -96,7 +96,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Gränsen mot avfall avgör vilka regler som gäller. Avfall är allt som innehavaren gör sig av med, avser att göra sig av med eller är skyldig att göra sig av med (15 kap. 4 § miljöbalken).</p>
+<p>Gränsen mot avfall avgör vilka regler som gäller. Avfall är allt som innehavaren gör sig av med, avser att göra sig av med eller är skyldig att göra sig av med (15 kap. 4 § miljöbalken).</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"fs-guide-ruta"} -->
@@ -105,7 +105,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Det som en gång har blivit avfall upphör att vara avfall först när alla fyra villkoren är uppfyllda (15 kap. 6–8 §§ miljöbalken, <a href="https://www.naturvardsverket.se/vagledning-och-stod/avfall/bedomning-av-nar-avfall-upphor-att-vara-avfall/" target="_blank" rel="noreferrer noopener">Naturvårdsverkets vägledning</a>):</p>
+<p>Det som en gång har blivit avfall upphör att vara avfall först när alla fyra villkoren är uppfyllda (15 kap. 6–8 §§ miljöbalken, <a href="https://www.naturvardsverket.se/vagledning-och-stod/avfall/bedomning-av-nar-avfall-upphor-att-vara-avfall/" target="_blank" rel="noreferrer noopener">Naturvårdsverkets vägledning</a>):</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"ordered":true,"className":"fs-guide-villkor"} -->
@@ -132,7 +132,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Sedan 1 juli 2026 ska byggherren se till att det finns en avfallshanteringsplan för åtgärder som kräver lov eller anmälan (10 kap. 8 a § <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/" target="_blank" rel="noreferrer noopener">plan- och bygglagen</a>).</p>
+<p>Sedan 1 juli 2026 ska byggherren se till att det finns en avfallshanteringsplan för åtgärder som kräver lov eller anmälan (10 kap. 8 a § <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/" target="_blank" rel="noreferrer noopener">plan- och bygglagen</a>).</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"fs-guide-krav"} -->
@@ -159,7 +159,7 @@
 <!-- /wp:list -->
 
 <!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
-<p class="fs-guide-paragraf">PBL 10 kap. 8 a §</p>
+<p class="fs-guide-paragraf">PBL 10 kap. 8 a §</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -286,7 +286,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Den som äger en byggnad där sådana massor kan ha använts vid bygget eller en renovering de åren ska undersöka om de innehåller PCB (16 § <a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">förordningen om PCB m.m.</a>). En vara med mer än 50 mg/kg PCB räknas som PCB-produkt. Kommunen är i de flesta fall tillsynsmyndighet (<a href="https://www.naturvardsverket.se/vagledning-och-stod/kemikalier/pcb/" target="_blank" rel="noreferrer noopener">Naturvårdsverket</a>). Mer om <a href="/pcb/">PCB-inventering</a>.</p>
+<p>Den som äger en byggnad där sådana massor kan ha använts vid bygget eller en renovering de åren ska undersöka om de innehåller PCB (16 § <a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">förordningen om PCB m.m.</a>). En vara med mer än 50 mg/kg PCB räknas som PCB-produkt. Kommunen är i de flesta fall tillsynsmyndighet (<a href="https://www.naturvardsverket.se/vagledning-och-stod/kemikalier/pcb/" target="_blank" rel="noreferrer noopener">Naturvårdsverket</a>). Mer om <a href="/pcb/">PCB-inventering</a>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -388,7 +388,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>En PCB-vara får inte tillverkas, bearbetas, saluföras, överlåtas för användning eller återanvändas (7 § förordningen om PCB m.m.).</p>
+<p>En PCB-vara får inte tillverkas, bearbetas, saluföras, överlåtas för användning eller återanvändas (7 § förordningen om PCB m.m.).</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -426,7 +426,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Ett återbrukat material ska bidra till att byggnaden klarar samma krav som med nytt material. En byggprodukt får bara byggas in om den är lämplig för den avsedda användningen (8 kap. 19 § plan- och bygglagen), och det är byggherren som ansvarar för valet.</p>
+<p>Ett återbrukat material ska bidra till att byggnaden klarar samma krav som med nytt material. En byggprodukt får bara byggas in om den är lämplig för den avsedda användningen (8 kap. 19 § plan- och bygglagen), och det är byggherren som ansvarar för valet.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -484,7 +484,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Ska se till att varje åtgärd genomförs enligt de krav som gäller (10 kap. 5 § plan- och bygglagen) och att avfallshanteringsplanen finns.</p>
+<p>Ska se till att varje åtgärd genomförs enligt de krav som gäller (10 kap. 5 § plan- och bygglagen) och att avfallshanteringsplanen finns.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -512,7 +512,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Minst trä, mineral (betong, tegel, klinker, keramik och sten), metall, glas, plast och gips (3 kap. 19 § <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/avfallsforordning-2020614_sfs-2020-614/" target="_blank" rel="noreferrer noopener">avfallsförordningen</a>). Farligt avfall får inte blandas eller spädas ut (4 kap. 19 §).</p>
+<p>Minst trä, mineral (betong, tegel, klinker, keramik och sten), metall, glas, plast och gips (3 kap. 19 § <a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/avfallsforordning-2020614_sfs-2020-614/" target="_blank" rel="noreferrer noopener">avfallsförordningen</a>). Farligt avfall får inte blandas eller spädas ut (4 kap. 19 §).</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -656,7 +656,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/" target="_blank" rel="noreferrer noopener">Plan- och bygglag (2010:900), 8 kap. 19 §, 10 kap. 5 och 8 a §§</a>, riksdagen.se.</li>
+<li><a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/plan-och-bygglag-2010900_sfs-2010-900/" target="_blank" rel="noreferrer noopener">Plan- och bygglag (2010:900), 8 kap. 19 §, 10 kap. 5 och 8 a §§</a>, riksdagen.se.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -720,7 +720,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/avfallsforordning-2020614_sfs-2020-614/" target="_blank" rel="noreferrer noopener">Avfallsförordning (2020:614), 3 kap. 19 § och 4 kap. 19 §</a>, riksdagen.se.</li>
+<li><a href="https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/avfallsforordning-2020614_sfs-2020-614/" target="_blank" rel="noreferrer noopener">Avfallsförordning (2020:614), 3 kap. 19 § och 4 kap. 19 §</a>, riksdagen.se.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->
 

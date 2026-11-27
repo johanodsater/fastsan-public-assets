@@ -4,6 +4,7 @@
  * Bara temats färger, typsnitt och avstånd (theme.json). Mobilen först. Samma formspråk som /kompetens/:
  * ljus panel med sandstenslinje, kapitelnummer, stämplar och tidslinje.
  * 1.0 B 2026-11-27, Johan 11:43 "vart är inramning bakgrund det lilla extra".
+ * 1.1 B 2026-11-27: tidslinjen lodrät (fem spalter bröt ord), luft efter kapitelrubrik och före etikettrader.
  */
 
 /* Utvald bild: liggande 16:9 även när fotot är stående (bara i guider) */
@@ -15,6 +16,8 @@
 
 .fs-guide { counter-reset: fs-guide-kap; }
 .fs-guide > * + * { margin-block-start: var(--wp--preset--spacing--40); }
+.fs-guide > h2 + * { margin-block-start: var(--wp--preset--spacing--40) !important; }
+.fs-guide > * + .fs-guide-rubrikrad { margin-block-start: var(--wp--preset--spacing--50) !important; }
 
 /* Rubrikrad: liten versal etikett i sandsten */
 .fs-guide-rubrikrad {
@@ -189,7 +192,7 @@
 }
 .fs-guide-paragraf a { color: inherit; }
 
-/* Tidslinje: lodrät på mobil, vågrät från 640 px */
+/* Tidslinje: lodrät, med årtalet i egen spalt från 640 px */
 .fs-guide-tidslinje {
 	list-style: none;
 	margin: 0 !important;
@@ -231,15 +234,13 @@
 	color: var(--wp--preset--color--primary);
 }
 @media (min-width: 640px) {
-	.fs-guide-tidslinje { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 	.fs-guide-tidslinje li {
-		margin: 0;
-		padding: 1.3em 0.6em 0 0;
-		border-left: 0;
-		border-top: 3px solid var(--wp--preset--color--border);
+		display: grid;
+		grid-template-columns: 9.5em minmax(0, 1fr);
+		column-gap: 1em;
+		align-items: baseline;
+		font-size: var(--wp--preset--font-size--medium);
 	}
-	.fs-guide-tidslinje li:last-child { border-top-color: transparent; }
-	.fs-guide-tidslinje li::before { left: 0; top: calc(-0.5em - 1.5px); }
 }
 
 /* Kort: jämförelse, ämnen, förbud och roller */
