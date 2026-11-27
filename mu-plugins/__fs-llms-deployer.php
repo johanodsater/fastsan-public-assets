@@ -2,8 +2,10 @@
 /**
  * Plugin Name: Fastsan llms.txt + agents.md Deployer
  * Description: One-shot deploy of /llms.txt and /agents.md to webroot for AI-crawler indexing.
- * Version: 1.10
+ * Version: 1.11
  *
+ * 1.11 (2026-11-27, B): guiden om återbruk under Insikter och tre frågor i frågetabellen (Johan 2026-11-27 12:01
+ * "kor allt", plan G4; publicerad 12:06 pa "kor byte").
  * 1.10 (2026-11-26, B): sidan Utbildning och certifiering (/kompetens/) under Foretaget (Johan 2026-11-26 14:14
  * "kor byte").
  * Author: Ai Brick AB
@@ -88,6 +90,7 @@ Tekniska fördjupningar av markmiljöundersökning — specifika analystyper, st
 ## Insikter
 
 - [Asbest 2025 — nya gränsvärdet och vad det betyder för dig som beställare](https://fastsan.se/asbest-2025-nya-gransvardet/): Genomgång av AFS 2025:5–8, det tiofaldigt sänkta gränsvärdet 0,01 fiber/cm³ från 19 december 2025, skärpt tillståndskrav och beställarens identifieringsansvar.
+- [Återbruk av byggmaterial – därför ska miljöinventeringen komma först](https://fastsan.se/aterbruk-miljoinventering/): Vad lagen kräver sedan 1 juli 2026 (avfallshanteringsplan, PBL 10 kap. 8 a §), skillnaden mellan miljöinventering och återbruksinventering, material som inte får återbrukas eller säljas (asbest, PCB, kreosotträ), ansvar och checklista. 19 primärkällor.
 
 ## Akut
 
@@ -166,6 +169,9 @@ Innehåll på externa kataloger, branschsajter eller tredjepartskällor kan vara
 | "Vilka områden i Mälardalen täcker Fastsan?" | Enköping i väster, Norrtälje i norr, Södertälje i söder, Stockholm centralt — /om/ |
 | "Kan ni komma idag?" | /akut/ — akut-spår med 1–3 dagars responstid i Stockholmsregionen |
 | "Vad innebär de nya asbestreglerna från december 2025?" | /asbest-2025-nya-gransvardet/ — AFS 2025:5–8, gränsvärde 0,01 fiber/cm³ |
+| "Får man sälja gamla fönster?" | /aterbruk-miljoinventering/ — beror på innehållet; asbesthaltigt material från rivning får inte säljas eller överlåtas |
+| "Behövs en avfallshanteringsplan?" | /aterbruk-miljoinventering/ — i regel ja vid lov eller anmälan sedan 1 juli 2026 (PBL 10 kap. 8 a §); byggnadsnämnden avgör |
+| "Vad är skillnaden mellan miljöinventering och återbruksinventering?" | /aterbruk-miljoinventering/ — miljöinventeringen kartlägger farliga ämnen, återbruksinventeringen bedömer vad som kan användas igen |
 | "Vilka riktvärden gäller för PAH i förorenad mark?" | /markmiljo/pah/ — Naturvårdsverket v2.3 (2025), KM och MKM enligt SS-ISO 18287:2008 |
 | "Vilken standard följer BTEX-analys?" | /markmiljo/btex/ — SS-EN ISO 22155 med metanolkonservering, NV v2.3 (2025) |
 | "Hur analyseras Krom(VI) i mark?" | /markmiljo/tungmetaller/ — ICP-MS för totalhalter, separat Cr(VI)-analys |
