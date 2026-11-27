@@ -77,7 +77,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
-<p class="fs-guide-paragraf"><a href="https://www.fohm.se/contentassets/26ea6c0d999742c0a5351c63e70cb0ce/fohmfs-2014-14.pdf" target="_blank" rel="noreferrer noopener">FoHMFS 2014:14, miljöbalken 9 kap. 3 §</a></p>
+<p class="fs-guide-paragraf"><a href="https://www.folkhalsomyndigheten.se/contentassets/26ea6c0d999742c0a5351c63e70cb0ce/fohmfs-2014-14.pdf" target="_blank" rel="noreferrer noopener">FoHMFS 2014:14, miljöbalken 9 kap. 3 §</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -264,7 +264,7 @@
 
 <!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
 <ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
-<li><a href="https://www.fohm.se/contentassets/26ea6c0d999742c0a5351c63e70cb0ce/fohmfs-2014-14.pdf" target="_blank" rel="noreferrer noopener">Folkhälsomyndighetens allmänna råd om fukt och mikroorganismer (FoHMFS 2014:14)</a>, Folkhälsomyndigheten.</li>
+<li><a href="https://www.folkhalsomyndigheten.se/contentassets/26ea6c0d999742c0a5351c63e70cb0ce/fohmfs-2014-14.pdf" target="_blank" rel="noreferrer noopener">Folkhälsomyndighetens allmänna råd om fukt och mikroorganismer (FoHMFS 2014:14)</a>, Folkhälsomyndigheten.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->
 

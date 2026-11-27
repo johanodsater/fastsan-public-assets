@@ -73,7 +73,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
-<p class="fs-guide-paragraf"><a href="https://www.stralsakerhetsmyndigheten.se/contentassets/a5c8b2f6958d46858ef3bc87fd01d5bd/handbok-radon---bostader-och-lokaler-dit-allmanheten-har-tilltrade.pdf" target="_blank" rel="noreferrer noopener">3 kap. 6 § strålskyddsförordningen</a></p>
+<p class="fs-guide-paragraf"><a href="https://www.stralsakerhetsmyndigheten.se/contentassets/d22ca6e5272d49c08e80e4affe79fbd8/vagledning-for-matning-av-radonhalten-i-skolor-och-forskolor.pdf" target="_blank" rel="noreferrer noopener">3 kap. 6 § strålskyddsförordningen</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -101,7 +101,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
-<p class="fs-guide-paragraf"><a href="https://www.stralsakerhetsmyndigheten.se/globalassets/publikationer/metodbeskrivning--matning-av-radon-i-bostader.pdf" target="_blank" rel="noreferrer noopener">SSM:s metodbeskrivning</a></p>
+<p class="fs-guide-paragraf"><a href="https://www.ssm.se/contentassets/39da1026fbe443beac2d8261a43a2c79/metodbeskrivning-for-radonmatning-pa-arbetsplatser.pdf" target="_blank" rel="noreferrer noopener">SSM:s metodbeskrivning</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -188,7 +188,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Själva mätningen pågår minst två månader, helst tre (<a href="https://www.boverket.se/sv/byggande/halsa-och-inomhusmiljo/radon/mat-radon-i-ditt-hus/" target="_blank" rel="noreferrer noopener">Boverket</a>), och ska ligga mellan 1 oktober och 30 april. Den som vill ha ett årsmedelvärde den här säsongen behöver alltså börja mäta senast i slutet av februari.</p>
+<p>Själva mätningen pågår minst två månader, helst tre (<a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/risker-felaktig-ventilation/radon/mat/" target="_blank" rel="noreferrer noopener">Boverket</a>), och ska ligga mellan 1 oktober och 30 april. Den som vill ha ett årsmedelvärde den här säsongen behöver alltså börja mäta senast i slutet av februari.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"fs-guide-not"} -->
@@ -284,11 +284,7 @@
 
 <!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
 <ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
-<li><a href="https://www.stralsakerhetsmyndigheten.se/globalassets/publikationer/metodbeskrivning--matning-av-radon-i-bostader.pdf" target="_blank" rel="noreferrer noopener">Mätning av radon i bostäder – metodbeskrivning (augusti 2026)</a>, Strålsäkerhetsmyndigheten.</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><a href="https://www.stralsakerhetsmyndigheten.se/contentassets/a5c8b2f6958d46858ef3bc87fd01d5bd/handbok-radon---bostader-och-lokaler-dit-allmanheten-har-tilltrade.pdf" target="_blank" rel="noreferrer noopener">Radon – bostäder och lokaler dit allmänheten har tillträde (handbok)</a>, Strålsäkerhetsmyndigheten.</li>
+<li><a href="https://www.stralsakerhetsmyndigheten.se/contentassets/d22ca6e5272d49c08e80e4affe79fbd8/vagledning-for-matning-av-radonhalten-i-skolor-och-forskolor.pdf" target="_blank" rel="noreferrer noopener">Vägledning för mätning av radonhalten i skolor och förskolor</a>, Strålsäkerhetsmyndigheten.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -300,7 +296,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.boverket.se/sv/byggande/halsa-och-inomhusmiljo/radon/mat-radon-i-ditt-hus/" target="_blank" rel="noreferrer noopener">Mät radon i ditt hus</a>, Boverket.</li>
+<li><a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/risker-felaktig-ventilation/radon/mat/" target="_blank" rel="noreferrer noopener">Mät radon i ditt hus</a>, Boverket.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->
 
