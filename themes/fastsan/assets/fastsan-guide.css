@@ -557,8 +557,8 @@
 .fs-insikt-utvald .fs-insikt-text .wp-block-post-title { font-size: var(--wp--preset--font-size--xx-large); line-height: 1.2; }
 @media (min-width: 800px) {
 	.fs-insikt-utvald .fs-insikt-kort { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
-	.fs-insikt-utvald .wp-block-post-featured-image,
-	.fs-insikt-utvald .wp-block-post-featured-image a { display: block; height: 100%; }
-	.fs-insikt-utvald .wp-block-post-featured-image img { height: 100%; min-height: 20rem; aspect-ratio: auto; }
+	.fs-insikt-utvald .wp-block-post-featured-image { position: relative; min-height: 22rem; overflow: hidden; }
+	.fs-insikt-utvald .wp-block-post-featured-image a { position: absolute; inset: 0; display: block; }
+	.fs-insikt-utvald .wp-block-post-featured-image img { position: absolute; inset: 0; width: 100%; height: 100%; aspect-ratio: auto; }
 	.fs-insikt-utvald .fs-insikt-text { justify-content: center; padding: var(--wp--preset--spacing--50); }
 }
