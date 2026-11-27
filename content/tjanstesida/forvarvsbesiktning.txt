@@ -1,0 +1,315 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Miljöteknisk förvärvsbesiktning — vet vad du köper</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">En byggteknisk besiktning tittar på tak, fasad och installationer. Vi tittar på miljö- och hälsofarliga material i fastigheten: asbest, PCB, tungmetaller, radon och förorenad mark. Rapporten kommer före tillträdet, så att du vet vad köpet innebär.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"id":154,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-bild"} -->
+<figure class="wp-block-image size-full fs-guide-bild"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-miljokonsult-daniel-stalbrand-faltbesok.webp" alt="Daniel Stålbrand, miljökonsult på Fastsan, står utomhus vid en fastighet med en uppslagen rapportpärm" class="wp-image-154"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Före tillträdet</strong> får du veta vilka miljö- och hälsofarliga material fastigheten har.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Prover tas</strong> av misstänkta material och lämnas till laboratorium för analys.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapporten</strong> är underlag inför köpet och inför senare ombyggnad.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad proverna visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"vad-ar-en-forvarvsbesiktning"} -->
+<h2 class="wp-block-heading" id="vad-ar-en-forvarvsbesiktning">Vad en förvärvsbesiktning är</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>En miljöteknisk förvärvsbesiktning är en kontroll av miljörisker inför köp av en fastighet. Den visar om byggnaden har material som kan innehålla asbest, PCB eller tungmetaller, om radon behöver mätas, och om marken kan vara förorenad av tidigare verksamhet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En vanlig överlåtelsebesiktning ser främst till byggnadens tekniska skick, som fukt, konstruktion och synliga fel. Förvärvsbesiktningen ser till farliga ämnen och förorenad mark. De två kompletterar varandra.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Vad reglerna säger</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Utredning före ombyggnad och rivning</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Innan rivning, ombyggnad eller renovering börjar ska det utredas om det finns hälsofarligt material i den del av byggnaden som arbetet gäller. Går det inte att klarlägga på annat sätt ska prover tas och analyseras. Den som köper en fastighet med planer på ombyggnad har nytta av att veta det före köpet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">AFS 2023:3</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">PCB i fogmassor och golvmassor</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Den som äger en byggnad där fogmassor eller halkskyddade golvmassor kan ha använts vid bygget eller en renovering åren 1956–1973 ska undersöka om de innehåller PCB. Massa med mer än 50 mg/kg ska tas bort vid renovering, ombyggnad eller rivning. Mer om <a href="/pcb/">PCB-inventering</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">16 och 17 a §§ förordningen om PCB m.m.</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs en förvärvsbesiktning?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Villa eller radhus</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Asbest och PCB</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Asbest användes i bland annat isolering, undertak och golvmattor fram till förbudet 1982 (<a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/asbest/" target="_blank" rel="noreferrer noopener">Boverket</a>). PCB användes i fogmassor och golvmassor 1956–1973.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Flerbostadshus och BRF</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Stambyte, fasad och fönster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En äldre fastighet ska förr eller senare byggas om. Farliga material blir då en kostnad för ägaren. Besiktningen ger styrelsen ett underlag innan köpet.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Fastighet med tidigare verksamhet</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Förorenad mark</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Industri-, lager- och verkstadsfastigheter kan ha förorenad mark. Besiktningen kan då omfatta orienterande markprover.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Förfrågan</strong> med adress, byggår, eventuella ritningar och tidigare verksamhet.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Genomgång</strong> av handlingarna och av tidigare renoveringar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Besiktning</strong> på plats av din konsult personligen, Daniel eller hans kollega.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Prov</strong> av misstänkta material, och vid behov orienterande markprover. Antalet bestäms av byggnadens storlek och hur många olika material den har.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong>: Fastsan lämnar proverna till laboratorium för analys.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med fynd per material, en samlad riskbedömning och rekommenderade nästa steg. Genomgång av rapporten ingår.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"tid"} -->
+<h2 class="wp-block-heading" id="tid">Hur lång tid tar det?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>För en normalstor flerbostadsfastighet eller villa:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-tidslinje"} -->
+<ol class="wp-block-list fs-guide-tidslinje"><!-- wp:list-item -->
+<li><strong>1–2 veckor</strong> Besiktning och provtagning på plats, räknat från att offerten godkänts</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>5–10 arbetsdagar</strong> Svar från laboratoriet</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>1 vecka</strong> Rapporten levereras efter labbsvaret</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>3–5 veckor</strong> Total ledtid</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Är tiden till tillträdet kort finns ett snabbare spår: se <a href="/akut/">akut provtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är en miljöteknisk förvärvsbesiktning?</summary><!-- wp:paragraph -->
+<p>En kontroll av miljörisker inför köp av en fastighet: farliga ämnen i byggnaden, radon och förorenad mark. Syftet är att du ska veta vad du köper innan avtalet är klart.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är skillnaden mot en överlåtelsebesiktning?</summary><!-- wp:paragraph -->
+<p>Överlåtelsebesiktningen ser främst till byggnadens tekniska skick. Förvärvsbesiktningen ser till farliga ämnen och förorenad mark. De kompletterar varandra.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vilka risker letar ni efter?</summary><!-- wp:paragraph -->
+<p>Material som kan innehålla asbest, PCB eller tungmetaller, behovet av radonmätning och, när tidigare verksamhet motiverar det, förorenad mark.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Hinner besiktningen göras före tillträdet?</summary><!-- wp:paragraph -->
+<p>Normalt tar den 3–5 veckor med labbsvar. Vid kort tidsfrist finns ett snabbare spår med express på laboratoriet.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Sanerar Fastsan?</summary><!-- wp:paragraph -->
+<p>Nej. Fastsan tar prover och skriver rapporter. Rapporten kan användas som underlag när en sanering handlas upp.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Funderar du på att köpa?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/#offert">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/miljoinventering/">Miljöinventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/pcb/">PCB-inventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/radon/">Radonmätning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/asbest/">Asbestprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/">Markmiljöundersökning</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">Projektering och byggarbetsmiljösamordning – grundläggande skyldigheter (AFS 2023:3)</a>, Arbetsmiljöverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">Förordning (2007:19) om PCB m.m.</a>, Regeringskansliets rättsdatabaser.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/asbest/" target="_blank" rel="noreferrer noopener">Risker med hantering av asbest i byggnader</a>, Boverket.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 26–27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

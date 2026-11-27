@@ -1,0 +1,311 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Radonmätning — långtidsmätning i bostäder, lokaler och arbetsplatser</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Radon syns inte och luktar inte, så mätning är det enda sättet att veta halten. Vi mäter enligt Strålsäkerhetsmyndighetens metodbeskrivning och redovisar årsmedelvärdet mot referensnivån 200 Bq/m³.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Referensnivån är 200 Bq/m³</strong> som årsmedelvärde, i bostäder, allmänna lokaler och på arbetsplatser.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Mätningen pågår minst två månader</strong> under eldningssäsongen, 1 oktober–30 april.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>En korttidsmätning</strong> ger inget årsmedelvärde och kan inte jämföras med referensnivån.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan utför inga åtgärder</strong> och har inget intresse av vad mätningen visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"vad-ar-radon"} -->
+<h2 class="wp-block-heading" id="vad-ar-radon">Vad radon är</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Radon är en radioaktiv gas som kan komma från marken, från byggnadsmaterial som blåbetong eller från hushållsvatten. Den syns inte och har varken lukt eller smak.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Radon är näst efter rökning den vanligaste orsaken till lungcancer (<a href="https://www.ssm.se/contentassets/39da1026fbe443beac2d8261a43a2c79/metodbeskrivning-for-radonmatning-pa-arbetsplatser.pdf" target="_blank" rel="noreferrer noopener">Strålsäkerhetsmyndigheten</a>). Därför är det viktigt att sänka halten där den ligger över referensnivån.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Vad reglerna säger</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Referensnivå 200 Bq/m³</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Den nationella referensnivån för radon är 200 Bq/m³ som årsmedelvärde. Den gäller bostäder, lokaler dit allmänheten har tillträde och arbetsplatser. En referensnivå är inte samma sak som ett gränsvärde.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.stralsakerhetsmyndigheten.se/contentassets/a5c8b2f6958d46858ef3bc87fd01d5bd/handbok-radon---bostader-och-lokaler-dit-allmanheten-har-tilltrade.pdf" target="_blank" rel="noreferrer noopener">3 kap. 6 § strålskyddsförordningen</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Arbetsplatser</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Arbetsgivaren ska känna till radonhalten på arbetsplatsen. Halten bör mätas om ingen tidigare mätning finns eller om lokalen har ändrats. Ligger halten kvar över 200 Bq/m³ trots åtgärder ska det anmälas till Strålsäkerhetsmyndigheten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.stralsakerhetsmyndigheten.se/contentassets/b37d087c7a704be29a6adfbddfa9d1bf/ssmfs-201810-stralsakerhetsmyndighetens-foreskrifter-om-radon-pa-arbetsplatser.pdf" target="_blank" rel="noreferrer noopener">SSMFS 2018:10</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Mätmetod</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ett årsmedelvärde mäts med en långtidsmätning under minst två månader mellan 1 oktober och 30 april. En korttidsmätning ger bara en indikation och kan inte jämföras med referensnivån.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.stralsakerhetsmyndigheten.se/globalassets/publikationer/metodbeskrivning--matning-av-radon-i-bostader.pdf" target="_blank" rel="noreferrer noopener">SSM:s metodbeskrivning</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs en radonmätning?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Bostad och villa</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Inför köp eller försäljning</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Köpare frågar ofta efter en dokumenterad radonhalt. En mätning visar läget innan beslutet fattas.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Arbetsplats och lokal</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Strålsäkerhetsmyndigheten</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>När ingen mätning finns, eller när lokalen har byggts om. Arbetsgivaren ska känna till halten.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Misstanke om förhöjd halt</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Mark, blåbetong eller vatten</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Byggnader med blåbetong, på mark med hög radonhalt eller med vatten från egen brunn har större risk för förhöjda halter.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Beställning</strong>: du får mätdosor och en instruktion om var de ska stå.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Placering</strong>: i många fall placerar du dosorna själv. Vid arbetsplatser och svårare fastigheter hjälper vi till på plats.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Mätning</strong> i minst två månader, helst tre, under eldningssäsongen.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong>: dosorna skickas tillbaka och analyseras på laboratorium.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med årsmedelvärdet i Bq/m³, jämfört med referensnivån.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Genomgång</strong> av rapporten, där frågor besvaras.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"tid"} -->
+<h2 class="wp-block-heading" id="tid">Hur lång tid tar det?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Själva mätningen pågår minst två månader, helst tre (<a href="https://www.boverket.se/sv/byggande/halsa-och-inomhusmiljo/radon/mat-radon-i-ditt-hus/" target="_blank" rel="noreferrer noopener">Boverket</a>), och ska ligga mellan 1 oktober och 30 april. Den som vill ha ett årsmedelvärde den här säsongen behöver alltså börja mäta senast i slutet av februari.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Ligger halten över referensnivån bör orsaken utredas. Efter en åtgärd görs en ny mätning för att kontrollera resultatet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Varför ska jag mäta radon?</summary><!-- wp:paragraph -->
+<p>Radon syns inte och luktar inte, så mätning är det enda sättet att veta halten. Långvarig exponering för förhöjda halter ökar risken för lungcancer.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är skillnaden mellan långtids- och korttidsmätning?</summary><!-- wp:paragraph -->
+<p>En långtidsmätning under minst två månader ger ett årsmedelvärde som kan jämföras med referensnivån. En korttidsmätning ger bara en indikation.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>När på året kan radon mätas?</summary><!-- wp:paragraph -->
+<p>En mätning som ska ge årsmedelvärde görs mellan 1 oktober och 30 april, när huset är mer stängt och mätningen blir representativ.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad händer om halten ligger över 200 Bq/m³?</summary><!-- wp:paragraph -->
+<p>Orsaken bör utredas och åtgärder planeras, till exempel bättre ventilation, tätning eller radonsug. Efter åtgärden görs en ny mätning. På arbetsplatser ska en halt som ligger kvar över 200 Bq/m³ anmälas till Strålsäkerhetsmyndigheten.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Placerar jag dosorna själv?</summary><!-- wp:paragraph -->
+<p>I många fall ja, enligt instruktionen. Vid arbetsplatser och svårare fastigheter hjälper vi till på plats.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Behöver du mäta radon?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/#offert">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/inomhusmiljo/">Fukt- och mögelutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/luktutredning/">Luktutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/forvarvsbesiktning/">Miljöteknisk förvärvsbesiktning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/miljoinventering/">Miljöinventering</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.stralsakerhetsmyndigheten.se/globalassets/publikationer/metodbeskrivning--matning-av-radon-i-bostader.pdf" target="_blank" rel="noreferrer noopener">Mätning av radon i bostäder – metodbeskrivning (augusti 2026)</a>, Strålsäkerhetsmyndigheten.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.stralsakerhetsmyndigheten.se/contentassets/a5c8b2f6958d46858ef3bc87fd01d5bd/handbok-radon---bostader-och-lokaler-dit-allmanheten-har-tilltrade.pdf" target="_blank" rel="noreferrer noopener">Radon – bostäder och lokaler dit allmänheten har tillträde (handbok)</a>, Strålsäkerhetsmyndigheten.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.ssm.se/contentassets/39da1026fbe443beac2d8261a43a2c79/metodbeskrivning-for-radonmatning-pa-arbetsplatser.pdf" target="_blank" rel="noreferrer noopener">Metodbeskrivning för radonmätning på arbetsplatser</a>, Strålsäkerhetsmyndigheten.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.stralsakerhetsmyndigheten.se/contentassets/b37d087c7a704be29a6adfbddfa9d1bf/ssmfs-201810-stralsakerhetsmyndighetens-foreskrifter-om-radon-pa-arbetsplatser.pdf" target="_blank" rel="noreferrer noopener">Strålsäkerhetsmyndighetens föreskrifter om radon på arbetsplatser (SSMFS 2018:10)</a>, Strålsäkerhetsmyndigheten.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.boverket.se/sv/byggande/halsa-och-inomhusmiljo/radon/mat-radon-i-ditt-hus/" target="_blank" rel="noreferrer noopener">Mät radon i ditt hus</a>, Boverket.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

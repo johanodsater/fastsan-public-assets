@@ -1,0 +1,337 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">PCB-inventering — fogmassor, golvmassor och isolerrutor</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Vi tar prover av material som kan innehålla PCB och lämnar dem till laboratorium för analys. Rapporten visar halten i varje material och är underlag för ägarens anmälan till kommunen och för hanteringen av avfallet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Fogmassor och golvmassor</strong> från 1956–1973 kan innehålla PCB.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Över 50 mg/kg</strong> ska massan tas bort vid renovering, ombyggnad eller rivning.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Saneringen anmäls</strong> till kommunen senast tre veckor innan arbetet börjar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad proverna visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"vad-ar-en-pcb-inventering"} -->
+<h2 class="wp-block-heading" id="vad-ar-en-pcb-inventering">Vad en PCB-inventering är</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>PCB är ett miljögift som användes i byggmaterial, främst i fogmassor och halkskyddade golvmassor. Det finns också i isolerrutor och i kondensatorer, till exempel i lysrörsarmaturer. PCB bryts ned mycket långsamt och finns kvar i miljön länge (<a href="https://www.naturvardsverket.se/amnesomraden/miljofororeningar/organiska-miljogifter/pcb-i-miljon/" target="_blank" rel="noreferrer noopener">Naturvårdsverket</a>).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En PCB-inventering kartlägger vilka material i byggnaden som kan innehålla PCB. Misstänkta material provtas och analyseras på laboratorium. Fastsan följer Naturvårdsverkets vägledning för inventering och sanering av PCB i byggnader.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Vad förordningen kräver</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Inventering av fogmassor och golvmassor</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Den som äger en byggnad där fogmassor eller halkskyddade golvmassor kan ha använts vid bygget eller en renovering åren 1956–1973 ska undersöka om de innehåller PCB. Inventeringen skulle redovisas till tillsynsmyndigheten senast 30 juni 2008. En- och tvåbostadshus som ägs av privatpersoner är undantagna.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">16 och 19 §§ förordningen om PCB m.m.</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Två haltgränser</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Massa med mer än 500 mg/kg skulle vara borttagen senast 2014 eller 2016, beroende på byggnad. Massa med 50–500 mg/kg ska tas bort i samband med renovering, ombyggnad eller rivning. Under 50 mg/kg räknas massan inte som PCB-produkt, men avfallet ska ändå hanteras enligt avfallsreglerna.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">3, 17 och 17 a §§ förordningen om PCB m.m.</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Anmälan före sanering</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ägaren ska anmäla att massan tas bort till tillsynsmyndigheten, oftast kommunens miljöförvaltning, senast tre veckor innan arbetet börjar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">18 § förordningen om PCB m.m.</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">PCB-varor får inte återanvändas (7 §). Läs mer i guiden <a href="/aterbruk-miljoinventering/">Återbruk av byggmaterial – därför ska miljöinventeringen komma först</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs en PCB-inventering?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför renovering, ombyggnad eller rivning</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Förordningen 17 a § och AFS 2023:3</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Massa med mer än 50 mg/kg ska tas bort när byggnaden renoveras, byggs om eller rivs. Före arbetet ska det också utredas om det finns hälsofarligt material i den del som arbetet gäller.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Om inventeringen aldrig gjorts</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Förordningen 16 §</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Byggnader som uppfördes eller renoverades 1956–1973 ska vara inventerade. Saknas dokumentation är en inventering det säkra sättet att få veta.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Fönster, fogar och armaturer byts</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Isolerrutor och kondensatorer</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>PCB finns också i isolerrutor och i kondensatorer, till exempel i lysrörsarmaturer (<a href="https://www.naturvardsverket.se/vagledning-och-stod/kemikalier/pcb/pcb-i-produkter" target="_blank" rel="noreferrer noopener">Naturvårdsverket</a>). De demonteras separat och hanteras som farligt avfall.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Genomgång</strong> av tillgängliga ritningar, byggår och tidigare renoveringar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Besiktning</strong> på plats av din konsult personligen, Daniel eller hans kollega.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Prov</strong> av misstänkta fogmassor och golvmassor. Antalet bestäms av byggnadens storlek och hur många olika material den har.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong> på laboratorium. Halten anges i mg/kg.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med halt och klassning per material, som underlag för anmälan och för hanteringen av avfallet.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Genomgång</strong> av rapporten, där frågor besvaras.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"tid"} -->
+<h2 class="wp-block-heading" id="tid">Hur lång tid tar det?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>För en normalstor flerbostadsfastighet:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-tidslinje"} -->
+<ol class="wp-block-list fs-guide-tidslinje"><!-- wp:list-item -->
+<li><strong>1–2 veckor</strong> Provtagning på plats, räknat från att offerten godkänts</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>5–10 arbetsdagar</strong> Svar från laboratoriet</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>1 vecka</strong> Rapporten levereras efter labbsvaret</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>3–5 veckor</strong> Total ledtid</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">För akuta projekt finns ett snabbare spår: se <a href="/akut/">akut provtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är PCB och var finns det i byggnader?</summary><!-- wp:paragraph -->
+<p>PCB är ett miljögift som användes i byggmaterial 1956–1973, främst i fogmassor och halkskyddade golvmassor. Det finns också i isolerrutor och kondensatorer.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Måste vår fastighet PCB-inventeras?</summary><!-- wp:paragraph -->
+<p>Ja, om fogmassor eller halkskyddade golvmassor kan ha använts vid bygget eller en renovering 1956–1973. En- och tvåbostadshus som ägs av privatpersoner är undantagna.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad betyder gränserna 50 och 500 mg/kg?</summary><!-- wp:paragraph -->
+<p>Massa med mer än 500 mg/kg skulle ha tagits bort senast 2014 eller 2016. Massa med 50–500 mg/kg tas bort vid renovering, ombyggnad eller rivning. Under 50 mg/kg räknas massan inte som PCB-produkt.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Måste saneringen anmälas?</summary><!-- wp:paragraph -->
+<p>Ja. Ägaren anmäler till tillsynsmyndigheten, oftast kommunen, senast tre veckor innan arbetet börjar. Fastsans rapport är underlag för anmälan.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Sanerar Fastsan?</summary><!-- wp:paragraph -->
+<p>Nej. Fastsan tar prover och skriver rapporter. Rapporten kan användas som underlag när saneringen handlas upp.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Behöver du en PCB-inventering?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/#offert">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/miljoinventering/">Miljöinventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/material/">Provtagning av byggnadsmaterial</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/asbest/">Asbestprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/forvarvsbesiktning/">Miljöteknisk förvärvsbesiktning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/aterbruk-miljoinventering/">Guide: återbruk av byggmaterial</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">Förordning (2007:19) om PCB m.m.</a>, Regeringskansliets rättsdatabaser.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/vagledning-och-stod/kemikalier/pcb/avlagsna-fog--och-golvmassor/" target="_blank" rel="noreferrer noopener">Avlägsna fog- och golvmassor</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/vagledning-och-stod/kemikalier/pcb/pcb-i-produkter" target="_blank" rel="noreferrer noopener">PCB i produkter</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/amnesomraden/miljofororeningar/organiska-miljogifter/pcb-i-miljon/" target="_blank" rel="noreferrer noopener">PCB i miljön</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">Projektering och byggarbetsmiljösamordning – grundläggande skyldigheter (AFS 2023:3)</a>, Arbetsmiljöverket.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
