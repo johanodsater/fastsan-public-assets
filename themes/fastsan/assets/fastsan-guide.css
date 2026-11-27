@@ -1,0 +1,434 @@
+/*
+ * Fastsan: guider under Insikter (innehåll inslaget i gruppen .fs-guide).
+ * Laddas på inlägg (functions.php, is_singular( 'post' )). Allt är bundet till .fs-guide, så andra inlägg påverkas inte.
+ * Bara temats färger, typsnitt och avstånd (theme.json). Mobilen först. Samma formspråk som /kompetens/:
+ * ljus panel med sandstenslinje, kapitelnummer, stämplar och tidslinje.
+ * 1.0 B 2026-11-27, Johan 11:43 "vart är inramning bakgrund det lilla extra".
+ */
+
+/* Utvald bild: liggande 16:9 även när fotot är stående (bara i guider) */
+.fs-article-body:has(.fs-guide) .wp-block-post-featured-image img {
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	height: auto;
+}
+
+.fs-guide { counter-reset: fs-guide-kap; }
+.fs-guide > * + * { margin-block-start: var(--wp--preset--spacing--40); }
+
+/* Rubrikrad: liten versal etikett i sandsten */
+.fs-guide-rubrikrad {
+	font-family: var(--wp--preset--font-family--display);
+	font-size: var(--wp--preset--font-size--xs);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--wp--preset--color--accent-text);
+	margin: 0 0 0.6em !important;
+}
+
+/* Stämpeln överst */
+.fs-guide-granskad {
+	display: inline-block;
+	margin: 0 !important;
+	padding: 0.35em 0.75em;
+	font-size: var(--wp--preset--font-size--xs);
+	font-weight: 600;
+	color: var(--wp--preset--color--accent-text);
+	background: var(--wp--preset--color--accent-pale);
+	border-radius: 2px;
+}
+.fs-guide-ingress {
+	font-size: var(--wp--preset--font-size--lead);
+	line-height: 1.55;
+	color: var(--wp--preset--color--contrast);
+}
+
+/* I korthet: panelen som på /kompetens/ */
+.fs-guide-korthet {
+	background: var(--wp--preset--color--base-muted);
+	border-top: 3px solid var(--wp--preset--color--accent-soft);
+	padding: var(--wp--preset--spacing--40);
+	margin-block-start: var(--wp--preset--spacing--50) !important;
+}
+.fs-guide-korthet > * { margin-block: 0; }
+.fs-guide-korthet__lista {
+	list-style: none;
+	margin: 0 !important;
+	padding: 0;
+	display: grid;
+	gap: 0;
+}
+.fs-guide-korthet__lista li {
+	position: relative;
+	margin: 0;
+	padding: 0.75em 0 0.75em 2.1em;
+	border-top: 1px solid var(--wp--preset--color--border);
+	line-height: 1.45;
+}
+.fs-guide-korthet__lista li:first-child { border-top: 0; }
+.fs-guide-korthet__lista li::before,
+.fs-guide-bockar li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.85em;
+	width: 1.35em;
+	height: 1.35em;
+	border-radius: 50%;
+	background: var(--wp--preset--color--primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center / 62% no-repeat;
+}
+.fs-guide-korthet__lista strong { color: var(--wp--preset--color--primary); }
+@media (min-width: 640px) {
+	.fs-guide-korthet__lista { grid-template-columns: 1fr 1fr; column-gap: var(--wp--preset--spacing--40); }
+	.fs-guide-korthet__lista li:nth-child(2) { border-top: 0; }
+}
+
+/* Innehållsförteckning */
+.fs-guide-innehall {
+	border: 1px solid var(--wp--preset--color--border);
+	padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+}
+.fs-guide-innehall > * { margin-block: 0; }
+.fs-guide-innehall__lista {
+	list-style: none;
+	counter-reset: fs-guide-toc;
+	margin: 0 !important;
+	padding: 0;
+	font-size: var(--wp--preset--font-size--small);
+}
+.fs-guide-innehall__lista li {
+	counter-increment: fs-guide-toc;
+	display: grid;
+	grid-template-columns: 2.2em minmax(0, 1fr);
+	margin: 0;
+	padding: 0.4em 0;
+	border-top: 1px solid var(--wp--preset--color--border);
+}
+.fs-guide-innehall__lista li::before {
+	content: counter(fs-guide-toc, decimal-leading-zero);
+	font-family: var(--wp--preset--font-family--display);
+	font-weight: 700;
+	font-variant-numeric: tabular-nums;
+	color: var(--wp--preset--color--accent-text);
+}
+.fs-guide-innehall__lista a {
+	color: var(--wp--preset--color--primary);
+	text-decoration: none;
+}
+.fs-guide-innehall__lista a:hover,
+.fs-guide-innehall__lista a:focus-visible { text-decoration: underline; }
+@media (min-width: 640px) {
+	.fs-guide-innehall__lista { columns: 2; column-gap: var(--wp--preset--spacing--40); }
+	.fs-guide-innehall__lista li { break-inside: avoid; }
+}
+
+/* Kapitel: nummer och marinblå linje som på /kompetens/ */
+.fs-guide > h2,
+.fs-guide-kallor > h2 {
+	counter-increment: fs-guide-kap;
+	margin-block-start: var(--wp--preset--spacing--70) !important;
+	padding-block-end: 0.35em;
+	border-bottom: 2px solid var(--wp--preset--color--primary);
+	scroll-margin-top: 6rem;
+}
+.fs-guide > h2::before,
+.fs-guide-kallor > h2::before {
+	content: counter(fs-guide-kap, decimal-leading-zero);
+	display: block;
+	margin-block-end: 0.35em;
+	font-size: var(--wp--preset--font-size--xs);
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	font-variant-numeric: tabular-nums;
+	color: var(--wp--preset--color--accent-text);
+}
+
+/* Rutor: krav och fakta */
+.fs-guide-ruta,
+.fs-guide-krav {
+	background: var(--wp--preset--color--base-muted);
+	border-left: 3px solid var(--wp--preset--color--accent-soft);
+	padding: var(--wp--preset--spacing--40);
+}
+.fs-guide-krav { border-left-color: var(--wp--preset--color--primary); }
+.fs-guide-ruta > *,
+.fs-guide-krav > * { margin-block: 0; }
+.fs-guide-ruta > * + *,
+.fs-guide-krav > * + * { margin-block-start: 0.75em; }
+.fs-guide-bockar {
+	list-style: none;
+	margin-inline: 0;
+	padding: 0;
+}
+.fs-guide-bockar li {
+	position: relative;
+	margin: 0;
+	padding: 0.4em 0 0.4em 2.1em;
+	line-height: 1.45;
+}
+.fs-guide-bockar li::before { top: 0.45em; }
+.fs-guide-villkor {
+	margin-inline: 0;
+	padding-inline-start: 1.4em;
+}
+.fs-guide-villkor li { padding: 0.2em 0; }
+.fs-guide-villkor li::marker {
+	font-family: var(--wp--preset--font-family--display);
+	font-weight: 700;
+	color: var(--wp--preset--color--accent-text);
+}
+.fs-guide-paragraf {
+	display: inline-block;
+	padding: 0.3em 0.7em;
+	font-size: var(--wp--preset--font-size--xs);
+	font-weight: 600;
+	color: var(--wp--preset--color--base);
+	background: var(--wp--preset--color--primary);
+	border-radius: 2px;
+}
+.fs-guide-paragraf a { color: inherit; }
+
+/* Tidslinje: lodrät på mobil, vågrät från 640 px */
+.fs-guide-tidslinje {
+	list-style: none;
+	margin: 0 !important;
+	padding: 0;
+	display: grid;
+}
+.fs-guide > .fs-guide-rubrikrad + .fs-guide-tidslinje { margin-block-start: 0.4em !important; }
+.fs-guide-tidslinje li {
+	position: relative;
+	margin: 0 0 0 0.55em;
+	padding: 0 0 1.1em 1.5em;
+	border-left: 3px solid var(--wp--preset--color--border);
+	font-size: var(--wp--preset--font-size--small);
+	line-height: 1.4;
+	color: var(--wp--preset--color--secondary-text);
+}
+.fs-guide-tidslinje li:last-child { border-left-color: transparent; padding-bottom: 0; }
+.fs-guide-tidslinje li::before {
+	content: "";
+	position: absolute;
+	box-sizing: border-box;
+	left: calc(-0.5em - 1.5px);
+	top: 0.15em;
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	background: var(--wp--preset--color--base);
+	border: 3px solid var(--wp--preset--color--primary);
+}
+.fs-guide-tidslinje li:nth-child(4)::before {
+	background: var(--wp--preset--color--accent);
+	border-color: var(--wp--preset--color--accent);
+	box-shadow: 0 0 0 4px var(--wp--preset--color--accent-pale);
+}
+.fs-guide-tidslinje strong {
+	display: block;
+	font-family: var(--wp--preset--font-family--display);
+	font-variant-numeric: tabular-nums;
+	color: var(--wp--preset--color--primary);
+}
+@media (min-width: 640px) {
+	.fs-guide-tidslinje { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+	.fs-guide-tidslinje li {
+		margin: 0;
+		padding: 1.3em 0.6em 0 0;
+		border-left: 0;
+		border-top: 3px solid var(--wp--preset--color--border);
+	}
+	.fs-guide-tidslinje li:last-child { border-top-color: transparent; }
+	.fs-guide-tidslinje li::before { left: 0; top: calc(-0.5em - 1.5px); }
+}
+
+/* Kort: jämförelse, ämnen, förbud och roller */
+.fs-guide-jamfor,
+.fs-guide-amnen,
+.fs-guide-roller {
+	display: grid;
+	gap: var(--wp--preset--spacing--30);
+}
+.fs-guide-kort {
+	margin: 0 !important;
+	background: var(--wp--preset--color--base);
+	border: 1px solid var(--wp--preset--color--border);
+	border-top: 3px solid var(--wp--preset--color--primary);
+	padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40) var(--wp--preset--spacing--40);
+}
+.fs-guide-kort > * { margin-block: 0; }
+.fs-guide-kort > * + * { margin-block-start: 0.6em; }
+.fs-guide-kort h3 { font-size: var(--wp--preset--font-size--x-large); }
+.fs-guide-kort p { font-size: var(--wp--preset--font-size--small); line-height: 1.55; }
+.fs-guide-etikett {
+	font-size: var(--wp--preset--font-size--xs) !important;
+	font-weight: 600;
+	color: var(--wp--preset--color--accent-text);
+}
+.fs-guide-kort--stopp {
+	background: var(--wp--preset--color--alert-soft);
+	border-color: var(--wp--preset--color--alert-soft);
+	border-top-color: var(--wp--preset--color--alert);
+}
+.fs-guide-kort--stopp .fs-guide-etikett { color: var(--wp--preset--color--alert); }
+.fs-guide-kort--info {
+	background: var(--wp--preset--color--base-muted);
+	border-top-color: var(--wp--preset--color--accent-soft);
+}
+@media (min-width: 640px) {
+	.fs-guide-jamfor,
+	.fs-guide-amnen { grid-template-columns: 1fr 1fr; }
+	.fs-guide-amnen > .fs-guide-kort:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
+/* Citat */
+.fs-guide-citat {
+	margin-block: var(--wp--preset--spacing--40) !important;
+	padding: 0.2em 0 0.2em var(--wp--preset--spacing--40);
+	border-left: 4px solid var(--wp--preset--color--accent);
+	font-family: var(--wp--preset--font-family--display);
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: 700;
+	line-height: 1.35;
+	color: var(--wp--preset--color--primary);
+}
+
+/* Bildgallerier med ram */
+.fs-guide-galleri {
+	background: var(--wp--preset--color--base-muted);
+	padding: var(--wp--preset--spacing--30);
+}
+
+/* Stegen: numrerade cirklar med linje mellan */
+.fs-guide-steg {
+	list-style: none;
+	counter-reset: fs-guide-steg;
+	margin: 0 !important;
+	padding: 0;
+}
+.fs-guide-steg li {
+	counter-increment: fs-guide-steg;
+	position: relative;
+	margin: 0;
+	padding: 0 0 1.2em 3.2em;
+	line-height: 1.5;
+}
+.fs-guide-steg li::before {
+	content: counter(fs-guide-steg);
+	position: absolute;
+	left: 0;
+	top: -0.1em;
+	width: 2.1em;
+	height: 2.1em;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+	font-family: var(--wp--preset--font-family--display);
+	font-weight: 700;
+}
+.fs-guide-steg li:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	left: calc(1.05em - 1px);
+	top: 2.1em;
+	bottom: 0.1em;
+	width: 2px;
+	background: var(--wp--preset--color--border);
+}
+.fs-guide-steg strong { color: var(--wp--preset--color--primary); }
+
+/* Checklistan i panel, med rutor */
+.fs-guide-checklista {
+	background: var(--wp--preset--color--base-muted);
+	border-top: 3px solid var(--wp--preset--color--accent-soft);
+	padding: var(--wp--preset--spacing--40);
+}
+.fs-guide-checklista__lista {
+	list-style: none;
+	counter-reset: fs-guide-check;
+	margin: 0 !important;
+	padding: 0;
+}
+.fs-guide-checklista__lista li {
+	counter-increment: fs-guide-check;
+	position: relative;
+	margin: 0;
+	padding: 0.65em 0 0.65em 2.6em;
+	border-top: 1px solid var(--wp--preset--color--border);
+	line-height: 1.45;
+}
+.fs-guide-checklista__lista li:first-child { border-top: 0; }
+.fs-guide-checklista__lista li::before {
+	content: counter(fs-guide-check);
+	position: absolute;
+	left: 0;
+	top: 0.6em;
+	box-sizing: border-box;
+	width: 1.6em;
+	height: 1.6em;
+	display: grid;
+	place-items: center;
+	border: 2px solid var(--wp--preset--color--primary);
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--primary);
+	font-size: var(--wp--preset--font-size--xs);
+	font-weight: 700;
+}
+
+/* Vanliga frågor */
+.fs-guide-fraga {
+	margin: 0 !important;
+	border-top: 1px solid var(--wp--preset--color--border);
+}
+.fs-guide > h2 + .fs-guide-fraga { margin-block-start: var(--wp--preset--spacing--30) !important; }
+.fs-guide-fraga:last-of-type { border-bottom: 1px solid var(--wp--preset--color--border); }
+.fs-guide-fraga summary {
+	position: relative;
+	list-style: none;
+	cursor: pointer;
+	padding: 0.9em 2.5em 0.9em 0;
+	font-weight: 600;
+	color: var(--wp--preset--color--primary);
+}
+.fs-guide-fraga summary::-webkit-details-marker { display: none; }
+.fs-guide-fraga summary::after {
+	content: "+";
+	position: absolute;
+	right: 0.25em;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1.6em;
+	height: 1.6em;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	background: var(--wp--preset--color--accent-pale);
+	color: var(--wp--preset--color--accent-text);
+	font-weight: 700;
+}
+.fs-guide-fraga[open] summary::after { content: "\2212"; }
+.fs-guide-fraga p { margin: 0 0 1em; color: var(--wp--preset--color--secondary-text); }
+
+/* Källor i ljus ruta */
+.fs-guide-kallor {
+	background: var(--wp--preset--color--base-muted);
+	padding: var(--wp--preset--spacing--40);
+	margin-block-start: var(--wp--preset--spacing--70) !important;
+}
+.fs-guide-kallor > h2 { margin-block-start: 0 !important; }
+.fs-guide-kallor > * + * { margin-block-start: var(--wp--preset--spacing--30); }
+.fs-guide-kallor__lista {
+	margin: 0;
+	padding-inline-start: 1.6em;
+	font-size: var(--wp--preset--font-size--xs);
+	line-height: 1.5;
+	color: var(--wp--preset--color--secondary-text);
+}
+.fs-guide-kallor__lista li { padding: 0.2em 0; }
+.fs-guide-kallor__lista li::marker { color: var(--wp--preset--color--accent-text); font-variant-numeric: tabular-nums; }
+.fs-guide-not {
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--wp--preset--color--tertiary-text);
+}
