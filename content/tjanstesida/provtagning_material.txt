@@ -1,0 +1,307 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Provtagning av byggnadsmaterial — asbest, PCB, bly, mögel och PAH</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Vi tar materialprov inför renovering, rivning, fastighetsköp och vid misstanke om farliga ämnen. Varje provpunkt dokumenteras, och resultatet sammanställs som underlag för åtgärd, avfallshantering eller upphandling.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"id":169,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-bild"} -->
+<figure class="wp-block-image size-full fs-guide-bild"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-aterbruk-cellplast-provpase.webp" alt="Provpåse med bitar av cellplastisolering, märkt CFC" class="wp-image-169"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Varje material och skikt</strong> som kan skilja sig provtas för sig.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Förpackningen anpassas</strong> efter ämnet, och varje prov märks och fotograferas.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapporten</strong> kopplar varje svar till provpunkt, material och plats.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad proverna visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"amnen"} -->
+<h2 class="wp-block-heading" id="amnen">Vilka ämnen vi provtar</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Asbest:</strong> kakelfix, fogmassa, plastmatta, mattlim, rörisolering, eternit och skivmaterial. Mer om <a href="/provtagning/asbest/">asbestprov</a>.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>PCB:</strong> elastiska fogmassor från 1956–1973, golvmassor och isolerrutor. Mer om <a href="/pcb/">PCB-inventering</a>.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Bly:</strong> äldre målarfärg, blymönja och fönsterfärg.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Mögel:</strong> gipsskivor, träreglar, spånskivor, isolering och pappskikt. Mer om <a href="/provtagning/fukt-mogel/">fukt- och mögelprovtagning</a>.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Kreosot och PAH:</strong> järnvägsslipers, stolpar och äldre impregnerat virke.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Vad reglerna säger</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Utredning före rivning och renovering</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Innan rivning, ombyggnad eller renovering börjar ska det utredas om det finns hälsofarligt material i den del av byggnaden som arbetet gäller. Går det inte att klarlägga på annat sätt ska prover tas och analyseras.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">AFS 2023:3</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">PCB i fogmassor och golvmassor</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Massa med 50–500 mg/kg PCB ska tas bort i samband med renovering, ombyggnad eller rivning.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">17 a § förordningen om PCB m.m.</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs provtagning?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför renovering</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Badrum, kök, golv</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ska kakel, mattor eller skivor rivas ut visar provet om materialet kan hanteras som vanligt avfall.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför rivning</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Avfallshanteringsplan</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Provsvaren visar vilka material som ska tas om hand som farligt avfall.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför fastighetsköp</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Miljöteknisk förvärvsbesiktning</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Prover av misstänkta material ger underlag inför köpet. Se <a href="/forvarvsbesiktning/">förvärvsbesiktning</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Genomgång</strong> av byggnad, byggår och historik: vilka material som misstänks, var de sitter och vilken åtgärd som planeras.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Provpunkter</strong> väljs per material. Skiktade material, som kakel med fix eller matta med lim, provtas i alla lager: det farliga ämnet sitter ofta i ett underliggande skikt.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Prov</strong> tas av din konsult personligen, Daniel eller hans kollega, med skyddsutrustning och utan att damma.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Förpackning och märkning</strong> efter ämne. Varje prov får ett id, plats, materialtyp och foto.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong> på laboratorium med rätt metod för ämnet.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> som kopplar varje resultat till provpunkten, med bedömning och nästa steg.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"antal"} -->
+<h2 class="wp-block-heading" id="antal">Hur många prov behövs?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Antalet bestäms av byggnadens storlek och hur många olika material den har. Vid en riktad kontroll av ett tydligt material räcker ofta ett prov. Finns samma material i flera rum kan fler prov behövas om det varierar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Har ett pågående arbete stoppats finns ett snabbare spår: se <a href="/akut/">akut provtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad innebär provtagning av byggnadsmaterial?</summary><!-- wp:paragraph -->
+<p>En liten mängd material tas ut för analys på laboratorium. Syftet är att ta reda på om materialet innehåller ämnen som påverkar arbetsmiljö, avfallshantering, renovering, rivning eller ett fastighetsbeslut.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vilka ämnen kan analyseras?</summary><!-- wp:paragraph -->
+<p>Vanligast är asbest, PCB, bly, mögel och PAH. I vissa projekt är även kvicksilver eller klorparaffiner aktuella.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är ett homogent material?</summary><!-- wp:paragraph -->
+<p>Ett material som är av samma typ, från samma byggperiod och med samma utseende och användning. Varierar det i färg, skikt eller ålder räknas det som flera material.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad händer efter analysen?</summary><!-- wp:paragraph -->
+<p>Du får en rapport som kopplar varje svar till provpunkt, material och plats. Den kan användas för att planera rivning, renovering, avfallshantering eller fortsatt utredning.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Sanerar Fastsan?</summary><!-- wp:paragraph -->
+<p>Nej. Fastsan tar prover och skriver rapporter. Rapporten kan användas som underlag när saneringen handlas upp.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Behöver du provta ett material?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/#offert">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/provtagning/asbest/">Asbestprov</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/pcb/">PCB-inventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/fukt-mogel/">Fukt- och mögelprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/miljoinventering/">Miljöinventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/forvarvsbesiktning/">Miljöteknisk förvärvsbesiktning</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">Projektering och byggarbetsmiljösamordning – grundläggande skyldigheter (AFS 2023:3)</a>, Arbetsmiljöverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">Förordning (2007:19) om PCB m.m.</a>, Regeringskansliets rättsdatabaser.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

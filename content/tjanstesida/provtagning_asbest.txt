@@ -1,0 +1,337 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Asbestprov och asbestanalys i Stockholm</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Ska du renovera badrummet, riva en vägg eller köpa ett äldre hus? Hus byggda före 1982 kan innehålla asbest, och det syns inte med blotta ögat. Vi kommer hem till dig i Stockholm och Mälardalen, tar provet på ett säkert sätt och låter ett oberoende laboratorium analysera det.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"id":156,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-bild"} -->
+<figure class="wp-block-image size-full fs-guide-bild"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-materialprov-packning-provpase.webp" alt="Hand håller en provpåse märkt P2 Packning framför en rörfläns" class="wp-image-156"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>2 495 kr inkl. moms</strong> för hembesök, provtagning, labbanalys och skriftlig rapport. Ett prov ingår.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Extra prov</strong> kostar 650 kr inkl. moms per prov.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Svar normalt inom 3 dagar</strong> från att provet tagits.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och tjänar inget på vad provet visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"var-finns-asbest"} -->
+<h2 class="wp-block-heading" id="var-finns-asbest">Var finns asbest i ett hus?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Asbest var ett vanligt byggmaterial i Sverige under flera decennier. Det tål värme, isolerar och påverkas inte av de flesta kemikalier, så det blandades in i allt från golvlim till fasadskivor. En stor del av användningen förbjöds i mitten av 1970-talet, och 1982 kom ett generellt förbud (<a href="https://www.av.se/globalassets/filer/produktion-industri-och-logistik/asbest-korta-sifferfakta-2006-09.pdf" target="_blank" rel="noreferrer noopener">Arbetsmiljöverket</a>). Samma typ av material kan vara fritt från asbest i ett hus och innehålla asbest i grannhuset.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Badrum och golv:</strong> kakelfix och fog, klinkerfix, socklar, plastmattor och linoleum, golvplattor, lim under mattor och plattor, golvmassor.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Isolering och rör:</strong> rörisolering, dörrisolering, vatten- och avloppsrör, ventilationskanaler.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fogar och tätning:</strong> fogmassor, tätmassor, fönsterkitt, skruvplugg.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Skivor:</strong> akustikskivor, takskivor, fasadskivor, balkongskivor, väggskivor inomhus.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Värme och eld:</strong> puts runt kakelugnar, rökgångsanslutningar, värmepannor, värmeskydd.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Övrigt:</strong> puts, färger, fönsterbänkar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Mer om riskerna finns hos <a href="https://www.av.se/halsa-och-sakerhet/kemiska-risker/risker-for-vissa-amnen-produkter-och-verksamheter/asbest/" target="_blank" rel="noreferrer noopener">Arbetsmiljöverket</a>. Asbesthaltigt material från rivning får inte säljas eller överlåtas: läs guiden <a href="/aterbruk-miljoinventering/">om återbruk av byggmaterial</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Vad reglerna säger</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Utredning före rivning och renovering</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Innan rivning, ombyggnad eller renovering börjar ska det utredas om det finns hälsofarligt material i den del av byggnaden som arbetet gäller. Går det inte att klarlägga på annat sätt ska prover tas och analyseras.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">AFS 2023:3</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Skärpta regler sedan 19 december 2025</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Gränsvärdet för asbest i luft sänktes från 0,1 till 0,01 fiber/cm³, och reglerna för arbete med asbest skärptes. Det ställer högre krav på sanering och på kontrollmätning efteråt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-202314/" target="_blank" rel="noreferrer noopener">AFS 2023:14</a> och <a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-202313/" target="_blank" rel="noreferrer noopener">AFS 2023:13</a>, ändrade 2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs ett asbestprov?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Före rivning eller renovering</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Hus byggda före 1982</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Före rivning eller större renovering ska det utredas om materialen innehåller asbest. Ett prov ger svaret.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Före håltagning och slipning</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Bilning, borrning, slipning</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Det är när materialet bearbetas som fibrerna sprids. Ta provet innan arbetet börjar.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför köp av ett äldre hus</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Eller när ett material är skadat</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ett prov visar vad du köper, eller om ett skadat material behöver hanteras som farligt avfall.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Du bokar</strong> och berättar vad du ska göra och vilket material du undrar över.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Vi kommer hem till dig</strong>, går igenom huset, byggåret och var risken är störst.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Provet tas</strong> med skyddsutrustning. Materialet fuktas först så att inga fibrer sprids, och provet packas tätt och märks.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Laboratoriet analyserar.</strong> Materialprov analyseras med polarisationsmikroskopi (PLM), damm- och luftprov med svepelektronmikroskop (SEM-EDS).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Du får en skriftlig rapport</strong>, normalt inom 3 dagar, som säger om materialet innehåller asbest och vad du bör göra härnäst.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:gallery {"columns":2,"linkTo":"none","className":"fs-guide-galleri"} -->
+<figure class="wp-block-gallery has-nested-images columns-2 is-cropped fs-guide-galleri"><!-- wp:image {"id":170,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-aterbruk-matta-lim-provpase.webp" alt="Provpåse märkt matta och lim på ett golv där mattan är uppriven" class="wp-image-170"/><figcaption class="wp-element-caption">Prov av matta och lim.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":171,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-aterbruk-kakelfix-provpase.webp" alt="Provpåse märkt kakelfix framför en vägg där kakel har tagits bort" class="wp-image-171"/><figcaption class="wp-element-caption">Prov av kakelfix bakom borttaget kakel.</figcaption></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:heading {"anchor":"tid"} -->
+<h2 class="wp-block-heading" id="tid">Hur lång tid tar det?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Normalt 3 dagar från att provet tagits. Har du bråttom, säg till när du bokar så ser vi vad som går att ordna.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Har ett pågående arbete stoppats finns ett snabbare spår: se <a href="/akut/">akut provtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad kostar ett asbestprov?</summary><!-- wp:paragraph -->
+<p>2 495 kr inkl. moms. Då ingår hembesök, provtagning, labbanalys och skriftlig rapport, med ett prov. Varje extra prov kostar 650 kr inkl. moms.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Varför ska jag inte ta provet själv?</summary><!-- wp:paragraph -->
+<p>Det är när materialet bryts loss som fibrerna sprids. Vi tar provet med rätt skydd och teknik och vet var i huset det är värt att ta det. Rapporten från en oberoende provtagare kan du visa för entreprenörer, köpare och myndigheter.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Är ett negativt prov alltid tillräckligt?</summary><!-- wp:paragraph -->
+<p>Inte alltid. Ett negativt prov säger att asbest inte påvisats i just det provtagna materialet. Skiljer sig materialet mellan rum, skikt eller byggdelar kan fler prover behövas.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad händer om provet visar asbest?</summary><!-- wp:paragraph -->
+<p>Lämna materialet orört tills nästa steg är planerat. Rapporten används för att avgränsa materialet och planera sanering. Sanering får bara göras av företag med tillstånd från Arbetsmiljöverket.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är skillnaden mellan er och ett saneringsbolag?</summary><!-- wp:paragraph -->
+<p>Fastsan utför ingen sanering och har inget intresse av vad provet visar. Visar provet asbest hjälper vi dig att förstå vad det betyder och hur saneringen kan handlas upp.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Boka asbestprov – 2 495 kr</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så bokar vi en tid som passar dig.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/?service=asbest">Boka asbestprov</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/provtagning/material/">Provtagning av byggnadsmaterial</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/miljoinventering/">Miljöinventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/pcb/">PCB-inventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/akut/">Akut provtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/aterbruk-miljoinventering/">Guide: återbruk av byggmaterial</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">Projektering och byggarbetsmiljösamordning – grundläggande skyldigheter (AFS 2023:3)</a>, Arbetsmiljöverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-202313/" target="_blank" rel="noreferrer noopener">Risker vid vissa typer av arbeten (AFS 2023:13)</a>, Arbetsmiljöverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-202314/" target="_blank" rel="noreferrer noopener">Gränsvärden för luftvägsexponering i arbetsmiljön (AFS 2023:14)</a>, Arbetsmiljöverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.av.se/globalassets/filer/produktion-industri-och-logistik/asbest-korta-sifferfakta-2006-09.pdf" target="_blank" rel="noreferrer noopener">Asbest – korta sifferfakta</a>, Arbetsmiljöverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/asbest/" target="_blank" rel="noreferrer noopener">Risker med hantering av asbest i byggnader</a>, Boverket.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

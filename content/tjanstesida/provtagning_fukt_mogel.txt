@@ -1,0 +1,303 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Fuktmätning och mögelprovtagning i Stockholm</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Vi utreder misstänkta fuktskador, mögellukt, synlig påväxt och riskkonstruktioner åt fastighetsägare, BRF:er, företag och privatpersoner. Utredningen kombinerar byggnadsteknisk genomgång, fuktmätning och riktade prover. Vi säljer ingen sanering, så du får ett neutralt underlag.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"id":158,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-bild"} -->
+<figure class="wp-block-image size-full fs-guide-bild"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-fuktmatning-horn.webp" alt="Fuktmätare med mätspetsen mot golvet i ett hörn, displayen visar 98,0" class="wp-image-158"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>75 % relativ fuktighet</strong> var byggreglernas kritiska nivå när ett materials egen gräns inte var känd.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Ett luftprov räcker sällan</strong>: det utesluter inte en dold fuktskada.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Olika analyser</strong> svarar på olika frågor: odling, DNA-analys, MVOC och mikroskopi.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad proverna visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs fukt- och mögelprovtagning?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Mögellukt eller synlig påväxt</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Även utan synlig skada</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Mögellukt, missfärgning eller påväxt på väggar, tak, fönster, gipsskivor eller trä.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Efter läckage eller vattenskada</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Kan materialet sitta kvar?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Mätningen visar om materialen har torkat eller behöver bytas. Se <a href="/fukt-mogel/vattenskada/">vattenskada</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför köp eller renovering</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Dolda fuktskador</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bakom kakel, i syllar, i blindbotten eller i isolering, och när boende eller personal har besvär.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Regler och riktvärden</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Kritiskt fukttillstånd</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Enligt Boverkets byggregler skulle väl undersökta kritiska fukttillstånd användas för material där mögel och bakterier kan växa. Var materialets gräns inte undersökt gällde en relativ fuktighet på 75 %.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.boverket.se/globalassets/publikationer/dokument/2026/boverkets-byggregler-bbr-avsnitt-6---hygien-halsa-och-miljo-vagledning-fran-pbl-kunskapsbanken-fore-1-december-2025.pdf" target="_blank" rel="noreferrer noopener">BBR 6:52 (regler före 1 december 2025)</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Olägenhet för människors hälsa</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Kommunen bedömer om fukt och mikroorganismer i bostäder och allmänna lokaler är en olägenhet för hälsan. Den bör bland annat se om det finns synlig mikrobiell växt eller mikrobiell lukt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.folkhalsomyndigheten.se/contentassets/26ea6c0d999742c0a5351c63e70cb0ce/fohmfs-2014-14.pdf" target="_blank" rel="noreferrer noopener">FoHMFS 2014:14, miljöbalken 9 kap. 3 §</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Branschens riktvärden: betong under plastmatta bör ligga under cirka 85 % RF, och trä i uppvärmda rum har normalt en fuktkvot under 16–18 %. Ett enskilt mätvärde räcker sällan: det tolkas med material, lukt, skador och konstruktion.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Genomgång</strong> av byggnadens historik och vilka besvär som finns.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Besiktning</strong> på plats av din konsult personligen, Daniel eller hans kollega: synlig påväxt, lukt, missfärgning och riskkonstruktioner.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fuktmätning</strong>: screening och riktade mätningar av relativ fuktighet och fuktkvot.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Prov</strong> av material, luft eller damm vid behov.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong> på oberoende laboratorium.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med bedömning och rekommenderat nästa steg.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"metoder"} -->
+<h2 class="wp-block-heading" id="metoder">Analysmetoder</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Odling</strong> visar levande mögelsvampar och tar 3–7 dagar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>DNA-analys (qPCR)</strong> är snabbare och hittar även döda organismer.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>MVOC</strong> är ett luftprov av gaser som mögel och bakterier avger, när det luktar men inget syns.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Sporer i luft</strong> används för att kontrollera före och efter en sanering.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Direktmikroskopi</strong> bekräftar snabbt en synlig påväxt.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Vid akut mögelmisstanke finns ett snabbare spår: se <a href="/akut/">akut provtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>När behöver man göra mögelprovtagning?</summary><!-- wp:paragraph -->
+<p>När det finns synlig påväxt, mögellukt, misstänkt fuktskada eller besvär som kan kopplas till byggnaden. Provet riktas mot misstänkta material och kombineras med fuktmätning.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Räcker ett luftprov för att avgöra om det finns mögel?</summary><!-- wp:paragraph -->
+<p>Nej, inte alltid. Sporer i luft varierar med väder, årstid, ventilation och städning, och ett normalt luftprov utesluter inte en dold fuktskada.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är skillnaden mellan odling och DNA-analys?</summary><!-- wp:paragraph -->
+<p>Odling visar levande mögelsvampar efter 3–7 dagar. DNA-analys hittar även döda organismer och är snabbare. I svårare fall kompletterar de varandra.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Är svart mögel alltid farligt?</summary><!-- wp:paragraph -->
+<p>Svart missfärgning betyder inte automatiskt en viss mögelart. Mörk påväxt på fuktskadade material visar ofta på långvarig fukt och ska tas på allvar.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Sanerar Fastsan?</summary><!-- wp:paragraph -->
+<p>Nej. Fastsan tar prover och skriver rapporter. Rapporten kan användas som underlag när åtgärden handlas upp.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Misstänker du fukt eller mögel?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/#offert">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/inomhusmiljo/">Fukt- och mögelutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/fukt-mogel/mogel/">Mögelutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/fukt-mogel/vattenskada/">Vattenskada</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/luktutredning/">Luktutredning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/akut/">Akut provtagning</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.boverket.se/globalassets/publikationer/dokument/2026/boverkets-byggregler-bbr-avsnitt-6---hygien-halsa-och-miljo-vagledning-fran-pbl-kunskapsbanken-fore-1-december-2025.pdf" target="_blank" rel="noreferrer noopener">Boverkets byggregler avsnitt 6 – vägledning från PBL kunskapsbanken (före 1 december 2025)</a>, Boverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.folkhalsomyndigheten.se/contentassets/26ea6c0d999742c0a5351c63e70cb0ce/fohmfs-2014-14.pdf" target="_blank" rel="noreferrer noopener">Folkhälsomyndighetens allmänna råd om fukt och mikroorganismer (FoHMFS 2014:14)</a>, Folkhälsomyndigheten.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

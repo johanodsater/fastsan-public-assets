@@ -1,0 +1,305 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Provtagning av byggnadsmaterial — asbest, PCB och tungmetaller</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Riktad provtagning när frågan gäller ett visst material. Vi kommer ut, tar provet och lämnar det till laboratorium för analys. Du får ett skriftligt utlåtande som underlag för renovering, myndighet, försäkring eller anbud.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:image {"id":163,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-bild"} -->
+<figure class="wp-block-image size-full fs-guide-bild"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-aterbruk-fonsterkitt-provpase.webp" alt="Provpåse märkt fönsterkitt glaspartier, fasttejpad på ett äldre fönster" class="wp-image-163"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Asbest</strong> förbjöds 1982. Material i äldre hus kan innehålla det.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>PCB</strong> användes i fogmassor och golvmassor 1956–1973.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Vid akut stopp</strong> kan vi ofta vara på plats inom 1–3 dagar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad proverna visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"vad-ar-riktad-provtagning"} -->
+<h2 class="wp-block-heading" id="vad-ar-riktad-provtagning">Vad riktad provtagning är</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Riktad provtagning används när frågan redan gäller ett visst material, till exempel kakelfix i ett badrum eller fogmassan runt ett fönster. Ska hela byggnaden kartläggas inför rivning eller större ombyggnad är en <a href="/miljoinventering/">miljöinventering</a> rätt start.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vi väljer laboratorium efter provtyp, utan bindningar till en leverantör. Därför kan olika prover gå till olika laboratorier.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Vad reglerna säger</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Utredning före rivning och renovering</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Innan rivning, ombyggnad eller renovering börjar ska det utredas om det finns hälsofarligt material i den del av byggnaden som arbetet gäller. Går det inte att klarlägga på annat sätt ska prover tas och analyseras, och den som ska riva ska få resultatet skriftligt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">AFS 2023:3</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Asbest: skärpta regler sedan 19 december 2025</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Gränsvärdet för asbest i luft sänktes från 0,1 till 0,01 fiber/cm³, och reglerna för arbete med asbest skärptes. Mer om <a href="/provtagning/asbest/">asbestprov</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-202314/" target="_blank" rel="noreferrer noopener">AFS 2023:14</a>, ändrad 2025</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">PCB i fogmassor och golvmassor</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Massa med 50–500 mg/kg PCB ska tas bort i samband med renovering, ombyggnad eller rivning. Mer om <a href="/pcb/">PCB-inventering</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">17 a § förordningen om PCB m.m.</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs riktad provtagning?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Misstänkt asbest</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Hus byggda före 1982</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Eternitplattor på tak eller fasad, golvmattor, fogmassor runt rörgenomföringar, eldstadsisolering, ventilationsisolering och akustikplattor. Asbest förbjöds 1982 (<a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/asbest/" target="_blank" rel="noreferrer noopener">Boverket</a>).</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">PCB i fogmassor och golv</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Byggnader från 1956–1973</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Elastiska fogmassor mellan betongelement och runt fönster, och halkskyddade golvmassor.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Tungmetaller</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Bly, kvicksilver, krom, kadmium</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bly i äldre målarfärg, krom VI i betong och ytbehandling, kadmium i färg och rostskydd. Provas vid renovering och när avfall eller massor ska klassas.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Förfrågan</strong> med en kort beskrivning och gärna ett foto av materialet. Vi återkommer inom kontorstid med en bedömning av om prov behövs och vad det kostar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Provtagning</strong> på plats av din konsult personligen, Daniel eller hans kollega. Minsta möjliga åverkan, rätt förpackning och en spårbar kedja från prov till laboratorium.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong> på ett laboratorium som är valt för just den provtypen.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Utlåtande</strong> med labbsvaret, vad det betyder enligt reglerna och rekommenderat nästa steg.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"tid"} -->
+<h2 class="wp-block-heading" id="tid">Hur lång tid tar det?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Svarstiden beror på analysen. För asbest är normal svarstid 3 dagar från att provet tagits.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Har ett pågående arbete stoppats finns ett snabbare spår: se <a href="/akut/">akut provtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är skillnaden mellan riktad provtagning och miljöinventering?</summary><!-- wp:paragraph -->
+<p>Riktad provtagning gäller ett visst material. En miljöinventering kartlägger farliga material i hela byggnaden inför rivning eller större ombyggnad.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad står i utlåtandet?</summary><!-- wp:paragraph -->
+<p>Vilket material som provtagits och var, med foto, labbsvaret och vad det betyder enligt reglerna, och rekommenderat nästa steg.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Hur snabbt får jag svar?</summary><!-- wp:paragraph -->
+<p>För asbest normalt inom 3 dagar. Andra analyser tar olika lång tid. Vid akut stopp finns ett snabbare spår.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Sanerar Fastsan?</summary><!-- wp:paragraph -->
+<p>Nej. Fastsan tar prover och skriver rapporter. Rapporten kan användas som underlag när saneringen handlas upp.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Behöver du en provtagning?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/#offert">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/provtagning/asbest/">Asbestprov</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/material/">Provtagning av byggnadsmaterial</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/fukt-mogel/">Fukt- och mögelprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/jord/">Jordprov</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/miljoinventering/">Miljöinventering</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/akut/">Akut provtagning</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-20233/" target="_blank" rel="noreferrer noopener">Projektering och byggarbetsmiljösamordning – grundläggande skyldigheter (AFS 2023:3)</a>, Arbetsmiljöverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.av.se/arbetsmiljoarbete-och-inspektioner/publikationer/foreskrifter/afs-202314/" target="_blank" rel="noreferrer noopener">Gränsvärden för luftvägsexponering i arbetsmiljön (AFS 2023:14)</a>, Arbetsmiljöverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://rkrattsbaser.gov.se/sfst?bet=2007:19" target="_blank" rel="noreferrer noopener">Förordning (2007:19) om PCB m.m.</a>, Regeringskansliets rättsdatabaser.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.boverket.se/sv/byggande/forebygg-fel-brister-skador/risker-byggande/asbest/" target="_blank" rel="noreferrer noopener">Risker med hantering av asbest i byggnader</a>, Boverket.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

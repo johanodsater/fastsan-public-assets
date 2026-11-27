@@ -1,0 +1,303 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Jordprov — markmiljöprovtagning i Stockholm och Mälardalen</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Vi tar jordprov när marken kan vara förorenad: inför schakt, bygge, fastighetsköp eller när massor ska flyttas. Vi tar fram en provtagningsplan, gör fältarbetet, lämnar proverna till laboratorium och sammanställer en rapport som underlag för markarbete, myndighetsdialog eller fortsatt utredning.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Jordprov</strong> tas inför schakt, bygge, fastighetsköp och vid misstanke om förorenad mark.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analyserna</strong> väljs efter platsens historik och den planerade markanvändningen.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>MIFO</strong> är Naturvårdsverkets metodik för att bedöma förorenade områden.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad proverna visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs jordprov?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför schakt och bygge</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Massor som ska flyttas</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Massor som ska lämna fastigheten ska klassas först. Provet visar om de är förorenade.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Tidigare verksamhet</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Verkstad, industri, cistern, upplag</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Där det funnits verkstad, industri, drivmedel eller upplag kan marken innehålla metaller, olja eller PAH. Äldre fyllnadsmassor innehåller ofta tegel, slagg eller aska.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Fastighetsköp och exploatering</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Underlag inför affären</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ett jordprov visar om marken behöver utredas vidare innan köp eller ändrad markanvändning. Se <a href="/forvarvsbesiktning/">förvärvsbesiktning</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">MIFO och myndigheterna</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Metodik för inventering av förorenade områden</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>MIFO är Naturvårdsverkets metodik för stegvis bedömning av misstänkt förorenade platser. Fas 1 bygger på historik, kartor och platsbesök och innehåller normalt inte provtagning. I fas 2 tas prover av jord och vid behov grundvatten för att bekräfta eller avfärda misstankarna.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.naturvardsverket.se/publikationer/4900/metodik-for-inventering-av-fororenade-omraden/" target="_blank" rel="noreferrer noopener">Naturvårdsverket, rapport 4918</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Länsstyrelsens register</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Länsstyrelsen har ett register över platser som kan vara förorenade. Ligger fastigheten där kan kommunen begära provtagning, till exempel inför ett bygglov.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf">Länsstyrelsen och kommunens miljöförvaltning</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Jordprov görs också utanför MIFO, till exempel inför schakt, när massor ska flyttas eller när en känd förorening ska avgränsas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"analyser"} -->
+<h2 class="wp-block-heading" id="analyser">Vanliga analyspaket</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Vilka analyser som görs styrs av historiken, den misstänkta källan och den planerade markanvändningen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Metaller:</strong> bly, kadmium, kvicksilver, koppar, zink, nickel, arsenik och krom, vid behov sexvärt krom för sig.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>PAH:</strong> tjära, kreosot, asfalt, förbränningsrester och äldre fyllnadsmassor. Mer om <a href="/markmiljo/pah/">PAH i jord</a>.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Olja och bensin:</strong> alifater, aromater och BTEX. Mer om <a href="/markmiljo/btex/">BTEX</a>.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>PFAS:</strong> platser som påverkats av brandskum och vissa industrier.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Klorerade lösningsmedel:</strong> tvätterier och metallverkstäder.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>PCB:</strong> platser med transformatorer eller kondensatorer och äldre fyllnad.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Genomgång</strong> av platsens historik, tidigare verksamheter och vad marken ska användas till.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Provtagningsplan</strong>: var proverna tas, på vilka djup och vilka analyser som behövs.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fältarbete</strong> av din konsult personligen, Daniel eller hans kollega.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong> på laboratorium.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med resultat, bedömning och rekommenderat nästa steg.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"tid"} -->
+<h2 class="wp-block-heading" id="tid">Hur lång tid tar det?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Tidplanen beror på provtagningsplanen och analyserna. Du får den i offerten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>När behöver man ta jordprov?</summary><!-- wp:paragraph -->
+<p>När marken kan vara förorenad: inför schakt, bygge, fastighetsköp eller ändrad markanvändning, eller där det funnits verkstad, industri, cistern, upplag, fyllnadsmassor eller drivmedel.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Är jordprovtagning samma sak som MIFO fas 2?</summary><!-- wp:paragraph -->
+<p>Nej. Jordprov kan vara en del av MIFO fas 2, men görs också för andra syften, som inför schakt eller när en känd förorening ska avgränsas.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Hur många jordprov behövs?</summary><!-- wp:paragraph -->
+<p>Det beror på områdets storlek, historik, misstänkta föroreningar och jordlager. Ett litet område kan behöva några riktade prov, större eller blandade ytor fler prov på flera djup.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad betyder höga PAH-halter?</summary><!-- wp:paragraph -->
+<p>De kan tyda på tjära, kreosot, förbränningsrester, äldre asfalt eller förorenade fyllnadsmassor. Resultatet påverkar riskbedömning, schakt och hur massorna får hanteras.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Sanerar Fastsan?</summary><!-- wp:paragraph -->
+<p>Nej. Om sanering behövs får du ett underlag som kan användas för att ta in offerter från flera entreprenörer.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Behöver du ta jordprov?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/#offert">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/markmiljo/">Markmiljöundersökning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/pah/">PAH i jord</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/btex/">BTEX i jord</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/tungmetaller/">Tungmetaller i jord</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/forvarvsbesiktning/">Miljöteknisk förvärvsbesiktning</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/publikationer/4900/metodik-for-inventering-av-fororenade-omraden/" target="_blank" rel="noreferrer noopener">Metodik för inventering av förorenade områden (rapport 4918)</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Källan läst 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
