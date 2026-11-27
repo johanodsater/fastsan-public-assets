@@ -1,0 +1,295 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Markmiljöundersökning i Stockholm: MIFO fas 1 och 2</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Fastsan gör markmiljöundersökningar i Stockholm och Mälardalen när mark kan vara förorenad. Vi hjälper exploatörer, byggherrar, fastighetsägare, kommuner och projektledare med MIFO fas 1 och 2, riskbedömning och underlag inför köp, detaljplan, bygglov, schakt eller anmälan. Vi säljer ingen sanering.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Fas 1 utan prover, fas 2 med.</strong> Historiken avgör om och var prover behövs.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Riktvärden är inte gränsvärden.</strong> De är ett stöd i riskbedömningen.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Schakt i förorenad mark</strong> ska i regel anmälas till tillsynsmyndigheten innan arbetet börjar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad undersökningen visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"mifo"} -->
+<h2 class="wp-block-heading" id="mifo">MIFO: Naturvårdsverkets metodik</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>MIFO står för Metodik för inventering av förorenade områden. Den bedömer risken steg för steg och ger en riskklass från 1 till 4. MIFO prioriterar vilka områden som behöver undersökas vidare. Den är ingen saneringsplan.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Fas 1</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Orienterande studie</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Utan prover: historik, tidigare verksamheter, kartor, flygbilder, arkiv, myndigheternas uppgifter, intervjuer och besök på platsen. Ger en preliminär riskklass.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Fas 2</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Översiktlig undersökning</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Prover av jord, grundvatten och vid behov porgas eller sediment. Bekräftar eller ändrar bilden från fas 1. Se <a href="/provtagning/jord/">jordprovtagning</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Riktvärden och lagen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">KM och MKM</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Naturvårdsverkets generella riktvärden bygger på hur marken ska användas. Känslig markanvändning (KM), till exempel bostäder och förskolor, har lägre värden än mindre känslig markanvändning (MKM), till exempel industri och kontor. De är inte juridiska gränsvärden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.naturvardsverket.se/vagledning-och-stod/fororenade-omraden/riktvarden-for-fororenad-mark/" target="_blank" rel="noreferrer noopener">Naturvårdsverket: Riktvärden för förorenad mark</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Upplysningsplikt</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Upptäcks en förorening som kan skada människors hälsa eller miljön ska den som äger eller brukar fastigheten genast underrätta tillsynsmyndigheten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=1998:808" target="_blank" rel="noreferrer noopener">Miljöbalken 10 kap. 11 §</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Anmälan före efterbehandling</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>En åtgärd i ett förorenat område som kan öka spridningen av föroreningar eller exponeringen ska anmälas till tillsynsmyndigheten innan den påbörjas. Flera kommuner anger senast sex veckor före.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=1998:899" target="_blank" rel="noreferrer noopener">28 § förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Vem ansvarar?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I första hand den verksamhetsutövare som orsakat föroreningen. Den som köpt fastigheten kan bli ansvarig om hen vid köpet kände till föroreningen eller borde ha upptäckt den. För privatbostäder gäller bara den som kände till den.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=1998:808" target="_blank" rel="noreferrer noopener">Miljöbalken 10 kap. 2 och 3 §§</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Historik</strong>: tidigare verksamheter, kartor, flygbilder och arkiv.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Besök</strong> på platsen av din konsult personligen, Daniel eller hans kollega.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Provtagningsplan</strong> efter de misstänkta källorna.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Prover</strong> av jord och vid behov grundvatten eller porgas, med läge och djup.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong> på oberoende laboratorium.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med jämförelse mot riktvärden, bedömning och rekommenderat nästa steg.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är skillnaden mellan MIFO fas 1 och fas 2?</summary><!-- wp:paragraph -->
+<p>Fas 1 är en studie utan prover som ger en preliminär riskklass. Fas 2 är en undersökning med prover och analys. Fas 1 svarar på om det finns skäl att misstänka en förorening, fas 2 på vad som finns, var och vilken risk det ger.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Är KM och MKM juridiska gränsvärden?</summary><!-- wp:paragraph -->
+<p>Nej. De är generella riktvärden som stöd i riskbedömningen. Bedömningen tar också hänsyn till markanvändning, exponering, skyddsobjekt och spridningsrisk.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>När behöver man göra en 28 §-anmälan?</summary><!-- wp:paragraph -->
+<p>När en åtgärd i ett förorenat område, till exempel schakt eller sanering, kan öka spridningen eller exponeringen. Det är en annan regel än upplysningsplikten i miljöbalken.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vem ansvarar för förorenad mark?</summary><!-- wp:paragraph -->
+<p>I första hand den som orsakat föroreningen. En köpare kan bli ansvarig om hen kände till eller borde ha upptäckt föroreningen vid köpet. Avtal mellan köpare och säljare tar inte bort ansvaret mot myndigheten.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad får jag efter undersökningen?</summary><!-- wp:paragraph -->
+<p>En rapport med bakgrund, provtagningsplan, provpunkter med läge och djup, analysresultat, jämförelse mot riktvärden, bedömning och rekommenderat nästa steg.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Behöver du en markmiljöundersökning?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/?service=markmiljo">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/markmiljo/">Markmiljö, översikt</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/jord/">Jordprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/pah/">PAH-analys</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/btex/">BTEX-analys</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/tungmetaller/">Tungmetaller i mark</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/forvarvsbesiktning/">Miljöteknisk förvärvsbesiktning</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/publikationer/4900/metodik-for-inventering-av-fororenade-omraden/" target="_blank" rel="noreferrer noopener">Metodik för inventering av förorenade områden</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/vagledning-och-stod/fororenade-omraden/riktvarden-for-fororenad-mark/" target="_blank" rel="noreferrer noopener">Riktvärden för förorenad mark</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://rkrattsbaser.gov.se/sfst?bet=1998:808" target="_blank" rel="noreferrer noopener">Miljöbalken (1998:808), 10 kap.</a>, Regeringskansliets rättsdatabaser.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://rkrattsbaser.gov.se/sfst?bet=1998:899" target="_blank" rel="noreferrer noopener">Förordningen (1998:899) om miljöfarlig verksamhet och hälsoskydd</a>, Regeringskansliets rättsdatabaser.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

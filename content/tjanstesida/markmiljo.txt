@@ -1,0 +1,321 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Markmiljöundersökning inför försäljning eller exploatering</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">När en industritomt, en före detta bensinstation eller en äldre fastighet ska byta ägare eller bebyggas tar vi prover, jämför halterna med Naturvårdsverkets riktvärden och skriver en rapport som köpare, kommun och länsstyrelse kan läsa. Vi säljer ingen sanering.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Historiken styr provtagningen</strong>: vilken verksamhet har funnits på platsen?</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>KM och MKM</strong> är Naturvårdsverkets riktvärden för känslig och mindre känslig markanvändning.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Upptäcks en förorening</strong> ska tillsynsmyndigheten genast underrättas.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad proverna visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs en markmiljöundersökning?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför försäljning eller köp</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Due diligence</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Industri, verkstäder, bensinstationer, kemtvättar, åkerier och deponier kan ha lämnat kolväten, metaller eller klorerade lösningsmedel i marken. Se <a href="/forvarvsbesiktning/">förvärvsbesiktning</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Inför exploatering</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Detaljplan, bygglov och schakt</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Kommunen behöver veta att marken är lämplig för det som ska byggas. Förorenade massor ska hanteras rätt.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Misstanke om förorening</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Lukt, färg eller historik</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Bensinlukt i källaren, missfärgad jord vid grävning eller känd äldre verksamhet på fastigheten.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Riktvärden och regler</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Naturvårdsverkets generella riktvärden</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Riktvärdena finns för känslig markanvändning (KM), till exempel bostäder, skolor och förskolor, och för mindre känslig markanvändning (MKM), till exempel industri och kontor. De är inte juridiska gränsvärden utan ett stöd i riskbedömningen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.naturvardsverket.se/vagledning-och-stod/fororenade-omraden/riktvarden-for-fororenad-mark/" target="_blank" rel="noreferrer noopener">Naturvårdsverket: Riktvärden för förorenad mark</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Upplysningsplikt</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Upptäcks en förorening som kan skada människors hälsa eller miljön ska den som äger eller brukar fastigheten genast underrätta tillsynsmyndigheten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://rkrattsbaser.gov.se/sfst?bet=1998:808" target="_blank" rel="noreferrer noopener">Miljöbalken 10 kap. 11 §</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Undersökningen följer Naturvårdsverkets metodik för inventering av förorenade områden, MIFO. Se <a href="/markmiljo/undersokning/">MIFO fas 1 och 2</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"ingar"} -->
+<h2 class="wp-block-heading" id="ingar">Vad ingår</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Historik om tidigare verksamhet på fastigheten, ur kartor och kommunala arkiv.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Provtagningsplan efter de misstänkta källorna.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Jordprover med läge och djup.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Analys på oberoende laboratorium: petroleum, metaller, PAH eller klorerade lösningsmedel, efter vad som misstänks.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Jämförelse med Naturvårdsverkets riktvärden för KM och MKM.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Rapport med slutsatser och förslag på fortsatt hantering.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"analyser"} -->
+<h2 class="wp-block-heading" id="analyser">Analyser</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">PAH</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Kreosot, tjära, gasverk</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Se <a href="/markmiljo/pah/">PAH-analys</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">BTEX</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Bensin och lösningsmedel</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Se <a href="/markmiljo/btex/">BTEX-analys</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Metaller</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Industri, fyllnadsmassor, impregnerat trä</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Se <a href="/markmiljo/tungmetaller/">tungmetaller i mark</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Hur jordproverna tas beskrivs på <a href="/provtagning/jord/">jordprovtagning</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>När behöver jag en markmiljöundersökning?</summary><!-- wp:paragraph -->
+<p>Ofta inför köp, försäljning, byggnation, schaktning eller ändrad markanvändning. Särskilt om fastigheten har använts för industri, verkstad, drivmedel, fyllnadsmassor eller annan verksamhet som kan förorena.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Hur går en markprovtagning till?</summary><!-- wp:paragraph -->
+<p>Vi börjar med historik, kartor och möjliga riskområden. Sedan tas jordprover på utvalda punkter och djup, med borrning, grävning eller provgropar. Proverna analyseras på laboratorium.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad betyder KM och MKM?</summary><!-- wp:paragraph -->
+<p>KM är känslig markanvändning, till exempel bostäder, skolor och parker. MKM är mindre känslig markanvändning, till exempel industri. Riktvärdena visar om marken kan användas som planerat eller om mer utredning behövs.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Hur lång tid tar det?</summary><!-- wp:paragraph -->
+<p>En enklare undersökning kan ofta göras inom några dagar från bokning. Laboratoriet svarar normalt inom några arbetsdagar, och sedan skrivs rapporten. Stora fastigheter och komplex historik tar längre tid.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad händer om marken är förorenad?</summary><!-- wp:paragraph -->
+<p>Resultatet bedöms mot den planerade användningen. Nästa steg kan vara kompletterande prover, riskbedömning, kontakt med tillsynsmyndigheten eller kontrollerad hantering av schaktmassor. Ibland krävs sanering.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Markmiljö inför affär eller exploatering?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/?service=markmiljo">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/markmiljo/undersokning/">MIFO fas 1 och 2</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/jord/">Jordprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/forvarvsbesiktning/">Miljöteknisk förvärvsbesiktning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/miljoinventering/">Miljöinventering</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/vagledning-och-stod/fororenade-omraden/riktvarden-for-fororenad-mark/" target="_blank" rel="noreferrer noopener">Riktvärden för förorenad mark</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/publikationer/4900/metodik-for-inventering-av-fororenade-omraden/" target="_blank" rel="noreferrer noopener">Metodik för inventering av förorenade områden</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://rkrattsbaser.gov.se/sfst?bet=1998:808" target="_blank" rel="noreferrer noopener">Miljöbalken (1998:808), 10 kap.</a>, Regeringskansliets rättsdatabaser.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

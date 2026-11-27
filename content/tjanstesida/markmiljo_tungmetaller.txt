@@ -1,0 +1,343 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Tungmetaller i mark</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">Metaller i mark finns ofta där det har funnits industri, verkstäder, skjutbanor, träimpregnering, hamnar, fyllnadsmassor eller äldre stadsmiljö. Fastsan gör provtagningsplanen, tar proverna och bedömer metallerna mot Naturvårdsverkets riktvärden i Stockholm och Mälardalen. Vi säljer ingen sanering.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>Elva vanliga metaller</strong> har generella riktvärden hos Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Kadmium och krom(VI)</strong>: riktvärdena för kadmium och MKM för krom(VI) ändrades i augusti 2025.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Naturliga halter</strong> varierar med geologin och vägs in i bedömningen.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad proverna visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs metallanalys?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Industri, verkstad eller gjuteri</strong> som kan ha lämnat flera metaller.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fyllnadsmassor</strong> av okänt ursprung.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Skjutbanor</strong>, där blyhalterna kan vara mycket höga.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Impregnerat trä</strong> med koppar, krom och arsenik.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Hamn, upplag, skrot eller förbränningsrester.</strong></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Inför schakt, exploatering eller köp.</strong> Se <a href="/forvarvsbesiktning/">förvärvsbesiktning</a>.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Naturvårdsverkets riktvärden</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Arsenik</strong>: KM 10, MKM 25</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Bly</strong>: KM 50, MKM 180</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Kadmium</strong>: KM 0,7, MKM 2,5</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Kobolt</strong>: KM 15, MKM 35</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Koppar</strong>: KM 80, MKM 200</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Krom totalt</strong>: KM 80, MKM 150</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Krom(VI)</strong>: KM 2, MKM 8</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Kvicksilver</strong>: KM 0,25, MKM 2,5</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Nickel</strong>: KM 40, MKM 120</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Vanadin</strong>: KM 100, MKM 200</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Zink</strong>: KM 250, MKM 500</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Gällande tabell (mg/kg TS)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Värdena ovan är Naturvårdsverkets generella riktvärden. Riktvärdena för bly ändrades 2022, och för kadmium och MKM för krom(VI) i augusti 2025. KM gäller känslig markanvändning som bostäder och förskolor, MKM mindre känslig som industri och kontor. De är inte juridiska gränsvärden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.naturvardsverket.se/4a3dbd/globalassets/vagledning/fororenade-omraden/riktvarden/generella-riktvarden-for-fororenad-mark-2025.pdf" target="_blank" rel="noreferrer noopener">Naturvårdsverket, generella riktvärden 2025 (version 2.3)</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Rapporten jämför alltid mot Naturvårdsverkets gällande tabell. Äldre tabeller kan ha andra värden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"bakgrund"} -->
+<h2 class="wp-block-heading" id="bakgrund">Naturliga halter</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Halterna av metaller varierar naturligt med berggrund och jordart. En förhöjd halt behöver därför inte bero på en verksamhet. Uppmätta halter jämförs med riktvärdena och med bakgrundshalterna på platsen. Beror halten på geologin ska det visas i rapporten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"krom"} -->
+<h2 class="wp-block-heading" id="krom">Krom(VI) analyseras för sig</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Totalhalten krom säger inte vilken form kromet har. Trevärt krom är den vanliga naturliga formen och binder hårt till jord. Sexvärt krom, krom(VI), är mer lösligt och rörligt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Mer än 1 procent krom(VI)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Om andelen krom(VI) är större än 1 procent av den totala kromhalten bör även krom(VI) riskbedömas. IARC klassar krom(VI) som cancerframkallande för människa (grupp 1).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.naturvardsverket.se/4a3dbd/globalassets/vagledning/fororenade-omraden/riktvarden/generella-riktvarden-for-fororenad-mark-2025.pdf" target="_blank" rel="noreferrer noopener">Naturvårdsverkets riktvärdestabell, fotnot om krom</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Vid historik med kromater, garveri, ytbehandling eller impregnerat trä analyseras krom(VI) separat. Provet hanteras snabbt och kallt, eftersom krom(VI) kan omvandlas till trevärt krom under transporten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"cca"} -->
+<h2 class="wp-block-heading" id="cca">Impregnerat trä med koppar, krom och arsenik</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Äldre tryckimpregnerat trä (CCA) innehåller koppar, krom och arsenik. Det finns kvar i bryggor, stolpar, staket, trall, lekplatser och stödmurar. Metallerna lakar ur träet till marken under, och arsenik är ofta den metall som ligger högst.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Träet är farligt avfall och får inte eldas eller hanteras som vanligt träavfall.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Marken under konstruktionen provtas för koppar, krom och arsenik, och för krom(VI) vid kromathistorik.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Schaktmassor med höga halter kan vara farligt avfall.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Historik</strong> och provtagningsplan efter de misstänkta källorna.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Provtagning</strong> av din konsult personligen, Daniel eller hans kollega.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong> på oberoende laboratorium, med låga rapporteringsgränser för känslig markanvändning.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Bedömning</strong> mot riktvärden och bakgrundshalter.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med resultat, bedömning och rekommenderat nästa steg.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Fältinstrument (XRF) kan användas för att snabbt hitta förhöjda områden, men resultaten påverkas av fukt och jordart och bekräftas med laboratorieanalys. Metaller bryts inte ned: de schaktas bort, binds in eller tvättas ut. Fastsan levererar underlaget men säljer ingen sanering.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vilka metaller analyseras oftast?</summary><!-- wp:paragraph -->
+<p>Arsenik, bly, kadmium, koppar, krom, kvicksilver, nickel, zink, kobolt och vanadin, och krom(VI) vid behov. Urvalet anpassas efter platsens historik.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad betyder KM och MKM?</summary><!-- wp:paragraph -->
+<p>KM är känslig markanvändning, till exempel bostäder, skolor och parker. MKM är mindre känslig markanvändning, till exempel industri och kontor. Riktvärdena är stöd i riskbedömningen, inte juridiska gränsvärden.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Varför är arsenik ibland svårt att bedöma?</summary><!-- wp:paragraph -->
+<p>Arsenik kan vara naturligt förhöjd i vissa jordar och bergarter. Därför jämförs resultatet både med riktvärdena och med bakgrundshalterna på platsen.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Varför analyseras krom(VI) separat?</summary><!-- wp:paragraph -->
+<p>Totalhalten säger inte vilken form kromet har. Krom(VI) är mer rörligt och cancerframkallande. Naturvårdsverket anger att krom(VI) bör riskbedömas om det är mer än 1 procent av totalkromet.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Måste metallförorenad jord alltid schaktas bort?</summary><!-- wp:paragraph -->
+<p>Nej. Det beror på halter, djup, markanvändning, spridningsrisk och bakgrundshalter. Ibland räcker en platsspecifik riskbedömning eller kontrollerad hantering.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Behöver du metallanalys av mark?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/?service=markmiljo">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/markmiljo/undersokning/">MIFO fas 1 och 2</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/pah/">PAH-analys</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/btex/">BTEX-analys</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/jord/">Jordprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/forvarvsbesiktning/">Miljöteknisk förvärvsbesiktning</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/4a3dbd/globalassets/vagledning/fororenade-omraden/riktvarden/generella-riktvarden-for-fororenad-mark-2025.pdf" target="_blank" rel="noreferrer noopener">Naturvårdsverkets generella riktvärden för förorenad mark 2025</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/vagledning-och-stod/fororenade-omraden/riktvarden-for-fororenad-mark/" target="_blank" rel="noreferrer noopener">Riktvärden för förorenad mark</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://monographs.iarc.who.int/agents-classified-by-the-iarc/" target="_blank" rel="noreferrer noopener">Agents classified by the IARC Monographs</a>, IARC.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

@@ -1,0 +1,335 @@
+<!-- wp:group {"className":"fs-guide fs-guide--sida"} -->
+<div class="wp-block-group fs-guide fs-guide--sida"><!-- wp:group {"className":"fs-guide-topp"} -->
+<div class="wp-block-group fs-guide-topp"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">PAH-analys av jord, även kreosot</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-ingress"} -->
+<p class="fs-guide-ingress">PAH-analys används när mark, fyllnadsmassor, trä, asfalt eller sediment kan vara påverkade av tjära, kreosot, sot, gasverk, äldre industri eller tyngre petroleumprodukter. Fastsan tar prover och bedömer PAH i Stockholm och Mälardalen inför schakt, exploatering, fastighetsköp och MIFO fas 2. Vi säljer ingen sanering.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"fs-guide-person"} -->
+<div class="wp-block-group fs-guide-person"><!-- wp:image {"id":155,"sizeSlug":"full","linkDestination":"none","className":"fs-guide-portratt"} -->
+<figure class="wp-block-image size-full fs-guide-portratt"><img src="https://fastsan.se/wp-content/uploads/fastsan-content/img/fastsan-daniel-stalbrand-portratt-150x150.webp" alt="Porträtt av Daniel Stålbrand" class="wp-image-155"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Daniel Stålbrand är grundare av Fastsan. Hans utbildningar och intyg finns under <a href="/kompetens/">Utbildning och certifiering</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-granskad"} -->
+<p class="fs-guide-granskad">Senast granskad 27 november 2026</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-korthet"} -->
+<div class="wp-block-group fs-guide-korthet"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">I korthet</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-korthet__lista"} -->
+<ul class="wp-block-list fs-guide-korthet__lista"><!-- wp:list-item -->
+<li><strong>PAH delas i tre grupper</strong>: låg-, mellan- och högmolekylära (PAH-L, PAH-M, PAH-H).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>PAH-H för känslig markanvändning:</strong> 1 mg/kg TS enligt Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Bens(a)pyren</strong> är klassat som cancerframkallande för människa.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Fastsan sanerar inte</strong> och har inget intresse av vad proverna visar.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"nar"} -->
+<h2 class="wp-block-heading" id="nar">När behövs PAH-analys?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>Kreosotimpregnerat trä</strong>: järnvägsslipers, stolpar, hamnpålar och äldre konstruktionsvirke.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Gasverk, hamnar och äldre industri</strong> med tjära och kol.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Tjärasfalt, svart fyllning eller sotiga massor</strong> vid rivning eller schakt.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Inför schakt och masshantering</strong>, när massorna ska klassas.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>MIFO fas 2</strong>, när fas 1 pekar på PAH. Se <a href="/markmiljo/undersokning/">MIFO fas 1 och 2</a>.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"grupper"} -->
+<h2 class="wp-block-heading" id="grupper">PAH-16 i tre grupper</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>PAH-16 är sexton PAH-ämnen som ofta analyseras i miljöprover. I Sverige delas de i tre grupper efter molekylvikt, och riktvärdena gäller summan i varje grupp.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>PAH-L</strong> (låg): naftalen, acenaftylen, acenaften. Flyktiga och mer vattenlösliga.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>PAH-M</strong> (mellan): fluoren, fenantren, antracen, fluoranten, pyren. Vanliga vid kreosot, tjära och olja.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>PAH-H</strong> (hög): bens(a)antracen, krysen, bens(b)fluoranten, bens(k)fluoranten, bens(a)pyren, indeno(1,2,3-cd)pyren, dibens(a,h)antracen, bens(g,h,i)perylen. Binder till partiklar och bryts ned långsamt.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:heading {"anchor":"lagen"} -->
+<h2 class="wp-block-heading" id="lagen">Riktvärden för PAH i jord</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-krav"} -->
+<div class="wp-block-group fs-guide-krav"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Naturvårdsverkets generella riktvärden (mg/kg TS)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>PAH-L: KM 3, MKM 15. PAH-M: KM 3,5, MKM 20. PAH-H: KM 1, MKM 10. KM gäller känslig markanvändning som bostäder, skolor och förskolor, MKM mindre känslig markanvändning som industri och kontor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://www.naturvardsverket.se/4a3dbd/globalassets/vagledning/fororenade-omraden/riktvarden/generella-riktvarden-for-fororenad-mark-2025.pdf" target="_blank" rel="noreferrer noopener">Naturvårdsverket, generella riktvärden 2025 (version 2.3)</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-ruta"} -->
+<div class="wp-block-group fs-guide-ruta"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Bens(a)pyren</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>IARC klassar bens(a)pyren som cancerframkallande för människa (grupp 1).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
+<p class="fs-guide-paragraf"><a href="https://monographs.iarc.who.int/agents-classified-by-the-iarc/" target="_blank" rel="noreferrer noopener">IARC Monographs</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Riktvärdena är inte juridiska gränsvärden. De tolkas mot markanvändning, djup, spridningsrisk och exponering. Rapporten jämför alltid mot Naturvårdsverkets gällande tabell.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"kallor-pah"} -->
+<h2 class="wp-block-heading" id="kallor-pah">Vanliga källor till PAH</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fs-guide-amnen"} -->
+<div class="wp-block-group fs-guide-amnen"><!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Kreosot</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Slipers, stolpar, pålar</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Ger ofta höga halter, särskilt PAH-M och PAH-H.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Gasverk</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Kol, koks och tjära</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Gamla gasverksområden hör till de mest komplexa PAH-objekten.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Sot</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Ytlig jord</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Kring äldre industri, värmeverk och trafik, främst de översta decimetrarna.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kort"} -->
+<div class="wp-block-group fs-guide-kort"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Asfalt och tjära</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"fs-guide-etikett"} -->
+<p class="fs-guide-etikett">Rivning och ledningsarbeten</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tjärasfalt, tjärpapp och tjärstrykningar.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"anchor":"sa-gar-det-till"} -->
+<h2 class="wp-block-heading" id="sa-gar-det-till">Så går det till</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-steg"} -->
+<ol class="wp-block-list fs-guide-steg"><!-- wp:list-item -->
+<li><strong>Källbild</strong>: historik och MIFO-underlag avgör var och på vilket djup proverna tas.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Provtagning</strong> av din konsult personligen, Daniel eller hans kollega.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Analys</strong> på oberoende laboratorium av de sexton ämnena, redovisade en och en och som PAH-L, PAH-M och PAH-H.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Bedömning</strong> mot Naturvårdsverkets riktvärden.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Rapport</strong> med resultat, bedömning och rekommenderat nästa steg.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Åtgärder vid höga halter kan vara schakt och deponi, termisk behandling, jordtvätt eller behandling på plats. Valet beror på halter, djup, volym, jordart och tillsynsmyndighetens krav. Fastsan levererar underlaget men säljer ingen sanering.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"anchor":"fragor"} -->
+<h2 class="wp-block-heading" id="fragor">Vanliga frågor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad är PAH?</summary><!-- wp:paragraph -->
+<p>Polycykliska aromatiska kolväten, en grupp ämnen som bildas vid ofullständig förbränning. De finns i tjära, kreosot, sot, äldre fyllnadsmassor, gasverk, hamnar och asfalt.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vad betyder PAH-L, PAH-M och PAH-H?</summary><!-- wp:paragraph -->
+<p>Den svenska indelningen av PAH-16 efter molekylvikt: tre lätta, fem mellan och åtta tunga ämnen. Summan i varje grupp jämförs med Naturvårdsverkets riktvärden.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Vilka riktvärden gäller för PAH i jord?</summary><!-- wp:paragraph -->
+<p>PAH-L: KM 3 och MKM 15 mg/kg TS. PAH-M: KM 3,5 och MKM 20. PAH-H: KM 1 och MKM 10.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Är kreosot samma sak som PAH?</summary><!-- wp:paragraph -->
+<p>Nej. Kreosot är en blandning ur stenkolstjära med hundratals ämnen, bland dem höga halter PAH. Vid misstänkt kreosot är PAH-analysen central.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"fs-guide-fraga"} -->
+<details class="wp-block-details fs-guide-fraga"><summary>Måste PAH-förorenad jord alltid saneras?</summary><!-- wp:paragraph -->
+<p>Nej. Det beror på halter, markanvändning, djup, spridningsrisk och exponering. Ibland räcker avgränsning eller en platsspecifik riskbedömning.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:group {"className":"fs-guide-kontakt"} -->
+<div class="wp-block-group fs-guide-kontakt"><!-- wp:heading {"anchor":"kontakt"} -->
+<h2 class="wp-block-heading" id="kontakt">Behöver du PAH-analys?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Ring eller mejla Daniel direkt, så får du pris och tidplan inom 24 timmar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link" href="/kontakt/?service=markmiljo">Begär offert</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="tel:0701424639">Ring 070-142 46 39</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Eller mejla <a href="mailto:daniel@fastsan.se">daniel@fastsan.se</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-innehall"} -->
+<div class="wp-block-group fs-guide-innehall"><!-- wp:paragraph {"className":"fs-guide-rubrikrad"} -->
+<p class="fs-guide-rubrikrad">Relaterade tjänster</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"className":"fs-guide-innehall__lista fs-guide-relaterat"} -->
+<ul class="wp-block-list fs-guide-innehall__lista fs-guide-relaterat"><!-- wp:list-item -->
+<li><a href="/markmiljo/undersokning/">MIFO fas 1 och 2</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/btex/">BTEX-analys</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/markmiljo/tungmetaller/">Tungmetaller i mark</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/provtagning/jord/">Jordprovtagning</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="/forvarvsbesiktning/">Miljöteknisk förvärvsbesiktning</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fs-guide-kallor"} -->
+<div class="wp-block-group fs-guide-kallor"><!-- wp:heading {"anchor":"kallor"} -->
+<h2 class="wp-block-heading" id="kallor">Källor</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true,"className":"fs-guide-kallor__lista"} -->
+<ol class="wp-block-list fs-guide-kallor__lista"><!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/4a3dbd/globalassets/vagledning/fororenade-omraden/riktvarden/generella-riktvarden-for-fororenad-mark-2025.pdf" target="_blank" rel="noreferrer noopener">Naturvårdsverkets generella riktvärden för förorenad mark 2025</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://www.naturvardsverket.se/vagledning-och-stod/fororenade-omraden/riktvarden-for-fororenad-mark/" target="_blank" rel="noreferrer noopener">Riktvärden för förorenad mark</a>, Naturvårdsverket.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><a href="https://monographs.iarc.who.int/agents-classified-by-the-iarc/" target="_blank" rel="noreferrer noopener">Agents classified by the IARC Monographs</a>, IARC.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"className":"fs-guide-not"} -->
+<p class="fs-guide-not">Alla källor lästa 27 november 2026.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
