@@ -117,7 +117,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Blåbetong är ett alunskifferbaserat byggnadsmaterial som tillverkades 1929–1975 och avger radon (<a href="https://www.ssm.se/omraden/radon/vad-ar-radon/radonkallor-i-inomhusluften/" target="_blank" rel="noreferrer noopener">Strålsäkerhetsmyndigheten</a>). Mer om <a href="/radon/">radonmätning</a>.</p>
+<p>Blåbetong är ett alunskifferbaserat byggnadsmaterial som tillverkades 1929–1975 och avger radon (<a href="https://www.stralsakerhetsmyndigheten.se/omraden/radon/vad-ar-radon/radonkallor-i-inomhusluften/" target="_blank" rel="noreferrer noopener">Strålsäkerhetsmyndigheten</a>). Mer om <a href="/radon/">radonmätning</a>.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:gallery {"columns":3,"linkTo":"none"} -->
@@ -402,7 +402,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://www.ssm.se/omraden/radon/vad-ar-radon/radonkallor-i-inomhusluften/" target="_blank" rel="noreferrer noopener">Radonkällor i inomhusluften</a>, Strålsäkerhetsmyndigheten.</li>
+<li><a href="https://www.stralsakerhetsmyndigheten.se/omraden/radon/vad-ar-radon/radonkallor-i-inomhusluften/" target="_blank" rel="noreferrer noopener">Radonkällor i inomhusluften</a>, Strålsäkerhetsmyndigheten.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
