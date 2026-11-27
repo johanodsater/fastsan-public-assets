@@ -137,11 +137,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Svenskt Trä anger för limträ att ytfuktkvoten bör vara högst 18 % när det byggs in och högst 16 % när det målas.</p>
+<p>Enligt Svenskt Trä får ytfuktkvoten vara högst 18 % före inbyggnad och högst 16 % när virket målas.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"fs-guide-paragraf"} -->
-<p class="fs-guide-paragraf"><a href="https://shop.svenskttra.se/media/1097/hantera-limtra-ratt.pdf" target="_blank" rel="noreferrer noopener">Svenskt Trä: Hantera limträ rätt</a></p>
+<p class="fs-guide-paragraf"><a href="https://www.svenskttra.se/siteassets/5-publikationer/pdfer/st-hvr-2025-04-16.pdf" target="_blank" rel="noreferrer noopener">Svenskt Trä: Hantera virket rätt</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -225,7 +225,7 @@
 
 <!-- wp:details {"className":"fs-guide-fraga"} -->
 <details class="wp-block-details fs-guide-fraga"><summary>Vilken fuktkvot är acceptabel i trä?</summary><!-- wp:paragraph -->
-<p>För limträ anger Svenskt Trä högst 18 % ytfuktkvot vid inbyggnad och högst 16 % vid målning. Högre värden utreds, särskilt om fukten har funnits länge.</p>
+<p>Svenskt Trä anger högst 18 % ytfuktkvot före inbyggnad och högst 16 % vid målning. Högre värden utreds, särskilt om fukten har funnits länge.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
@@ -304,7 +304,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="https://shop.svenskttra.se/media/1097/hantera-limtra-ratt.pdf" target="_blank" rel="noreferrer noopener">Hantera limträ rätt</a>, Svenskt Trä.</li>
+<li><a href="https://www.svenskttra.se/siteassets/5-publikationer/pdfer/st-hvr-2025-04-16.pdf" target="_blank" rel="noreferrer noopener">Hantera virket rätt, utgåva 4:2025</a>, Svenskt Trä.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
